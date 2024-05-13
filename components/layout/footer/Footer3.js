@@ -82,7 +82,7 @@ export default function Footer3() {
                                                         <i className="flaticon-envelope" />
                                                     </div>
                                                     <div className="content">
-                                                        <Link href="#mailto:info@apexa.com">ienmaa@enmaa.com</Link>
+                                                        <Link href="#mailto:enmaa@enmaa.com">enmaa@enmaa.com</Link>
                                                     </div>
                                                 </li>
                                                 <li>
