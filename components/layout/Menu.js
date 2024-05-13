@@ -49,7 +49,7 @@ export default function Menu() {
                         <li><Link href="/blog">Latest News</Link></li>
                         <li><Link href="/careers">Careers</Link></li>
                         <li><Link href="/complaints">Complaints</Link></li>
-                        <li><Link href="mailto:enmaa@enmaa.com">Report an Incident</Link></li>
+                        <li><Link href="mailto:whistleblower@enmaa.com">Report an Incident</Link></li>
                         {/* <li><Link href="/#-details">Team Details</Link></li>
                         <li><Link href="/project-details">Project Details</Link></li>
                         <li><Link href="/error">404 Error Page</Link></li>
