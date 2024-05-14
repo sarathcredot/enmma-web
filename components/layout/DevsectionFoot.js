@@ -1,7 +1,7 @@
 const DevsectionFoot = ({ title, paragraph, bgColor, fontColor, fontColor2 }) => {
     return (
         <div className="box-video-small" >
-            <div className="item-video-small" style={{ backgroundColor: bgColor}}>
+            <div1 className="item-video-small" style={{ backgroundColor: bgColor}}>
                 <div className="video-small-left">
                     <div className="video-small-left-inner">
                         <div className="video-small-left-1">
@@ -20,7 +20,7 @@ const DevsectionFoot = ({ title, paragraph, bgColor, fontColor, fontColor2 }) =>
                         {/* <VideoPopup style={1}/> */}
                     </div>
                 </div>
-            </div>
+            </div1>
         </div>
     );
 };
