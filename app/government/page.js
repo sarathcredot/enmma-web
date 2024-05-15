@@ -32,18 +32,19 @@ export default function About4() {
                                                 <img src="/assets/img/project/h2_project_img041.jpg" alt="" />
                                             </div>
                                         </div>
-                                        <div className="project__item-three mt-5 shine-animate-item">
-                                        <div className=" shine-animate">
-                                                <img src="/assets/img/project/h3_project_img01.jpg" alt="" />
-                                             </div>
-                                             <div className="project__content-two">
-                                                <span>Maximise Property Value</span>
-                                                <h2 className="title"><Link href="#/project-details">Owner Services</Link></h2>
-                                                <p >Expert solutions for property management and optimisation strategies.</p>
-                                                <Link href="#/project-details" className="btn btn-two ">See Details</Link>
-                                             </div>
-                                           
-                                           </div>
+                                        <br/>
+                                        <div className="project__item-three shine-animate-item">
+                                            <div className="project__content-two">
+                                                {/* <span>Souq Al Wataniya</span> */}
+                                                <h2 className="title"><Link href="#/project-details">Souq Al Wataniya</Link></h2>
+                                                <p className="">The distinctive location of the Souq Al Wataniya Market located in the heart of the commercial district of the Kuwait city gave it high importance. This is in addition to shops and administrative offices constituting the market. The view is wonderful. Car parks there serve the market tenants and the region's visitors in general. The building is located near several markets, ancient commercial complexes, and hotels that many tourists visit throughout the year.</p>
+                                                <Link href="#/project-details" className="btn ">See Details</Link>
+                                            </div>
+                                            <div className="project__thumb-three shine-animate">
+                                                <img src="/assets/img/project/h2_project_img041.jpg" alt="" />
+                                            </div>
+                                        </div>
+                                        
                                          <div/>
                     
                                        </div>   

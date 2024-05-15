@@ -38,7 +38,7 @@ export default function Header6({ scroll, isMobileMenu, handleMobileMenu, transp
                                         </div>
                                         <div className="tgmenu__action tgmenu__action-five d-none d-md-block">
                                             <ul className="list-wrap">
-                                                <li className="header-btn"><Link href="/search-property" className="btn "> <SVG caseValue='case1'/>&nbsp; Search Properties</Link></li>
+                                                <li className="header-btn" ><Link href="/search-property" className="btn "> <SVG caseValue='case1'/>&nbsp; Search Properties</Link></li>
                                                 <li className="header-btn"><Link href="https://onpayment.enmaa.com/ONPAY/login.jsp" className="btn btn-two"> <SVG caseValue='case2'/>&nbsp; pay rent</Link></li>
                                             </ul>
                                         </div>

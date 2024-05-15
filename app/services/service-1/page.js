@@ -36,7 +36,7 @@ export default function service1() {
                                         </h2>
                                     </div>
                                     <div className="dev_customsize services__content-two mt-4">
-                                        <Link href="" className="btn">
+                                        <Link href="/services" className="btn">
                                             See more services
                                         </Link>
                                     </div>
@@ -47,7 +47,7 @@ export default function service1() {
                                     <div className="services__tab-wrap">
                                         <ul className="nav nav-tabs" id="myTab" role="tablist">
                                             <li className="nav-item" onClick={() => handleOnClick(1)}>
-                                                <button
+                                            <Link href="#dev-link-section" smooth><button
                                                     className={
                                                         activeIndex == 1 ? "nav-link active" : "nav-link"
                                                     }
@@ -61,10 +61,10 @@ export default function service1() {
                                                 >
                                                     <i className="flaticon-travel-insurance" />
                                                     Expert Property Management
-                                                </button>
+                                                </button></Link>
                                             </li>
                                             <li className="nav-item" onClick={() => handleOnClick(2)}>
-                                                <button
+                                            <Link href="#dev-link-section" smooth> <button
                                                     className={
                                                         activeIndex == 2 ? "nav-link active" : "nav-link"
                                                     }
@@ -78,10 +78,10 @@ export default function service1() {
                                                 >
                                                     <i className="flaticon-travel-insurance" />
                                                     Streamlined Operations
-                                                </button>
+                                                </button></Link>
                                             </li>
                                             <li className="nav-item" onClick={() => handleOnClick(3)}>
-                                                <button
+                                            <Link href="#dev-link-section" smooth> <button
                                                     className={
                                                         activeIndex == 3 ? "nav-link active" : "nav-link"
                                                     }
@@ -95,10 +95,10 @@ export default function service1() {
                                                 >
                                                     <i className="flaticon-travel-insurance" />
                                                     Technology at Your Service
-                                                </button>
+                                                </button></Link>
                                             </li>
                                             <li className="nav-item" onClick={() => handleOnClick(4)}>
-                                                <button
+                                                <Link href="#dev-link-section" smooth><button
                                                     className={
                                                         activeIndex == 4 ? "nav-link active" : "nav-link"
                                                     }
@@ -112,12 +112,12 @@ export default function service1() {
                                                 >
                                                     <i className="flaticon-travel-insurance" />
                                                     Investing in Your Success
-                                                </button>
+                                                </button></Link>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
-                                <div className="col-md-6">
+                                <div className="col-md-6" id="dev-link-section">
                                     <div className="tab-content" id="myTabContent">
                                         <div
                                             className={
