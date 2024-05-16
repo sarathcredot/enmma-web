@@ -16,8 +16,12 @@ export default function service5() {
         <>
             <Layout headerStyle={6} footerStyle={3}>
                 <Banner1
-                    title={"Owner Services"}
-                    paragraph={`Owning rental property can be a rewarding investment, but it also comes with responsibilities. At Al Enmaa Real Estate, we understand this, and that's why we offer a comprehensive suite of owner services designed to maximise your return and minimise your stress.`}
+                    title={"Consultancy Services"}
+                    paragraph={`The Kuwaiti real estate market offers a wealth of potential for investors, but navigating 
+                    its complexities can be challenging. At Al Enmaa Real Estate, we understand the 
+                    importance of informed decision-making. That's why we offer comprehensive real 
+                    estate consultancy services designed to empower you throughout your investment 
+                    journey.`}
                     bgColor={"#110B79"}
                     fontColor={"#FFFFFF"}
                     fontColor2={"#FFFFFF"}
@@ -60,7 +64,7 @@ export default function service5() {
                                                     aria-selected="true"
                                                 >
                                                     <i className="flaticon-travel-insurance" />
-                                                    Expert Property Management
+                                                    Unparalleled Market Expertise
                                                 </button></Link>
                                             </li>
                                             <li className="nav-item" onClick={() => handleOnClick(2)}>
@@ -77,7 +81,7 @@ export default function service5() {
                                                     aria-selected="false"
                                                 >
                                                     <i className="flaticon-travel-insurance" />
-                                                    Streamlined Operations
+                                                    Strategic Investment Guidance
                                                 </button></Link>
                                             </li>
                                             <li className="nav-item" onClick={() => handleOnClick(3)}>
@@ -94,26 +98,10 @@ export default function service5() {
                                                     aria-selected="false"
                                                 >
                                                     <i className="flaticon-travel-insurance" />
-                                                    Technology at Your Service
+                                                    Seamless Transaction Support
                                                 </button></Link>
                                             </li>
-                                            <li className="nav-item" onClick={() => handleOnClick(4)}>
-                                                <Link href="#dev-link-section" smooth><button
-                                                    className={
-                                                        activeIndex == 4 ? "nav-link active" : "nav-link"
-                                                    }
-                                                    id="cargo-tab"
-                                                    data-bs-toggle="tab"
-                                                    data-bs-target="#cargo-tab-pane"
-                                                    type="button"
-                                                    role="tab"
-                                                    aria-controls="cargo-tab-pane"
-                                                    aria-selected="false"
-                                                >
-                                                    <i className="flaticon-travel-insurance" />
-                                                    Investing in Your Success
-                                                </button></Link>
-                                            </li>
+
                                         </ul>
                                     </div>
                                 </div>
@@ -137,19 +125,16 @@ export default function service5() {
                                                 <div className="services__content-four">
                                                     <h2 className="title">
                                                         <Link href="/services-details">
-                                                            Expert Property Management
+                                                        Unparalleled Market Expertise
                                                         </Link>
                                                     </h2>
                                                     <p>
-                                                        Our team of experienced professionals takes care
-                                                        of every aspect of your rental property, allowing
-                                                        you to focus on what matters most. We handle tenant
-                                                        screening and selection to ensure you have
-                                                        responsible occupants in your property. We draft and
-                                                        manage lease agreements, ensuring your rights are
-                                                        protected and all terms are clearly outlined.
-                                                        Additionally, we take care of rent collection and
-                                                        manage any late payments efficiently.
+                                                    Our team of experienced consultants possesses a 
+deep understanding of the Kuwaiti real estate landscape. Through continuous research 
+and analysis, we stay current on market trends, emerging opportunities, and potential 
+risks. We leverage this expertise to provide you with insightful market reports, property 
+valuations, and investment forecasts, enabling you to make informed decisions based on 
+the latest market conditions
                                                     </p>
                                                 </div>
                                             </div1>
@@ -175,14 +160,16 @@ export default function service5() {
                                                 <div className="services__content-four">
                                                     <h2 className="title">
                                                         <Link href="/services-details">
-                                                        Streamlined Operations                                              </Link>
+                                                        Strategic Investment Guidance                              </Link>
                                                     </h2>
                                                     <p>
-                                                    We prioritize efficiency and transparency in everything we
-do. Our established processes and procedures ensure your property is well-maintained
-and any issues are addressed promptly. We handle routine maintenance requests and
-coordinate with qualified vendors for repairs when necessary. We also provide regular
-reports on the property's condition, occupancy rates, and income/expense details.
+                                                    Our services extend beyond simply providing data. 
+We work closely with you to understand your unique investment goals, risk tolerance, 
+and financial objectives. Based on this in-depth understanding, we develop personalized 
+investment strategies that align with your specific needs. Whether you're a seasoned 
+investor seeking high-yield opportunities or a first-time investor seeking guidance on 
+building a property portfolio, our consultants offer tailored advice to help you achieve 
+your investment goals
                                                     
                                                     </p>
                                                     
@@ -211,17 +198,20 @@ reports on the property's condition, occupancy rates, and income/expense details
                                                 <div className="services__content-four">
                                                     <h2 className="title">
                                                         <Link href="/services-details">
-                                                        Technology at Your Service
+                                                        Seamless Transaction Support
                                                         </Link>
                                                     </h2>
                                                     <p>
-                                                    We leverage cutting-edge technology to enhance your
-experience as a property owner. Our secure system allows you to easily access property
-related services. We also offer a convenient online support for on-the-go access to
-information and communication with our team.<br/><br/>
-By partnering with Al Enmaa Real Estate, you gain peace of mind knowing your
-property is in good hands. We handle the day-to-day tasks efficiently, allowing you to
-enjoy the benefits of ownership without the hassle.
+                                                    : Our commitment to service doesn't stop at investment 
+planning. We provide ongoing support throughout the entire transaction process. Our 
+consultants can assist with property due diligence, negotiation of terms, and legal 
+documentation. We also maintain a network of trusted professionals, including lawyers, 
+mortgage brokers, and property managers, to ensure you have access to the necessary 
+expertise at every step of the way.<br/><br/>
+By partnering with Al Enmaa Real Estate for your real estate consultancy needs, you 
+gain access to a wealth of knowledge, strategic guidance, and ongoing support. We 
+empower you to make informed investment decisions with confidence, maximizing your 
+potential for success in the dynamic Kuwaiti real estate market.
 
                                                     </p>
                                                     
@@ -229,97 +219,7 @@ enjoy the benefits of ownership without the hassle.
                                                 </div>
                                             </div>
                                         </div>
-                                        <div
-                                            className={
-                                                activeIndex == 4
-                                                    ? "tab-pane fade show active"
-                                                    : "tab-pane fade"
-                                            }
-                                            id="cargo-tab-pane"
-                                            role="tabpanel"
-                                            aria-labelledby="cargo-tab"
-                                            tabIndex={0}
-                                        >
-                                            <div className="services__item-four shine-animate-item">
-                                                <div className="services__thumb-four shine-animate">
-                                                    <img src="/assets/img/services/Tabpanel.jpg" alt="" />
-                                                </div>
-                                                <div className="services__content-four">
-                                                    <h2 className="title">
-                                                        <Link href="/services-details">
-                                                            Investing in Your Success
-                                                        </Link>
-                                                    </h2>
-                                                    <p>
-                                                        Al Enmaa Real Estate is committed to your success as
-                                                        a property owner. We go beyond basic property
-                                                        management by offering additional services designed
-                                                        to maximize your investment returns
-                                                    </p>
-                                                    <div className="about__list-box-2">
-                                                        <ul className="list-wrap">
-                                                            <li>
-                                                                <SVG caseValue="case13" />
-                                                                <ul>
-                                                                    <li>
-                                                                        <h6>
-                                                                            Market Analysis and Rent Optimization:
-                                                                        </h6>
-                                                                    </li>
-                                                                    <li>
-                                                                        <p>
-                                                                            We leverage our market expertise to
-                                                                            analyze rental trends and ensure your
-                                                                            property is priced competitively.
-                                                                        </p>
-                                                                    </li>
-                                                                </ul>
-                                                            </li>
-                                                            <li>
-                                                                <SVG caseValue="case13" />
-                                                                <ul>
-                                                                    <li>
-                                                                        <h6>
-                                                                            Renovation and Maintenance Consulting:
-                                                                        </h6>
-                                                                    </li>
-                                                                    <li>
-                                                                        <p>
-                                                                            Our team can advise you on cost- effective
-                                                                            renovations or upgrades that can enhance
-                                                                            the value of your property and attract
-                                                                            high-quality tenants.{" "}
-                                                                        </p>
-                                                                    </li>
-                                                                </ul>
-                                                            </li>
-                                                            <li>
-                                                                <SVG caseValue="case13" />
-                                                                <ul>
-                                                                    <li>
-                                                                        <h6>Legal Support: </h6>
-                                                                    </li>
-                                                                    <li>
-                                                                        <p>
-                                                                            We can connect you with trusted legal
-                                                                            professionals to ensure you are compliant
-                                                                            with all regulations and maximizing your
-                                                                            benefits.With Al Enmaa's comprehensive
-                                                                            owner services, you can experience the
-                                                                            benefits of rental property ownership with
-                                                                            minimal stress. We focus on maximizing
-                                                                            your return on investment while ensuring
-                                                                            your property is well-maintained and
-                                                                            managed effectively.{" "}
-                                                                        </p>
-                                                                    </li>
-                                                                </ul>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        
                                     </div>
                                 </div>
                             </div>

@@ -36,6 +36,8 @@ export default function Blog() {
                                                         </button>
                                                     </form>
                                                 </div>
+                                                <div>  
+                                                </div>
                                             </div>
                                             <div className="sidebar__widget">
                                                 <h4 className="sidebar__widget-title">Categories</h4>

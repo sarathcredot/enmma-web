@@ -16,8 +16,11 @@ export default function service3() {
         <>
             <Layout headerStyle={6} footerStyle={3}>
                 <Banner1
-                    title={"Owner Services"}
-                    paragraph={`Owning rental property can be a rewarding investment, but it also comes with responsibilities. At Al Enmaa Real Estate, we understand this, and that's why we offer a comprehensive suite of owner services designed to maximise your return and minimise your stress.`}
+                    title={"Auction Services"}
+                    paragraph={`Real estate auctions have become a powerful tool for both investors and sellers seeking 
+                    a dynamic and transparent marketplace. Al Enmaa Real Estate leverages its extensive 
+                    experience and market knowledge to conduct successful property auctions, maximizing 
+                    value for everyone involved`}
                     bgColor={"#110B79"}
                     fontColor={"#FFFFFF"}
                     fontColor2={"#FFFFFF"}
@@ -31,8 +34,8 @@ export default function service3() {
                                         <span className="">What We Offer</span>
                                         <h2 className=" mt-4">
                                             {" "}
-                                            Al Enmaa's Comprehensive <br />
-                                            Services for Property Owners
+                                            Unlocking Value <br />
+                                            Through Auctions
                                         </h2>
                                     </div>
                                     <div className="dev_customsize services__content-two mt-4">
@@ -47,73 +50,65 @@ export default function service3() {
                                     <div className="services__tab-wrap">
                                         <ul className="nav nav-tabs" id="myTab" role="tablist">
                                             <li className="nav-item" onClick={() => handleOnClick(1)}>
-                                            <Link href="#dev-link-section" smooth><button
-                                                    className={
-                                                        activeIndex == 1 ? "nav-link active" : "nav-link"
-                                                    }
-                                                    id="health-tab"
-                                                    data-bs-toggle="tab"
-                                                    data-bs-target="#health-tab-pane"
-                                                    type="button"
-                                                    role="tab"
-                                                    aria-controls="health-tab-pane"
-                                                    aria-selected="true"
-                                                >
-                                                    <i className="flaticon-travel-insurance" />
-                                                    Expert Property Management
-                                                </button></Link>
+                                                <Link href="#dev-link-section" smooth>
+                                                    <button
+                                                        className={
+                                                            activeIndex == 1 ? "nav-link active" : "nav-link"
+                                                        }
+                                                        id="health-tab"
+                                                        data-bs-toggle="tab"
+                                                        data-bs-target="#health-tab-pane"
+                                                        type="button"
+                                                        role="tab"
+                                                        aria-controls="health-tab-pane"
+                                                        aria-selected="true"
+                                                    >
+                                                        <i className="flaticon-travel-insurance" />
+                                                        Selling Through Auctions{" "}
+                                                    </button>
+                                                </Link>
                                             </li>
                                             <li className="nav-item" onClick={() => handleOnClick(2)}>
-                                            <Link href="#dev-link-section" smooth> <button
-                                                    className={
-                                                        activeIndex == 2 ? "nav-link active" : "nav-link"
-                                                    }
-                                                    id="travel-tab"
-                                                    data-bs-toggle="tab"
-                                                    data-bs-target="#travel-tab-pane"
-                                                    type="button"
-                                                    role="tab"
-                                                    aria-controls="travel-tab-pane"
-                                                    aria-selected="false"
-                                                >
-                                                    <i className="flaticon-travel-insurance" />
-                                                    Streamlined Operations
-                                                </button></Link>
+                                                <Link href="#dev-link-section" smooth>
+                                                    {" "}
+                                                    <button
+                                                        className={
+                                                            activeIndex == 2 ? "nav-link active" : "nav-link"
+                                                        }
+                                                        id="travel-tab"
+                                                        data-bs-toggle="tab"
+                                                        data-bs-target="#travel-tab-pane"
+                                                        type="button"
+                                                        role="tab"
+                                                        aria-controls="travel-tab-pane"
+                                                        aria-selected="false"
+                                                    >
+                                                        <i className="flaticon-travel-insurance" />
+                                                        Expert Auction Management{" "}
+                                                    </button>
+                                                </Link>
                                             </li>
                                             <li className="nav-item" onClick={() => handleOnClick(3)}>
-                                            <Link href="#dev-link-section" smooth> <button
-                                                    className={
-                                                        activeIndex == 3 ? "nav-link active" : "nav-link"
-                                                    }
-                                                    id="vehicle-tab"
-                                                    data-bs-toggle="tab"
-                                                    data-bs-target="#vehicle-tab-pane"
-                                                    type="button"
-                                                    role="tab"
-                                                    aria-controls="vehicle-tab-pane"
-                                                    aria-selected="false"
-                                                >
-                                                    <i className="flaticon-travel-insurance" />
-                                                    Technology at Your Service
-                                                </button></Link>
+                                                <Link href="#dev-link-section" smooth>
+                                                    {" "}
+                                                    <button
+                                                        className={
+                                                            activeIndex == 3 ? "nav-link active" : "nav-link"
+                                                        }
+                                                        id="vehicle-tab"
+                                                        data-bs-toggle="tab"
+                                                        data-bs-target="#vehicle-tab-pane"
+                                                        type="button"
+                                                        role="tab"
+                                                        aria-controls="vehicle-tab-pane"
+                                                        aria-selected="false"
+                                                    >
+                                                        <i className="flaticon-travel-insurance" />
+                                                        The Buyer's Advantage{" "}
+                                                    </button>
+                                                </Link>
                                             </li>
-                                            <li className="nav-item" onClick={() => handleOnClick(4)}>
-                                                <Link href="#dev-link-section" smooth><button
-                                                    className={
-                                                        activeIndex == 4 ? "nav-link active" : "nav-link"
-                                                    }
-                                                    id="cargo-tab"
-                                                    data-bs-toggle="tab"
-                                                    data-bs-target="#cargo-tab-pane"
-                                                    type="button"
-                                                    role="tab"
-                                                    aria-controls="cargo-tab-pane"
-                                                    aria-selected="false"
-                                                >
-                                                    <i className="flaticon-travel-insurance" />
-                                                    Investing in Your Success
-                                                </button></Link>
-                                            </li>
+                                            
                                         </ul>
                                     </div>
                                 </div>
@@ -137,19 +132,14 @@ export default function service3() {
                                                 <div className="services__content-four">
                                                     <h2 className="title">
                                                         <Link href="/services-details">
-                                                            Expert Property Management
-                                                        </Link>
+                                                            Selling Through Auctions                            </Link>
                                                     </h2>
                                                     <p>
-                                                        Our team of experienced professionals takes care
-                                                        of every aspect of your rental property, allowing
-                                                        you to focus on what matters most. We handle tenant
-                                                        screening and selection to ensure you have
-                                                        responsible occupants in your property. We draft and
-                                                        manage lease agreements, ensuring your rights are
-                                                        protected and all terms are clearly outlined.
-                                                        Additionally, we take care of rent collection and
-                                                        manage any late payments efficiently.
+                                                        Strategic auctions offer distinct benefits compared to
+                                                        traditional sales methods. Your property can be presented to a wider audience of
+                                                        interested buyers, potentially leading to a faster sale and a final price that exceeds your
+                                                        initial expectations. The open bidding process fosters competition, ensuring you receive
+                                                        a fair market value based on active buyer interest.
                                                     </p>
                                                 </div>
                                             </div1>
@@ -175,18 +165,19 @@ export default function service3() {
                                                 <div className="services__content-four">
                                                     <h2 className="title">
                                                         <Link href="/services-details">
-                                                        Streamlined Operations                                              </Link>
+                                                            Expert Auction Management
+                                                        </Link>
                                                     </h2>
                                                     <p>
-                                                    We prioritize efficiency and transparency in everything we
-do. Our established processes and procedures ensure your property is well-maintained
-and any issues are addressed promptly. We handle routine maintenance requests and
-coordinate with qualified vendors for repairs when necessary. We also provide regular
-reports on the property's condition, occupancy rates, and income/expense details.
-                                                    
+                                                        Whether you're considering an auction for your
+                                                        property or exploring investment opportunities at existing auctions, Al Enmaa offers
+                                                        comprehensive support throughout the process. Our dedicated team will meticulously
+                                                        analyze your property and advise on optimal auction strategies to help you achieve the
+                                                        highest possible return on investment. We utilize targeted marketing campaigns to
+                                                        attract qualified buyers and generate excitement for your property leading up to the
+                                                        auction date. Experienced auctioneers conduct the event with transparency and
+                                                        professionalism, ensuring a fair and efficient bidding process for all participants
                                                     </p>
-                                                    
-                                                  
                                                 </div>
                                             </div>
                                         </div>
@@ -211,115 +202,27 @@ reports on the property's condition, occupancy rates, and income/expense details
                                                 <div className="services__content-four">
                                                     <h2 className="title">
                                                         <Link href="/services-details">
-                                                        Technology at Your Service
+                                                            The Buyer's Advantage
                                                         </Link>
                                                     </h2>
                                                     <p>
-                                                    We leverage cutting-edge technology to enhance your
-experience as a property owner. Our secure system allows you to easily access property
-related services. We also offer a convenient online support for on-the-go access to
-information and communication with our team.<br/><br/>
-By partnering with Al Enmaa Real Estate, you gain peace of mind knowing your
-property is in good hands. We handle the day-to-day tasks efficiently, allowing you to
-enjoy the benefits of ownership without the hassle.
-
+                                                        Looking to invest in real estate through auctions? Al Enmaa
+                                                        can be your trusted guide. Our team meticulously assesses auction listings and
+                                                        highlights properties with strong potential for investment, allowing you to focus on the
+                                                        most promising opportunities. We offer guidance on developing a sound bidding
+                                                        strategy to secure your desired property at a competitive price while staying within
+                                                        your budget. Our support extends beyond winning the bid, as we assist with finalizing
+                                                        the purchase process and navigating any post-auction logistics
+                                                        <br />
+                                                        <br />
+                                                        By partnering with Al Enmaa Real Estate for your auction needs, you unlock a world of
+                                                        possibilities within the dynamic world of real estate auctions. We empower both sellers
+                                                        and buyers to achieve their goals through a transparent and efficient platform.
                                                     </p>
-                                                    
-                                                  
                                                 </div>
                                             </div>
                                         </div>
-                                        <div
-                                            className={
-                                                activeIndex == 4
-                                                    ? "tab-pane fade show active"
-                                                    : "tab-pane fade"
-                                            }
-                                            id="cargo-tab-pane"
-                                            role="tabpanel"
-                                            aria-labelledby="cargo-tab"
-                                            tabIndex={0}
-                                        >
-                                            <div className="services__item-four shine-animate-item">
-                                                <div className="services__thumb-four shine-animate">
-                                                    <img src="/assets/img/services/Tabpanel.jpg" alt="" />
-                                                </div>
-                                                <div className="services__content-four">
-                                                    <h2 className="title">
-                                                        <Link href="/services-details">
-                                                            Investing in Your Success
-                                                        </Link>
-                                                    </h2>
-                                                    <p>
-                                                        Al Enmaa Real Estate is committed to your success as
-                                                        a property owner. We go beyond basic property
-                                                        management by offering additional services designed
-                                                        to maximize your investment returns
-                                                    </p>
-                                                    <div className="about__list-box-2">
-                                                        <ul className="list-wrap">
-                                                            <li>
-                                                                <SVG caseValue="case13" />
-                                                                <ul>
-                                                                    <li>
-                                                                        <h6>
-                                                                            Market Analysis and Rent Optimization:
-                                                                        </h6>
-                                                                    </li>
-                                                                    <li>
-                                                                        <p>
-                                                                            We leverage our market expertise to
-                                                                            analyze rental trends and ensure your
-                                                                            property is priced competitively.
-                                                                        </p>
-                                                                    </li>
-                                                                </ul>
-                                                            </li>
-                                                            <li>
-                                                                <SVG caseValue="case13" />
-                                                                <ul>
-                                                                    <li>
-                                                                        <h6>
-                                                                            Renovation and Maintenance Consulting:
-                                                                        </h6>
-                                                                    </li>
-                                                                    <li>
-                                                                        <p>
-                                                                            Our team can advise you on cost- effective
-                                                                            renovations or upgrades that can enhance
-                                                                            the value of your property and attract
-                                                                            high-quality tenants.{" "}
-                                                                        </p>
-                                                                    </li>
-                                                                </ul>
-                                                            </li>
-                                                            <li>
-                                                                <SVG caseValue="case13" />
-                                                                <ul>
-                                                                    <li>
-                                                                        <h6>Legal Support: </h6>
-                                                                    </li>
-                                                                    <li>
-                                                                        <p>
-                                                                            We can connect you with trusted legal
-                                                                            professionals to ensure you are compliant
-                                                                            with all regulations and maximizing your
-                                                                            benefits.With Al Enmaa's comprehensive
-                                                                            owner services, you can experience the
-                                                                            benefits of rental property ownership with
-                                                                            minimal stress. We focus on maximizing
-                                                                            your return on investment while ensuring
-                                                                            your property is well-maintained and
-                                                                            managed effectively.{" "}
-                                                                        </p>
-                                                                    </li>
-                                                                </ul>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        
                                     </div>
                                 </div>
                             </div>

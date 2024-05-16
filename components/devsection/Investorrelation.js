@@ -27,7 +27,7 @@ export default function Contact() {
                   <div className="row">
                     <div className="form-grp">
                      
-                      <select name="pets" id="pet-select">
+                      <select name="list" id="pet-select">
                         <option value="">Please select</option>
                         <option value="AAA">AAA</option>
                         <option value="BBBB">BBBB</option>
