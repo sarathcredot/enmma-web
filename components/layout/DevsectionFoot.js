@@ -17,7 +17,6 @@ const DevsectionFoot = ({ title, paragraph, bgColor, fontColor, fontColor2 }) =>
                 <div className="video-small-right">
                     <div className="box-video image-fit">
                         <img src="/assets/img/project/h3_project_img0106.jpg" />
-                        {/* <VideoPopup style={1}/> */}
                     </div>
                 </div>
             </div1>
