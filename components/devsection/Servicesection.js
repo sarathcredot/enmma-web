@@ -3,7 +3,7 @@ import Link from "next/link"
 export default function Servicesection() {
     return (
         <>
-                       <div className="row  pt-4">
+                       <div className="row  pt-120">
                         <div className="col-lg-8">
                             <div className="section-title white-title mb-50 tg-heading-subheading animation-style3">
                                 

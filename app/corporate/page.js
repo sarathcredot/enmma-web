@@ -51,6 +51,21 @@ export default function corporate() {
                                             <li className="nav-item" onClick={() => handleOnClick(6)}>
                                                 <button className={activeIndex == 6 ? "nav-link active" : "nav-link"} id="bike-tab" data-bs-toggle="tab" data-bs-target="#bike-tab-pane" type="button" role="tab"  aria-selected="false"><i className="flaticon-travel-insurance" />Promote Code of Conduct & Ethical Standards</button>
                                             </li>
+                                            <li className="nav-item" onClick={() => handleOnClick(7)}>
+                                                <button className={activeIndex == 7 ? "nav-link active" : "nav-link"} id="bike-tab" data-bs-toggle="tab" data-bs-target="#bike-tab-pane" type="button" role="tab"  aria-selected="false"><i className="flaticon-travel-insurance" />Ensure Timely and High-Quality Disclosure and Transparency</button>
+                                            </li>
+                                            <li className="nav-item" onClick={() => handleOnClick(8)}>
+                                                <button className={activeIndex == 8 ? "nav-link active" : "nav-link"} id="bike-tab" data-bs-toggle="tab" data-bs-target="#bike-tab-pane" type="button" role="tab"  aria-selected="false"><i className="flaticon-travel-insurance" />Respect the Rights of Shareholders</button>
+                                            </li>
+                                            <li className="nav-item" onClick={() => handleOnClick(9)}>
+                                                <button className={activeIndex == 9 ? "nav-link active" : "nav-link"} id="bike-tab" data-bs-toggle="tab" data-bs-target="#bike-tab-pane" type="button" role="tab"  aria-selected="false"><i className="flaticon-travel-insurance" />Recognise the Roles of Stakeholders</button>
+                                            </li>
+                                            <li className="nav-item" onClick={() => handleOnClick(10)}>
+                                                <button className={activeIndex == 10 ? "nav-link active" : "nav-link"} id="bike-tab" data-bs-toggle="tab" data-bs-target="#bike-tab-pane" type="button" role="tab"  aria-selected="false"><i className="flaticon-travel-insurance" />Encourage and Enhance Performance</button>
+                                            </li>
+                                            <li className="nav-item" onClick={() => handleOnClick(11)}>
+                                                <button className={activeIndex == 11 ? "nav-link active" : "nav-link"} id="bike-tab" data-bs-toggle="tab" data-bs-target="#bike-tab-pane" type="button" role="tab"  aria-selected="false"><i className="flaticon-travel-insurance" />Focus on the Importance of Corporate Social Responsibility</button>
+                                            </li>
                                         </ul>
 
                                     </div>

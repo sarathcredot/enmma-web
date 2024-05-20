@@ -5132,11 +5132,86 @@ padding: 30px;
   object-fit: cover;
   width: 100%;
 }
+
 /* @media (max-width: 1199.98px) {
   .services__thumb-four img {
     height: 340px;
   }
 } */
+.services__thumb-four-dev {
+  width: 100%;
+  flex: 0 0 auto;
+}
+/* @media (max-width: 1199.98px) {
+  .services__thumb-four-dev {
+    width: 300px;
+  }
+} */
+@media (max-width: 991.98px) {
+  .services__thumb-four-dev {
+    width: 100%;
+  }
+}
+.services__thumb-four-dev img {
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -o-border-radius: 12px;
+  -ms-border-radius: 12px;
+  border-radius: 12px;
+  height: 320px;
+  object-fit: cover;
+  width: 100%;
+}
+.services__thumb-four {
+  width: 100%;
+  flex: 0 0 auto;
+}
+/* @media (max-width: 1199.98px) {
+  .services__thumb-four {
+    width: 300px;
+  }
+} */
+@media (max-width: 991.98px) {
+  .services__thumb-four {
+    width: 100%;
+  }
+}
+.services__thumb-four img {
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -o-border-radius: 12px;
+  -ms-border-radius: 12px;
+  border-radius: 12px;
+  height: 320px;
+  object-fit: cover;
+  width: 100%;
+}
+.services__thumb-four {
+  position: relative;
+}
+
+.services__thumb-four img {
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -o-border-radius: 12px;
+  -ms-border-radius: 12px;
+  border-radius: 12px;
+  height: 320px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.services__thumb-four::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 20%;
+  background: linear-gradient(to top, white, transparent);
+  border-radius: 0 0 12px 12px;
+}
+
 .services__icon-two {
   font-size: 60px;
   line-height: 0;
@@ -7796,7 +7871,7 @@ text-align: left;
   border-radius: 15px;
   padding: 50px 50px;
   position: absolute;
-  left: 105px;
+  left: 0px;
   top: 50%;
   z-index: 2;
   -webkit-transform: translateY(-50%);
@@ -7804,6 +7879,9 @@ text-align: left;
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+.project__content-two .dev-gov-parag{
+  font-size: 16px;
 }
 @media (max-width: 1199.98px) {
   .project__content-two {
@@ -7902,7 +7980,7 @@ text-align: left;
   border-radius: 15px;
   padding: 50px 50px;
   position: absolute;
-  right:80px;
+  right:0px;
   top: 50%;
   z-index: 2;
   -webkit-transform: translateY(-50%);
@@ -7910,6 +7988,9 @@ text-align: left;
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+.project__content-two-2 .dev-gov-parag{
+  font-size: 16px;
 }
 @media (max-width: 1199.98px) {
   .project__content-two-2 {
