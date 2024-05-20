@@ -30,30 +30,30 @@ export default function corporate() {
                                 </div>
                             </div>
                             <div className=" row">
-                                <div className="col-md-6">
-                                    <div1 className="services__tab-wrap">
+                                <div className="col-md-6 ">
+                                    <div className="services__tab-wrap ">
                                         <ul className="nav nav-tabs" id="myTab" role="tablist">
                                             <li className="nav-item" onClick={() => handleOnClick(1)}>
-                                                <button className={activeIndex == 1 ? "nav-link active" : "nav-link"} id="health-tab" data-bs-toggle="tab" data-bs-target="#health-tab-pane" type="button" role="tab" aria-controls="health-tab-pane" aria-selected="true"><i className="flaticon-travel-insurance" />Governance Framework</button>
+                                                <button className={activeIndex == 1 ? "nav-link active" : "nav-link"} id="health-tab" data-bs-toggle="tab" data-bs-target="#health-tab-pane" type="button" role="tab"  aria-selected="true"><i className="flaticon-travel-insurance" />Governance Framework</button>
                                             </li>
                                             <li className="nav-item" onClick={() => handleOnClick(2)}>
-                                                <button className={activeIndex == 2 ? "nav-link active" : "nav-link"} id="travel-tab" data-bs-toggle="tab" data-bs-target="#travel-tab-pane" type="button" role="tab" aria-controls="travel-tab-pane" aria-selected="false"><i className="flaticon-travel-insurance" />Construct a Balanced Board Com position</button>
+                                                <button className={activeIndex == 2 ? "nav-link active" : "nav-link"} id="travel-tab" data-bs-toggle="tab" data-bs-target="#travel-tab-pane" type="button" role="tab"  aria-selected="false"><i className="flaticon-travel-insurance" />Construct a Balanced Board Com position</button>
                                             </li>
                                             <li className="nav-item" onClick={() => handleOnClick(3)}>
-                                                <button className={activeIndex == 3 ? "nav-link active" : "nav-link"} id="vehicle-tab" data-bs-toggle="tab" data-bs-target="#vehicle-tab-pane" type="button" role="tab" aria-controls="vehicle-tab-pane" aria-selected="false"><i className="flaticon-travel-insurance" />Recruit Highly Qualified Candidates for Members of a Board of Directors and the Executive Management</button>
+                                                <button className={activeIndex == 3 ? "nav-link active" : "nav-link"} id="vehicle-tab" data-bs-toggle="tab" data-bs-target="#vehicle-tab-pane" type="button" role="tab"  aria-selected="false"><i className="flaticon-travel-insurance" />Recruit Highly Qualified Candidates for Members of a Board of Directors and the Executive Management</button>
                                             </li>
                                             <li className="nav-item" onClick={() => handleOnClick(4)}>
-                                                <button className={activeIndex == 4 ? "nav-link active" : "nav-link"} id="cargo-tab" data-bs-toggle="tab" data-bs-target="#cargo-tab-pane" type="button" role="tab" aria-controls="cargo-tab-pane" aria-selected="false"><i className="flaticon-travel-insurance" />Safeguard the Integrity of Financial Reporting</button>
+                                                <button className={activeIndex == 4 ? "nav-link active" : "nav-link"} id="cargo-tab" data-bs-toggle="tab" data-bs-target="#cargo-tab-pane" type="button" role="tab"  aria-selected="false"><i className="flaticon-travel-insurance" />Safeguard the Integrity of Financial Reporting</button>
                                             </li>
                                             <li className="nav-item" onClick={() => handleOnClick(5)}>
-                                                <button className={activeIndex == 5 ? "nav-link active" : "nav-link"} id="fire-tab" data-bs-toggle="tab" data-bs-target="#fire-tab-pane" type="button" role="tab" aria-controls="fire-tab-pane" aria-selected="false"><i className="flaticon-travel-insurance" />Apply Sound Systems of Risk Management and Internal Audit</button>
+                                                <button className={activeIndex == 5 ? "nav-link active" : "nav-link"} id="fire-tab" data-bs-toggle="tab" data-bs-target="#fire-tab-pane" type="button" role="tab" aria-selected="false"><i className="flaticon-travel-insurance" />Apply Sound Systems of Risk Management and Internal Audit</button>
                                             </li>
                                             <li className="nav-item" onClick={() => handleOnClick(6)}>
-                                                <button className={activeIndex == 6 ? "nav-link active" : "nav-link"} id="bike-tab" data-bs-toggle="tab" data-bs-target="#bike-tab-pane" type="button" role="tab" aria-controls="bike-tab-pane" aria-selected="false"><i className="flaticon-travel-insurance" />Promote Code of Conduct & Ethical Standards</button>
+                                                <button className={activeIndex == 6 ? "nav-link active" : "nav-link"} id="bike-tab" data-bs-toggle="tab" data-bs-target="#bike-tab-pane" type="button" role="tab"  aria-selected="false"><i className="flaticon-travel-insurance" />Promote Code of Conduct & Ethical Standards</button>
                                             </li>
                                         </ul>
 
-                                    </div1>
+                                    </div>
 
                                 </div>
                                 <div className="col-md-6">
@@ -64,16 +64,12 @@ export default function corporate() {
                                                     <img src="/assets/img/services/h3_services_img01.jpg" alt="" />
                                                 </div>
                                                 <div className="services__content-four">
-                                                    <h2 className="title"><Link href="/services-details">Health Insurance</Link></h2>
-                                                    <p>Explore our savings, quality care and wellness solutions to craft the perfect plan for your busineshen an unknown printer.</p>
+                                                    <h2 className="title"><Link href="/services-details">Governance Framework</Link></h2>
+                                                    <p>Corporate Governance is a management framework which is referred to as a collection of control mechanisms that the company adopts to ensure the enhancement of the overall performance and management across the company, and achieve the maximum protection for the stakeholder’s rights and applying a number of principles related to accountability, transparency, and fairness. And with the broad global diversity in the governance standards applied, ERESCO adopts the rules of governance imposed by the regulations of the Capital Markets Authority as the regulator of the capital markets in Kuwait, where ERESCO operates.</p>
                                                     <div className="about__list-box">
-                                                        <ul className="list-wrap">
-                                                            <li><i className="fas fa-check" />Business Growth</li>
-                                                            <li><i className="fas fa-check" />Analysis  Research</li>
-                                                            <li><i className="fas fa-check" />100% Secure</li>
-                                                        </ul>
+                                                        
                                                     </div>
-                                                    <Link href="/services-details" className="btn">Read More</Link>
+                                                    <Link href="/services-details" className="btn">download</Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -83,16 +79,12 @@ export default function corporate() {
                                                     <img src="/assets/img/services/h3_services_img02.jpg" alt="" />
                                                 </div>
                                                 <div className="services__content-four">
-                                                    <h2 className="title"><Link href="/services-details">Health Insurance</Link></h2>
-                                                    <p>Explore our savings, quality care and wellness solutions to craft the perfect plan for your busineshen an unknown printer.</p>
+                                                    <h2 className="title"><Link href="/services-details">Governance Framework</Link></h2>
+                                                    <p>Corporate Governance is a management framework which is referred to as a collection of control mechanisms that the company adopts to ensure the enhancement of the overall performance and management across the company, and achieve the maximum protection for the stakeholder’s rights and applying a number of principles related to accountability, transparency, and fairness. And with the broad global diversity in the governance standards applied, ERESCO adopts the rules of governance imposed by the regulations of the Capital Markets Authority as the regulator of the capital markets in Kuwait, where ERESCO operates.</p>
                                                     <div className="about__list-box">
-                                                        <ul className="list-wrap">
-                                                            <li><i className="fas fa-check" />Business Growth</li>
-                                                            <li><i className="fas fa-check" />Analysis  Research</li>
-                                                            <li><i className="fas fa-check" />100% Secure</li>
-                                                        </ul>
+                                                    
                                                     </div>
-                                                    <Link href="/services-details" className="btn">Read More</Link>
+                                                    <Link href="/services-details" className="btn">download</Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -102,16 +94,12 @@ export default function corporate() {
                                                     <img src="/assets/img/services/h3_services_img01.jpg" alt="" />
                                                 </div>
                                                 <div className="services__content-four">
-                                                    <h2 className="title"><Link href="/services-details">Health Insurance</Link></h2>
-                                                    <p>Explore our savings, quality care and wellness solutions to craft the perfect plan for your busineshen an unknown printer.</p>
+                                                    <h2 className="title"><Link href="/services-details">Governance Framework</Link></h2>
+                                                    <p>Corporate Governance is a management framework which is referred to as a collection of control mechanisms that the company adopts to ensure the enhancement of the overall performance and management across the company, and achieve the maximum protection for the stakeholder’s rights and applying a number of principles related to accountability, transparency, and fairness. And with the broad global diversity in the governance standards applied, ERESCO adopts the rules of governance imposed by the regulations of the Capital Markets Authority as the regulator of the capital markets in Kuwait, where ERESCO operates.</p>
                                                     <div className="about__list-box">
-                                                        <ul className="list-wrap">
-                                                            <li><i className="fas fa-check" />Business Growth</li>
-                                                            <li><i className="fas fa-check" />Analysis  Research</li>
-                                                            <li><i className="fas fa-check" />100% Secure</li>
-                                                        </ul>
+                                                    
                                                     </div>
-                                                    <Link href="/services-details" className="btn">Read More</Link>
+                                                    <Link href="/services-details" className="btn">download</Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -121,16 +109,12 @@ export default function corporate() {
                                                     <img src="/assets/img/services/h3_services_img02.jpg" alt="" />
                                                 </div>
                                                 <div className="services__content-four">
-                                                    <h2 className="title"><Link href="/services-details">Health Insurance</Link></h2>
-                                                    <p>Explore our savings, quality care and wellness solutions to craft the perfect plan for your busineshen an unknown printer.</p>
+                                                    <h2 className="title"><Link href="/services-details">Governance Framework</Link></h2>
+                                                    <p>Corporate Governance is a management framework which is referred to as a collection of control mechanisms that the company adopts to ensure the enhancement of the overall performance and management across the company, and achieve the maximum protection for the stakeholder’s rights and applying a number of principles related to accountability, transparency, and fairness. And with the broad global diversity in the governance standards applied, ERESCO adopts the rules of governance imposed by the regulations of the Capital Markets Authority as the regulator of the capital markets in Kuwait, where ERESCO operates.</p>
                                                     <div className="about__list-box">
-                                                        <ul className="list-wrap">
-                                                            <li><i className="fas fa-check" />Business Growth</li>
-                                                            <li><i className="fas fa-check" />Analysis  Research</li>
-                                                            <li><i className="fas fa-check" />100% Secure</li>
-                                                        </ul>
+                                                    
                                                     </div>
-                                                    <Link href="/services-details" className="btn">Read More</Link>
+                                                    <Link href="/services-details" className="btn">download</Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -140,16 +124,12 @@ export default function corporate() {
                                                     <img src="/assets/img/services/h3_services_img01.jpg" alt="" />
                                                 </div>
                                                 <div className="services__content-four">
-                                                    <h2 className="title"><Link href="/services-details">Health Insurance</Link></h2>
-                                                    <p>Explore our savings, quality care and wellness solutions to craft the perfect plan for your busineshen an unknown printer.</p>
+                                                    <h2 className="title"><Link href="/services-details">Governance Framework</Link></h2>
+                                                    <p>Corporate Governance is a management framework which is referred to as a collection of control mechanisms that the company adopts to ensure the enhancement of the overall performance and management across the company, and achieve the maximum protection for the stakeholder’s rights and applying a number of principles related to accountability, transparency, and fairness. And with the broad global diversity in the governance standards applied, ERESCO adopts the rules of governance imposed by the regulations of the Capital Markets Authority as the regulator of the capital markets in Kuwait, where ERESCO operates.</p>
                                                     <div className="about__list-box">
-                                                        <ul className="list-wrap">
-                                                            <li><i className="fas fa-check" />Business Growth</li>
-                                                            <li><i className="fas fa-check" />Analysis  Research</li>
-                                                            <li><i className="fas fa-check" />100% Secure</li>
-                                                        </ul>
+                                                    
                                                     </div>
-                                                    <Link href="/services-details" className="btn">Read More</Link>
+                                                    <Link href="/services-details" className="btn">download</Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -159,16 +139,12 @@ export default function corporate() {
                                                     <img src="/assets/img/services/h3_services_img02.jpg" alt="" />
                                                 </div>
                                                 <div className="services__content-four">
-                                                    <h2 className="title"><Link href="/services-details">Health Insurance</Link></h2>
-                                                    <p>Explore our savings, quality care and wellness solutions to craft the perfect plan for your busineshen an unknown printer.</p>
+                                                    <h2 className="title"><Link href="/services-details">Governance Framework</Link></h2>
+                                                    <p>Corporate Governance is a management framework which is referred to as a collection of control mechanisms that the company adopts to ensure the enhancement of the overall performance and management across the company, and achieve the maximum protection for the stakeholder’s rights and applying a number of principles related to accountability, transparency, and fairness. And with the broad global diversity in the governance standards applied, ERESCO adopts the rules of governance imposed by the regulations of the Capital Markets Authority as the regulator of the capital markets in Kuwait, where ERESCO operates.</p>
                                                     <div className="about__list-box">
-                                                        <ul className="list-wrap">
-                                                            <li><i className="fas fa-check" />Business Growth</li>
-                                                            <li><i className="fas fa-check" />Analysis  Research</li>
-                                                            <li><i className="fas fa-check" />100% Secure</li>
-                                                        </ul>
+                                                    
                                                     </div>
-                                                    <Link href="/services-details" className="btn">Read More</Link>
+                                                    <Link href="/services-details" className="btn">download</Link>
                                                 </div>
                                             </div>
                                         </div>

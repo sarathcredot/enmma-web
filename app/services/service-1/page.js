@@ -43,7 +43,7 @@ export default function service1() {
                                 </div>
                             </div>
                             <div className=" row">
-                                <div className="col-md-6">
+                                <div className="col-md-7">
                                     <div className="services__tab-wrap">
                                         <ul className="nav nav-tabs" id="myTab" role="tablist">
                                             <li className="nav-item" onClick={() => handleOnClick(1)}>
@@ -117,7 +117,7 @@ export default function service1() {
                                         </ul>
                                     </div>
                                 </div>
-                                <div className="col-md-6" id="dev-link-section">
+                                <div className="col-md-5" id="dev-link-section">
                                     <div className="tab-content" id="myTabContent">
                                         <div
                                             className={
