@@ -21,7 +21,7 @@ export default function About3() {
                                 <span className="sub-title">Board Of Directors</span>
                                 <h2 className="title tg-element-title mt-4">Meet the Visionaries Steering  <br />Our Success</h2>
                             </div>
-                                <div className="dev_customsize mt-4">Our power of choice is untrammelled and when nothing prevents being able to do what we like best every pleasure.</div>
+                                <div className="dev_customsize mt-4" style={{color:'#282739'}}>Our power of choice is untrammelled and when nothing prevents being able to do what we like best every pleasure.</div>
                         </div>
                     </div>
                             <div className="team-item-wrap">
@@ -125,7 +125,7 @@ export default function About3() {
                             <span className="sub-title">Management Team</span>
                             <h2 className="title tg-element-title mt-4">Meet the Minds Behind  <br />Our Success</h2>
                         </div>
-                            <div className="dev_customsize mt-4">Our power of choice is untrammelled and when nothing prevents being able to do what we like best every pleasure.</div>
+                            <div className="dev_customsize mt-4"style={{color:'#282739'}}>Our power of choice is untrammelled and when nothing prevents being able to do what we like best every pleasure.</div>
                     </div>
                 </div>
                         <div className="team-item-wrap">
@@ -226,10 +226,10 @@ export default function About3() {
                     <div className="row ">
                     <div className="col-xl-7 space-betweeni col-lg-8">
                         <div  className="section-title  mb-50 tg-heading-subheading animation-style3">
-                            <span className="sub-title">Board Of Directors</span>
-                            <h2 className="title tg-element-title mt-4">Meet the Visionaries Steering  <br />Our Success</h2>
+                            <span className="sub-title">Executive Management</span>
+                            <h2 className="title tg-element-title mt-4">Meet Our Visionary Leaders</h2>
                         </div>
-                            <div className="dev_customsize mt-4">Our power of choice is untrammelled and when nothing prevents being able to do what we like best every pleasure.</div>
+                            <div className="dev_customsize mt-4"style={{color:'#282739'}}>Our power of choice is untrammelled and when nothing prevents being able to do what we like best every pleasure.</div>
                     </div>
                 </div>
                         <div className="team-item-wrap">

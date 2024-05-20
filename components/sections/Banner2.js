@@ -6,7 +6,7 @@ const Banner2 = ({ title, paragraph, bgColor, fontColor,fontColor2 }) => {
             <section className="banner__area-one banner__bg-four"style={{ backgroundColor: bgColor}} >
                 <div className="container" style={{  color: fontColor }} >
                     <div className="row">
-                        <div className="col-lg-6">
+                        <div className="col-lg-9">
                             <div className="banner__content-two">
                                 <h2 className="title "style={{  color: fontColor }} data-aos="fade-up" data-aos-delay={100}>{title}</h2>
                                 <p data-aos="fade-up" style={{  color: fontColor2 }} data-aos-delay={300}>{paragraph}</p>

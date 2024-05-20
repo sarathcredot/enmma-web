@@ -178,7 +178,6 @@ export default function corporate() {
                         </div>
                             <div className=" container dev-bottom "><Sectionfoot /> </div>
 
-
                     </div>
                     <Bannerfooter />
                 </div>

@@ -34,13 +34,13 @@ export default function About4() {
                                         </div>
                                         <br/>
                                         <div className="project__item-three shine-animate-item">
-                                            <div className="project__content-two">
+                                            <div className="project__content-two-2">
                                                 {/* <span>Souq Al Wataniya</span> */}
                                                 <h2 className="title"><Link href="#/project-details">Souq Al Wataniya</Link></h2>
                                                 <p className="">The distinctive location of the Souq Al Wataniya Market located in the heart of the commercial district of the Kuwait city gave it high importance. This is in addition to shops and administrative offices constituting the market. The view is wonderful. Car parks there serve the market tenants and the region's visitors in general. The building is located near several markets, ancient commercial complexes, and hotels that many tourists visit throughout the year.</p>
                                                 <Link href="#/project-details" className="btn ">See Details</Link>
                                             </div>
-                                            <div className="project__thumb-three shine-animate">
+                                            <div className="project__thumb-three-2 shine-animate">
                                                 <img src="/assets/img/project/h2_project_img041.jpg" alt="" />
                                             </div>
                                         </div>
