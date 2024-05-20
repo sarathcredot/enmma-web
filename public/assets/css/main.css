@@ -7554,10 +7554,10 @@ text-align: left;
 }
 
 .project__thumb-three img {
-  height: 478px;
+  height: 508px;
   width: 100%;
   position:relative ;
-  left: -100;
+  left: -150;
   object-fit: cover;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
@@ -7587,7 +7587,7 @@ text-align: left;
 }
 
 .project__thumb-three-2 img {
-  height: 478px;
+  height: 508px;
   width: 100%;
   position:relative ;
   left: -100;
@@ -15365,6 +15365,8 @@ text-align: left;
   padding-top: 40px;
  color: #000;
  flex-wrap: wrap;
+ gap: 20%;
+
 }
 
 .dev-disclosure-table{
@@ -15380,7 +15382,7 @@ background-color: #fff;
   justify-content: space-between;
 }
 .dev-disclosurelist p{
-  max-width: 300px;
+  max-width: 30%;
   min-width: 260px;
   color: #282739;
   font-size: 15px;
@@ -15388,6 +15390,8 @@ background-color: #fff;
 }
 .dev-disclosurelist h6{
 font-size: 14px;
+max-width: 30%;
+
 font-weight: 500;
 line-height: 26px;
 text-align: left;
@@ -15398,6 +15402,8 @@ align-items: center;
 
 }
 .dev-disclosurelist h5{
+ justify-content: flex-end;
+ margin-left: 150px;
   font-size: 14px;
   font-weight: 700;
   line-height: 26px;
