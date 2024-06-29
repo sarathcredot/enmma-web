@@ -26,7 +26,7 @@ export default function Menu() {
                         <li><Link href="/#about-4">Digital agency About</Link></li> */}
                     </ul>
                 </li>
-                 <li> <Link href="/government">Government Bots</Link></li>
+                 <li> <Link href="/government-bots">Government Bots</Link></li>
                     <li> <Link href="/services">Services</Link></li>
                     <li> <Link href="/corporate">Corporate Governance</Link></li>
 

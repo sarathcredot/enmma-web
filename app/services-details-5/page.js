@@ -102,17 +102,17 @@ export default function ServicesDetails5() {
                                         <form action="#">
                                             <div className="row">
                                                 <div className="col-md-6">
-                                                    <div className="form-grp">
+                                                    <div className="form-grp ">
                                                         <input type="text" placeholder="Name *" />
                                                     </div>
                                                 </div>
                                                 <div className="col-md-6">
-                                                    <div className="form-grp">
+                                                    <div className="form-grp ">
                                                         <input type="email" placeholder="E-mail *" />
                                                     </div>
                                                 </div>
                                                 <div className="col-md-6">
-                                                    <div className="form-grp">
+                                                    <div className="form-grp ">
                                                         <input type="number" placeholder="Phone *" />
                                                     </div>
                                                 </div>

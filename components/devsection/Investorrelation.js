@@ -25,9 +25,9 @@ export default function Contact() {
                 </p>
                 <form id="contact-form" action="assets/mail.php" method="POST">
                   <div className="row">
-                    <div className="form-grp">
+                    <div className="form-grp ">
                      
-                      <select name="list" id="pet-select">
+                      <select className='form-grp  form-select' name="list" id="pet-select">
                         <option value="">Please select</option>
                         <option value="AAA">AAA</option>
                         <option value="BBBB">BBBB</option>
@@ -38,22 +38,22 @@ export default function Contact() {
                       </select>
                     </div>
                     <div className="col-md-4">
-                      <div className="form-grp">
+                      <div className="form-grp ">
                         <input type="text" name="name" placeholder="Name" />
                       </div>
                     </div>
                     <div className="col-md-4">
-                      <div className="form-grp">
+                      <div className="form-grp ">
                         <input type="email" name="email" placeholder="Email" />
                       </div>
                     </div>
                     <div className="col-md-4">
-                      <div className="form-grp">
+                      <div className="form-grp ">
                         <input type="number" name="phone" placeholder="Phone" />
                       </div>
                     </div>
                   </div>
-                  <div className="form-grp">
+                  <div className="form-grp ">
                     <textarea name="message" placeholder="Message" />
                   </div>
 

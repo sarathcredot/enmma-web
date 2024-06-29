@@ -146,27 +146,27 @@ export default function Home() {
                                                 <h3 className="comment-reply-title">Post a comment</h3>
                                                 <form action="#" className="comment-form">
                                                     <p className="comment-notes">Your email address will not be published. Required fields are marked *</p>
-                                                    <div className="form-grp">
+                                                    <div className="form-grp ">
                                                         <textarea name="comment" placeholder="Comment" />
                                                     </div>
                                                     <div className="row">
                                                         <div className="col-md-4">
-                                                            <div className="form-grp">
+                                                            <div className="form-grp ">
                                                                 <input type="text" placeholder="Name" />
                                                             </div>
                                                         </div>
                                                         <div className="col-md-4">
-                                                            <div className="form-grp">
+                                                            <div className="form-grp ">
                                                                 <input type="email" placeholder="Email" />
                                                             </div>
                                                         </div>
                                                         <div className="col-md-4">
-                                                            <div className="form-grp">
+                                                            <div className="form-grp ">
                                                                 <input type="url" placeholder="Website" />
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div className="form-grp checkbox-grp">
+                                                    <div className="form-grp  checkbox-grp">
                                                         <input type="checkbox" id="checkbox" />
                                                         <label htmlFor="checkbox">Save my name, email, and website in this browser for the next time I comment.</label>
                                                     </div>
@@ -296,17 +296,17 @@ export default function Home() {
                                         <form action="#">
                                             <div className="row">
                                                 <div className="col-md-6">
-                                                    <div className="form-grp">
+                                                    <div className="form-grp ">
                                                         <input type="text" placeholder="Name *" />
                                                     </div>
                                                 </div>
                                                 <div className="col-md-6">
-                                                    <div className="form-grp">
+                                                    <div className="form-grp ">
                                                         <input type="email" placeholder="E-mail *" />
                                                     </div>
                                                 </div>
                                                 <div className="col-md-6">
-                                                    <div className="form-grp">
+                                                    <div className="form-grp ">
                                                         <input type="number" placeholder="Phone *" />
                                                     </div>
                                                 </div>

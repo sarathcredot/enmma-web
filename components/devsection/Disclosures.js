@@ -65,7 +65,7 @@ export default function BlogPost({ style, showItem, showPagination }) {
                 <div className="dev-disclosure-form">
 
 
-                    <select className=" dev-disclosure-form-wrap" name="list" >
+                    <select className='form-grp  form-select' className=" dev-disclosure-form-wrap" name="list" >
                         <option value="">Sort By</option>
                         <option value="week">Week</option>
                         <option value="30 Days">30 Days</option>
@@ -73,7 +73,7 @@ export default function BlogPost({ style, showItem, showPagination }) {
                     </select>
 
 
-                    <select className=" dev-disclosure-form-wrap" name="list" >
+                    <select className='form-grp  form-select' className=" dev-disclosure-form-wrap" name="list" >
                         <option value="">Year Disclosure</option>
                         <option value="2024">2024</option>
                         <option value="BBBB">2023</option>

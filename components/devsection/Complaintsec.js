@@ -14,9 +14,9 @@ export default function Disclosurelist({ item }) {
                                     <p>We value your feedback. You can submit a complaint or offer a suggestion to help us improve our service.</p>
                                     <form id="contact-form" action="assets/mail.php" method="POST">
 
-                                        <div className="form-grp">
+                                        <div className="form-grp ">
 
-                                            <select name="list" id="pet-select">
+                                            <select className='form-grp  form-select' name="list" id="pet-select">
                                                 <option value="">Please select</option>
                                                 <option value="AAA">AAA</option>
                                                 <option value="BBBB">BBBB</option>
@@ -26,17 +26,17 @@ export default function Disclosurelist({ item }) {
                                                 <option value="FFFFF">FFFFF</option>
                                             </select>
                                         </div>
-                                        <div className="form-grp">
+                                        <div className="form-grp ">
                                             <textarea name="message" placeholder="Description of your complaints or suggestions" />
                                         </div>
                                         <div className="row">
                                             <div className="col-md-6">
-                                                <div className="form-grp">
+                                                <div className="form-grp ">
                                                     <input type="text" name="name" placeholder="Contact Number" />
                                                 </div>
                                             </div>
                                             <div className="col-md-6">
-                                                <div className="form-grp">
+                                                <div className="form-grp ">
                                                     <input type="number" name="number" placeholder="Civil ID" />
                                                 </div>
                                             </div>
@@ -44,12 +44,12 @@ export default function Disclosurelist({ item }) {
                                         </div>
                                         <div className="row">
                                             <div className="col-md-6">
-                                                <div className="form-grp">
+                                                <div className="form-grp ">
                                                     <input type="text" name="name" placeholder="First Name" />
                                                 </div>
                                             </div>
                                             <div className="col-md-6">
-                                                <div className="form-grp">
+                                                <div className="form-grp ">
                                                     <input type="text" name="name" placeholder="Last Name" />
                                                 </div>
                                             </div>
@@ -57,12 +57,12 @@ export default function Disclosurelist({ item }) {
                                         </div>
                                         <div className="row">
                                             <div className="col-md-6">
-                                                <div className="form-grp">
+                                                <div className="form-grp ">
                                                     <input type="number" name="number" placeholder="Phone Number" />
                                                 </div>
                                             </div>
                                             <div className="col-md-6">
-                                                <div className="form-grp">
+                                                <div className="form-grp ">
                                                     <input type="email" name="email" placeholder="Email" />
                                                 </div>
                                             </div>

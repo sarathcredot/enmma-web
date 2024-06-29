@@ -58,26 +58,26 @@ export default function Contact() {
                                         <form id="contact-form" action="assets/mail.php" method="POST">
                                         <div className="row">
                                                 <div className="col-md-4">
-                                                    <div className="form-grp">
+                                                    <div className="form-grp ">
                                                         <input type="text" name="name" placeholder="Name" />
                                                     </div>
                                                 </div>
                                                 <div className="col-md-4">
-                                                    <div className="form-grp">
+                                                    <div className="form-grp ">
                                                         <input type="email" name="email" placeholder="Email" />
                                                     </div>
                                                 </div>
                                                 <div className="col-md-4">
-                                                    <div className="form-grp">
+                                                    <div className="form-grp ">
                                                         <input type="number" name="phone" placeholder="Phone" />
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div className="form-grp">
+                                            <div className="form-grp ">
                                                 <textarea name="message" placeholder="Message" />
                                             </div>
                                             
-                                            <div className="form-grp checkbox-grp">
+                                            <div className="form-grp  checkbox-grp">
                                                 <input type="checkbox" name="checkbox" id="checkbox" />
                                                 <label htmlFor="checkbox">Save my name, email, and website in this browser for the next time I comment.</label>
                                             </div>

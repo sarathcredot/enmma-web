@@ -107,13 +107,13 @@ export default function ServicesDetails4() {
                                                 <h4 className="sidebar__widget-title">Send Us Message</h4>
                                                 <div className="sidebar__form">
                                                     <form action="#">
-                                                        <div className="form-grp">
+                                                        <div className="form-grp ">
                                                             <input type="text" placeholder="Your Name" />
                                                         </div>
-                                                        <div className="form-grp">
+                                                        <div className="form-grp ">
                                                             <input type="email" placeholder="E-mail Address" />
                                                         </div>
-                                                        <div className="form-grp">
+                                                        <div className="form-grp ">
                                                             <textarea name="message" placeholder="Type Your Message" />
                                                         </div>
                                                         <button type="submit" className="btn btn-two">Send Message</button>

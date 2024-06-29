@@ -19,9 +19,9 @@ export default function Careerform() {
                             
                                     <form id="contact-form" action="assets/mail.php" method="POST">
 
-                                        {/* <div className="form-grp">
+                                        {/* <div className="form-grp ">
 
-                                            <select name="list" id="pet-select">
+                                            <select className='form-grp  form-select' name="list" id="pet-select">
                                                 <option value="">Please select</option>
                                                 <option value="AAA">AAA</option>
                                                 <option value="BBBB">BBBB</option>
@@ -31,17 +31,17 @@ export default function Careerform() {
                                                 <option value="FFFFF">FFFFF</option>
                                             </select>
                                         </div> */}
-                                        {/* <div className="form-grp">
+                                        {/* <div className="form-grp ">
                                             <textarea name="message" placeholder="Description of your complaints or suggestions" />
                                         </div> */}
                                         <div className="row">
                                             <div className="col-md-6">
-                                                <div className="form-grp">
+                                                <div className="form-grp ">
                                                     <input type="text" name="name" placeholder="Position Applying for" />
                                                 </div>
                                             </div>
                                             <div className="col-md-6">
-                                                <div className="form-grp">
+                                                <div className="form-grp ">
                                                     <input type="text" name="number" placeholder="Full Name" />
                                                 </div>
                                             </div>
@@ -49,13 +49,13 @@ export default function Careerform() {
                                         </div>
                                         <div className="row">
                                             <div className="col-md-6">
-                                                <div className="form-grp">
+                                                <div className="form-grp ">
                                                     <input type="text" name="name" placeholder="Date of Birth" />
                                                 </div>
                                             </div>
                                             <div className="col-md-6">
-                                                <div className="form-grp">
-                                                <select name="list" id="pet-select" style={{color:"#3E4073"}}>
+                                                <div className="form-grp ">
+                                                <select className='form-grp  form-select' name="list" id="pet-select" style={{color:"#3E4073"}}>
                                                 <option value="">Gender</option>
                                                 <option value="male">male</option>
                                                 <option value="female">female</option>
@@ -67,12 +67,12 @@ export default function Careerform() {
                                         </div>
                                         <div className="row">
                                             <div className="col-md-6">
-                                                <div className="form-grp">
+                                                <div className="form-grp ">
                                                     <input type="number" name="number" placeholder="Phone Number" />
                                                 </div>
                                             </div>
                                             <div className="col-md-6">
-                                                <div className="form-grp">
+                                                <div className="form-grp ">
                                                 <input type="number" name="number" placeholder="Passport Number" />
                                                 </div>
                                             </div>
@@ -80,13 +80,13 @@ export default function Careerform() {
                                         </div>
                                         <div className="row">
                                             <div className="col-md-6">
-                                                <div className="form-grp">
+                                                <div className="form-grp ">
                                                 <input type="email" name="email" placeholder="Email" />
                                                 </div>
                                             </div>
                                             <div className="col-md-6">
-                                                <div className="form-grp">
-                                                <select name="list" id="pet-select" style={{color:"#3E4073"}}>
+                                                <div className="form-grp ">
+                                                <select className='form-grp  form-select' name="list" id="pet-select" style={{color:"#3E4073"}}>
                                                 <option value="">Select Nationality</option>
                                                 <option value="AAA">AAA</option>
                                                 <option value="BBBB">BBBB</option>
@@ -100,8 +100,8 @@ export default function Careerform() {
                                         </div>
                                         <div className="row">
                                             <div className="col-md-6">
-                                                <div className="form-grp">
-                                                <select name="list" id="pet-select"style={{color:"#3E4073"}}>
+                                                <div className="form-grp ">
+                                                <select className='form-grp  form-select' name="list" id="pet-select"style={{color:"#3E4073"}}>
                                                 <option value="">Degree Level</option>
                                                 <option value="AAA">AAA</option>
                                                 <option value="BBBB">BBBB</option>
@@ -112,8 +112,8 @@ export default function Careerform() {
                                             </select>                                                </div>
                                             </div>
                                             <div className="col-md-6">
-                                                <div className="form-grp">
-                                                <select name="list" id="pet-select"style={{color:"#3E4073"}}>
+                                                <div className="form-grp ">
+                                                <select className='form-grp  form-select' name="list" id="pet-select"style={{color:"#3E4073"}}>
                                                 <option value="">Career Level</option>
                                                 <option value="AAA">AAA</option>
                                                 <option value="BBBB">BBBB</option>
@@ -127,12 +127,12 @@ export default function Careerform() {
                                         </div>
                                         <div className="row">
                                             <div className="col-md-6">
-                                                <div className="form-grp">
+                                                <div className="form-grp ">
                                                 <textarea name="message" placeholder="Briefly Describe your Last Job Duties" />
                                                 </div>
                                             </div>
                                             <div className="col-md-6">
-                                                <div className="form-grp">
+                                                <div className="form-grp ">
                                                 <textarea name="message" placeholder="If Any Additional informations" />
                                                 </div>
                                             </div>
@@ -140,7 +140,7 @@ export default function Careerform() {
                                         </div>
                                         <div className="row">
                                         <div className="col-md-6">
-                                                <div className="form-grp">
+                                                <div className="form-grp ">
                                                     <p>Upload Your Resume ( pdf or docx only )</p>
                                                 <input type="file" name="number" placeholder="Passport Number" style={{color:"#3E4073"}}/>
                                                 </div>

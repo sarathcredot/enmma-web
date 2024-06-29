@@ -11,14 +11,14 @@ export default function Testimonial4() {
                             <div className="testimonial__form">
                                 <h2 className="title">Get a Quote</h2>
                                 <form action="#">
-                                    <div className="form-grp">
+                                    <div className="form-grp ">
                                         <input type="text" placeholder="Full Name" />
                                     </div>
-                                    <div className="form-grp">
+                                    <div className="form-grp ">
                                         <input type="email" placeholder="E-mail" />
                                     </div>
-                                    <div className="form-grp select-grp">
-                                        <select name="orderby" className="orderby">
+                                    <div className="form-grp  select-grp">
+                                        <select className='form-grp  form-select' name="orderby" className="orderby">
                                             <option value="Select Insurance Service">Select Insurance Service</option>
                                             <option value="Health Insurance">Health Insurance</option>
                                             <option value="Travel Insurance">Travel Insurance</option>
