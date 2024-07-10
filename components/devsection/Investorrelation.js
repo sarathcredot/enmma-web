@@ -86,7 +86,7 @@ export default function Contact() {
                       </div>
                       <div className="content">
                         <h4 className="title">Phone</h4>
-                        <Link href="tel:0123456789">+48 1866667</Link>
+                        <Link href="tel:1866667">+48 1866667</Link>
                       </div>
                     </li>
                     <li>

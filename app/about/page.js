@@ -10,7 +10,7 @@ export default function About() {
     return (
         <>
             <Layout headerStyle={6} footerStyle={3} >
-                <Banner2  title={'About Company'} paragraph={'Lorem ipsum dolor sit amet consectetur. Mus et rhoncus pretium euismod pellentesque. Consectetur lacus enim eleifend vitae nibh sem.lacus enim eleifend vitae nibh sem it amet consectetur.'} />
+                <Banner2  title={'About Company'} paragraph={'Al Enma’a Real Estate Company K.S.C.P was registered and incorporated in State of Kuwait in 1993. The company shares are listed on Boursa Kuwait and all the activities of the company are conducted in accordance with Islamic Sharia. The parent company is subsidiary of Kuwait Finance House K.S.C.P a registered Islamic bank in Kuwait whose shares are listed on Boursa Kuwait.'} />
                 <div>
                     <section className="about__area-four">
 
@@ -52,7 +52,12 @@ export default function About() {
                                                 <img src="/assets/img/images/about_list_img02.png" alt="" />
                                             </div>
                                         </div1> */}
-                                        <p>Al Enma’a Real Estate Company K.S.C.P was registered and incorporated in State of Kuwait in 1993. The company shares are listed on Boursa Kuwait and all the activities of the company are conducted in accordance with Islamic Sharia. The parent company is subsidiary of Kuwait Finance House K.S.C.P a registered Islamic bank in Kuwait whose shares are listed on Boursa Kuwait.Al Enmaa Real Estate Company is engaged in real estate activities inside and outside Kuwait. In the field of the real estate, the Company manages, markets, leases and maintains all types of real estate whether owned by the company or managed for other through its qualified personnel.</p>
+                                        <p>Al Enmaa Real Estate Company is engaged in real estate activities inside and outside Kuwait. In the field of the real estate, the Company manages, markets, leases and maintains all types of real estate whether owned by the company or managed for other through its qualified personnel. The company organizes real estate auctions, carrying out real estate brokerage works, evaluating real estate for others and provide real estate consultancy services.<br/>
+                                        <br/>In the field of the contracting projects, the Company implements and maintains the different construction projects such as housing cities, commercial, investment and residential towers whether to the account of the public sector or private sector and shall also implement and maintain specialized contracting such as electrical, mechanical, sanitary, air conditioning, electronic systems and fire systems. Moreover, the Company provides the entire types of integrated engineering services in addition to the installation and maintenance services of the central air conditioning in all its types for the Governmental projects and the private sectors and individuals projects.<br/><br/>
+         The Company also provides security guarding services to Ministries, Governmental Institutions, private sector, cooperative societies and real estate owned and managed by it.<br/><br/>
+The company manages two BOT projects namely Souk Al Wataniya & Souk Al Dawliah and owns commercial and residential properties.
+<br/><br/>
+Such integration of the performance confirms the Company’s efforts towards realizing excellence and diversification in performance, providing the best services to its customers and promoting the economic Islamic work.</p>
                                         <Link href="/contact" className="btn">Contact With Us</Link>
                                     </div>
                                 </div1>
@@ -137,10 +142,10 @@ export default function About() {
                                 <div className="col-lg-5">
                                     <div className="choose__content-four">
                                         <div className="section-title white-title mb-20">
-                                            <span className="sub-title">Lorem ipsum dolor sit amet </span>
+                                            <span className="sub-title">Pioneering Excellence in Real Estate Services </span>
                                             <h2 className="title">Our MIssion and Vision </h2>
                                         </div>
-                                        <p>Lorem ipsum dolor sit amet consectetur. Mus et rhoncus pretium euismod pellentesque. Consectetur lacus enim eleifend vitae nibh sem.lacus enim eleifend vitae nibh sem it amet consectetur.orem ipsum dolor sit amet consectetur. Mus et rhoncus pretium euismod pellentesque. Consectetur lacus enim eleifend vitae nibh sem.lacus enim eleifend vitae nibh sem it amet consectetur.</p>
+                                        <p>We strive to be a trusted partner, providing sustainable solutions and setting new standards in real estate development and investment. Our goal is to deliver outstanding services and products, maximizing profits through the integration of knowledge, technology, and innovation. With a vision to become the premier choice in the real estate and security services sectors, we are dedicated to achieving the highest possible standards and exceeding our clients' expectations.</p>
                                     </div>
                                 </div>
                                 <div className="col-lg-7">
@@ -175,7 +180,13 @@ export default function About() {
                                                     </div>
                                                     <div className="choose__list-content-two">
                                                         <h4 className="title">Mission</h4>
-                                                        <p>To evolve as a trusted partner in property management and security services.To develop sustainable Property Management solutions.</p>
+                                              <ul className="white-dev mb-2">
+                                                <li>To evolve as a trusted partner in property management and security services.</li>
+                                                <li>To develop sustainable Property Management solutions.</li>
+                                                <li>New standards in real estate development and investments.</li>
+                                                <li>To provide outstanding level of services and products to our clients.</li>
+                                                <li>Profit maximization through combining knowledge, technology, and innovation in all spectrum of real estate.</li>
+                                              </ul>
                                                     </div>
                                                 </div>
                                             </li>
@@ -186,7 +197,10 @@ export default function About() {
                                                     </div>
                                                     <div className="choose__list-content-two">
                                                         <h4 className="title">Vision</h4>
-                                                        <p>To become the first-choice partner of real estate and security services and to achieve highest possible standards in the real estate sector</p>
+                                                        <ul className="white-dev mb-2">
+                                                <li>To become the first-choice partner of real estate and security services and to achieve highest possible standards in the real estate sector.</li>
+                                            
+                                              </ul>
                                                     </div>
                                                 </div>
                                             </li>
@@ -209,14 +223,14 @@ export default function About() {
                                     <div className="request-content text-center">
                                         <h2 className="title">Offering The Best Experience Of Real Estate  Services</h2>
                                         <div className="content-bottom">
-                                            <Link href="tel:0123456789" className="btn">Contact With Us</Link>
+                                            <Link href="tel:1866667" className="btn">Contact With Us</Link>
                                             <div className="content-right">
                                                 <div className="icon">
                                                     <i className="flaticon-phone-call" />
                                                 </div>
                                                 <div className="content">
                                                     {/* <span>Toll Free Call</span> */}
-                                                    <Link href="tel:0123456789">+ 88 ( 9600 ) 6002</Link>
+                                                    <Link href="tel:1866667">+ 1866667</Link>
                                                 </div>
                                             </div>
                                         </div>

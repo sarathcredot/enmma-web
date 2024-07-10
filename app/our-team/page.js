@@ -134,7 +134,7 @@ export default function About3() {
                                 <div className="col-xl-3 col-lg-4 col-md-6 col-sm-8">
                                     <div className="team-item">
                                         <div className="team-thumb">
-                                            <img src="/assets/img/team/team_img01.jpg" alt="" />
+                                            <img src="/assets/img/team/team2_img01.jpg" alt="" />
                                             <div className="team-social">
                                                 {/* <SocialToggle/> */}
                                             </div>
@@ -148,13 +148,13 @@ export default function About3() {
                                 <div className="col-xl-3 col-lg-4 col-md-6 col-sm-8">
                                     <div className="team-item">
                                         <div className="team-thumb">
-                                            <img src="/assets/img/team/team_img02.jpg" alt="" />
+                                            <img src="/assets/img/team/team2_img02.jpg" alt="" />
                                             <div className="team-social">
                                                 {/* <SocialToggle/> */}
                                             </div>
                                         </div>
                                         <div className="team-content">
-                                            <h4 className="title"><Link href="/team-details">MR. Abdul Mohsen Hamad Al Hamd</Link></h4>
+                                            <h4 className="title"><Link href="/team-details">MR. Abdullah Saif Al Saif</Link></h4>
                                             <span>Senior manager</span>
                                         </div>
                                     </div>
@@ -163,56 +163,56 @@ export default function About3() {
                                 <div className="col-xl-3 col-lg-4 col-md-6 col-sm-8">
                                     <div className="team-item">
                                         <div className="team-thumb">
-                                            <img src="/assets/img/team/team_img05.jpg" alt="" />
+                                            <img src="/assets/img/team/team2_img03.jpg" alt="" />
                                             <div className="team-social">
                                                 {/* <SocialToggle/> */}
                                             </div>
                                         </div>
                                         <div className="team-content">
-                                            <h4 className="title"><Link href="/team-details">MR. Saleh Turki Al Khamees</Link></h4>
-                                            <span>Senior manager</span>
+                                            <h4 className="title"><Link href="/team-details">MR. Abdullah Alomar</Link></h4>
+                                            <span> manager</span>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-xl-3 col-lg-4 col-md-6 col-sm-8">
                                     <div className="team-item">
                                         <div className="team-thumb">
-                                            <img src="/assets/img/team/team_img07.jpg" alt="" />
+                                            <img src="/assets/img/team/team2_img04.jpg" alt="" />
                                             <div className="team-social">
                                                 {/* <SocialToggle/> */}
                                             </div>
                                         </div>
                                         <div className="team-content">
-                                            <h4 className="title"><Link href="/team-details">MR. Ahmad Abdulmohsen Alfarhan</Link></h4>
-                                            <span>Senior manager</span>
+                                            <h4 className="title"><Link href="/team-details">MR. Ayman badway</Link></h4>
+                                            <span> manager</span>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-xl-3 col-lg-4 col-md-6 col-sm-8">
                                     <div className="team-item">
                                         <div className="team-thumb">
-                                            <img src="/assets/img/team/team_img06.jpg" alt="" />
+                                            <img src="/assets/img/team/team2_img05.jpg" alt="" />
                                             <div className="team-social">
                                                 {/* <SocialToggle/> */}
                                             </div>
                                         </div>
                                         <div className="team-content">
-                                            <h4 className="title"><Link href="/team-details">MR. Abdulrahman Saud Albarjas</Link></h4>
-                                            <span>Senior manager</span>
+                                            <h4 className="title"><Link href="/team-details">MR. mohamed ibrahim eel metennawi</Link></h4>
+                                            <span>Chief Financial Officer</span>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-xl-3 col-lg-4 col-md-6 col-sm-8">
                                     <div className="team-item">
                                         <div className="team-thumb">
-                                            <img src="/assets/img/team/team_img08.jpg" alt="" />
+                                            <img src="/assets/img/team/team2_img06.jpg" alt="" />
                                             <div className="team-social">
                                                 {/* <SocialToggle/> */}
                                             </div>
                                         </div>
                                         <div className="team-content">
-                                            <h4 className="title"><Link href="/team-details">MR. Ahmad Abdullatif Alluhaib</Link></h4>
-                                            <span>Senior manager</span>
+                                            <h4 className="title"><Link href="/team-details">MR. Darweesh Qamhiya</Link></h4>
+                                            <span> manager</span>
                                         </div>
                                     </div>
                                 </div>
@@ -306,14 +306,14 @@ export default function About3() {
                                     <div className="request-content text-center">
                                         <h2 className="title">Offering The Best Experience Of Real Estate  Services</h2>
                                         <div className="content-bottom">
-                                            <Link href="tel:0123456789" className="btn">Contact With Us</Link>
+                                            <Link href="tel:1866667" className="btn">Contact With Us</Link>
                                             <div className="content-right">
                                                 <div className="icon">
                                                     <i className="flaticon-phone-call" />
                                                 </div>
                                                 <div className="content">
                                                     {/* <span>Toll Free Call</span> */}
-                                                    <Link href="tel:0123456789">+ 88 ( 9600 ) 6002</Link>
+                                                    <Link href="tel:1866667">+ 1866667</Link>
                                                 </div>
                                             </div>
                                         </div>

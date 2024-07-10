@@ -60,7 +60,7 @@ export default function About5() {
                                                 </div>
                                                 <div className="content">
                                                     <span>Hot Line Number</span>
-                                                    <Link href="tel:0123456789">+123 8989 444</Link>
+                                                    <Link href="tel:1866667">+123 8989 444</Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -144,10 +144,10 @@ export default function About5() {
                                             </div>
                                             <div className="content">
                                                 <span>Toll Free Call</span>
-                                                <Link href="tel:0123456789">+ 88 ( 9600 ) 6002</Link>
+                                                <Link href="tel:1866667">+ 1866667</Link>
                                             </div>
                                         </div>
-                                        <Link href="tel:0123456789" className="btn">Request a Free Call</Link>
+                                        <Link href="tel:1866667" className="btn">Request a Free Call</Link>
                                     </div>
                                 </div>
                             </div>

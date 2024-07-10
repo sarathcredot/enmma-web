@@ -37,7 +37,7 @@ export default function Footer1() {
                                                         <i className="flaticon-phone-call" />
                                                     </div>
                                                     <div className="content">
-                                                        <Link href="tel:0123456789">+123 888 9999</Link>
+                                                        <Link href="tel:1866667">+123 888 9999</Link>
                                                     </div>
                                                 </li>
                                                 <li>

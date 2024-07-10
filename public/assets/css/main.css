@@ -10554,6 +10554,9 @@ text-align: left;
   border-radius: 15px;
   border: 1px solid var(--tg-border-1);
   margin-bottom: 30px;
+  height: 400px;
+
+  
 }
 .team-item-wrap .row {
   --bs-gutter-x: 24px;
@@ -15680,5 +15683,9 @@ justify-content: center;
   color: white;
 
  }
+ .white-dev li{
+  color: var(--tg-color-white-default)!important;
+
+}
   /*search propertyend*/
 /*# sourceMappingURL=main.css.map */

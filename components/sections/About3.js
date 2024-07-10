@@ -51,7 +51,7 @@ export default function About3() {
                                         </div>
                                         <div className="content">
                                             <span>Hot Line Number</span>
-                                            <Link href="tel:0123456789">+123 8989 444</Link>
+                                            <Link href="tel:1866667">+123 8989 444</Link>
                                         </div>
                                     </div1> */}
                                 </div>

@@ -64,7 +64,7 @@ export default function ServicesDetails5() {
                                             <div className="sidebar__widget sidebar__widget-two">
                                                 <div className="sidebar__contact sidebar__contact-two" data-background="/assets/img/services/sidebar_contact_bg.jpg">
                                                     <h2 className="title">If You Need Any Help Contact With Us</h2>
-                                                    <Link href="tel:0123456789" className="btn"><i className="flaticon-phone-call" />+91 705 2101 786</Link>
+                                                    <Link href="tel:1866667" className="btn"><i className="flaticon-phone-call" />+91 705 2101 786</Link>
                                                 </div>
                                             </div>
                                             <div className="sidebar__widget">

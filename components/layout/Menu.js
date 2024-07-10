@@ -19,9 +19,9 @@ export default function Menu() {
                 </li> */}
                 <li className="menu-item-has-children"><Link href="/about">About</Link>
                     <ul className="sub-menu">
-                        <li><Link href="/about-sub/#director"  >Board Of Directors</Link></li>
-                        <li><Link href="/about-sub/#management">Management</Link></li>
-                        <li><Link href="/about-sub/#executive">Executive </Link></li>
+                        <li><Link href="/our-team/#director"  >Board Of Directors</Link></li>
+                        <li><Link href="/our-team/#management">Management</Link></li>
+                        <li><Link href="/our-team/#executive">Executive </Link></li>
                         {/* <li><Link href="/>Insurance About</Link></li>
                         <li><Link href="/#about-4">Digital agency About</Link></li> */}
                     </ul>

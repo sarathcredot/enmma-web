@@ -25,7 +25,7 @@ export default function TeamDetails() {
                                                 <ul className="list-wrap">
                                                     <li>
                                                         <i className="flaticon-phone-call" />
-                                                        <Link href="tel:0123456789">+123 8989 444</Link>
+                                                        <Link href="tel:1866667">+123 8989 444</Link>
                                                     </li>
                                                     <li>
                                                         <i className="flaticon-mail" />

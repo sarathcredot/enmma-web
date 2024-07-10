@@ -13,7 +13,7 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, transp
                         <div className="row">
                             <div className="col-lg-6">
                                 <ul className="tg-header__top-info left-side list-wrap">
-                                    <li><i className="flaticon-phone-call" /><Link href="tel:0123456789">+123 9898 500</Link></li>
+                                    <li><i className="flaticon-phone-call" /><Link href="tel:1866667">+123 9898 500</Link></li>
                                     <li><i className="flaticon-pin" />256 Avenue, Mark Street, NewYork City</li>
                                 </ul>
                             </div>
@@ -100,7 +100,7 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, transp
                                             <div className="contact-info">
                                                 <ul className="list-wrap">
                                                     <li><Link href="mailto:info@apexa.com">info@apexa.com</Link></li>
-                                                    <li><Link href="tel:0123456789">+123 888 9999</Link></li>
+                                                    <li><Link href="tel:1866667">+123 888 9999</Link></li>
                                                 </ul>
                                             </div>
                                             <div className="social-links">

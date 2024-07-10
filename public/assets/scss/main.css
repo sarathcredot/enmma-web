@@ -8442,6 +8442,7 @@ textarea {
   border-radius: 15px;
   border: 1px solid var(--tg-border-1);
   margin-bottom: 30px;
+  height: 400px;
 }
 .team-item-wrap .row {
   --bs-gutter-x: 24px;
@@ -8579,6 +8580,10 @@ textarea {
 }
 .team__social-three .list-wrap li a {
   color: var(--tg-color-white-default);
+}
+.white-dev li{
+  color: var(--tg-color-white-default)!important;
+
 }
 .team__social-three .list-wrap li a:hover {
   color: var(--tg-theme-secondary);

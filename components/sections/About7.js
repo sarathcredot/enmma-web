@@ -42,7 +42,7 @@ export default function About7() {
                                         </div>
                                         <div className="content">
                                             <span>Hot Line Number</span>
-                                            <a href="tel:0123456789">+123 8989 444</a>
+                                            <a href="tel:1866667">+123 8989 444</a>
                                         </div>
                                     </div>
                                 </div>
