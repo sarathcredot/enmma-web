@@ -58,7 +58,7 @@ export default function service1() {
                                                     aria-controls="health-tab-pane"
                                                     aria-selected="true"
                                                 >
-                                                    <i className="flaticon-travel-insurance" />
+                                                    <i className="flaticon-pin" />
                                                     Industry Expertise
                                                 </button></Link>
                                             </li>
@@ -75,7 +75,7 @@ export default function service1() {
                                                     aria-controls="travel-tab-pane"
                                                     aria-selected="false"
                                                 >
-                                                    <i className="flaticon-travel-insurance" />
+                                                    <i className="flaticon-pin" />
                                                     Investment in Excellence  </button></Link>
                                             </li>
                                             <li className="nav-item" onClick={() => handleOnClick(3)}>
@@ -91,7 +91,7 @@ export default function service1() {
                                                     aria-controls="vehicle-tab-pane"
                                                     aria-selected="false"
                                                 >
-                                                    <i className="flaticon-travel-insurance" />
+                                                    <i className="flaticon-pin" />
                                                     Exceptional Client Support                                                </button></Link>
                                             </li>
                                             {/* <li1 className="nav-item" onClick={() => handleOnClick(4)}>
@@ -107,7 +107,7 @@ export default function service1() {
                                                     aria-controls="cargo-tab-pane"
                                                     aria-selected="false"
                                                 >
-                                                    <i className="flaticon-travel-insurance" />
+                                                    <i className="flaticon-pin" />
                                                     Investing in Your Success
                                                 </button></Link>
                                             </li1> */}

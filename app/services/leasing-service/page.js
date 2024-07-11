@@ -60,7 +60,7 @@ export default function service2() {
                                                     aria-controls="health-tab-pane"
                                                     aria-selected="true"
                                                 >
-                                                    <i className="flaticon-travel-insurance" />
+                                                    <i className="flaticon-pin" />
                                                     Wide Range of Options                                                </button></Link>
                                             </li>
                                             <li className="nav-item" onClick={() => handleOnClick(2)}>
@@ -76,7 +76,7 @@ export default function service2() {
                                                     aria-controls="travel-tab-pane"
                                                     aria-selected="false"
                                                 >
-                                                    <i className="flaticon-travel-insurance" />
+                                                    <i className="flaticon-pin" />
                                                     Personalized Property Selection                                                </button></Link>
                                             </li>
                                             <li className="nav-item" onClick={() => handleOnClick(3)}>
@@ -92,7 +92,7 @@ export default function service2() {
                                                     aria-controls="vehicle-tab-pane"
                                                     aria-selected="false"
                                                 >
-                                                    <i className="flaticon-travel-insurance" />
+                                                    <i className="flaticon-pin" />
                                                     Dedicated Support and Guidance                                            
                                                       </button>  </Link>
                                             </li>

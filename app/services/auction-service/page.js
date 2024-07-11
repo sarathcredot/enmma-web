@@ -55,7 +55,7 @@ export default function Service3() {
                                                         aria-controls="health-tab-pane"
                                                         aria-selected="true"
                                                     >
-                                                        <i className="flaticon-travel-insurance" />
+                                                        <i className="flaticon-pin" />
                                                         Effective Investment Strategy
                                                     </button>
                                                 </Link>
@@ -72,7 +72,7 @@ export default function Service3() {
                                                         aria-controls="travel-tab-pane"
                                                         aria-selected="false"
                                                     >
-                                                        <i className="flaticon-travel-insurance" />
+                                                        <i className="flaticon-pin" />
                                                         Personalized Auction Consultation
                                                     </button>
                                                 </Link>
@@ -89,7 +89,7 @@ export default function Service3() {
                                                         aria-controls="vehicle-tab-pane"
                                                         aria-selected="false"
                                                     >
-                                                        <i className="flaticon-travel-insurance" />
+                                                        <i className="flaticon-pin" />
                                                         Seamless Auction Process
                                                     </button>
                                                 </Link>

@@ -27,7 +27,7 @@ standards across all aspects of our operations.`} bgColor={"#110B79"} fontColor=
                                 <div className="col-xl-7 space-betweeni col-lg-8">
                                     <div className="  mb-50 dev_gover ">
                                         <span className="">Governance and Ethics</span>
-                                        <h2 className=" mt-4">Commitment to Ethical<br /> Leadership </h2>
+                                        <h2 className=" mt-4">lCommitment to Ethical<br /> Leadership </h2>
                                     </div>
                                     <div className="dev_customsize mt-4">Explore our governance practices, ensuring transparency, accountability, 
 and ethical leadership. Al Enmaa Real Estate Co. upholds the highest 
@@ -39,37 +39,37 @@ standards in all operations.</div>
                                     <div className="services__tab-wrap ">
                                         <ul className="nav nav-tabs" id="myTab" role="tablist">
                                             <li className="nav-item" onClick={() => handleOnClick(1)}>
-                                                <button className={activeIndex == 1 ? "nav-link active" : "nav-link"} id="health-tab" data-bs-toggle="tab" data-bs-target="#health-tab-pane" type="button" role="tab"  aria-selected="true"><i className="flaticon-travel-insurance" />Governance Framework</button>
+                                                <button className={activeIndex == 1 ? "nav-link active" : "nav-link"} id="health-tab" data-bs-toggle="tab" data-bs-target="#health-tab-pane" type="button" role="tab"  aria-selected="true"><i className="flaticon-pin" />Governance Framework</button>
                                             </li>
                                             <li className="nav-item" onClick={() => handleOnClick(2)}>
-                                                <button className={activeIndex == 2 ? "nav-link active" : "nav-link"} id="travel-tab" data-bs-toggle="tab" data-bs-target="#travel-tab-pane" type="button" role="tab"  aria-selected="false"><i className="flaticon-travel-insurance" />Construct a Balanced Board Com position</button>
+                                                <button className={activeIndex == 2 ? "nav-link active" : "nav-link"} id="travel-tab" data-bs-toggle="tab" data-bs-target="#travel-tab-pane" type="button" role="tab"  aria-selected="false"><i className="flaticon-pin" />Construct a Balanced Board Com position</button>
                                             </li>
                                             <li className="nav-item" onClick={() => handleOnClick(3)}>
-                                                <button className={activeIndex == 3 ? "nav-link active" : "nav-link"} id="vehicle-tab" data-bs-toggle="tab" data-bs-target="#vehicle-tab-pane" type="button" role="tab"  aria-selected="false"><i className="flaticon-travel-insurance" />Recruit Highly Qualified Candidates for Members of a Board of Directors and the Executive Management</button>
+                                                <button className={activeIndex == 3 ? "nav-link active" : "nav-link"} id="vehicle-tab" data-bs-toggle="tab" data-bs-target="#vehicle-tab-pane" type="button" role="tab"  aria-selected="false"><i className="flaticon-pin" />Recruit Highly Qualified Candidates for Members of a Board of Directors and the Executive Management</button>
                                             </li>
                                             <li className="nav-item" onClick={() => handleOnClick(4)}>
-                                                <button className={activeIndex == 4 ? "nav-link active" : "nav-link"} id="cargo-tab" data-bs-toggle="tab" data-bs-target="#cargo-tab-pane" type="button" role="tab"  aria-selected="false"><i className="flaticon-travel-insurance" />Safeguard the Integrity of Financial Reporting</button>
+                                                <button className={activeIndex == 4 ? "nav-link active" : "nav-link"} id="cargo-tab" data-bs-toggle="tab" data-bs-target="#cargo-tab-pane" type="button" role="tab"  aria-selected="false"><i className="flaticon-pin" />Safeguard the Integrity of Financial Reporting</button>
                                             </li>
                                             <li className="nav-item" onClick={() => handleOnClick(5)}>
-                                                <button className={activeIndex == 5 ? "nav-link active" : "nav-link"} id="fire-tab" data-bs-toggle="tab" data-bs-target="#fire-tab-pane" type="button" role="tab" aria-selected="false"><i className="flaticon-travel-insurance" />Apply Sound Systems of Risk Management and Internal Audit</button>
+                                                <button className={activeIndex == 5 ? "nav-link active" : "nav-link"} id="fire-tab" data-bs-toggle="tab" data-bs-target="#fire-tab-pane" type="button" role="tab" aria-selected="false"><i className="flaticon-pin" />Apply Sound Systems of Risk Management and Internal Audit</button>
                                             </li>
                                             <li className="nav-item" onClick={() => handleOnClick(6)}>
-                                                <button className={activeIndex == 6 ? "nav-link active" : "nav-link"} id="bike-tab" data-bs-toggle="tab" data-bs-target="#bike-tab-pane" type="button" role="tab"  aria-selected="false"><i className="flaticon-travel-insurance" />Promote Code of Conduct & Ethical Standards</button>
+                                                <button className={activeIndex == 6 ? "nav-link active" : "nav-link"} id="bike-tab" data-bs-toggle="tab" data-bs-target="#bike-tab-pane" type="button" role="tab"  aria-selected="false"><i className="flaticon-pin" />Promote Code of Conduct & Ethical Standards</button>
                                             </li>
                                             <li className="nav-item" onClick={() => handleOnClick(7)}>
-                                                <button className={activeIndex == 7 ? "nav-link active" : "nav-link"} id="bike-tab" data-bs-toggle="tab" data-bs-target="#bike-tab-pane" type="button" role="tab"  aria-selected="false"><i className="flaticon-travel-insurance" />Ensure Timely and High-Quality Disclosure and Transparency</button>
+                                                <button className={activeIndex == 7 ? "nav-link active" : "nav-link"} id="bike-tab" data-bs-toggle="tab" data-bs-target="#bike-tab-pane" type="button" role="tab"  aria-selected="false"><i className="flaticon-pin" />Ensure Timely and High-Quality Disclosure and Transparency</button>
                                             </li>
                                             <li className="nav-item" onClick={() => handleOnClick(8)}>
-                                                <button className={activeIndex == 8 ? "nav-link active" : "nav-link"} id="bike-tab" data-bs-toggle="tab" data-bs-target="#bike-tab-pane" type="button" role="tab"  aria-selected="false"><i className="flaticon-travel-insurance" />Respect the Rights of Shareholders</button>
+                                                <button className={activeIndex == 8 ? "nav-link active" : "nav-link"} id="bike-tab" data-bs-toggle="tab" data-bs-target="#bike-tab-pane" type="button" role="tab"  aria-selected="false"><i className="flaticon-pin" />Respect the Rights of Shareholders</button>
                                             </li>
                                             <li className="nav-item" onClick={() => handleOnClick(9)}>
-                                                <button className={activeIndex == 9 ? "nav-link active" : "nav-link"} id="bike-tab" data-bs-toggle="tab" data-bs-target="#bike-tab-pane" type="button" role="tab"  aria-selected="false"><i className="flaticon-travel-insurance" />Recognise the Roles of Stakeholders</button>
+                                                <button className={activeIndex == 9 ? "nav-link active" : "nav-link"} id="bike-tab" data-bs-toggle="tab" data-bs-target="#bike-tab-pane" type="button" role="tab"  aria-selected="false"><i className="flaticon-pin" />Recognise the Roles of Stakeholders</button>
                                             </li>
                                             <li className="nav-item" onClick={() => handleOnClick(10)}>
-                                                <button className={activeIndex == 10 ? "nav-link active" : "nav-link"} id="bike-tab" data-bs-toggle="tab" data-bs-target="#bike-tab-pane" type="button" role="tab"  aria-selected="false"><i className="flaticon-travel-insurance" />Encourage and Enhance Performance</button>
+                                                <button className={activeIndex == 10 ? "nav-link active" : "nav-link"} id="bike-tab" data-bs-toggle="tab" data-bs-target="#bike-tab-pane" type="button" role="tab"  aria-selected="false"><i className="flaticon-pin" />Encourage and Enhance Performance</button>
                                             </li>
                                             <li className="nav-item" onClick={() => handleOnClick(11)}>
-                                                <button className={activeIndex == 11 ? "nav-link active" : "nav-link"} id="bike-tab" data-bs-toggle="tab" data-bs-target="#bike-tab-pane" type="button" role="tab"  aria-selected="false"><i className="flaticon-travel-insurance" />Focus on the Importance of Corporate Social Responsibility</button>
+                                                <button className={activeIndex == 11 ? "nav-link active" : "nav-link"} id="bike-tab" data-bs-toggle="tab" data-bs-target="#bike-tab-pane" type="button" role="tab"  aria-selected="false"><i className="flaticon-pin" />Focus on the Importance of Corporate Social Responsibility</button>
                                             </li>
                                         </ul>
 

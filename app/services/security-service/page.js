@@ -57,7 +57,7 @@ export default function service4() {
                                                     aria-controls="health-tab-pane"
                                                     aria-selected="true"
                                                 >
-                                                    <i className="flaticon-travel-insurance" />
+                                                    <i className="flaticon-pin" />
                                                     Comprehensive Security Solutions                                                </button></Link>
                                             </li>
                                             <li className="nav-item" onClick={() => handleOnClick(2)}>
@@ -73,7 +73,7 @@ export default function service4() {
                                                     aria-controls="travel-tab-pane"
                                                     aria-selected="false"
                                                 >
-                                                    <i className="flaticon-travel-insurance" />
+                                                    <i className="flaticon-pin" />
                                                     Highly Trained Security Personnel                                                </button></Link>
                                             </li>
                                             <li className="nav-item" onClick={() => handleOnClick(3)}>
@@ -89,7 +89,7 @@ export default function service4() {
                                                     aria-controls="vehicle-tab-pane"
                                                     aria-selected="false"
                                                 >
-                                                    <i className="flaticon-travel-insurance" />
+                                                    <i className="flaticon-pin" />
                                                     Supporting Business Security Needs                                                </button></Link>
                                             </li>
                                             
