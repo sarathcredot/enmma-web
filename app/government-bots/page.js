@@ -8,16 +8,22 @@ export default function About4() {
     return (
         <>
             <Layout headerStyle={6} footerStyle={3} >
-            <Banner2  title={'Government Bots'} paragraph={'Lorem ipsum dolor sit amet consectetur. Mus et rhoncus pretium euismod pellentesque. Consectetur lacus enim eleifend vitae nibh sem.lacus enim eleifend vitae nibh sem it amet consectetur.'} bgColor={"#110B79"} fontColor={"#FFFFFF"}fontColor2={'#FFFFFF'}/>
+            <Banner2  title={'Government Bots'} paragraph={`Explore Al Enmaa Real Estate Co.'s Government BOTS projects, 
+showcasing our commitment to innovative public sector developments. 
+Our sustainable buildings enhance community infrastructure, reflecting 
+our dedication to excellence and long-term growth in government 
+partnerships.`} bgColor={"#110B79"} fontColor={"#FFFFFF"}fontColor2={'#FFFFFF'}/>
            <div   style={{ backgroundColor: '#110B79' }}>
                 <div className="container project__area-three ">
                     <div className="row ">
                     <div className="col-xl-7 space-betweeni col-lg-8">
                         <div  className="  mb-50 dev_gover ">
-                            <span className="">Lorem ipsum dolor sit a</span>
-                            <h2 className=" mt-4">lorem ipsum dolor sit amet <br />congue ornare elit</h2>
+                            <span className="">Transformative Government Projects</span>
+                            <h2 className=" mt-4">Innovative Public Sector <br/>Developments</h2>
                         </div>
-                            <div className="dev_customsize mt-4">Lorem ipsum dolor sit amet consectetur. Mus et rhoncus pretium euismod pellentesque. Consectetur lacus enim eleifend vitae nibh sem</div>
+                            <div className="dev_customsize mt-4">Al Enmaa Real Estate Co. collaborates on BOTS projects, delivering 
+sustainable buildings that enhance community infrastructure and foster 
+public sector growth.</div>
                     </div>
                 </div>
 
