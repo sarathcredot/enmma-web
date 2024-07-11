@@ -22,7 +22,7 @@ export default function Service3() {
                     fontColor2={"#FFFFFF"}
                 />
                 <div>
-                    <div className="mb-5" style={{ backgroundColor: "#110B79" }}>
+                    <div className="" style={{ backgroundColor: "#110B79" }}>
                         <div className="container project__area-three">
                             <div className="row">
                                 <div className="col-xl-7 space-betweeni col-lg-8">
@@ -173,9 +173,9 @@ export default function Service3() {
                             </div>
                             <div className="mt-5"></div>
                         </div>
-                        <div className="container dev-bottom">
+                        {/* <div className="container dev-bottom">
                             <Sectionfoot />
-                        </div>
+                        </div> */}
                     </div>
                     <Bannerfooter />
                 </div>
