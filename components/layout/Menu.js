@@ -17,6 +17,8 @@ export default function Menu() {
 
                     </ul>
                 </li> */}
+                <li> <Link href="/">Home</Link></li>
+
                 <li className="menu-item-has-children"><Link href="/about">About</Link>
                     <ul className="sub-menu">
                         <li><Link href="/our-team/#director"  >Board Of Directors</Link></li>
@@ -26,7 +28,7 @@ export default function Menu() {
                         <li><Link href="/#about-4">Digital agency About</Link></li> */}
                     </ul>
                 </li>
-                 <li> <Link href="/government-bots">Government Bots</Link></li>
+                 <li> <Link href="/government-bots">Govt. Bots</Link></li>
                     <li> <Link href="/services">Services</Link></li>
                     <li> <Link href="/corporate">Corporate Governance</Link></li>
 
@@ -44,7 +46,7 @@ export default function Menu() {
                         <li><Link href="/#-details-5">Service Details Five</Link></li> */}
                     </ul>
                 </li>
-                <li className="menu-item-has-children"><Link href="#">Information center </Link>
+                <li className="menu-item-has-children"><Link href="#">Info center </Link>
                     <ul className="sub-menu">
                         <li><Link href="/blog">Latest News</Link></li>
                         <li><Link href="/careers">Careers</Link></li>
