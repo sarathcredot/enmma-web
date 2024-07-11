@@ -65,7 +65,7 @@ export default function About3() {
                                                 </div>
                                             </div>
                                             <div className="team-content">
-                                                <h4 className="title"><Link href="/team-details">MR. Saleh Turki Al Khamees</Link></h4>
+                                                <h4 className="title"><Link href="/team-details">Mr. Tareq Fahad Al Shaya</Link></h4>
                                                 <span>Board Member</span>
                                             </div>
                                         </div>
@@ -197,7 +197,7 @@ export default function About3() {
                                             </div>
                                         </div>
                                         <div className="team-content">
-                                            <h4 className="title"><Link href="/team-details">MR. mohamed ibrahim eel metennawi</Link></h4>
+                                            <h4 className="title"><Link href="/team-details">MR. Mohamed Ibrahim Eel Metennawi</Link></h4>
                                             <span>Chief Financial Officer</span>
                                         </div>
                                     </div>
@@ -273,7 +273,7 @@ export default function About3() {
                                             </div>
                                         </div>
                                         <div className="team-content">
-                                            <h4 className="title"><Link href="/team-details">MR. Saleh Turki Al Khamees</Link></h4>
+                                            <h4 className="title"><Link href="/team-details">Mr. Tareq Fahad Al Shaya</Link></h4>
                                             <span>Board Member</span>
                                         </div>
                                     </div>
