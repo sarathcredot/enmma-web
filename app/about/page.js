@@ -58,7 +58,7 @@ export default function About() {
 The company manages two BOT projects namely Souk Al Wataniya & Souk Al Dawliah and owns commercial and residential properties.
 <br/><br/>
 Such integration of the performance confirms the Company’s efforts towards realizing excellence and diversification in performance, providing the best services to its customers and promoting the economic Islamic work.</p>
-                                        <Link href="/contact" className="btn">Contact With Us</Link>
+                                        {/* <Link href="/contact" className="btn">Contact With Us</Link> */}
                                     </div>
                                 </div1>
                             </div>

@@ -1,7 +1,7 @@
 const DevsectionFoot = ({ title, paragraph, bgColor, fontColor, fontColor2 }) => {
     return (
         <div className="box-video-small" >
-            <div1 className="item-video-small" style={{ backgroundColor: bgColor}}>
+            <div className="item-video-small" style={{ backgroundColor: bgColor}}>
                 <div className="video-small-left">
                     <div className="video-small-left-inner">
                         <div className="video-small-left-1">
@@ -19,7 +19,7 @@ const DevsectionFoot = ({ title, paragraph, bgColor, fontColor, fontColor2 }) =>
                         <img src="/assets/img/project/h3_project_img0106.jpg" />
                     </div>
                 </div>
-            </div1>
+            </div>
         </div>
     );
 };

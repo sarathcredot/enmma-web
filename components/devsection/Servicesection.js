@@ -22,8 +22,8 @@ export default function Servicesection() {
                 
                         <div className="dev-service-content">
                           <h1>Owner Services</h1>
-                          <p>We have been managing rental properties for years. Our industry-specific experience and a wide range of processes and procedures meet the needs of property owners and help tenants receive excellent services.</p>
-                         <span><Link href="/services/service-1" className="btn">Read More</Link></span> 
+                          <p>Al Enmaa Real Estate Co. has been managing rental properties for years. Our industry-specific experience and a wide range of processes and procedures meet the needs of property owners and help tenants receive excellent services.</p>
+                         <span><Link href="/services/ower-service" className="btn">Read More</Link></span> 
                         </div>
                 
             </div>
@@ -35,8 +35,9 @@ export default function Servicesection() {
                 
                         <div className=" col-xl-8 dev-service-content">
                           <h1>Leasing Services</h1>
-                          <p>Discover a wide range of leasing options across Kuwait. Browse our extensive listings or use our convenient contact form to find the perfect property for your needs. We make leasing easy!</p>
-                        <span><Link href="/services/service-2" className="btn">Read More</Link></span> 
+                          <p>Discover a wide range of leasing options across Kuwait. Browse our extensive listings or use our convenient contact form to find the perfect property for your needs. We make leasing easy!
+                          </p>
+                        <span><Link href="/services/leasing-service" className="btn">Read More</Link></span> 
                         </div>
                 
             </div>  <div className="dev-services-section">
@@ -47,8 +48,8 @@ export default function Servicesection() {
                 
                         <div className="dev-service-content">
                           <h1>Auction Services</h1>
-                          <p>You can also choose the property that meets your needs by using the contact form below. You can also choose the property that meets your needs by using the contact form below.</p>
-                        <span><Link href="/services/service-3" className="btn">Read More</Link></span> 
+                          <p>Real estate auctions have long been an effective way for investors to get a good and attractive real estate deals. The best way to see if auction is right for you and your property is to contact us. We can help you regarding the real estate auction process and provide you with a recommendation for your properties and real estate investments</p>
+                        <span><Link href="/services/auction-service" className="btn">Read More</Link></span> 
                         </div>
                 
             </div>  <div className="dev-services-section">
@@ -59,8 +60,8 @@ export default function Servicesection() {
                 
                         <div className="dev-service-content">
                           <h1>Security Services</h1>
-                          <p>We are pleased to offer security services across all the public and private sector. We always look forward to supporting all businesses by providing security guard services with highly trained security personnel.</p>
-                        <span><Link href="/services/service-4" className="btn">Read More</Link></span> 
+                          <p>We are pleased to offer security services across all the public and private sector. We always look forward to supporting all businesses by providing security guard services with highly trained security personnel.</p>
+                        <span><Link href="/services/security-service" className="btn">Read More</Link></span> 
                         </div>
                 
             </div>
@@ -73,13 +74,10 @@ export default function Servicesection() {
                         <div className="dev-service-content">
                           <h1>Consultancy Services</h1>
                           <p>We offer real estate consultancy services to clients who would like to seek professional advice regarding investment in properties. We analyze markets, assess properties, and guide strategic decisions to maximize your investment returns.</p>
-                        <span><Link href="/services/service-5" className="btn">Read More</Link></span> 
+                        <span><Link href="/services/consultancy-service" className="btn">Read More</Link></span> 
                         </div>
-                
             </div>
-
- </div>
-                    
+ </div>             
                     </div>
          </>
     )

@@ -8,7 +8,7 @@ export default function About3() {
         <>
 
             <Layout headerStyle={6} footerStyle={3}>
-            <Banner2  title={'Meet Our team'} paragraph={'Lorem ipsum dolor sit amet consectetur. Mus et rhoncus pretium euismod pellentesque. Consectetur lacus enim eleifend vitae nibh sem.lacus enim eleifend vitae nibh sem it amet consectetur.'} />
+            <Banner2  title={'Meet Our team'} paragraph={'Meet the dedicated team behind Al Enmaa Real Estate Company. Our skilled professionals excel at every level of management, ensuring excellence and commitment in all we do.'} />
 
                 <div id="director"  >
                     
@@ -19,9 +19,9 @@ export default function About3() {
                         <div className="col-xl-7 space-betweeni col-lg-8">
                             <div  className="section-title  mb-50 tg-heading-subheading animation-style3">
                                 <span className="sub-title">Board Of Directors</span>
-                                <h2 className="title tg-element-title mt-4">Meet the Visionaries Steering  <br />Our Success</h2>
+                                <h2 className="title tg-element-title mt-4">Strategic Leadership<br/> for Sustainable Growth</h2>
                             </div>
-                                <div className="dev_customsize mt-4" style={{color:'#282739'}}>Our power of choice is untrammelled and when nothing prevents being able to do what we like best every pleasure.</div>
+                                <div className="dev_customsize mt-4" style={{color:'#282739'}}>Our Board of Directors at Al Enmaa Real Estate Co. comprises experienced leaders who bring a wealth of expertise and strategic vision to our organization.</div>
                         </div>
                     </div>
                             <div className="team-item-wrap">
@@ -123,9 +123,9 @@ export default function About3() {
                     <div className="col-xl-7 space-betweeni col-lg-8">
                         <div  className="section-title  mb-50 tg-heading-subheading animation-style3">
                             <span className="sub-title">Management Team</span>
-                            <h2 className="title tg-element-title mt-4">Meet the Minds Behind  <br />Our Success</h2>
+                            <h2 className="title tg-element-title mt-4">Driving Excellence <br/>Through Leadership</h2>
                         </div>
-                            <div className="dev_customsize mt-4"style={{color:'#282739'}}>Our power of choice is untrammelled and when nothing prevents being able to do what we like best every pleasure.</div>
+                            <div className="dev_customsize mt-4"style={{color:'#282739'}}>The Management Team at Al Enmaa Real Estate Co. is composed of seasoned professionals dedicated to operational excellence and client satisfaction.</div>
                     </div>
                 </div>
                         <div className="team-item-wrap">
@@ -227,9 +227,9 @@ export default function About3() {
                     <div className="col-xl-7 space-betweeni col-lg-8">
                         <div  className="section-title  mb-50 tg-heading-subheading animation-style3">
                             <span className="sub-title">Executive Management</span>
-                            <h2 className="title tg-element-title mt-4">Meet Our Visionary Leaders</h2>
+                            <h2 className="title tg-element-title mt-4">Leading with Vision  <br/>and Expertise</h2>
                         </div>
-                            <div className="dev_customsize mt-4"style={{color:'#282739'}}>Our power of choice is untrammelled and when nothing prevents being able to do what we like best every pleasure.</div>
+                            <div className="dev_customsize mt-4"style={{color:'#282739'}}>The Executive Management team at Al Enmaa Real Estate Co. is at the forefront of our strategic direction and operational excellence. Comprised of experienced executives with deep industry knowledge, they steer the company towards sustainable growth and innovation.</div>
                     </div>
                 </div>
                         <div className="team-item-wrap">

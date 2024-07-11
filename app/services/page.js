@@ -9,7 +9,7 @@ export default function Services() {
     return (
         <>
             <Layout headerStyle={6} footerStyle={3}>
-            <Banner2  title={'Services'} paragraph={'Lorem ipsum dolor sit amet consectetur. Mus et rhoncus pretium euismod pellentesque. Consectetur lacus enim eleifend vitae nibh sem.lacus enim eleifend vitae nibh sem it amet consectetur.'} bgColor={"#110B79"} fontColor={"#FFFFFF"}fontColor2={'#FFFFFF'}/>
+            <Banner2  title={'Services'} paragraph={'Discover a wide range of professional services at Al Enmaa Real Estate Co., including property management, security services, real estate consultancy, and more. Our dedicated team ensures exceptional quality and client satisfaction in every service we provide.'} bgColor={"#110B79"} fontColor={"#FFFFFF"}fontColor2={'#FFFFFF'}/>
             <div  style={{ backgroundColor: '#110B79' }}>
 
 

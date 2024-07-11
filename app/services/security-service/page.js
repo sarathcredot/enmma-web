@@ -7,7 +7,7 @@ import Link from "next/link";
 import Sectionfoot from "@/components/layout/DevsectionFoot";
 import { useState } from "react";
 
-export default function service2() {
+export default function service4() {
     const [activeIndex, setActiveIndex] = useState(1);
     const handleOnClick = (index) => {
         setActiveIndex(index);
@@ -16,13 +16,8 @@ export default function service2() {
         <>
             <Layout headerStyle={6} footerStyle={3}>
                 <Banner1
-                    title={"LEASING SERVICES"}
-                    paragraph={`Looking for a new home or commercial space in Kuwait? Look no further than Al Enmaa 
-                    Real Estate's comprehensive leasing services! We offer a wide variety of properties 
-                    across the State of Kuwait, catering to diverse needs and budgets. Whether you're 
-                    seeking a spacious apartment in the heart of the city, a cozy villa in a quiet suburb, or a 
-                    prime location for your business, our experienced team is here to guide you every step 
-                    of the way`}
+                    title={"Security Services"}
+                    paragraph={`We are pleased to offer security services across all the public and private sector. We always look forward to supporting all businesses by providing security guard services with highly trained security personnel.`}
                     bgColor={"#110B79"}
                     fontColor={"#FFFFFF"}
                     fontColor2={"#FFFFFF"}
@@ -33,12 +28,9 @@ export default function service2() {
                             <div className="row ">
                                 <div className="col-xl-7 space-betweeni col-lg-8">
                                     <div className="  mb-50 dev_gover ">
-                                        <span className="">What We Offer</span>
+                                        <span className="">Premier Security Services</span>
                                         <h2 className=" mt-4">
-                                            {" "}
-                                            Streamlined Leasing  <br />Services from Al Enmaa
-
-
+                                        Ensuring Safety for Public <br/>and Private Sectors
                                         </h2>
                                     </div>
                                     <div className="dev_customsize services__content-two mt-4">
@@ -53,7 +45,7 @@ export default function service2() {
                                     <div className="services__tab-wrap">
                                         <ul className="nav nav-tabs" id="myTab" role="tablist">
                                             <li className="nav-item" onClick={() => handleOnClick(1)}>
-                                                <Link href="#dev-link-section" passHref><button
+                                            <Link href="#dev-link-section" smooth><button
                                                     className={
                                                         activeIndex == 1 ? "nav-link active" : "nav-link"
                                                     }
@@ -66,11 +58,10 @@ export default function service2() {
                                                     aria-selected="true"
                                                 >
                                                     <i className="flaticon-travel-insurance" />
-                                                    Seamless Search Process
-                                                </button></Link>
+                                                    Comprehensive Security Solutions                                                </button></Link>
                                             </li>
                                             <li className="nav-item" onClick={() => handleOnClick(2)}>
-                                                <Link href="#dev-link-section" passHref> <button
+                                            <Link href="#dev-link-section" smooth> <button
                                                     className={
                                                         activeIndex == 2 ? "nav-link active" : "nav-link"
                                                     }
@@ -83,11 +74,10 @@ export default function service2() {
                                                     aria-selected="false"
                                                 >
                                                     <i className="flaticon-travel-insurance" />
-                                                    Stress-Free Application & Move-In
-                                                </button></Link>
+                                                    Highly Trained Security Personnel                                                </button></Link>
                                             </li>
                                             <li className="nav-item" onClick={() => handleOnClick(3)}>
-                                                <Link href="#dev-link-section" passHref> <button
+                                            <Link href="#dev-link-section" smooth> <button
                                                     className={
                                                         activeIndex == 3 ? "nav-link active" : "nav-link"
                                                     }
@@ -100,8 +90,7 @@ export default function service2() {
                                                     aria-selected="false"
                                                 >
                                                     <i className="flaticon-travel-insurance" />
-                                                    Ongoing Support
-                                                </button></Link>
+                                                    Supporting Business Security Needs                                                </button></Link>
                                             </li>
                                             
                                         </ul>
@@ -127,18 +116,10 @@ export default function service2() {
                                                 <div className="services__content-four">
                                                     <h2 className="title">
                                                         <Link href="/services-details">
-                                                            Seamless Search Process
-                                                        </Link>
+                                                        Comprehensive Security Solutions                                                        </Link>
                                                     </h2>
                                                     <p>
-                                                        Finding the perfect rental property can be overwhelming. At
-                                                        Al Enmaa, we simplify the process by offering a user-friendly online platform and
-                                                        dedicated leasing consultants. You can easily browse our extensive listings, filtering by
-                                                        location, property type, price range, and amenities. Our detailed listings provide clear
-                                                        descriptions, photos, and virtual tours, allowing you to virtually explore potential
-                                                        properties from the comfort of your own home. Additionally, our leasing consultants
-                                                        possess in-depth knowledge of the Kuwaiti rental market and are available to answer
-                                                        any questions and recommend properties that align with your specific requirements.
+                                                    At Al Enmaa Real Estate Co., we are proud to offer top-tier security services to both the public and private sectors. Our comprehensive solutions are designed to meet the diverse security needs of various industries, ensuring a safe and secure environment for all. From corporate offices to public institutions, our security services are tailored to protect your assets and provide peace of mind.
                                                     </p>
                                                 </div>
                                             </div1>
@@ -164,20 +145,14 @@ export default function service2() {
                                                 <div className="services__content-four">
                                                     <h2 className="title">
                                                         <Link href="/services-details">
-                                                            Stress-Free Application & Move-In                                             </Link>
+                                                        Highly Trained Security Personnel                                     </Link>
                                                     </h2>
                                                     <p>
-                                                        : Once you've identified your ideal property, our
-                                                        team streamlines the application and move-in process. We guide you through the
-                                                        application documents, conduct efficient background checks, and facilitate clear
-                                                        communication with landlords. We also handle lease agreements, ensuring all terms
-                                                        and conditions are transparent and clearly understood. Furthermore, we can connect
-                                                        you with reliable moving companies and other service providers to ensure a smooth
-                                                        and stress-free transition into your new rental space.
-
+                                                    Our commitment to excellence is reflected in the quality of our security personnel. We employ highly trained and experienced security guards who are adept at handling a wide range of security scenarios. Our rigorous training programs ensure that our team is equipped with the latest skills and knowledge to effectively safeguard your premises and respond to any security threats promptly and efficiently.
+                                                    
                                                     </p>
-
-
+                                                    
+                                                  
                                                 </div>
                                             </div>
                                         </div>
@@ -202,21 +177,14 @@ export default function service2() {
                                                 <div className="services__content-four">
                                                     <h2 className="title">
                                                         <Link href="/services-details">
-                                                            Ongoing Support
-                                                        </Link>
+                                                        Supporting Business Security Needs                                                        </Link>
                                                     </h2>
                                                     <p>
-                                                        Our commitment to service extends beyond the initial lease signing.
-                                                        Throughout your tenancy, you can rely on Al Enmaa's dedicated support team. We
-                                                        promptly address any maintenance requests, coordinating with qualified vendors to
-                                                        ensure timely repairs and upkeep of the property. We also offer helpful resources and
-                                                        guidance regarding tenant rights and responsibilities..<br /><br />
-                                                        By partnering with Al Enmaa Real Estate for your leasing needs, you gain access to a
-                                                        wide range of properties, a streamlined search process, and ongoing support
-                                                        throughout your tenancy. Let us help you find your perfect place in Kuwait
+                                                    We understand that each business has unique security requirements, and we are dedicated to providing personalized support to meet those needs. Our security services are designed to support businesses of all sizes, offering flexible and scalable solutions. Whether you require round-the-clock surveillance or event-specific security, Al Enmaa Real Estate Co. is your trusted partner in maintaining a secure and protected environment for your business operation
+
                                                     </p>
-
-
+                                                    
+                                                  
                                                 </div>
                                             </div>
                                         </div>
@@ -225,9 +193,9 @@ export default function service2() {
                                 </div>
                             </div>
                             <div className="mt-5">
-                                <Sectionfoot />{" "}
                             </div>
                         </div>
+                            <div className=" container dev-bottom "><Sectionfoot /> </div>
                     </div>
                     <Bannerfooter />
                 </div>

@@ -3357,7 +3357,7 @@ textarea {
   background: var(--tg-heading-color);
   padding: 55px 0;
 }
-.brand-item {
+.brand-item h1{
   min-height: 46px;
   display: -webkit-box;
   display: -moz-box;

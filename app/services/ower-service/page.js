@@ -17,7 +17,7 @@ export default function service1() {
             <Layout headerStyle={6} footerStyle={3}>
                 <Banner1
                     title={"Owner Services"}
-                    paragraph={`Owning rental property can be a rewarding investment, but it also comes with responsibilities. At Al Enmaa Real Estate, we understand this, and that's why we offer a comprehensive suite of owner services designed to maximise your return and minimise your stress.`}
+                    paragraph={`Al Enmaa Real Estate Co. has been managing rental properties for years. Our industry-specific experience and a wide range of processes and procedures meet the needs of property owners and help tenants receive excellent services.`}
                     bgColor={"#110B79"}
                     fontColor={"#FFFFFF"}
                     fontColor2={"#FFFFFF"}
@@ -28,11 +28,10 @@ export default function service1() {
                             <div className="row ">
                                 <div className="col-xl-7 space-betweeni col-lg-8">
                                     <div className="  mb-50 dev_gover ">
-                                        <span className="">What We Offer</span>
+                                        <span className="">Owner Services Excellence</span>
                                         <h2 className=" mt-4">
                                             {" "}
-                                            Al Enmaa's Comprehensive <br />
-                                            Services for Property Owners
+                                            Tailored Property Management <br/>Solutions in Kuwait
                                         </h2>
                                     </div>
                                     <div className="dev_customsize services__content-two mt-4">
@@ -60,7 +59,7 @@ export default function service1() {
                                                     aria-selected="true"
                                                 >
                                                     <i className="flaticon-travel-insurance" />
-                                                    Expert Property Management
+                                                    Industry Expertise
                                                 </button></Link>
                                             </li>
                                             <li className="nav-item" onClick={() => handleOnClick(2)}>
@@ -77,8 +76,7 @@ export default function service1() {
                                                     aria-selected="false"
                                                 >
                                                     <i className="flaticon-travel-insurance" />
-                                                    Streamlined Operations
-                                                </button></Link>
+                                                    Investment in Excellence  </button></Link>
                                             </li>
                                             <li className="nav-item" onClick={() => handleOnClick(3)}>
                                             <Link href="#dev-link-section" smooth> <button
@@ -94,10 +92,9 @@ export default function service1() {
                                                     aria-selected="false"
                                                 >
                                                     <i className="flaticon-travel-insurance" />
-                                                    Technology at Your Service
-                                                </button></Link>
+                                                    Exceptional Client Support                                                </button></Link>
                                             </li>
-                                            <li className="nav-item" onClick={() => handleOnClick(4)}>
+                                            {/* <li1 className="nav-item" onClick={() => handleOnClick(4)}>
                                                 <Link href="#dev-link-section" smooth><button
                                                     className={
                                                         activeIndex == 4 ? "nav-link active" : "nav-link"
@@ -113,7 +110,7 @@ export default function service1() {
                                                     <i className="flaticon-travel-insurance" />
                                                     Investing in Your Success
                                                 </button></Link>
-                                            </li>
+                                            </li1> */}
                                         </ul>
                                     </div>
                                 </div>
@@ -130,29 +127,20 @@ export default function service1() {
                                             aria-labelledby="health-tab"
                                             tabIndex={0}
                                         >
-                                            <div1 className="services__item-four shine-animate-item">
+                                            <div className="services__item-four shine-animate-item">
                                                 <div className="services__thumb-four shine-animate">
                                                     <img src="/assets/img/services/Tabpanel.jpg" alt="" />
                                                 </div>
                                                 <div className="services__content-four">
                                                     <h2 className="title">
                                                         <Link href="/services-details">
-                                                            Expert Property Management
-                                                        </Link>
+                                                        Industry Expertise  </Link>
                                                     </h2>
                                                     <p>
-                                                        Our team of experienced professionals takes care
-                                                        of every aspect of your rental property, allowing
-                                                        you to focus on what matters most. We handle tenant
-                                                        screening and selection to ensure you have
-                                                        responsible occupants in your property. We draft and
-                                                        manage lease agreements, ensuring your rights are
-                                                        protected and all terms are clearly outlined.
-                                                        Additionally, we take care of rent collection and
-                                                        manage any late payments efficiently.
+                                                    Al Enmaa Real Estate Co. brings years of specialized experience in managing rental properties, catering to the diverse needs of property owners. Our comprehensive processes and procedures ensure efficient management practices that enhance property value and tenant satisfaction. Whether it's residential, commercial, or mixed-use properties, we deliver tailored solutions that align with your investment goals.
                                                     </p>
                                                 </div>
-                                            </div1>
+                                            </div>
                                         </div>
                                         <div
                                             className={
@@ -174,16 +162,10 @@ export default function service1() {
                                                 </div>
                                                 <div className="services__content-four">
                                                     <h2 className="title">
-                                                        <Link href="/services-details">
-                                                        Streamlined Operations                                              </Link>
-                                                    </h2>
+                                                        <Link href="/services-details"></Link>
+                                                        Investment in Excellence                                                    </h2>
                                                     <p>
-                                                    We prioritize efficiency and transparency in everything we
-do. Our established processes and procedures ensure your property is well-maintained
-and any issues are addressed promptly. We handle routine maintenance requests and
-coordinate with qualified vendors for repairs when necessary. We also provide regular
-reports on the property's condition, occupancy rates, and income/expense details.
-                                                    
+                                                    Driven by a commitment to excellence, we have strategically invested in our human resources, technology infrastructure, and operational capabilities. These investments enable us to offer cutting-edge property management services in Kuwait. From advanced property management software to proactive maintenance strategies, we leverage innovation to optimize property performance and maximize returns for our clients.
                                                     </p>
                                                     
                                                   
@@ -211,17 +193,10 @@ reports on the property's condition, occupancy rates, and income/expense details
                                                 <div className="services__content-four">
                                                     <h2 className="title">
                                                         <Link href="/services-details">
-                                                        Technology at Your Service
-                                                        </Link>
+                                                        Exceptional Client Support</Link>
                                                     </h2>
                                                     <p>
-                                                    We leverage cutting-edge technology to enhance your
-experience as a property owner. Our secure system allows you to easily access property
-related services. We also offer a convenient online support for on-the-go access to
-information and communication with our team.<br/><br/>
-By partnering with Al Enmaa Real Estate, you gain peace of mind knowing your
-property is in good hands. We handle the day-to-day tasks efficiently, allowing you to
-enjoy the benefits of ownership without the hassle.
+                         At Al Enmaa Real Estate Co., client satisfaction is our priority. We provide personalized support and transparent communication throughout our partnership. Our dedicated team of property management professionals ensures that property owners receive timely financial reports, regular property inspections, and proactive tenant management solutions. Partner with us for peace of mind and a seamless property ownership experience in Kuwait.
 
                                                     </p>
                                                     
@@ -324,9 +299,9 @@ enjoy the benefits of ownership without the hassle.
                                 </div>
                             </div>
                             <div className="mt-5">
-                                <Sectionfoot />{" "}
                             </div>
                         </div>
+                            <div className=" container dev-bottom "><Sectionfoot /> </div>
                     </div>
                     <Bannerfooter />
                 </div>

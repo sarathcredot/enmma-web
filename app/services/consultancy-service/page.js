@@ -17,11 +17,7 @@ export default function service5() {
             <Layout headerStyle={6} footerStyle={3}>
                 <Banner1
                     title={"Consultancy Services"}
-                    paragraph={`The Kuwaiti real estate market offers a wealth of potential for investors, but navigating 
-                    its complexities can be challenging. At Al Enmaa Real Estate, we understand the 
-                    importance of informed decision-making. That's why we offer comprehensive real 
-                    estate consultancy services designed to empower you throughout your investment 
-                    journey.`}
+                    paragraph={`We offer real estate consultancy services to clients who would like to seek professional advice regarding investment in properties. We analyze markets, assess properties, and guide strategic decisions to maximize your investment returns.`}
                     bgColor={"#110B79"}
                     fontColor={"#FFFFFF"}
                     fontColor2={"#FFFFFF"}
@@ -32,11 +28,11 @@ export default function service5() {
                             <div className="row ">
                                 <div className="col-xl-7 space-betweeni col-lg-8">
                                     <div className="  mb-50 dev_gover ">
-                                        <span className="">What We Offer</span>
+                                        <span className="">Expert Real Estate Consultancy</span>
                                         <h2 className=" mt-4">
                                             {" "}
-                                            Al Enmaa's Comprehensive <br />
-                                            Services for Property Owners
+                                            Professional Guidance for Smart
+                                            <br/> Property Investments
                                         </h2>
                                     </div>
                                     <div className="dev_customsize services__content-two mt-4">
@@ -64,8 +60,7 @@ export default function service5() {
                                                     aria-selected="true"
                                                 >
                                                     <i className="flaticon-travel-insurance" />
-                                                    Unparalleled Market Expertise
-                                                </button></Link>
+                                                    Tailored Investment Advice                                                </button></Link>
                                             </li>
                                             <li className="nav-item" onClick={() => handleOnClick(2)}>
                                             <Link href="#dev-link-section" smooth> <button
@@ -81,8 +76,7 @@ export default function service5() {
                                                     aria-selected="false"
                                                 >
                                                     <i className="flaticon-travel-insurance" />
-                                                    Strategic Investment Guidance
-                                                </button></Link>
+                                                    Market Insights and Analysis                                                </button></Link>
                                             </li>
                                             <li className="nav-item" onClick={() => handleOnClick(3)}>
                                             <Link href="#dev-link-section" smooth> <button
@@ -98,8 +92,7 @@ export default function service5() {
                                                     aria-selected="false"
                                                 >
                                                     <i className="flaticon-travel-insurance" />
-                                                    Seamless Transaction Support
-                                                </button></Link>
+                                                    Strategic Investment Planning                                                </button></Link>
                                             </li>
 
                                         </ul>
@@ -125,16 +118,11 @@ export default function service5() {
                                                 <div className="services__content-four">
                                                     <h2 className="title">
                                                         <Link href="/services-details">
-                                                        Unparalleled Market Expertise
-                                                        </Link>
+                                                        Tailored Investment Advice                                                        </Link>
                                                     </h2>
                                                     <p>
-                                                    Our team of experienced consultants possesses a 
-deep understanding of the Kuwaiti real estate landscape. Through continuous research 
-and analysis, we stay current on market trends, emerging opportunities, and potential 
-risks. We leverage this expertise to provide you with insightful market reports, property 
-valuations, and investment forecasts, enabling you to make informed decisions based on 
-the latest market conditions
+                                                    At Al Enmaa Real Estate Co., we provide personalized real estate consultancy services to clients seeking professional advice on property investments. Our expert consultants take the time to understand your unique financial goals and investment preferences, offering tailored advice that aligns with your objectives. Whether you're a first-time investor or looking to expand your portfolio, we ensure you make informed decisions.
+                                                    
                                                     </p>
                                                 </div>
                                             </div1>
@@ -160,16 +148,10 @@ the latest market conditions
                                                 <div className="services__content-four">
                                                     <h2 className="title">
                                                         <Link href="/services-details">
-                                                        Strategic Investment Guidance                              </Link>
+                                                        Market Insights and Analysis                             </Link>
                                                     </h2>
                                                     <p>
-                                                    Our services extend beyond simply providing data. 
-We work closely with you to understand your unique investment goals, risk tolerance, 
-and financial objectives. Based on this in-depth understanding, we develop personalized 
-investment strategies that align with your specific needs. Whether you're a seasoned 
-investor seeking high-yield opportunities or a first-time investor seeking guidance on 
-building a property portfolio, our consultants offer tailored advice to help you achieve 
-your investment goals
+                                                    Our consultancy services are backed by comprehensive market insights and in-depth analysis. We keep a close watch on market trends, property values, and investment opportunities to provide you with accurate and up-to-date information. This strategic approach helps you identify lucrative investment prospects and mitigate risks, maximizing the potential returns on your real estate investments.
                                                     
                                                     </p>
                                                     
@@ -198,20 +180,10 @@ your investment goals
                                                 <div className="services__content-four">
                                                     <h2 className="title">
                                                         <Link href="/services-details">
-                                                        Seamless Transaction Support
-                                                        </Link>
+                                                        Strategic Investment Planning                                                        </Link>
                                                     </h2>
                                                     <p>
-                                                    : Our commitment to service doesn't stop at investment 
-planning. We provide ongoing support throughout the entire transaction process. Our 
-consultants can assist with property due diligence, negotiation of terms, and legal 
-documentation. We also maintain a network of trusted professionals, including lawyers, 
-mortgage brokers, and property managers, to ensure you have access to the necessary 
-expertise at every step of the way.<br/><br/>
-By partnering with Al Enmaa Real Estate for your real estate consultancy needs, you 
-gain access to a wealth of knowledge, strategic guidance, and ongoing support. We 
-empower you to make informed investment decisions with confidence, maximizing your 
-potential for success in the dynamic Kuwaiti real estate market.
+                                                    Planning your property investments strategically is crucial for long-term success. At Al Enmaa Real Estate Co., our consultants work closely with you to develop a customized investment plan that considers your financial situation, risk tolerance, and future goals. We provide continuous support and guidance, ensuring your investment strategy remains on track and adapts to market changes, helping you achieve sustainable growth and profitability.
 
                                                     </p>
                                                     
@@ -224,9 +196,9 @@ potential for success in the dynamic Kuwaiti real estate market.
                                 </div>
                             </div>
                             <div className="mt-5">
-                                <Sectionfoot />{" "}
                             </div>
                         </div>
+                            <div className=" container dev-bottom "><Sectionfoot /> </div>
                     </div>
                     <Bannerfooter />
                 </div>
