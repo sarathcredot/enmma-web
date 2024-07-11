@@ -36,10 +36,10 @@ export default function About() {
                                 </div>
                                 <div1 className="col-lg-6">
                                     <div className="about__content-four">
-                                        <div className="section-title mb-30">
+                                        {/* <div className="section-title mb-30">
                                             <span className="sub-title">Lorem ipsum dolor sit amet consectetur. Orci </span>
                                             <h2 className="title">Lorem ipsum dolor sit amet congue ornare elit </h2>
-                                        </div>
+                                        </div> */}
                                         {/* <div1 className="about__content-inner-three">
                                             <div className="about__list-box">
                                                 <ul className="list-wrap">

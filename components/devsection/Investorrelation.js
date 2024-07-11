@@ -8,10 +8,10 @@ export default function Contact() {
                     <div className="row ">
                     <div className="col-xl-7 space-betweeni col-lg-8">
                         <div  className="  mb-50 dev_gover " >
-                            <span className="">Lorem ipsum dolor sit a</span>
-                            <h2 className=" mt-4" style={{ color: '#110B79' }}>lorem ipsum dolor sit amet <br />congue ornare elit</h2>
+                            <span className="">Investor Support Center</span>
+                            <h2 className=" mt-4" style={{ color: '#110B79' }}>Connecting Investors<br/>with Insights</h2>
                         </div>
-                            <div className="dev_customsize mt-4" style={{ color: '#282739' }}>Lorem ipsum dolor sit amet consectetur. Mus et rhoncus pretium euismod pellentesque. Consectetur lacus enim eleifend vitae nibh sem</div>
+                            <div className="dev_customsize mt-4" style={{ color: '#282739' }}>Access our investor relations team through our contact form. We're here to provide timely responses to your inquiries.</div>
                     </div>
       <div className="container">
         <div className="row">

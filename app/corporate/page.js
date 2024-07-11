@@ -15,7 +15,10 @@ export default function corporate() {
     return (
         <>
             <Layout headerStyle={6} footerStyle={3}>
-                <Banner1 title={'Corporate Governance'} paragraph={'Lorem ipsum dolor sit amet consectetur. Mus et rhoncus pretium euismod pellentesque. Consectetur lacus enim eleifend vitae nibh sem.lacus enim eleifend vitae nibh sem it amet consectetur.'} bgColor={"#110B79"} fontColor={"#FFFFFF"} fontColor2={'#FFFFFF'} />
+                <Banner1 title={'Corporate Governance'} paragraph={`Discover Al Enmaa Real Estate Co.'s commitment to governance and 
+ethics. Our practices ensure transparency, accountability, and ethical 
+leadership, reinforcing our dedication to maintaining the highest 
+standards across all aspects of our operations.`} bgColor={"#110B79"} fontColor={"#FFFFFF"} fontColor2={'#FFFFFF'} />
                 <div >
                     <div className=" " style={{ backgroundColor: '#110B79' }} >
 
@@ -23,10 +26,12 @@ export default function corporate() {
                             <div className="row ">
                                 <div className="col-xl-7 space-betweeni col-lg-8">
                                     <div className="  mb-50 dev_gover ">
-                                        <span className="">Lorem ipsum dolor sit a</span>
-                                        <h2 className=" mt-4">lorem ipsum dolor sit amet <br />congue ornare elit</h2>
+                                        <span className="">Governance and Ethics</span>
+                                        <h2 className=" mt-4">Commitment to Ethical<br /> Leadership </h2>
                                     </div>
-                                    <div className="dev_customsize mt-4">Lorem ipsum dolor sit amet consectetur. Mus et rhoncus pretium euismod pellentesque. Consectetur lacus enim eleifend vitae nibh sem</div>
+                                    <div className="dev_customsize mt-4">Explore our governance practices, ensuring transparency, accountability, 
+and ethical leadership. Al Enmaa Real Estate Co. upholds the highest 
+standards in all operations.</div>
                                 </div>
                             </div>
                             <div className=" row">

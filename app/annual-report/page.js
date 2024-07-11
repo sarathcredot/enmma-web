@@ -12,7 +12,10 @@ export default function Home2() {
     return (
         <>
             <Layout headerStyle={6} footerStyle={3}>
-            <Banner1  title={'Annual report'} paragraph={'Lorem ipsum dolor sit amet consectetur. Mus et rhoncus pretium euismod pellentesque. Consectetur lacus enim eleifend vitae nibh sem.lacus enim eleifend vitae nibh sem it amet consectetur.'} />
+            <Banner1  title={'Annual report'} paragraph={`Explore Al Enmaa Real Estate Co.'s yearly performance reports, offering 
+detailed insights into our financial performance, key achievements, and 
+strategic initiatives. Stay updated on our annual progress and 
+commitment to excellence in the real estate sector.`} />
              <Annualreport/>
             <Bannerfooter/>
             </Layout>

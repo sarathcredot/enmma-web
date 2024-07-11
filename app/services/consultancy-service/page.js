@@ -47,7 +47,7 @@ export default function service5() {
                                     <div className="services__tab-wrap">
                                         <ul className="nav nav-tabs" id="myTab" role="tablist">
                                             <li className="nav-item" onClick={() => handleOnClick(1)}>
-                                            <Link href="#dev-link-section" smooth><button
+                                            <Link href="#focus-service" smooth><button
                                                     className={
                                                         activeIndex == 1 ? "nav-link active" : "nav-link"
                                                     }
@@ -63,7 +63,7 @@ export default function service5() {
                                                     Tailored Investment Advice                                                </button></Link>
                                             </li>
                                             <li className="nav-item" onClick={() => handleOnClick(2)}>
-                                            <Link href="#dev-link-section" smooth> <button
+                                            <Link href="#focus-service" smooth> <button
                                                     className={
                                                         activeIndex == 2 ? "nav-link active" : "nav-link"
                                                     }
@@ -79,7 +79,7 @@ export default function service5() {
                                                     Market Insights and Analysis                                                </button></Link>
                                             </li>
                                             <li className="nav-item" onClick={() => handleOnClick(3)}>
-                                            <Link href="#dev-link-section" smooth> <button
+                                            <Link href="#focus-service" smooth> <button
                                                     className={
                                                         activeIndex == 3 ? "nav-link active" : "nav-link"
                                                     }
@@ -98,7 +98,7 @@ export default function service5() {
                                         </ul>
                                     </div>
                                 </div>
-                                <div className="col-md-6" id="dev-link-section">
+                                <div className="col-md-6" id="focus-service">
                                     <div className="tab-content" id="myTabContent">
                                         <div
                                             className={

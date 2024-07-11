@@ -7,10 +7,12 @@ export default function Annualreport() {
                     <div className="row ">
                     <div className="col-xl-7 space-betweeni col-lg-8">
                         <div  className="  mb-50 dev_gover " >
-                            <span className="">Lorem ipsum dolor sit a</span>
-                            <h2 className=" mt-4" style={{ color: '#110B79' }}>lorem ipsum dolor sit amet <br />congue ornare elit</h2>
+                            <span className="">Yearly Performance Reports</span>
+                            <h2 className=" mt-4" style={{ color: '#110B79' }}>Insights into Our Annual<br/> Achievements</h2>
                         </div>
-                            <div className="dev_customsize mt-4" style={{ color: '#282739' }}>Lorem ipsum dolor sit amet consectetur. Mus et rhoncus pretium euismod pellentesque. Consectetur lacus enim eleifend vitae nibh sem</div>
+                            <div className="dev_customsize mt-4" style={{ color: '#282739' }}>Access comprehensive reports detailing our financial performance, 
+achievements, and strategic initiatives. Stay informed about Al Enmaa 
+Real Estate Co.'s yearly progress and growth</div>
                     </div>
              
  </div>

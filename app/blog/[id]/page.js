@@ -20,7 +20,7 @@ export default function BlogDetails() {
     return (
         <>
             <Layout headerStyle={6} footerStyle={3}>
-            <Banner1  title={'Blogs details'} paragraph={'Lorem ipsum dolor sit amet consectetur. Mus et rhoncus pretium euismod pellentesque. Consectetur lacus enim eleifend vitae nibh sem.lacus enim eleifend vitae nibh sem it amet consectetur.'} />
+            <Banner1  title={'Blogs details'} paragraph={`Discover our latest updates and insightful articles. Stay informed with industry trends, tips, and company news. Explore a variety of topics, from real estate trends to market analyses and community updates.`} />
                 {blogPost && (
                     <>
                         <div>

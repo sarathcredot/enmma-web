@@ -9,10 +9,10 @@ export default function Careerform() {
                 <div className="row ">
                     <div className="col-xl-7 space-betweeni col-lg-8">
                         <div className="  mb-50 dev_gover ">
-                            <span className="">Lorem ipsum dolor sit a</span>
-                            <h2 className=" mt-4">lorem ipsum dolor sit amet <br />congue ornare elit</h2>
+                            <span className="">Join Our Team</span>
+                            <h2 className=" mt-4">Explore Career Opportunities</h2>
                         </div>
-                        <div className="dev_customsize mt-4">Lorem ipsum dolor sit amet consectetur. Mus et rhoncus pretium euismod pellentesque. Consectetur lacus enim eleifend vitae nibh sem</div>
+                        <div className="dev_customsize mt-4">Submit your details and attach your CV to apply for exciting career opportunities at Al Enmaa Real Estate Co.</div>
                     </div>
                 </div>
                 <div className="contact__form-wrap">

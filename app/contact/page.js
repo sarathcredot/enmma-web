@@ -6,7 +6,7 @@ export default function Contact() {
     return (
         <>
             <Layout headerStyle={6} footerStyle={3} >
-            <Banner2  title={'Contact Us'} paragraph={'Lorem ipsum dolor sit amet consectetur. Mus et rhoncus pretium euismod pellentesque. Consectetur lacus enim eleifend vitae nibh sem.lacus enim eleifend vitae nibh sem it amet consectetur.'} />
+            <Banner2  title={'Contact Us'} paragraph={`Get in touch with us today for any inquiries or assistance you may need. Our team is here to support you every step of the way.`} />
                 <div>
                     <section className="contact__area">
                         <div className="container">
@@ -16,7 +16,7 @@ export default function Contact() {
                                     <div className="contact__content">
                                         <div className="section-title mb-35">
                                             <h2 className="title">How can we help you?</h2>
-                                            <p>Lorem ipsum dolor sit amet consectetur. Pellentesque ornare ipsum ultrices lacus. Quisque tortor accumsan ut pellentesque </p>
+                                            <p>Reach out to us with any questions or requirements you have. We're committed to providing prompt and helpful service. </p>
                                         </div>
                                         <div className="contact__info">
                                             <ul className="list-wrap">
