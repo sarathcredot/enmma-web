@@ -21,6 +21,7 @@ export default function Menu() {
 
                 <li className="menu-item-has-children"><Link href="/about">About</Link>
                     <ul className="sub-menu">
+                    <li><Link href="/about"  >Our Story</Link></li>
                         <li><Link href="/our-team/#director"  >Board Of Directors</Link></li>
                         <li><Link href="/our-team/#management">Management</Link></li>
                         <li><Link href="/our-team/#executive">Executive </Link></li>
@@ -46,7 +47,7 @@ export default function Menu() {
                         <li><Link href="/#-details-5">Service Details Five</Link></li> */}
                     </ul>
                 </li>
-                <li className="menu-item-has-children"><Link href="#">Info center </Link>
+                <li className="menu-item-has-children"><Link href="#">Info. center </Link>
                     <ul className="sub-menu">
                         <li><Link href="/blog">Latest News</Link></li>
                         <li><Link href="/careers">Careers</Link></li>
