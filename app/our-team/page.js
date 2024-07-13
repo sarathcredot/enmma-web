@@ -229,7 +229,7 @@ export default function About3() {
                             <span className="sub-title">Executive Management</span>
                             <h2 className="title tg-element-title mt-4">Leading with Vision  <br/>and Expertise</h2>
                         </div>
-                            <div className="dev_customsize mt-4"style={{color:'#282739'}}>The Executive Management team at Al Enmaa Real Estate Co. is at the forefront of our strategic direction and operational excellence. Comprised of experienced executives with deep industry knowledge, they steer the company towards sustainable growth and innovation.</div>
+                            <div className="dev_customsize mt-4"style={{color:'#282739'}}>The Executive Management team at Al Enmaa Real Estate Co. is at the forefront of our strategic direction and operational excellence.</div>
                     </div>
                 </div>
                         <div className="team-item-wrap">
