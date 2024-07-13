@@ -251,20 +251,7 @@ export default function About3() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-xl-3 col-lg-4 col-md-6 col-sm-8">
-                                    <div className="team-item">
-                                        <div className="team-thumb">
-                                            <img src="/assets/img/team/team_img02.jpg" alt="" />
-                                            <div className="team-social">
-                                                {/* <SocialToggle/> */}
-                                            </div>
-                                        </div>
-                                        <div  className="team-content">
-                                            <h4 className="title"><Link href="/team-details">MR. Abdul Mohsen Hamad Al Hamd</Link></h4>
-                                            <span>Board Member</span>
-                                        </div>
-                                    </div>
-                                </div>
+                                
                                 
                                 <div className="col-xl-3 col-lg-4 col-md-6 col-sm-8">
                                     <div className="team-item">
@@ -294,7 +281,20 @@ export default function About3() {
                                         </div>
                                     </div>
                                 </div>
-                                
+                                <div className="col-xl-3 col-lg-4 col-md-6 col-sm-8">
+                                    <div className="team-item">
+                                        <div className="team-thumb">
+                                            <img src="/assets/img/team/team_img02.jpg" alt="" />
+                                            <div className="team-social">
+                                                {/* <SocialToggle/> */}
+                                            </div>
+                                        </div>
+                                        <div  className="team-content">
+                                            <h4 className="title"><Link href="/team-details">MR. Abdul Mohsen Hamad Al Hamd</Link></h4>
+                                            <span>Board Member</span>
+                                        </div>
+                                    </div>
+                                </div>
                                 
                             </div>
                         </div>
