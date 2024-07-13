@@ -41,20 +41,7 @@ export default function About3() {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-8">
-                                        <div className="team-item">
-                                            <div className="team-thumb">
-                                                <img src="/assets/img/team/team_img02.jpg" alt="" />
-                                                <div className="team-social">
-                                                    {/* <SocialToggle/> */}
-                                                </div>
-                                            </div>
-                                            <div className="team-content">
-                                                <h4 className="title"><Link href="/team-details">MR. Abdul Mohsen Hamad Al Hamd</Link></h4>
-                                                <span>Board Member</span>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    
                                     
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-8">
                                         <div className="team-item">
@@ -80,6 +67,20 @@ export default function About3() {
                                             </div>
                                             <div className="team-content">
                                                 <h4 className="title"><Link href="/team-details">MR. Ahmad Abdulmohsen Alfarhan</Link></h4>
+                                                <span>Board Member</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-8">
+                                        <div className="team-item">
+                                            <div className="team-thumb">
+                                                <img src="/assets/img/team/team_img02.jpg" alt="" />
+                                                <div className="team-social">
+                                                    {/* <SocialToggle/> */}
+                                                </div>
+                                            </div>
+                                            <div className="team-content">
+                                                <h4 className="title"><Link href="/team-details">MR. Abdul Mohsen Hamad Al Hamd</Link></h4>
                                                 <span>Board Member</span>
                                             </div>
                                         </div>
@@ -177,31 +178,32 @@ export default function About3() {
                                 <div className="col-xl-3 col-lg-4 col-md-6 col-sm-8">
                                     <div className="team-item">
                                         <div className="team-thumb">
-                                            <img src="/assets/img/team/team2_img04.jpg" alt="" />
-                                            <div className="team-social">
-                                                {/* <SocialToggle/> */}
-                                            </div>
-                                        </div>
-                                        <div className="team-content">
-                                            <h4 className="title"><Link href="/team-details">MR. Ayman badway</Link></h4>
-                                            <span> manager</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-xl-3 col-lg-4 col-md-6 col-sm-8">
-                                    <div className="team-item">
-                                        <div className="team-thumb">
                                             <img src="/assets/img/team/team2_img05.jpg" alt="" />
                                             <div className="team-social">
                                                 {/* <SocialToggle/> */}
                                             </div>
                                         </div>
                                         <div className="team-content">
-                                            <h4 className="title"><Link href="/team-details">MR. Mohamed Ibrahim Eel Metennawi</Link></h4>
+                                            <h4 className="title"><Link href="/team-details">MR. Mohamed Ibrahim Eel Meten</Link></h4>
                                             <span>Chief Financial Officer</span>
                                         </div>
                                     </div>
                                 </div>
+                                <div className="col-xl-3 col-lg-4 col-md-6 col-sm-8">
+                                    <div className="team-item">
+                                        <div className="team-thumb">
+                                            <img src="/assets/img/team/team2_img04.jpg" alt="" />
+                                            <div className="team-social">
+                                                {/* <SocialToggle/> */}
+                                            </div>
+                                        </div>
+                                        <div className="team-content">
+                                            <h4 className="title"><Link href="/team-details">MR. Ayman badawy</Link></h4>
+                                            <span> manager</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
                                 <div className="col-xl-3 col-lg-4 col-md-6 col-sm-8">
                                     <div className="team-item">
                                         <div className="team-thumb">
