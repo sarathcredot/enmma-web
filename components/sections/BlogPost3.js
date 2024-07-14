@@ -17,7 +17,7 @@ export default function BlogPost3() {
                         <div className="col-lg-4 col-md-6">
                             <div className="blog__post-two">
                                 <div className="blog__post-thumb-two">
-                                    <Link href="/blog-details"><img src="/assets/img/blog/h2_blog_post038.jpg" alt="" /></Link>
+                                    <Link href="/"><img src="/assets/img/blog/h2_blog_post038.jpg" alt="" /></Link>
                                 </div>
                                 <div className="blog__post-content-two">
                                     <div className="blog-post-meta">
@@ -28,11 +28,11 @@ export default function BlogPost3() {
                                             <li><i className="fas fa-calendar-alt" />Oct 21, 2024</li>
                                         </ul>
                                     </div>
-                                    <h2 className="title"><Link href="/blog-details">Planned Gulf real estate project value rises to $1.7 trillion; analysts Identify trends and opportunities for Investors In 2024.</Link></h2>
+                                    <h2 className="title"><Link href="/">Planned Gulf real estate project value rises to $1.7 trillion; analysts Identify trends and opportunities for Investors In 2024.</Link></h2>
                                     <div className="blog-avatar">
                                         
                                         <div className="avatar-content">
-                                            <p> <Link href="/blog-details">Read More</Link></p>
+                                            <p> <Link href="/">Read More</Link></p>
                                         </div>
                                     </div>
                                 </div>
@@ -41,7 +41,7 @@ export default function BlogPost3() {
                         <div className="col-lg-4 col-md-6">
                             <div className="blog__post-two">
                                 <div className="blog__post-thumb-two">
-                                    <Link href="/blog-details"><img src="/assets/img/blog/h2_blog_post039.jpg" alt="" /></Link>
+                                    <Link href="/"><img src="/assets/img/blog/h2_blog_post039.jpg" alt="" /></Link>
                                 </div>
                                 <div className="blog__post-content-two">
                                     <div className="blog-post-meta">
@@ -52,11 +52,11 @@ export default function BlogPost3() {
                                             <li><i className="fas fa-calendar-alt" />Oct 21, 2024</li>
                                         </ul>
                                     </div>
-                                    <h2 className="title"><Link href="/blog-details">Markaz report forecasts UAE, Saudi and Kuwait real estate growth and trends In 2024.</Link></h2>
+                                    <h2 className="title"><Link href="/">Markaz report forecasts UAE, Saudi and Kuwait real estate growth and trends In 2024.</Link></h2>
                                     <div className="blog-avatar">
                                         
                                         <div className="avatar-content">
-                                            <p> <Link href="/#blog-details">Read More</Link></p>
+                                            <p> <Link href="/#">Read More</Link></p>
                                         </div>
                                     </div>
                                 </div>
@@ -65,7 +65,7 @@ export default function BlogPost3() {
                         <div className="col-lg-4 col-md-6">
                             <div className="blog__post-two">
                                 <div className="blog__post-thumb-two">
-                                    <Link href="/blog-details"><img src="/assets/img/blog/h2_blog_post0310.jpg" alt="" /></Link>
+                                    <Link href="/"><img src="/assets/img/blog/h2_blog_post0310.jpg" alt="" /></Link>
                                 </div>
                                 <div className="blog__post-content-two">
                                     <div className="blog-post-meta">
@@ -76,11 +76,11 @@ export default function BlogPost3() {
                                             <li><i className="fas fa-calendar-alt" />Oct 21, 2024</li>
                                         </ul>
                                     </div>
-                                    <h2 className="title"><Link href="/blog-details">Rental rates will continue to grow across Kuwait's commercial real estate market In 2023 and 2024, albelt fairly slowly.</Link></h2>
+                                    <h2 className="title"><Link href="/">Rental rates will continue to grow across Kuwait's commercial real estate market In 2023 and 2024, albelt fairly slowly.</Link></h2>
                                     <div className="blog-avatar">
                                         
                                         <div className="avatar-content">
-                                            <p> <Link href="/blog-details">Read More</Link></p>
+                                            <p> <Link href="/">Read More</Link></p>
                                         </div>
                                     </div>
                                 </div>
