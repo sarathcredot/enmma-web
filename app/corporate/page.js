@@ -27,7 +27,7 @@ standards across all aspects of our operations.`} bgColor={"#110B79"} fontColor=
                                 <div className="col-xl-7 space-betweeni col-lg-8">
                                     <div className="  mb-50 dev_gover ">
                                         <span className="">Governance and Ethics</span>
-                                        <h2 className=" mt-4">lCommitment to Ethical<br /> Leadership </h2>
+                                        <h2 className=" mt-4">Commitment to Ethical<br /> Leadership </h2>
                                     </div>
                                     <div className="dev_customsize mt-4">Explore our governance practices, ensuring transparency, accountability, 
 and ethical leadership. Al Enmaa Real Estate Co. upholds the highest 
