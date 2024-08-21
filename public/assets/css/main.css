@@ -10554,7 +10554,7 @@ text-align: left;
   border-radius: 15px;
   border: 1px solid var(--tg-border-1);
   margin-bottom: 30px;
-  height: 400px;
+  min-height: 400px;
 
   
 }
