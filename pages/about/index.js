@@ -85,13 +85,13 @@ export default function About({ initialData, pageTitle,pageDescription, }) {
       <div className="row align-items-center justify-content-center">
         <div className="col-lg-6 col-md-9 col-sm-10">
           <div className="about__img-wrap-four">
-            <img src={`${process.env.NEXT_PUBLIC_MEDIA_BASE_URL}${item.bannerImage}`} alt="" />
-            <img src={`${process.env.NEXT_PUBLIC_MEDIA_BASE_URL}${item.bannerImage}`} alt="" />
+            <img src={`${process.env.NEXT_PUBLIC_MEDIA_BASE_URL}${item.bannerImage}`} width={500} height={500} alt="" />
+            <img src={`${process.env.NEXT_PUBLIC_MEDIA_BASE_URL}${item.bannerImage}`}width={300} height={100}  alt="" />
             <div className="about__award-box">
               <div className="icon">
                 <i className="flaticon-time" />
               </div>
-              <div className="content">
+              <div className="content" style={{position: 'relative',zIndex: '4'}}>
                 <h2 className="title">30+</h2>
                 <p>Years of Experiences <br />Property management  <br />& Investment</p>
               </div>

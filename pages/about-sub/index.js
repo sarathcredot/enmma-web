@@ -62,6 +62,8 @@ export default function About3({ initialData, teamMembersData,pageDescription,pa
             buttonTitle: item[`buttonTitle_${i18n.language}`] || item.buttonTitle_en,
             localizedIcondata,
             points: i18n.language === "ar" ? localizedPointsAr : localizedPointsEn,
+            name: i18n.language === "ar" ? item.name_ar : item.name_en,
+            position: i18n.language === "ar" ? item.position_ar : item.position_en,
             buttonLink: item.buttonLink || "#",
         };
     });
@@ -86,7 +88,7 @@ export default function About3({ initialData, teamMembersData,pageDescription,pa
                                     <div className="col-xl-7 space-betweeni col-lg-8">
                                         <div className="section-title  mb-50 tg-heading-subheading animation-style3">
                                             <span className="sub-title">{item.subtitle}</span>
-                                            <h2 className="title tg-element-title mt-4 w-200">
+                                            <h2 className="title tg-element-title w-75 mt-4 w-200">
                                                 {item.title}
                                             </h2>
                                         </div>
@@ -105,7 +107,7 @@ export default function About3({ initialData, teamMembersData,pageDescription,pa
                                             ? teamMembers.teamMembers.find((member) => member._id === id)
                                             : null;
                                             
-                                            
+
 
                                             return teamData ? (
                                                 <div
@@ -144,7 +146,7 @@ export default function About3({ initialData, teamMembersData,pageDescription,pa
                                     <div className="col-xl-7 space-betweeni col-lg-8">
                                         <div className="section-title  mb-50 tg-heading-subheading animation-style3">
                                             <span className="sub-title">{item.subtitle}</span>
-                                            <h2 className="title tg-element-title mt-4">
+                                            <h2 className="title tg-element-title w-75 mt-4">
                                                 {item.title}
                                             </h2>
                                         </div>
@@ -159,7 +161,7 @@ export default function About3({ initialData, teamMembersData,pageDescription,pa
                                 <div className="team-item-wrap">
                                     <div className="row justify-content-center">
                                         {item.choicesTeam.map((id) => {
-                                            const teamData = Array.isArray(teamMembers.teamMembers)
+                                            const teamData = Array.isArray(teamMembers)
                                                 ? teamMembers.teamMembers.find((member) => member._id === id)
                                                 : null;
 
@@ -200,7 +202,7 @@ export default function About3({ initialData, teamMembersData,pageDescription,pa
                                     <div className="col-xl-7 space-betweeni col-lg-8">
                                         <div className="section-title  mb-50 tg-heading-subheading animation-style3">
                                             <span className="sub-title">{item.subtitle}</span>
-                                            <h2 className="title tg-element-title mt-4">
+                                            <h2 className="title tg-element-title w-75 mt-4">
                                                 {item.title}
                                             </h2>
                                         </div>

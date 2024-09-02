@@ -8,9 +8,10 @@ export default function Counter2({data}) {
                     <div className="row justify-content-center">
                         {data.map((item) => (
 
-                            <div className="row justify-content-center">
-
-                                <div className=" d-flex gap-4">
+                            
+                    <div className="row flex-wrap">
+            
+                    <div className=" d-flex gap-4 justify-content-center justify-content-md-between align-items-center flex-wrap">
                                     {Object.keys(item.localizedIcondata).map(iconKey => (
 
                                         <div className="counter-item">
