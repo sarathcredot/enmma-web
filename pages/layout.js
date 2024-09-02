@@ -1,19 +1,8 @@
-"use client"
-import { appWithTranslation } from 'next-i18next';
+import { appWithTranslation, useTranslation } from 'next-i18next';
 import { useEffect } from 'react';
-import { i18n } from 'next-i18next';
-
 import { Inter, Outfit } from 'next/font/google';
-import '/public/assets/css/animate.min.css';
-import '/public/assets/css/bootstrap.min.css';
-import '/public/assets/css/flaticon.css';
-import '/public/assets/css/fontawesome-all.min.css';
-import '/public/assets/css/magnific-popup.css';
-import '/public/assets/css/odometer.css';
-import '/public/assets/css/swiper-bundle.css';
-import '/public/assets/css/aos.css';
-import '/public/assets/css/default.css';
-import '/public/assets/css/main.css';
+
+
 
 const inter = Inter({
   weight: ['300', '400', '500', '600', '700'],
@@ -21,6 +10,7 @@ const inter = Inter({
   variable: '--tg-body-font-family',
   display: 'swap',
 });
+
 const outfit = Outfit({
   weight: ['400', '500', '600', '700', '800', '900'],
   subsets: ['latin'],
@@ -28,15 +18,17 @@ const outfit = Outfit({
   display: 'swap',
 });
 
-
 function RootLayout({ children }) {
+  const { i18n } = useTranslation();
+
   useEffect(() => {
     document.documentElement.lang = i18n.language;
+    document.documentElement.setAttribute('dir', i18n.language === 'ar' ? 'rtl' : 'ltr');
   }, [i18n.language]);
 
   return (
-    <html lang={i18n.language}>
-      <body>
+    <html lang={i18n.language} dir={i18n.language === 'ar' ? 'rtl' : 'ltr'}>
+      <body className={`${inter.variable} ${outfit.variable}`}>
         {children}
       </body>
     </html>
