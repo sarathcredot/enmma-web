@@ -33,7 +33,7 @@ export default function TestimonialActiveTwoSlider() {
                             <i className="fas fa-star" />
                         </div>
                         <p>“ Morem ipsum dolor sit amet, consectetur adipiscing elita florai sum dolor sit amet, consecteture.Borem ipsum dolor sit amet, consectetur adipiscing elita Moremsit amet.</p>
-                        {/* <div1 className="testimonial__bottom">
+                        <div className="testimonial__bottom">
                             <div className="testimonial__info-three">
                                 <h4 className="title">Mr.Robey Alexa</h4>
                                 <span>CEO, Moie Agency</span>
@@ -41,7 +41,7 @@ export default function TestimonialActiveTwoSlider() {
                             <div className="testimonial__icon">
                                 <img src="/assets/img/icon/quote02.svg" alt="" />
                             </div>
-                        </div1> */}
+                        </div>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
@@ -55,10 +55,10 @@ export default function TestimonialActiveTwoSlider() {
                         </div>
                         <p>“ Morem ipsum dolor sit amet, consectetur adipiscing elita florai sum dolor sit amet, consecteture.Borem ipsum dolor sit amet, consectetur adipiscing elita Moremsit amet.</p>
                         <div className="testimonial__bottom">
-                            {/* <div className="testimonial__info-three">
-                                <h4 className="title"></h4>
-                                <span>JAKS Shans</span>
-                            </div> */}
+                            <div className="testimonial__info-three">
+                                <h4 className="title">Kristin Watson</h4>
+                                <span>CEO,JAKS Shans</span>
+                            </div>
                             <div className="testimonial__icon">
                                 <img src="/assets/img/icon/quote02.svg" alt="" />
                             </div>
@@ -66,10 +66,10 @@ export default function TestimonialActiveTwoSlider() {
                     </div>
                 </SwiperSlide>
             </Swiper>
-            {/* <div className="testimonial__nav-two">
+            <div className="testimonial__nav-two">
                 <div className="testimonial-button-prev"><i className="flaticon-right-arrow" /></div>
                 <div className="testimonial-button-next"><i className="flaticon-right-arrow" /></div>
-            </div> */}
+            </div>
         </>
     )
 }
