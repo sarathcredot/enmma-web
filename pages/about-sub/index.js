@@ -102,8 +102,10 @@ export default function About3({ initialData, teamMembersData,pageDescription,pa
                                     <div className="row justify-content-center">
                                         {item.choicesTeam.map((id) => {
                                             const teamData = Array.isArray(teamMembers.teamMembers)
-                                                ? teamMembers.teamMembers.find((member) => member._id === id)
-                                                : null;
+                                            ? teamMembers.teamMembers.find((member) => member._id === id)
+                                            : null;
+                                            
+                                            
 
                                             return teamData ? (
                                                 <div
