@@ -36,10 +36,10 @@ export default function About5() {
                                     </div>
                                     <div className="about__list-box">
                                         <ul className="list-wrap">
-                                            <li><i className="flaticon-arrow-button" />Medicare Advantage Plans</li>
-                                            <li><i className="flaticon-arrow-button" />Analysis  Research</li>
-                                            <li><i className="flaticon-arrow-button" />100% Secure Money Back</li>
-                                            <li><i className="flaticon-arrow-button" />100% Money Growth</li>
+                                            <li><i className="fa icon-arrow" />Medicare Advantage Plans</li>
+                                            <li><i className="fa icon-arrow" />Analysis  Research</li>
+                                            <li><i className="fa icon-arrow" />100% Secure Money Back</li>
+                                            <li><i className="fa icon-arrow" />100% Money Growth</li>
                                         </ul>
                                     </div>
                                 </div>

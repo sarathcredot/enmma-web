@@ -2,7 +2,9 @@ import Link from "next/link"
 import Menu from "../Menu"
 import MobileMenu from "../MobileMenu"
 import SVG from "../../elements/Allsvg"
+import { useTranslation } from 'next-i18next';
 export default function Header6({ scroll, isMobileMenu, handleMobileMenu, transparent, isSearch, isOffcanvus, handleOffcanvus, handleSearch }) {
+    const { t } = useTranslation('common');
     return (
         <>
             <header className="tg-header__style-five">
@@ -11,7 +13,7 @@ export default function Header6({ scroll, isMobileMenu, handleMobileMenu, transp
                         <div className="row">
                             <div className="col-lg-6">
                                 <ul className="tg-header__top-info left-side list-wrap">
-                                    <li><i className="flaticon-phone-call" /><Link href="tel:1866667">+123 9898 500</Link></li>
+                                    <li><i className="flaticon-phone-call" /><Link href="tel:0123456789">+123 9898 500</Link></li>
                                     <li><i className="flaticon-pin" />256 Avenue, Mark Street, NewYork City</li>
                                 </ul>
                             </div>
@@ -38,8 +40,8 @@ export default function Header6({ scroll, isMobileMenu, handleMobileMenu, transp
                                         </div>
                                         <div className="tgmenu__action tgmenu__action-five d-none d-md-block">
                                             <ul className="list-wrap">
-                                                <li className="header-btn" ><Link href="/search-property" className="btn "> <SVG caseValue='case1'/>&nbsp; Search Properties</Link></li>
-                                                <li className="header-btn"><Link href="https://onpayment.enmaa.com/ONPAY/login.jsp" className="btn btn-two"> <SVG caseValue='case2'/>&nbsp; pay rent</Link></li>
+                                                <li className="header-btn" ><Link href="/search-property" className="btn "> <SVG caseValue='case1'/>&nbsp; {t("search_properties")}</Link></li>
+                                                <li className="header-btn"><Link href="https://onpayment.enmaa.com/ONPAY/login.jsp" className="btn btn-two"> <SVG caseValue='case2'/>&nbsp; {t("pay_rent")}</Link></li>
                                             </ul>
                                         </div>
                                         <div className="mobile-nav-toggler mobile-nav-toggler-two" onClick={handleMobileMenu}>
@@ -77,7 +79,7 @@ export default function Header6({ scroll, isMobileMenu, handleMobileMenu, transp
                                             <div className="contact-info">
                                                 <ul className="list-wrap">
                                                     <li><Link href="mailto:info@apexa.com">info@enmaa.com</Link></li>
-                                                    <li><Link href="tel:1866667">+123 888 9999</Link></li>
+                                                    <li><Link href="tel:0123456789">+123 888 9999</Link></li>
                                                 </ul>
                                             </div>
                                             <div className="social-links">

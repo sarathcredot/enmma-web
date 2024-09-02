@@ -35,10 +35,10 @@ export default function About2() {
                                 <div className="about__content-inner">
                                     <div className="about__list-box">
                                         <ul className="list-wrap">
-                                            <li><i className="flaticon-arrow-button" />Challenge Business Growth</li>
-                                            <li><i className="flaticon-arrow-button" />Analysis  Research</li>
-                                            <li><i className="flaticon-arrow-button" />Finance Security Solutions</li>
-                                            <li><i className="flaticon-arrow-button" />100% Money Growth</li>
+                                            <li><i className="fa icon-arrow" />Challenge Business Growth</li>
+                                            <li><i className="fa icon-arrow" />Analysis  Research</li>
+                                            <li><i className="fa icon-arrow" />Finance Security Solutions</li>
+                                            <li><i className="fa icon-arrow" />100% Money Growth</li>
                                         </ul>
                                     </div>
                                     <div className="about__list-img">

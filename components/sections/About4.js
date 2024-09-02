@@ -29,9 +29,9 @@ export default function About4() {
                                 <div className="about__content-inner-four">
                                     <div className="about__list-box">
                                         <ul className="list-wrap">
-                                            <li><i className="flaticon-arrow-button" />Medicare Advantage Plans</li>
-                                            <li><i className="flaticon-arrow-button" />Analysis  Research</li>
-                                            <li><i className="flaticon-arrow-button" />100% Secure Money Back</li>
+                                            <li><i className="fa icon-arrow" />Medicare Advantage Plans</li>
+                                            <li><i className="fa icon-arrow" />Analysis  Research</li>
+                                            <li><i className="fa icon-arrow" />100% Secure Money Back</li>
                                         </ul>
                                     </div>
                                     <div className="about__satisfied-box">
