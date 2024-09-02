@@ -1338,6 +1338,7 @@ textarea {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  gap:10px;
   padding: 0 0;
   margin: 0 0 0 125px;
 }
@@ -2750,7 +2751,6 @@ textarea {
 .brand-item {
   min-height: 46px;
   display: flex;
-
   align-items: center;
   justify-content: center;
 }
@@ -5183,10 +5183,10 @@ textarea {
 .sidebar__contact-two .btn:hover {
   color: var(--tg-color-white-default);
 }
-.sidebar__form form .form-grp  {
+.sidebar__form form .form-grp {
   margin-bottom: 8px;
 }
-.sidebar__form form .form-grp  textarea, .sidebar__form form .form-grp  input {
+.sidebar__form form .form-grp textarea, .sidebar__form form .form-grp input {
   width: 100%;
   border: 1px solid #E0E6F2;
   background: var(--tg-color-white-default);
@@ -5198,19 +5198,19 @@ textarea {
   height: 50px;
   display: block;
 }
-.sidebar__form form .form-grp  textarea::-moz-placeholder, .sidebar__form form .form-grp  input::-moz-placeholder {
+.sidebar__form form .form-grp textarea::-moz-placeholder, .sidebar__form form .form-grp input::-moz-placeholder {
   font-size: 14px;
   color: #667594;
   font-weight: 500;
   text-transform: capitalize;
 }
-.sidebar__form form .form-grp  textarea::placeholder, .sidebar__form form .form-grp  input::placeholder {
+.sidebar__form form .form-grp textarea::placeholder, .sidebar__form form .form-grp input::placeholder {
   font-size: 14px;
   color: #667594;
   font-weight: 500;
   text-transform: capitalize;
 }
-.sidebar__form form .form-grp  textarea {
+.sidebar__form form .form-grp textarea {
   min-height: 120px;
   max-height: 120px;
 }
@@ -7923,10 +7923,10 @@ textarea {
   font-size: 30px;
   text-transform: capitalize;
 }
-.testimonial__form .form-grp  {
+.testimonial__form .form-grp {
   margin-bottom: 10px;
 }
-.testimonial__form .form-grp  input {
+.testimonial__form .form-grp input {
   width: 100%;
   background: transparent;
   border-radius: 5px;
@@ -7937,20 +7937,20 @@ textarea {
   padding: 15px 20px;
   height: 50px;
 }
-.testimonial__form .form-grp  input::-moz-placeholder {
+.testimonial__form .form-grp input::-moz-placeholder {
   font-size: 14px;
   font-weight: 500;
   color: #667594;
 }
-.testimonial__form .form-grp  input::placeholder {
+.testimonial__form .form-grp input::placeholder {
   font-size: 14px;
   font-weight: 500;
   color: #667594;
 }
-.testimonial__form .form-grp .select-grp {
+.testimonial__form .form-grp.select-grp {
   position: relative;
 }
-.testimonial__form .form-grp .select-grp select {
+.testimonial__form .form-grp.select-grp select {
   background-color: transparent;
   border: 1px solid #D0D6E1;
   color: #667594;
@@ -7968,7 +7968,7 @@ textarea {
   height: 50px;
   cursor: pointer;
 }
-.testimonial__form .form-grp .select-grp::after {
+.testimonial__form .form-grp.select-grp::after {
   content: "\f106";
   position: absolute;
   top: 50%;
@@ -8443,7 +8443,6 @@ textarea {
   border-radius: 15px;
   border: 1px solid var(--tg-border-1);
   margin-bottom: 30px;
-  height: 400px;
 }
 .team-item-wrap .row {
   --bs-gutter-x: 24px;
@@ -8581,10 +8580,6 @@ textarea {
 }
 .team__social-three .list-wrap li a {
   color: var(--tg-color-white-default);
-}
-.white-dev li{
-  color: var(--tg-color-white-default)!important;
-
 }
 .team__social-three .list-wrap li a:hover {
   color: var(--tg-theme-secondary);
@@ -8896,10 +8891,10 @@ textarea {
 .call-back-form form .row {
   --bs-gutter-x: 15px;
 }
-.call-back-form form .form-grp  {
+.call-back-form form .form-grp {
   margin-bottom: 15px;
 }
-.call-back-form form .form-grp  input {
+.call-back-form form .form-grp input {
   width: 100%;
   border: none;
   border-radius: 4px;
@@ -8910,12 +8905,12 @@ textarea {
   padding: 15px 18px;
   height: 50px;
 }
-.call-back-form form .form-grp  input::-moz-placeholder {
+.call-back-form form .form-grp input::-moz-placeholder {
   font-size: 15px;
   font-weight: 500;
   color: #9597C8;
 }
-.call-back-form form .form-grp  input::placeholder {
+.call-back-form form .form-grp input::placeholder {
   font-size: 15px;
   font-weight: 500;
   color: #9597C8;
@@ -9887,10 +9882,10 @@ blockquote p {
 .comment-form .comment-notes {
   margin-bottom: 15px;
 }
-.comment-form .form-grp  {
+.comment-form .form-grp {
   margin-bottom: 15px;
 }
-.comment-form .form-grp  textarea, .comment-form .form-grp  input {
+.comment-form .form-grp textarea, .comment-form .form-grp input {
   width: 100%;
   border: 1px solid var(--tg-color-gray-1);
   background: var(--tg-color-white-default);
@@ -9902,17 +9897,17 @@ blockquote p {
   display: block;
   border-radius: 6px;
 }
-.comment-form .form-grp  textarea::-moz-placeholder, .comment-form .form-grp  input::-moz-placeholder {
+.comment-form .form-grp textarea::-moz-placeholder, .comment-form .form-grp input::-moz-placeholder {
   font-weight: 400;
   font-size: 15px;
   color: var(--tg-color-gray-4);
 }
-.comment-form .form-grp  textarea::placeholder, .comment-form .form-grp  input::placeholder {
+.comment-form .form-grp textarea::placeholder, .comment-form .form-grp input::placeholder {
   font-weight: 400;
   font-size: 15px;
   color: var(--tg-color-gray-4);
 }
-.comment-form .form-grp  textarea {
+.comment-form .form-grp textarea {
   min-height: 130px;
   max-height: 130px;
 }
@@ -10082,10 +10077,10 @@ blockquote p {
 .contact__form-wrap form .row {
   --bs-gutter-x: 10px;
 }
-.contact__form-wrap form .form-grp  {
+.contact__form-wrap form .form-grp {
   margin-bottom: 10px;
 }
-.contact__form-wrap form .form-grp  input {
+.contact__form-wrap form .form-grp input {
   width: 100%;
   background: var(--tg-color-white-default);
   border: 1px solid var(--tg-color-gray-1);
@@ -10095,15 +10090,15 @@ blockquote p {
   color: var(--tg-theme-secondary);
   height: 50px;
 }
-.contact__form-wrap form .form-grp  input::-moz-placeholder {
+.contact__form-wrap form .form-grp input::-moz-placeholder {
   font-size: 15px;
   color: var(--tg-body-color);
 }
-.contact__form-wrap form .form-grp  input::placeholder {
+.contact__form-wrap form .form-grp input::placeholder {
   font-size: 15px;
   color: var(--tg-body-color);
 }
-.contact__form-wrap form .form-grp  textarea {
+.contact__form-wrap form .form-grp textarea {
   width: 100%;
   background: var(--tg-color-white-default);
   border: 1px solid var(--tg-color-gray-1);
@@ -10115,11 +10110,11 @@ blockquote p {
   min-height: 130px;
   max-height: 130px;
 }
-.contact__form-wrap form .form-grp  textarea::-moz-placeholder {
+.contact__form-wrap form .form-grp textarea::-moz-placeholder {
   font-size: 15px;
   color: var(--tg-body-color);
 }
-.contact__form-wrap form .form-grp  textarea::placeholder {
+.contact__form-wrap form .form-grp textarea::placeholder {
   font-size: 15px;
   color: var(--tg-body-color);
 }
@@ -10814,7 +10809,7 @@ blockquote p {
 .fw-title::before {
   content: "";
   position: absolute;
-  left: 0;
+  inset-inline-start: 0;
   bottom: 0;
   width: 30px;
   height: 4px;

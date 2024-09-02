@@ -17,9 +17,9 @@ export default function About7() {
                                 <div className="about__content-inner-three">
                                     <div className="about__list-box">
                                         <ul className="list-wrap">
-                                            <li><i className="flaticon-arrow-button" />Medicare Advantage Plans</li>
-                                            <li><i className="flaticon-arrow-button" />Analysis &amp; Research</li>
-                                            <li><i className="flaticon-arrow-button" />100% Secure Money Back</li>
+                                            <li><i className="fa icon-arrow" />Medicare Advantage Plans</li>
+                                            <li><i className="fa icon-arrow" />Analysis &amp; Research</li>
+                                            <li><i className="fa icon-arrow" />100% Secure Money Back</li>
                                         </ul>
                                     </div>
                                     <div className="about__list-img-two">
@@ -42,7 +42,7 @@ export default function About7() {
                                         </div>
                                         <div className="content">
                                             <span>Hot Line Number</span>
-                                            <a href="tel:1866667">+123 8989 444</a>
+                                            <a href="tel:0123456789">+123 8989 444</a>
                                         </div>
                                     </div>
                                 </div>

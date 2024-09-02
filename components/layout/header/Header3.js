@@ -82,7 +82,7 @@ export default function Header3({ scroll, isMobileMenu, handleMobileMenu, transp
                                             <div className="contact-info">
                                                 <ul className="list-wrap">
                                                     <li><Link href="mailto:info@apexa.com">info@apexa.com</Link></li>
-                                                    <li><Link href="tel:1866667">+123 888 9999</Link></li>
+                                                    <li><Link href="tel:0123456789">+123 888 9999</Link></li>
                                                 </ul>
                                             </div>
                                             <div className="social-links">

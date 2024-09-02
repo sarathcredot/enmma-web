@@ -6,25 +6,25 @@ import { Swiper, SwiperSlide } from "swiper/react"
 const swiperOptions = {
     modules: [Autoplay, Pagination, Navigation],
     slidesPerView: 1,
-    // spaceBetween: 30,
+    spaceBetween: 30,
     loop: true,
-    // breakpoints: {
-    //     '1200': {
-    //         slidesPerView: 6,
-    //     },
-    //     '992': {
-    //         slidesPerView: 5,
-    //     },
-    //     '768': {
-    //         slidesPerView: 4,
-    //     },
-    //     '576': {
-    //         slidesPerView: 3,
-    //     },
-    //     '0': {
-    //         slidesPerView: 2,
-    //     },
-    // },
+    breakpoints: {
+        '1200': {
+            slidesPerView: 6,
+        },
+        '992': {
+            slidesPerView: 5,
+        },
+        '768': {
+            slidesPerView: 4,
+        },
+        '576': {
+            slidesPerView: 3,
+        },
+        '0': {
+            slidesPerView: 2,
+        },
+    },
 }
 
 export default function BrandActiveSlider() {
@@ -33,58 +33,37 @@ export default function BrandActiveSlider() {
             <Swiper {...swiperOptions}>
                 <SwiperSlide>
                     <div className="brand-item">
-                       <h1>Maximizing Value through Knowledge, 
-Technology, and Innovation at Al Enma’a 
-Real Estate Company</h1>
-                        {/* <img src="/assets/img/brand/brand_img01.png" alt="" /> */}
+                        <img src="/assets/img/brand/brand_img01.png" alt="" />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="brand-item">
-                       <h1>Maximizing Value through Knowledge, 
-Technology, and Innovation at Al Enma’a 
-Real Estate Company</h1>
-                        {/* <img src="/assets/img/brand/brand_img02.png" alt="" /> */}
+                        <img src="/assets/img/brand/brand_img02.png" alt="" />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="brand-item">
-                       <h1>Maximizing Value through Knowledge, 
-Technology, and Innovation at Al Enma’a 
-Real Estate Company</h1>
-                        {/* <img src="/assets/img/brand/brand_img03.png" alt="" /> */}
+                        <img src="/assets/img/brand/brand_img03.png" alt="" />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="brand-item">
-                       <h1>Maximizing Value through Knowledge, 
-Technology, and Innovation at Al Enma’a 
-Real Estate Company</h1>
-                        {/* <img src="/assets/img/brand/brand_img04.png" alt="" /> */}
+                        <img src="/assets/img/brand/brand_img04.png" alt="" />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="brand-item">
-                       <h1>Maximizing Value through Knowledge, 
-Technology, and Innovation at Al Enma’a 
-Real Estate Company</h1>
-                        {/* <img src="/assets/img/brand/brand_img05.png" alt="" /> */}
+                        <img src="/assets/img/brand/brand_img05.png" alt="" />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="brand-item">
-                       <h1>Maximizing Value through Knowledge, 
-Technology, and Innovation at Al Enma’a 
-Real Estate Company</h1>
-                        {/* <img src="/assets/img/brand/brand_img06.png" alt="" /> */}
+                        <img src="/assets/img/brand/brand_img06.png" alt="" />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="brand-item">
-                       <h1>Maximizing Value through Knowledge, 
-Technology, and Innovation at Al Enma’a 
-Real Estate Company</h1>
-                        {/* <img src="/assets/img/brand/brand_img03.png" alt="" /> */}
+                        <img src="/assets/img/brand/brand_img03.png" alt="" />
                     </div>
                 </SwiperSlide>
             </Swiper>

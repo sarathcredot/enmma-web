@@ -45,7 +45,7 @@ export default function Project4() {
                                             <h4 className="title"><Link href="/project-details">Marketing Idea</Link></h4>
                                             <span>Modern Strategy</span>
                                         </div>
-                                        <Link href="/project-details" className="right-arrow"><i className="flaticon-arrow-button" /></Link>
+                                        <Link href="/project-details" className="right-arrow"><i className="fa icon-arrow" /></Link>
                                     </div>
                                 </div>
                             </SwiperSlide>
@@ -59,7 +59,7 @@ export default function Project4() {
                                             <h4 className="title"><Link href="/project-details">Business Consulting</Link></h4>
                                             <span>Business Strategy</span>
                                         </div>
-                                        <Link href="/project-details" className="right-arrow"><i className="flaticon-arrow-button" /></Link>
+                                        <Link href="/project-details" className="right-arrow"><i className="fa icon-arrow" /></Link>
                                     </div>
                                 </div>
                             </SwiperSlide>
@@ -73,7 +73,7 @@ export default function Project4() {
                                             <h4 className="title"><Link href="/project-details">Digital Agency</Link></h4>
                                             <span>Modern Strategy</span>
                                         </div>
-                                        <Link href="/project-details" className="right-arrow"><i className="flaticon-arrow-button" /></Link>
+                                        <Link href="/project-details" className="right-arrow"><i className="fa icon-arrow" /></Link>
                                     </div>
                                 </div>
                             </SwiperSlide>
@@ -87,7 +87,7 @@ export default function Project4() {
                                             <h4 className="title"><Link href="/project-details">Inventory Tracking</Link></h4>
                                             <span>Modern Strategy</span>
                                         </div>
-                                        <Link href="/project-details" className="right-arrow"><i className="flaticon-arrow-button" /></Link>
+                                        <Link href="/project-details" className="right-arrow"><i className="fa icon-arrow" /></Link>
                                     </div>
                                 </div>
                             </SwiperSlide>
@@ -101,7 +101,7 @@ export default function Project4() {
                                             <h4 className="title"><Link href="/project-details">Digital Agency</Link></h4>
                                             <span>Modern Strategy</span>
                                         </div>
-                                        <Link href="/project-details" className="right-arrow"><i className="flaticon-arrow-button" /></Link>
+                                        <Link href="/project-details" className="right-arrow"><i className="fa icon-arrow" /></Link>
                                     </div>
                                 </div>
                             </SwiperSlide>
