@@ -27,9 +27,6 @@ const outfit = Outfit({
   display: 'swap',
 });
 
-export const metadata = {
-  title: `ENMA'A`,
-};
 
 function RootLayout({ children }) {
   useEffect(() => {
