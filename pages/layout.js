@@ -1,3 +1,4 @@
+"use client"
 import { appWithTranslation } from 'next-i18next';
 import { useEffect } from 'react';
 import { i18n } from 'next-i18next';
