@@ -58,7 +58,7 @@ export default function Contact({ data1, data }) {
             <div key={item._id} className="col-xl-7 space-betweeni col-lg-8">
               <div className="mb-50 dev_gover">
                 <span>{item.subtitle}</span>
-                <h2 className="mt-4" style={{ color: '#110B79' }}>
+                <h2 className="mt-4 w-75" style={{ color: '#110B79' }}>
                   {item.title}
                 </h2>
               </div>

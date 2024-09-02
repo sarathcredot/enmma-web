@@ -86,7 +86,7 @@ export default function Government({ initialData, pageTitle,pageDescription, }) 
 
                                     <div className="  mb-50 dev_gover ">
                                         <span className="">{item.subtitle}</span>
-                                        <h2 className=" mt-4">{item.title}</h2>
+                                        <h2 className="w-75 mt-4">{item.title}</h2>
                                     </div>
                                     <div className="dev_customsize mt-4">{item.description}</div>
                                 </div>
@@ -151,7 +151,7 @@ export async function getServerSideProps({ locale }) {
 
     const metadata = await metadataResponse.json();
 
-    const pageMetadata = metadata.find(page => page.page === 'about') || {};
+    const pageMetadata = metadata.find(page => page.page === 'government-bot') || {};
 
     const pageTitle = pageMetadata[`pageTitle_${locale}`] || pageMetadata.pageTitle_en || 'Default Title';
     const pageDescription = pageMetadata[`pageDescription_${locale}`] || pageMetadata.pageDescription_en || 'Default description';

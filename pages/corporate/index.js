@@ -104,7 +104,7 @@ export function CorporateSubheading({ corporateHeading }) {
       <div className="col-xl-7 space-betweeni col-lg-8">
         <div className="  mb-50 dev_gover ">
           <span className="">{corporateHeading.title}</span>
-          <h2 className=" mt-4">{corporateHeading.subtitle}</h2>
+          <h2 className="w-75 mt-4">{corporateHeading.subtitle}</h2>
         </div>
         <div className="dev_customsize mt-4">
           {corporateHeading.description}
@@ -123,8 +123,8 @@ export function CorporatePoints({ corporatePoints }) {
     };
   
     return (
-      <div className="row">
-        <div className="col-md-7">
+      <div className="row ">
+        <div className="col-md-6 my-5">
           <div className="services__tab-wrap">
             <ul className="nav nav-tabs" id="myTab" role="tablist">
               {corporatePoints.map((corporatePoint, index) => {
@@ -157,7 +157,7 @@ export function CorporatePoints({ corporatePoints }) {
             </ul>
           </div>
         </div>
-        <div className="col-md-5" id="dev-link-section">
+        <div className="col-md-6" id="dev-link-section">
           <div className="tab-content" id="myTabContent">
             {corporatePoints.map((corporatePoint, index) => {
               return (

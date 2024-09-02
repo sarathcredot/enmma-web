@@ -270,7 +270,7 @@ export async function getServerSideProps({ locale }) {
         const metadataResponse = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/pageMetadata/`);
         if (!metadataResponse.ok) throw new Error('Failed to fetch page metadata');
         const metadata = await metadataResponse.json();
-        const pageMetadata = metadata.find(page => page.page === 'about') || {};
+        const pageMetadata = metadata.find(page => page.page === 'team') || {};
 
         // Fetch Team Members Data
         const teamResponse = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/team/`);
