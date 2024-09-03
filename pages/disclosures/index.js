@@ -112,7 +112,7 @@ export async function getServerSideProps({ locale }) {
 
     const metadata = await metadataResponse.json();
 
-    const pageMetadata = metadata.find(page => page.page === 'about') || {};
+    const pageMetadata = metadata.find(page => page.page === 'disclosures') || {};
 
     const pageTitle = pageMetadata[`pageTitle_${locale}`] || pageMetadata.pageTitle_en || 'Default Title';
     const pageDescription = pageMetadata[`pageDescription_${locale}`] || pageMetadata.pageDescription_en || 'Default description';

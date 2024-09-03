@@ -308,6 +308,7 @@ export default function Careerform() {
             <div className="form-grp">
               <p>Upload Your Resume (pdf or docx only)</p>
               <input
+              className='form-control form-control-lg'
                 type="file"
                 onChange={(e) => handleFileUpload(e.target.files)}
                 style={{ color: '#3E4073' }}

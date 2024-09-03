@@ -15476,9 +15476,9 @@ text-align: left;
       padding: 26px 30px 30px;
     }
   }
-  .sidebar__widget-dev:last-child {
+  /* .sidebar__widget-dev:last-child {
     margin-bottom: 0;
-  }
+  } */
 .disclosuredevsection{
   border-radius: 20px;
   padding: 40px;
@@ -15512,11 +15512,7 @@ text-align: left;
   border-bottom: 1px solid var(--tg-border-4);;
 }
 .dev-disclosurelist{
-  display: flex;
-  padding-top: 40px;
- color: #000;
- flex-wrap: wrap;
- gap: 20%;
+
 
 }
 
@@ -15542,19 +15538,13 @@ background-color: #fff;
 .dev-disclosurelist h6{
 font-size: 14px;
 max-width: 30%;
-
 font-weight: 500;
 line-height: 26px;
-text-align: left;
-display: flex;
 color: #282739;
-
 align-items: center;
 
 }
 .dev-disclosurelist h5{
- justify-content: flex-end;
- margin-left: 150px;
   font-size: 14px;
   font-weight: 700;
   line-height: 26px;

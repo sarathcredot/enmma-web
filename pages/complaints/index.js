@@ -21,7 +21,7 @@ export default function About({ initialData, pageTitle, pageDescription, }) {
             try {
                 const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/cms`);
                 const data = await response.json();
-                const fetchedData = data.filter(item => item.page === 'annual-report');
+                const fetchedData = data.filter(item => item.page === 'complaint');
                 setData(fetchedData);
             } catch (error) {
                 console.error('Failed to load data:', error);
@@ -79,18 +79,18 @@ export default function About({ initialData, pageTitle, pageDescription, }) {
             </Head>
 
             <Layout headerStyle={6} footerStyle={3} >
-                <Banner1 data={getDataBySection('annual-banner')} />
+                <Banner1 data={getDataBySection('complaint-banner')} />
 
 
 
                 <div className="container project__area-three ">
                     <div className="row ">
-                        {getDataBySection('annual-heading').map((item) => (
+                        {getDataBySection('complaint-heading').map((item) => (
                             <div className="col-xl-7 space-betweeni col-lg-8">
 
                                 <div className="  mb-50 dev_gover " >
                                     <span className="">{item.subtitle}</span>
-                                    <h2 className=" mt-4" style={{ color: '#110B79' }}>{item.title}</h2>
+                                    <h2 className="w-75 mt-4" style={{ color: '#110B79' }}>{item.title}</h2>
                                 </div>
                                 <div className="dev_customsize mt-4" style={{ color: '#282739' }}>{item.description}</div>
                             </div>
@@ -98,7 +98,7 @@ export default function About({ initialData, pageTitle, pageDescription, }) {
                         <Complaintsec />
 
                     </div></div>
-                <Bannerfooter data={getDataBySection('annual-contact')} />
+                <Bannerfooter data={getDataBySection('complaint-contact')} />
             </Layout>
         </>
     )
@@ -106,7 +106,7 @@ export default function About({ initialData, pageTitle, pageDescription, }) {
 export async function getServerSideProps({ locale }) {
     const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/cms`);
     const data = await response.json();
-    const fetchedData = data.filter(item => item.page === 'annual-report');
+    const fetchedData = data.filter(item => item.page === 'complaint');
     const metadataResponse = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/pageMetadata/`);
 
     if (!response.ok || !metadataResponse.ok) {
@@ -115,7 +115,7 @@ export async function getServerSideProps({ locale }) {
 
     const metadata = await metadataResponse.json();
 
-    const pageMetadata = metadata.find(page => page.page === 'about') || {};
+    const pageMetadata = metadata.find(page => page.page === 'complaint') || {};
 
     const pageTitle = pageMetadata[`pageTitle_${locale}`] || pageMetadata.pageTitle_en || 'Default Title';
     const pageDescription = pageMetadata[`pageDescription_${locale}`] || pageMetadata.pageDescription_en || 'Default description';

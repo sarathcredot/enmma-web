@@ -24,7 +24,7 @@ export default function About3({ initialData, teamMembersData,pageDescription,pa
                 setData(fetchedData);
 
                 // Fetch Team Members Data
-                const teamResponse = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/team/`);
+                const teamResponse = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/team`);
                 const teamData = await teamResponse.json();
                 setTeamMembers(teamData);
             } catch (error) {
@@ -118,16 +118,16 @@ export default function About3({ initialData, teamMembersData,pageDescription,pa
                                                         <div className="team-thumb">
                                                             <img
                                                                 src={`${process.env.NEXT_PUBLIC_MEDIA_BASE_URL}${teamData.imageUrl}`}
-                                                                alt={teamData.name}
+                                                                alt={teamData.name_en}
                                                             />
                                                         </div>
                                                         <div className="team-content">
                                                             <h4 className="title">
                                                                 <Link href="/team-details">
-                                                                    {teamData.name}
+                                                                    {teamData.name_en}
                                                                 </Link>
                                                             </h4>
-                                                            <span>{teamData.position}</span>
+                                                            <span>{teamData.position_en}</span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -161,13 +161,12 @@ export default function About3({ initialData, teamMembersData,pageDescription,pa
                                 <div className="team-item-wrap">
                                     <div className="row justify-content-center">
                                         {item.choicesTeam.map((id) => {
-                                            const teamData = Array.isArray(teamMembers)
-                                                ? teamMembers.teamMembers.find((member) => member._id === id)
-                                                : null;
-
-                                            return teamData ? (
+                                            const teamData = Array.isArray(teamMembers.teamMembers)
+                                            ? teamMembers.teamMembers.find((member) => member._id ===id)
+                                            : null;
+                                              return teamData ? (
                                                 <div
-                                                    key={id}
+                                                    key={teamData._id}
                                                     className="col-xl-3 col-lg-4 col-md-6 col-sm-8"
                                                 >
                                                     <div className="team-item">

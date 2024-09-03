@@ -8,9 +8,7 @@ import { useEffect, useState } from 'react';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Head from "next/head"
 
-export const metadata = {
-    title: 'Annual report',
-}
+
 
 export default function Financialstatement({ initialData ,pageTitle,pageDescription, }) {
     const { t, i18n } = useTranslation('common');
@@ -83,11 +81,11 @@ export default function Financialstatement({ initialData ,pageTitle,pageDescript
             
             <div className="container project__area-three ">
                     <div className="row ">
-                        {getDataBySection('about-info-section').map((item) => (
+                        {getDataBySection('disclosure-heading').map((item) => (
                     <div className="col-xl-7 space-betweeni col-lg-8">
                             <div  className="  mb-50 dev_gover " >
                             <span className="">{item.subtitle}</span>
-                            <h2 className=" mt-4" style={{ color: '#110B79' }}>{item.title}</h2>
+                            <h2 className="w-75 mt-4" style={{ color: '#110B79' }}>{item.title}</h2>
                         </div>
                             <div className="dev_customsize mt-4" style={{ color: '#282739' }}>{item.description}</div>
                             </div>
