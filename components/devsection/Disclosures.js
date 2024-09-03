@@ -94,21 +94,29 @@ export default function BlogPost({ style, showItem, showPagination }) {
                 {getPaginatedProducts.length === 0 && (
                     <h3>No Products Found </h3>
                 )}
-
-                <div className="dev-disclosure-table">
-                    <h6>Disclosures</h6>
-                    <h6>Date</h6>
-                    <h6>Details</h6>
-                </div>
+                <div className="">
+                <table class="table " >
+                <thead >
+                    <tr className="">
+                        
+                    <th ><h6>Disclosures</h6></th>
+                    <th><h6>Date</h6></th>
+                    <th><h6>Details</h6></th>
+                    </tr>
+                </thead>
+                    <tbody>
 
                 {getPaginatedProducts.map(item => (
                     <React.Fragment key={item._id}>
-                        <div className="dev-disclosure-border">
+                        <>
                             {!style && <Disclosurelist item={item} />}
                             {style === 1 && <Disclosurelist item={item} />}
-                        </div>
+                        </>
                     </React.Fragment>
-                ))}
+                ))} 
+                </tbody>
+                </table>
+                </div>
             </div>
             {showPagination &&
                 <Pagination
