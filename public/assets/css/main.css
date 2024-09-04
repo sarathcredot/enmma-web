@@ -5555,7 +5555,7 @@ line-height: 30px;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  width: 600px;
+  width: 550px;
   flex-wrap: nowrap;
   justify-content: flex-start;
   gap: 5px;

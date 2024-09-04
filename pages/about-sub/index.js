@@ -35,6 +35,14 @@ export default function About3({ initialData, teamMembersData,pageDescription,pa
         loadData();
     }, [i18n.language]);
 
+    const localizedTeamMembers = teamMembers.teamMembers.map((member) => {
+        return {
+            ...member,
+            name: member[`name_${i18n.language}`] || member.title_en,
+            position: member[`position_${i18n.language}`] || member.subtitle_en,
+        };
+    });
+
     const localizedData = data.map((item) => {
         const localizedIcondata = {};
         Object.keys(item).forEach((key) => {
@@ -103,8 +111,8 @@ export default function About3({ initialData, teamMembersData,pageDescription,pa
                                 <div className="team-item-wrap">
                                     <div className="row justify-content-center">
                                         {item.choicesTeam.map((id) => {
-                                            const teamData = Array.isArray(teamMembers.teamMembers)
-                                            ? teamMembers.teamMembers.find((member) => member._id === id)
+                                            const teamData = Array.isArray(localizedTeamMembers)
+                                            ? localizedTeamMembers.find((member) => member._id === id)
                                             : null;
                                             
 
@@ -118,16 +126,16 @@ export default function About3({ initialData, teamMembersData,pageDescription,pa
                                                         <div className="team-thumb">
                                                             <img
                                                                 src={`${process.env.NEXT_PUBLIC_MEDIA_BASE_URL}${teamData.imageUrl}`}
-                                                                alt={teamData.name_en}
+                                                                alt={teamData.name}
                                                             />
                                                         </div>
                                                         <div className="team-content">
                                                             <h4 className="title">
                                                                 <Link href="/team-details">
-                                                                    {teamData.name_en}
+                                                                    {teamData.name}
                                                                 </Link>
                                                             </h4>
-                                                            <span>{teamData.position_en}</span>
+                                                            <span>{teamData.position}</span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -161,8 +169,8 @@ export default function About3({ initialData, teamMembersData,pageDescription,pa
                                 <div className="team-item-wrap">
                                     <div className="row justify-content-center">
                                         {item.choicesTeam.map((id) => {
-                                            const teamData = Array.isArray(teamMembers.teamMembers)
-                                            ? teamMembers.teamMembers.find((member) => member._id ===id)
+                                            const teamData = Array.isArray(localizedTeamMembers)
+                                            ? localizedTeamMembers.find((member) => member._id ===id)
                                             : null;
                                               return teamData ? (
                                                 <div
@@ -216,8 +224,8 @@ export default function About3({ initialData, teamMembersData,pageDescription,pa
                                 <div className="team-item-wrap">
                                     <div className="row justify-content-center">
                                         {item.choicesTeam.map((id) => {
-                                            const teamData = Array.isArray(teamMembers.teamMembers)
-                                                ? teamMembers.teamMembers.find((member) => member._id === id)
+                                            const teamData = Array.isArray(localizedTeamMembers)
+                                                ? localizedTeamMembers.find((member) => member._id === id)
                                                 : null;
 
                                             return teamData ? (

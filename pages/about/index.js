@@ -175,7 +175,9 @@ export default function About({ initialData, pageTitle,pageDescription, }) {
                             <img src="/assets/img/images/inner_choose_shape02.png" alt="" data-aos="fade-left" data-aos-delay={400} />
                         </div>
                     </section>
-                    <Brand2/>
+                    <section className="container text-center my-5">
+                        <h1 className=" text-wrap">{t('banner-title')}</h1>
+                    </section>
                     {getDataBySection('about-contact').map((item) => (
                     <section key={item._id} className="request-area request-bg" data-background={`${process.env.NEXT_PUBLIC_MEDIA_BASE_URL}${item.bannerImage}`}>
                         <div className="container">
