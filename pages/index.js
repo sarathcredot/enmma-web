@@ -81,12 +81,12 @@ export default function Home({
                 <Devindex1 data={localizeData(heroBottomData)} />
                 <div><Counter1 data={localizeData(counterData)} /></div>
                 <About3 data={localizeData(aboutSectionData)} />
-                <Services3 data={localizeData(serviceData)} />
+                <Services3 />
                 <Choose3 data={localizeData(investorSectionData)} />
                 <Project3 data={localizeData(ownerSectionData)} />
                 <Request3 data={localizeData(parallaxBannerData)} />
                 <Marketingexpert1 data={localizeData(solutionSectionData)} datas={localizeData(trustedSectionData)} />
-                <BlogPost3 data={localizeData(blogData)} />
+                <BlogPost3  />
             </Layout>
         </>
     );
@@ -117,13 +117,11 @@ export async function getServerSideProps({ locale }) {
             heroBottomData: getDataBySection('hero-bottom'),
             counterData: getDataBySection('counter'),
             aboutSectionData: getDataBySection('about-section'),
-            serviceData: getDataBySection('Service'),
             investorSectionData: getDataBySection('investor-section'),
             ownerSectionData: getDataBySection('Owner-section'),
             parallaxBannerData: getDataBySection('parallax-banner'),
             solutionSectionData: getDataBySection('solution-section'),
             trustedSectionData: getDataBySection('Trusted-section'),
-            blogData: getDataBySection('blog'),
                 pageTitle,
                 pageDescription,
                 ...(await serverSideTranslations(locale, ['common'])),

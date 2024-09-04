@@ -12087,7 +12087,7 @@ blockquote p {
 .sidebar__widget-title::before {
   content: "";
   position: absolute;
-  left: 0;
+  inset-inline-start: 0;
   bottom: 0;
   width: 30px;
   height: 4px;
@@ -12159,12 +12159,21 @@ blockquote p {
   -ms-border-radius: 4px;
   border-radius: 4px;
 }
-.sidebar__post-content .title {
+.sidebar__post-content .title a {
+  display: -webkit-box; 
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical; 
+  max-width: calc(3em * 3); 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+margin-bottom: 20px;
   font-size: 17px;
   margin-bottom: 10px;
   font-weight: 600;
   text-transform: capitalize;
+  
 }
+
 .sidebar__post-content .date {
   display: -webkit-box;
   display: -moz-box;
@@ -12175,6 +12184,7 @@ blockquote p {
   color: #83849E;
   font-size: 15px;
   gap: 5px;
+  text-wrap:nowrap;
 }
 .sidebar__post-content .date i {
   line-height: 0;

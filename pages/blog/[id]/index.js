@@ -148,7 +148,7 @@ useEffect(() => {
                         <aside className="blog__sidebar">
                           <div className="sidebar__widget">
                             <h4 className="sidebar__widget-title">
-                              Categories
+                              {t('categories')}
                             </h4>
                             <div className="sidebar__cat-list">
                               <ul className="list-wrap">
@@ -168,7 +168,7 @@ useEffect(() => {
 
                           <div className="sidebar__widget">
                             <h4 className="sidebar__widget-title">
-                              Latest Posts
+                             {t('latest_posts')}
                             </h4>
                             <div className="sidebar__post-list">
                               {latestPosts.map((blog) => {
@@ -200,7 +200,7 @@ useEffect(() => {
                           </div>
 
                           <div className="sidebar__widget">
-                            <h4 className="sidebar__widget-title">Tags</h4>
+                            <h4 className="sidebar__widget-title">{t('tags')}</h4>
                             <div className="sidebar__tag-list">
                               <ul className="list-wrap">
                                 {localizedData.tags.map((tag) => (

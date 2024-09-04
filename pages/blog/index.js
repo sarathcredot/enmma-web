@@ -151,7 +151,7 @@ export default function Blog({ initialData }) {
                         <div></div>
                       </div> */}
                       <div className="sidebar__widget">
-                        <h4 className="sidebar__widget-title">Categories</h4>
+                        <h4 className="sidebar__widget-title">{t('Category')}</h4>
                         <div className="sidebar__cat-list">
                           <ul className="list-wrap">
                             {localizedData.categories.map((category) => {
@@ -168,7 +168,7 @@ export default function Blog({ initialData }) {
                         </div>
                       </div>
                       <div className="sidebar__widget">
-                        <h4 className="sidebar__widget-title">Latest Posts</h4>
+                        <h4 className="sidebar__widget-title">{t('latest_posts')}</h4>
                         <div className="sidebar__post-list">
                           <div className="sidebar__post-item">
                             {latestPosts.map((blog) => {
@@ -197,7 +197,7 @@ export default function Blog({ initialData }) {
                         </div>
                       </div>
                       <div className="sidebar__widget">
-                        <h4 className="sidebar__widget-title">Tags</h4>
+                        <h4 className="sidebar__widget-title">{t('tags')}</h4>
                         <div className="sidebar__tag-list">
                           <ul className="list-wrap">
                             {localizedData.tags.map((tag) => <li>
