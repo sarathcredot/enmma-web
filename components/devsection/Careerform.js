@@ -3,7 +3,11 @@
 import { useState } from 'react';
 import axios from 'axios';
 
+import { useTranslation } from 'next-i18next';
+
 export default function Careerform() {
+  const { t, i18n } = useTranslation('common');
+
   const [formData, setFormData] = useState({
     position: '',
     fullName: '',
@@ -110,7 +114,7 @@ export default function Careerform() {
 
   return (
     <div className="contact__form-wrap">
-      <form id="contact-form" onSubmit={handleSubmit}>
+      <form id="contact-form" dir='ltr' onSubmit={handleSubmit}>
         {/* Input fields with onChange handlers */}
         <div className="row">
           {/* Position */}
@@ -119,7 +123,7 @@ export default function Careerform() {
               <input
                 type="text"
                 name="position"
-                placeholder="Position Applying for"
+                placeholder={t('Position-Applying-for')}
                 value={formData.position}
                 onChange={handleChange}
                 required
@@ -132,7 +136,7 @@ export default function Careerform() {
               <input
                 type="text"
                 name="fullName"
-                placeholder="Full Name"
+                placeholder={t("Full-Name")}
                 value={formData.fullName}
                 onChange={handleChange}
                 required
@@ -164,7 +168,7 @@ export default function Careerform() {
                 style={{ color: '#3E4073' }}
                 required
               >
-                <option value="">Gender</option>
+                <option value="">{t('Gender')}</option>
                 <option value="male">Male</option>
                 <option value="female">Female</option>
               </select>
@@ -178,7 +182,7 @@ export default function Careerform() {
               <input
                 type="text"
                 name="mobileNumber"
-                placeholder="Phone Number"
+                placeholder={t("Phone-Number")}
                 value={formData.mobileNumber}
                 onChange={handleChange}
                 required
@@ -191,7 +195,7 @@ export default function Careerform() {
               <input
                 type="text"
                 name="passportNumber"
-                placeholder="Passport Number"
+                placeholder={t("Passport-Number")}
                 value={formData.passportNumber}
                 onChange={handleChange}
                 required
@@ -206,7 +210,7 @@ export default function Careerform() {
               <input
                 type="email"
                 name="emailAddress"
-                placeholder="Email"
+                placeholder={t('email')}
                 value={formData.emailAddress}
                 onChange={handleChange}
                 required
@@ -223,7 +227,7 @@ export default function Careerform() {
                 style={{ color: '#3E4073' }}
                 required
               >
-                <option value="">Select Nationality</option>
+                <option value="">{t('Select-Nationality')}</option>
                 <option value="AAA">AAA</option>
                 <option value="BBBB">BBBB</option>
                 <option value="CCCC">CCCC</option>
@@ -245,7 +249,7 @@ export default function Careerform() {
                 style={{ color: '#3E4073' }}
                 required
               >
-                <option value="">Degree Level</option>
+                <option value="">{t('Degree-Level')}</option>
                 <option value="AAA">AAA</option>
                 <option value="BBBB">BBBB</option>
                 <option value="CCCC">CCCC</option>
@@ -265,7 +269,7 @@ export default function Careerform() {
                 style={{ color: '#3E4073' }}
                 required
               >
-                <option value="">Career Level</option>
+                <option value="">{t('Career-Level')}</option>
                 <option value="AAA">AAA</option>
                 <option value="BBBB">BBBB</option>
                 <option value="CCCC">CCCC</option>
@@ -282,7 +286,7 @@ export default function Careerform() {
             <div className="form-grp">
               <textarea
                 name="jobDuties"
-                placeholder="Briefly Describe your Last Job Duties"
+                placeholder={t('Briefly-describe-your-last-job-duties')}
                 value={formData.jobDuties}
                 onChange={handleChange}
                 required
@@ -294,7 +298,7 @@ export default function Careerform() {
             <div className="form-grp">
               <textarea
                 name="additionalInfo"
-                placeholder="If Any Additional Information"
+                placeholder={t('If-Any-Additional-Information')}
                 value={formData.additionalInfo}
                 onChange={handleChange}
                 required
@@ -306,7 +310,7 @@ export default function Careerform() {
           {/* File Upload */}
           <div className="col-md-6">
             <div className="form-grp">
-              <p>Upload Your Resume (pdf or docx only)</p>
+              <p>{t('Upload-Your-Resume')}</p>
               <input
               className='form-control form-control-lg'
                 type="file"
@@ -318,7 +322,7 @@ export default function Careerform() {
           </div>
         </div>
         {/* Submit Button */}
-        <button type="submit" className="btn">Submit</button>
+        <button type="submit" className="btn">{t('submit')}</button>
       </form>
       <p className="ajax-response mb-0" />
     </div>

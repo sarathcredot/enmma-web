@@ -88,13 +88,13 @@ export default function About({ initialData, pageTitle,pageDescription, }) {
             <img src={`${process.env.NEXT_PUBLIC_MEDIA_BASE_URL}${item.bannerImage}`} width={500} height={500} alt="" />
             <img src={`${process.env.NEXT_PUBLIC_MEDIA_BASE_URL}${item.bannerImage}`}width={300} height={100}  alt="" />
             <div className="about__award-box">
-              <div className="icon">
+              {/* <div className="icon">
                 <i className="flaticon-time" />
-              </div>
-              <div className="content" style={{position: 'relative',zIndex: '4'}}>
+              </div> */}
+              {/* <div className="content" style={{position: 'relative',zIndex: '4'}}>
                 <h2 className="title">30+</h2>
-                <p>Years of Experiences <br />Property management  <br />& Investment</p>
-              </div>
+                <p className="w-50">Years of Experiences Property management & Investment</p>
+              </div> */}
             </div>
             <div className="shape">
               <img src="/assets/img/images/inner_about_shape.jpg" alt="" className="alltuchtopdown" />
@@ -133,10 +133,10 @@ export default function About({ initialData, pageTitle,pageDescription, }) {
                                 <div className="col-lg-5">
                                     <div className="choose__content-four">
                                         <div className="section-title white-title mb-20">
-                                            <span className="sub-title">Lorem ipsum dolor sit amet </span>
-                                            <h2 className="title">Our MIssion and Vision </h2>
+                                            <span className="sub-title">{t('mission-subtitle')} </span>
+                                            <h2 className="title">{t('mission-title')}</h2>
                                         </div>
-                                        <p>Lorem ipsum dolor sit amet consectetur. Mus et rhoncus pretium euismod pellentesque. Consectetur lacus enim eleifend vitae nibh sem.lacus enim eleifend vitae nibh sem it amet consectetur.orem ipsum dolor sit amet consectetur. Mus et rhoncus pretium euismod pellentesque. Consectetur lacus enim eleifend vitae nibh sem.lacus enim eleifend vitae nibh sem it amet consectetur.</p>
+                                        <p>{t('mission-description')}</p>
                                     </div>
                                 </div>
                                 <div className="col-lg-7">
@@ -149,8 +149,8 @@ export default function About({ initialData, pageTitle,pageDescription, }) {
                                                     <SVG caseValue='case4'/>
                                                     </div>
                                                     <div className="choose__list-content-two">
-                                                        <h4 className="title">Mission</h4>
-                                                        <p>To evolve as a trusted partner in property management and security services.To develop sustainable Property Management solutions.</p>
+                                                        <h4 className="title">{t('mission')}</h4>
+                                                        <p>{t('mission-text')}</p>
                                                     </div>
                                                 </div>
                                             </li>
@@ -160,8 +160,8 @@ export default function About({ initialData, pageTitle,pageDescription, }) {
                                                     <SVG caseValue='case5'/>
                                                     </div>
                                                     <div className="choose__list-content-two">
-                                                        <h4 className="title">Vision</h4>
-                                                        <p>To become the first-choice partner of real estate and security services and to achieve highest possible standards in the real estate sector</p>
+                                                        <h4 className="title">{t('vision')}</h4>
+                                                        <p>{t('vision-text')}</p>
                                                     </div>
                                                 </div>
                                             </li>
