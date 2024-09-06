@@ -37,7 +37,7 @@ export default function Slider2({ data }) {
                                 <img className="slider__bg" src={`${process.env.NEXT_PUBLIC_MEDIA_BASE_URL}${item.bannerImage}`} />
                                 <div className="container">
                                     <div className="row">
-                                        <div className=" col-lg-8 mt-30">
+                                        <div className=" col-lg-8">
                                             <div className="banner__content-three ">
                                                 <div className="text-25-years">
                                                     <span className="text-stroke">{item.sidebarNumber}</span>

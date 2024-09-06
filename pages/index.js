@@ -86,7 +86,7 @@ export default function Home({
                 <Project3 data={localizeData(ownerSectionData)} />
                 <Request3 data={localizeData(parallaxBannerData)} />
                 <Marketingexpert1 data={localizeData(solutionSectionData)} datas={localizeData(trustedSectionData)} />
-                <BlogPost3  />
+                <BlogPost3 />
             </Layout>
         </>
     );
