@@ -57,7 +57,7 @@ useEffect(() => {
     category: blog.category.title,
     date: Date(blog.date)
   }});
-
+debugger;
   return (
     <>
       <Layout headerStyle={6} footerStyle={3}>
@@ -248,7 +248,7 @@ export async function getServerSideProps({ locale, params }) {
 
     return {
       props: {
-        initialData: { blogs: blogData.blogPosts, blog: {...blog.blogPost, blogContent_en: blogContentEn, blogContent_an: blogContentAr}, categories: categoryData.categories, tags: tagsData.tags},
+        initialData: { blogs: blogData.blogPosts, blog: {...blog.blogPost, blogContent_en: blogContentEn, blogContent_ar: blogContentAr}, categories: categoryData.categories, tags: tagsData.tags},
         ...(await serverSideTranslations(locale, ["common"])),
       },
     };

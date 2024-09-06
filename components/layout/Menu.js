@@ -18,7 +18,8 @@ export default function Menu() {
                         <li><Link href="/index-8">08. IT Solutions</Link></li>
 
                     </ul>
-                </li> */}
+                    </li> */}
+                    <li> <Link href="/">{t("home")}</Link></li>
                 <li className="menu-item-has-children"><Link href="/about">{t('about')}</Link>
                     <ul className="sub-menu">
                         <li><Link href="/about-sub/#director"  >{t("board_of_directors")}</Link></li>
@@ -28,6 +29,7 @@ export default function Menu() {
                         <li><Link href="/#about-4">Digital agency About</Link></li> */}
                     </ul>
                 </li>
+
                  <li> <Link href="/government">{t("govt_bots")}</Link></li>
                     <li> <Link href="/services">{t("services")}</Link></li>
                     <li> <Link href="/corporate">{t("corporate_governance")}</Link></li>

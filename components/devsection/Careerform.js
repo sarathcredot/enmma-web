@@ -316,6 +316,7 @@ export default function Careerform() {
                 type="file"
                 onChange={(e) => handleFileUpload(e.target.files)}
                 style={{ color: '#3E4073' }}
+                accept=".pdf,.doc,.docx"
                 required
               />
             </div>

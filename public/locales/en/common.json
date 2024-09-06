@@ -1,4 +1,5 @@
 {
+  "home":"Home",
     "about": "About",
     "board_of_directors": "Board Of Directors",
     "management": "Management",
@@ -32,8 +33,8 @@
     "copyright_text": "Copyright © 2024 Al Enmaa Real Estate Co. All rights reserved | Powered By Anathoth IT Solutions",
     "company_description": "Al Enma’a Real Estate Company K.S.C.P was registered and incorporated in State of Kuwait in 1993.",
     "read_more":"Read More",
-    "service_subtitle":"REALISING EXCELLENCE IN REAL ESTATE",
-    "service_title":"To Provide Outstanding Level of Services And Products To Our Clients",
+    "mainservice-subtitle":"REALISING EXCELLENCE IN REAL ESTATE",
+    "mainservice-title":"To Provide Outstanding Level of Services And Products To Our Clients",
     "blog_subtitle":"OUR BLOG UPDATE",
     "blog_title":"Featured News And Insights",
     "Category": "Categories",
@@ -81,7 +82,12 @@
   "mission":"Mission",
   "vison":"vison",
   "mission-text":"To evolve as a trusted partner in property management and security services.To develop sustainable Property Management solutions.",
-  "vision-text":"To become the first-choice partner of real estate and security services and to achieve highest possible standards in the real estate sector."
+  "vision-text":"To become the first-choice partner of real estate and security services and to achieve highest possible standards in the real estate sector.",
+
+
+  "Diverse-properties":"Diverse Properties",
+  "Trusted-Solutions":"Trusted Solutions",
+  "Trusted-Solutions-Description":"Your trusted source for premier real estate and security services, ensuring satisfaction and achieving the highest industry standards."
 
 
 

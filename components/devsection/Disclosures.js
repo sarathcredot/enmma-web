@@ -74,19 +74,17 @@ export default function BlogPost({ style, showItem, showPagination }) {
                         </form>
                     </div>
                     <div className="dev-disclosure-form">
-                        <select className=" dev-disclosure-form-wrap" name="list">
+                        {/* <select className=" dev-disclosure-form-wrap" name="list">
                             <option value="">Sort By</option>
                             <option value="week">Week</option>
                             <option value="30 Days">30 Days</option>
                             <option value="1-6 month">1-6 month</option>
-                        </select>
-                        <select className=" dev-disclosure-form-wrap" name="list">
+                        </select> */}
+                        <select   className=" dev-disclosure-form-wrap" name="list">
                             <option value="">Year Disclosure</option>
-                            <option value="2024">2024</option>
-                            <option value="2023">2023</option>
-                            <option value="2022">2022</option>
-                            <option value="2021">2021</option>
-                            <option value="2022">2022</option>
+                     {getPaginatedProducts.map(item => (
+                            <option key={item._id}value={item.year}>{item.year}</option>
+                        ))}
                         </select>
                     </div>
                 </div>

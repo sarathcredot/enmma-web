@@ -212,7 +212,7 @@ export default function Blog({ initialData }) {
               </div>
             </div>
           </section>
-          <section className="call-back-area">
+          {/* <section1 className="call-back-area">
             <div className="container">
               <div className="row">
                 <div className="col-lg-6">
@@ -264,7 +264,7 @@ export default function Blog({ initialData }) {
                 </div>
               </div>
             </div>
-          </section>
+          </section1> */}
         </div>
         {/* <Bannerfooter data={getDataBySection("annual-report")} /> */}
       </Layout>

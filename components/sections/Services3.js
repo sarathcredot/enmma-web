@@ -38,8 +38,8 @@ export default function Services3() {
                     <div className="row justify-content-center">
                         <div className="col-lg-8">
                             <div className="section-title white-title text-center mb-50 tg-heading-subheading animation-style3">
-                                <span className="sub-title">{t('service_subtitle')}</span>
-                                <h2 className="title tg-element-title">{t('service_title')}</h2>
+                                <span className="sub-title">{t('mainservice-subtitle')}</span>
+                                <h2 className="title tg-element-title">{t('mainservice-title')}</h2>
                             </div>
                         </div>
                     </div>

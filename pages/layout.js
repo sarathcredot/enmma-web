@@ -29,7 +29,6 @@ function RootLayout({ children }) {
   return (
     <html lang={i18n.language} dir={i18n.language === 'ar' ? 'rtl' : 'ltr'}>
       <body className={`${inter.variable} ${outfit.variable}`}>
-        {children}
       </body>
     </html>
   );
