@@ -100,9 +100,9 @@ export async function getServerSideProps({ locale }) {
 
 export function CorporateSubheading({ corporateHeading }) {
   return (
-    <div className="row">
+    <div className="row container">
       <div className="col-xl-7 space-betweeni col-lg-8">
-        <div className="  mb-50 dev_gover ">
+        <div className="  container mb-50 dev_gover ">
           <span className="">{corporateHeading.title}</span>
           <h2 className="w-75 mt-4">{corporateHeading.subtitle}</h2>
         </div>
@@ -123,7 +123,7 @@ export function CorporatePoints({ corporatePoints }) {
     };
   
     return (
-      <div className="row ">
+      <div className="row flex-wrap-reverse">
         <div className="col-md-6 my-5">
           <div className="services__tab-wrap">
             <ul className="nav nav-tabs" id="myTab" role="tablist">
@@ -134,7 +134,7 @@ export function CorporatePoints({ corporatePoints }) {
                     onClick={() => handleOnClick(index)}
                     key={corporatePoint._id}
                   >
-                    <Link href="#dev-link-section" smooth>
+                    <Link href="#focus" smooth>
                       <button
                         className={
                           activeIndex == index ? "nav-link active" : "nav-link"
@@ -157,7 +157,7 @@ export function CorporatePoints({ corporatePoints }) {
             </ul>
           </div>
         </div>
-        <div className="col-md-6" id="dev-link-section">
+        <div className="col-md-6" id="focus">
           <div className="tab-content" id="myTabContent">
             {corporatePoints.map((corporatePoint, index) => {
               return (

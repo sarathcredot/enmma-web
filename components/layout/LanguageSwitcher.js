@@ -12,8 +12,8 @@ export default function LanguageSwitcher() {
   };
 
   return (
-    <div className='search-dev-button" d-flex gap-3'>
-      language:
+    <div className='footer__social-three   d-flex gap-3 mb-2'>
+      <span className='title'>Language:</span>
       <button  className="search-dev-button"onClick={() => changeLanguage('en')}>English</button>
       <button className="search-dev-button " onClick={() => changeLanguage('ar')}>العربية</button>
     </div>

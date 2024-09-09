@@ -92,7 +92,7 @@ export default function About3({ initialData, teamMembersData,pageDescription,pa
                     <section className="team-area pt-100 ">
                         {getDataBySection("team-directors").map((item) => (
                             <div key={item._id} className="container project__area-three">
-                                <div className="row ">
+                                <div className="row container">
                                     <div className="col-xl-7 space-betweeni col-lg-8">
                                         <div className="section-title  mb-50 tg-heading-subheading animation-style3">
                                             <span className="sub-title">{item.subtitle}</span>
@@ -150,7 +150,7 @@ export default function About3({ initialData, teamMembersData,pageDescription,pa
                     <section className="team-area pt-50 bg-dev-color" id="management">
                         {getDataBySection("team-Management").map((item) => (
                             <div key={item._id} className="container project__area-three">
-                                <div className="row ">
+                                <div className="row container">
                                     <div className="col-xl-7 space-betweeni col-lg-8">
                                         <div className="section-title  mb-50 tg-heading-subheading animation-style3">
                                             <span className="sub-title">{item.subtitle}</span>
@@ -205,7 +205,7 @@ export default function About3({ initialData, teamMembersData,pageDescription,pa
                     <section id="executive" className="team-area pt-100 ">
                         {getDataBySection("team-Executive").map((item) => (
                             <div key={item._id} className="container project__area-three">
-                                <div className="row ">
+                                <div className="row container">
                                     <div className="col-xl-7 space-betweeni col-lg-8">
                                         <div className="section-title  mb-50 tg-heading-subheading animation-style3">
                                             <span className="sub-title">{item.subtitle}</span>

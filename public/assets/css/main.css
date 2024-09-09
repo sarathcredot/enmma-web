@@ -5515,7 +5515,7 @@ line-height: 30px;
 }
 @media (max-width: 767.98px) {
   .services__tab-wrap {
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
   }
 }
 .services__tab-wrap .nav-tabs {
@@ -7684,6 +7684,11 @@ html[lang="ar"] .choose__shape-wrap-three img:nth-child(2){
 @media (max-width: 1199.98px) {
   .project__thumb-three img {
     height: 430px;
+  }
+}
+@media (max-width: 750.98px) {
+  .project__thumb-three img {
+    display: none;
   }
 }
 /*devchange*/
@@ -10437,24 +10442,24 @@ html[lang="ar"] .choose__shape-wrap-three img:nth-child(2){
 ===============================*/
 .counter-area {
   background: #FFFBF3;
-  padding: 110px 0 80px;
+  padding: 80px 0 80px;
   position: relative;
   z-index: 1;
   overflow: hidden;
 }
 @media (max-width: 767.98px) {
   .counter-area {
-    padding: 100px 0 70px;
+    padding: 70px 0 70px;
   }
 }
 .counter-area-two {
-  padding: 140px 0 110px;
+  padding: 110px 0 110px;
   position: relative;
   overflow: hidden;
 }
 @media (max-width: 767.98px) {
   .counter-area-two {
-    padding: 100px 0 70px;
+    padding: 70px 0 70px;
   }
 }
 .counter-area-three {
@@ -12882,7 +12887,7 @@ margin-bottom: 20px;
   display: block;
   color: #7375A5;
   text-transform: capitalize;
-  margin-bottom: 15px;
+  margin: 10px 0 ;
 }
 .footer__social-three .list-wrap {
   display: -webkit-box;
@@ -15345,8 +15350,8 @@ text-align: left;
   padding-inline-end: 25px;
 }
 .navbar-padding {
-  padding-left: 2vw;
-  padding-right: 2vw;
+  padding-left: 6vw;
+  padding-right: 6vw;
 }
 .space-betweeni .dev_customsize{
   font-size: 14px;
@@ -15711,7 +15716,8 @@ border-bottom:.2px solid #DDDDDD ;
   background-color: #110B79;
   color: white;
   border: none;
-  padding: 5px 20px;
+  padding: 4px 20px;
+  margin: 10px 0;
   font-size: 13px;
   border-radius: 8px;
  }

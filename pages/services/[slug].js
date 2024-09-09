@@ -42,15 +42,15 @@ export default function Service({ initialData }) {
         <div>
           <div style={{ backgroundColor: "#110B79" }}>
             <div className=" container project__area-three">
-              <div className="row ">
+              <div className="row container">
                 <div className="col-xl-7 space-betweeni col-lg-8">
-                  <div className="  mb-50 dev_gover ">
+                  <div className="  container mb-50 dev_gover ">
                     <span className="">{localizedData.subHeading1}</span>
                     <h2 className=" mt-4">{localizedData.subHeading2}</h2>
                   </div>
                   <div className="dev_customsize services__content-two mt-4">
                     <Link href="/services" className="btn">
-                      See more services
+                      {t("more-services")}
                     </Link>
                   </div>
                 </div>
@@ -86,7 +86,7 @@ export function ServicePoints({ servicePoints }) {
   };
 
   return (
-    <div className="row">
+    <div className="row flex-wrap-reverse">
       <div className="col-md-7">
         <div className="services__tab-wrap">
           <ul className="nav nav-tabs" id="myTab" role="tablist">
@@ -97,7 +97,7 @@ export function ServicePoints({ servicePoints }) {
                   onClick={() => handleOnClick(index)}
                   key={servicePoint._id}
                 >
-                  <Link href="#dev-link-section" smooth>
+                  <Link href="#focus" smooth>
                     <button
                       className={
                         activeIndex == index ? "nav-link active" : "nav-link"
@@ -120,7 +120,7 @@ export function ServicePoints({ servicePoints }) {
           </ul>
         </div>
       </div>
-      <div className="col-md-5" id="dev-link-section">
+      <div className="col-md-5" id="focus">
         <div className="tab-content" id="myTabContent">
           {servicePoints.map((servicePoint, index) => {
             return (

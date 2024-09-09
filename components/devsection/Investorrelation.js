@@ -56,7 +56,7 @@ export default function Contact({ data1, data }) {
   return (
     <>
       <div className="container project__area-three">
-        <div className="row">
+        <div className="row container">
           {data.map((item) => (
             <div key={item._id} className="col-xl-7 space-betweeni col-lg-8">
               <div className="mb-50 dev_gover">

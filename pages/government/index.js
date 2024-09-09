@@ -80,11 +80,11 @@ export default function Government({ initialData, pageTitle,pageDescription, }) 
                 <div style={{ backgroundColor: '#110B79' }}>
                     <div className="container project__area-three ">
 
-                        <div className="row ">
+                        <div className="row container">
                             {getDataBySection('govern-heading').map((item) => (
                                 <div key={item._id} className="col-xl-7 space-betweeni col-lg-8">
 
-                                    <div className="  mb-50 dev_gover ">
+                                    <div className="  container mb-50 dev_gover ">
                                         <span className="">{item.subtitle}</span>
                                         <h2 className="w-75 mt-4">{item.title}</h2>
                                     </div>
@@ -96,7 +96,7 @@ export default function Government({ initialData, pageTitle,pageDescription, }) 
                         <section className="project__item-three shine-animate-item">
                             {getDataBySection('Government-1Project').map((item) => (
 
-                                <div key={item._id}>
+                                <div className="container" key={item._id}>
                                     <div className="project__content-two">
 
                                         <h2 className="title"><Link href="#/project-details">{item.title}</Link></h2>

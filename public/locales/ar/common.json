@@ -4,6 +4,7 @@
     "board_of_directors": "مجلس الإدارة",
     "management": "الإدارة",
     "executive": "التنفيذي",
+    "our-story": "قصةنا",
     "govt_bots": "البوتات الحكومية",
     "services": "الخدمات",
     "corporate_governance": "حوكمة الشركات",
@@ -66,6 +67,8 @@
    "Briefly-describe-your-last-job-duties":"صف بإيجاز واجباتك الوظيفية الأخيرة",
    "If-Any-Additional-Information":"إذا كان هناك أي معلومات إضافية",
   "Upload-Your-Resume":"قم بتحميل سيرتك الذاتية (pdf أو docx فقط)",
+  "read-more":"اقرأ المزيد",
+  "more-services":"مزيد من الخدمات",
 
 
 

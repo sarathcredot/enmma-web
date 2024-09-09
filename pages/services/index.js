@@ -88,11 +88,11 @@ export default function Services({ initialData }) {
             </div>
           </div>
         </section>
-        <section
+        {/* <section1
           className="request-area request-bg"
           data-background="/assets/img/bg/request_bg.jpg"
         >
-          <div className="container">
+          <div1 className="container">
             <div className="row justify-content-center">
               <div className="col-lg-8">
                 <div className="request-content text-center">
@@ -115,7 +115,7 @@ export default function Services({ initialData }) {
                 </div>
               </div>
             </div>
-          </div>
+          </div1>
           <div className="request-shape">
             <img
               src="/assets/img/images/request_shape01.png"
@@ -130,7 +130,7 @@ export default function Services({ initialData }) {
               data-aos-delay={400}
             />
           </div>
-        </section>
+        </section1> */}
       </Layout>
     </>
   );

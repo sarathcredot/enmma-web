@@ -23,7 +23,7 @@ export default function AnnualReport({ data }) {
             <div className="container project__area-three">
                 {data.map((item) => (
 
-                    <div key={item._id} className="row">
+                    <div key={item._id} className="row container">
                         <div className="col-xl-7 space-betweeni col-lg-8">
                             <div className="mb-50 dev_gover">
                                 <span className="">{item.subtitle}</span>

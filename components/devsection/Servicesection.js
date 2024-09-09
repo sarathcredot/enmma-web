@@ -27,6 +27,8 @@ export default function Servicesection({ services }) {
 }
 
 export function ServiceItem({ service }) {
+  const { t, i18n } = useTranslation("common");
+
   return (
     <div className="dev-services-section">
       <div className=" col-xl-4 col-md-12 dev-fit-image  ">
@@ -40,7 +42,7 @@ export function ServiceItem({ service }) {
         </p>
         <span>
           <Link href={`/services/${service.slug}`} className="btn">
-            Read More
+            {t('read-more')}
           </Link>
         </span>
       </div>

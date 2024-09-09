@@ -82,10 +82,10 @@ export default function Financialstatement({ initialData ,pageTitle,pageDescript
             <Banner1 data={getDataBySection('Financial-banner')} />
             
             <div className="container project__area-three ">
-                    <div className="row ">
+                    <div className="row container">
                         {getDataBySection('Financial-heading').map((item) => (
                     <div className="col-xl-7 space-betweeni col-lg-8">
-                            <div  className="  mb-50 dev_gover " >
+                            <div  className="  container mb-50 dev_gover " >
                             <span className="">{item.subtitle}</span>
                             <h2 className="w-75 mt-4" style={{ color: '#110B79' }}>{item.title}</h2>
                         </div>
