@@ -2,12 +2,15 @@
 
 import { useState } from 'react';
 import axios from 'axios';
-
+import { Country } from 'country-state-city';
 import { useTranslation } from 'next-i18next';
 
 export default function Careerform() {
-  const { t, i18n } = useTranslation('common');
-
+  const { t } = useTranslation('common');
+  
+  // Get country data using country-state-city library
+  let countryData = Country.getAllCountries();
+  
   const [formData, setFormData] = useState({
     position: '',
     fullName: '',
@@ -16,7 +19,7 @@ export default function Careerform() {
     mobileNumber: '',
     passportNumber: '',
     emailAddress: '',
-    nationality: '',
+    nationality: '', // This will store the country isoCode
     degreeLevel: '',
     careerLevel: '',
     jobDuties: '',
@@ -39,7 +42,7 @@ export default function Careerform() {
       fileData.append('media', files[0]);
 
       try {
-        const response = await axios.post('${process.env.NEXT_PUBLIC_BASE_URL}/media', fileData, {
+        const response = await axios.post(`${process.env.NEXT_PUBLIC_BASE_URL}/media`, fileData, {
           headers: { 'Content-Type': 'multipart/form-data' },
         });
 
@@ -76,7 +79,7 @@ export default function Careerform() {
     }
 
     try {
-      const response = await fetch('${process.env.NEXT_PUBLIC_BASE_URL}/careers/', {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/careers/`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -228,12 +231,11 @@ export default function Careerform() {
                 required
               >
                 <option value="">{t('Select-Nationality')}</option>
-                <option value="AAA">AAA</option>
-                <option value="BBBB">BBBB</option>
-                <option value="CCCC">CCCC</option>
-                <option value="DDDD">DDDD</option>
-                <option value="SSSSS">SSSSS</option>
-                <option value="FFFFF">FFFFF</option>
+                {countryData.map((country) => (
+                  <option key={country.isoCode} value={country.name}>
+                    {country.name}
+                  </option>
+                ))}
               </select>
             </div>
           </div>
@@ -250,12 +252,12 @@ export default function Careerform() {
                 required
               >
                 <option value="">{t('Degree-Level')}</option>
-                <option value="AAA">AAA</option>
-                <option value="BBBB">BBBB</option>
-                <option value="CCCC">CCCC</option>
-                <option value="DDDD">DDDD</option>
-                <option value="SSSSS">SSSSS</option>
-                <option value="FFFFF">FFFFF</option>
+                <option value="High School of Equivalent ">High School of Equivalent </option>
+                <option value="Certification">Certification</option>
+                <option value="Vocational">Vocational</option>
+                <option value="Associated Degree">Associated Degree</option>
+                <option value="Bachelor's Degree">Bachelor's Degree</option>
+                <option value="Master's Degree">Master's Degree</option>
               </select>
             </div>
           </div>
@@ -270,12 +272,11 @@ export default function Careerform() {
                 required
               >
                 <option value="">{t('Career-Level')}</option>
-                <option value="AAA">AAA</option>
-                <option value="BBBB">BBBB</option>
-                <option value="CCCC">CCCC</option>
-                <option value="DDDD">DDDD</option>
-                <option value="SSSSS">SSSSS</option>
-                <option value="FFFFF">FFFFF</option>
+                <option value="Student">Student</option>
+                <option value="Entry Level">Entry Level</option>
+                <option value="Mid Career">Mid Career</option>
+                <option value="Managment">Managment</option>
+                <option value="Executive">Executive</option>
               </select>
             </div>
           </div>
@@ -312,7 +313,7 @@ export default function Careerform() {
             <div className="form-grp">
               <p>{t('Upload-Your-Resume')}</p>
               <input
-              className='form-control form-control-lg'
+                className='form-control form-control-lg'
                 type="file"
                 onChange={(e) => handleFileUpload(e.target.files)}
                 style={{ color: '#3E4073' }}

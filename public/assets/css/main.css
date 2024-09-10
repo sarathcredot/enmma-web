@@ -15866,3 +15866,50 @@ html[lang="en-US"] :root {
     padding: 60px 0px; 
   }
 }
+
+
+/*Removing some default CSS from our language switcher*/
+/* .wpml-floating-language-switcher .wpml-ls-statics-shortcode_actions {
+  margin-bottom: 0;
+}
+  
+.wpml-floating-language-switcher  .wpml-ls-statics-shortcode_actions a {
+  background-color: transparent !important;
+}
+  
+.wpml-floating-language-switcher .wpml-ls-legacy-list-horizontal a {
+  padding: 5px;
+}
+   */
+  
+/*Customize this if you want*/
+.wpml-floating-language-switcher {
+  position: fixed;
+  z-index: 9999;
+  bottom: 5%; 
+  left: 5%;  
+ 
+}
+.floatlanglink {
+  display: inline; 
+  background: #FE7B12;
+  /* backdrop-filter: blur(40px); */
+  /* border: 1px solid white; */
+  color: white;
+  padding: 10px ;
+  margin: 10px;
+  border-radius: 4px; 
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.25);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.25);
+  box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.25);
+  transition: 1s ease;
+}
+.floatlanglink:hover{
+  color: white;
+  background: var(--tg-theme-secondary);
+
+}
+.floatlanglink.active {
+  display: none; 
+}
+/*  */

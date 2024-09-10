@@ -21,6 +21,7 @@ import Footer6 from "./footer/Footer6"
 import NextTopLoader from 'nextjs-toploader';
 
 import { appWithTranslation, i18n } from 'next-i18next';
+import FloatingLanguageSwitcher from "./header/Floating-lang"
 
 // export const metadata = {
 //     title: 'Apexa - Business Consulting NextJS Template',
@@ -94,7 +95,7 @@ function Layout({ headerStyle, footerStyle, headTitle,   breadcrumbTitle, childr
             {footerStyle == 5 ? < Footer5 /> : null}
             {footerStyle == 6 ? < Footer6 /> : null}
             {footerStyle == 7 ? < Footer7 /> : null}
-
+            <FloatingLanguageSwitcher/>
             <BackToTop />
         </>
     )
