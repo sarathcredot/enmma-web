@@ -24,13 +24,13 @@ export default function TestimonialActiveTwoSlider() {
         <>
      
                     <div className="testimonial__item-three">
-                        <div className="testimonial__rating testimonial__rating-two">
+                        {/* <div className="testimonial__rating testimonial__rating-two">
                             <i className="fas fa-star" />
                             <i className="fas fa-star" />
                             <i className="fas fa-star" />
                             <i className="fas fa-star" />
                             <i className="fas fa-star" />
-                        </div>
+                        </div> */}
                         <p>“ Morem ipsum dolor sit amet, consectetur adipiscing elita florai sum dolor sit amet, consecteture.Borem ipsum dolor sit amet, consectetur adipiscing elita Moremsit amet.</p>
                         <div className="testimonial__bottom">
                    
@@ -39,11 +39,11 @@ export default function TestimonialActiveTwoSlider() {
                             </div>
                         </div>
                     </div>
-            
+{/*             
             <div className="testimonial__nav-two">
                 <div className="testimonial-button-prev"><i className="flaticon-right-arrow" /></div>
                 <div className="testimonial-button-next"><i className="flaticon-right-arrow" /></div>
-            </div>
+            </div> */}
         </>
     )
 }

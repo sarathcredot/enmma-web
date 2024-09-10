@@ -44,7 +44,7 @@ export default function Service({ initialData }) {
             <div className=" container project__area-three">
               <div className="row container">
                 <div className="col-xl-7 space-betweeni col-lg-8">
-                  <div className="  container mb-50 dev_gover ">
+                  <div className="  container mb-50 dev_gover w-75 ">
                     <span className="">{localizedData.subHeading1}</span>
                     <h2 className=" mt-4">{localizedData.subHeading2}</h2>
                   </div>

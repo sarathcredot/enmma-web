@@ -82,7 +82,7 @@ export default function Disclosure({ initialData, pageTitle, pageDescription, })
                     <div  className="row container">
             {getDataBySection('disclosure-heading').map((item) => (
                     <div key={item.id} className="col-xl-7 space-betweeni col-lg-8">
-                        <div  className="  container mb-50 dev_gover " >
+                        <div  className="  container mb-50 dev_gover w-75 " >
                             <span className="">{item.subtitle}</span>
                             <h2 className=" mt-4 w-75" style={{ color: '#110B79' }}>{item.title}</h2>
                         </div>
