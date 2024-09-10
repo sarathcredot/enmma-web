@@ -38,7 +38,7 @@ export default function Blog({ initialData }) {
       try {
         const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/cms`);
         const data = await response.json();
-        const fetchedData = data.filter((item) => item.page === "blog");
+        const fetchedData = data.filter((item) => item.page === "Blog");
         setData(fetchedData);
       } catch (error) {
         console.error("Failed to load data:", error);
@@ -108,7 +108,7 @@ export default function Blog({ initialData }) {
   return (
     <>
       <Layout headerStyle={6} footerStyle={3}>
-        <Banner1 data={getDataBySection("blog-banner")} />
+        <Banner1 data={getDataBySection("Blog-banner")} />
         <div>
           <section className="blog__area">
             <div className="container">
