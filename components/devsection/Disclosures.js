@@ -63,7 +63,7 @@ export default function BlogPost({ style, showItem, showPagination }) {
         <>
             <div dir="ltr" className="container disclosuredevsection" style={{ backgroundColor: '#ECF6FA' }}>
                 <div className="dev-disclosure-main">
-                    <div className="sidebar__search">
+                    {/* <div className="sidebar__search">
                         <form action="#">
                             <input type="text" placeholder="Search . . ." />
                             <button type="submit">
@@ -72,7 +72,7 @@ export default function BlogPost({ style, showItem, showPagination }) {
                                 </svg>
                             </button>
                         </form>
-                    </div>
+                    </div> */}
                     <div className="dev-disclosure-form">
                         {/* <select className=" dev-disclosure-form-wrap" name="list">
                             <option value="">Sort By</option>
