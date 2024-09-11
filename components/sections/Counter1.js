@@ -10,12 +10,12 @@ export default function Counter1({data}) {
 
                     <div className="row flex-wrap">
             
-                        <div className=" d-flex gap-4 justify-content-center justify-content-md-between align-items-center flex-wrap flex-xl-nowrap">
+                        <div className=" d-flex gap-4 justify-content-center  align-content-center flex-wrap flex-xl-nowrap">
                       {Object.keys(item.localizedIcondata).map(iconKey => (
 
                             <div className="counter-item">
                                 <div className="icon">
-                                <img src={`${process.env.NEXT_PUBLIC_MEDIA_BASE_URL}${item.localizedIcondata[iconKey].iconpath}`} alt={item.localizedIcondata[iconKey].title} />                                </div>
+                                <img src={`${process.env.NEXT_PUBLIC_MEDIA_BASE_URL}${item.localizedIcondata[iconKey].iconpath}`} alt={item.localizedIcondata[iconKey].title} width={100} height={100} /> </div>
                                 <div className="content">
                                     <h2 className="count"><CounterUp count={item.localizedIcondata[iconKey].number_en}/>+</h2>
                                     <p className="w-75">{item.localizedIcondata[iconKey].title}</p>

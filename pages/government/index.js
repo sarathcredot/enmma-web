@@ -101,7 +101,7 @@ export default function Government({ initialData, pageTitle,pageDescription, }) 
 
                                         <h2 className="title"><Link href="#/project-details">{item.title}</Link></h2>
                                         <p className="dev-gov-parag">{item.description}</p>
-                                        <Link href={item.buttonLink} className="btn ">{item.buttonTitle}</Link>
+                                        {/* <Link href={item.buttonLink} className="btn ">{item.buttonTitle}</Link> */}
                                     </div>
                                     <div className="project__thumb-three shine-animate">
                                         <img src={`${process.env.NEXT_PUBLIC_MEDIA_BASE_URL}${item.bannerImage}`} alt="" />
@@ -119,7 +119,7 @@ export default function Government({ initialData, pageTitle,pageDescription, }) 
                                 {/* <span>Souq Al Wataniya</span> */}
                                 <h2 className="title"><Link href="#/project-details">{item.title}</Link></h2>
                                 <p className="dev-gov-parag">{item.description}</p>
-                                <Link href={item.buttonLink} className="btn ">{item.buttonTitle}</Link>
+                                {/* <Link href={item.buttonLink} className="btn ">{item.buttonTitle}</Link> */}
                             </div>
                             <div className="project__thumb-three-2 shine-animate">
                                 <img src={`${process.env.NEXT_PUBLIC_MEDIA_BASE_URL}${item.bannerImage}`} alt="" />
@@ -142,7 +142,7 @@ export default function Government({ initialData, pageTitle,pageDescription, }) 
 export async function getServerSideProps({ locale }) {
     const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/cms`);
     const data = await response.json();
-    const fetchedData = data.filter(item => item.page === 'Government');
+    const fetchedData = data.filter(item => item.page ==='Government');
     const metadataResponse = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/pageMetadata/`);
 
     if (!response.ok || !metadataResponse.ok) {
