@@ -85,7 +85,7 @@ export default function About({ initialData, pageTitle,pageDescription, }) {
                     <div key={item._id} className="col-xl-7 space-betweeni col-lg-8">
                         <div className="  container mb-50 dev_gover w-75 ">
                             <span className="">{item.subtitle}</span>
-                            <h2 className="w-75 mt-4">{item.title}</h2>
+                            <h2 className="w-75 mt-4 text-wrap">{item.title}</h2>
                         </div>
                         <div className="dev_customsize mt-4">{item.description}</div>
                     </div>

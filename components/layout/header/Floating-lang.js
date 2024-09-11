@@ -37,7 +37,7 @@ const FloatingLanguageSwitcher = () => {
           <div key={lang.code}>
             <a
               onClick={() => changeLanguage(lang.code)}
-              className={`${i18n.language === lang.code ? "active" : ""} floatlanglink`}
+              className={`${i18n.language === lang.code ? "active" : ""} floatlanglink `}
               style={{ cursor: "pointer" }}
               id={`tooltip-${lang.code}`}
               onMouseEnter={() => toggleTooltip(`tooltip-${lang.code}`)}
