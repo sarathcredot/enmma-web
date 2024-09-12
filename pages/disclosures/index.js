@@ -94,7 +94,7 @@ export default function Disclosure({ initialData, pageTitle, pageDescription, })
             </div>
             </div>
 
-            <Bannerfooter data={getDataBySection('disclosure-banner')}/>
+            <Bannerfooter data={getDataBySection('disclosure-contact')}/>
             </Layout>
             
         </>

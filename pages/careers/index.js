@@ -76,10 +76,10 @@ export default function About({ initialData, pageTitle,pageDescription, }) {
     </Head>
 
             <Layout headerStyle={6} footerStyle={3}>
-            <Banner1 data={getDataBySection('annual-banner')} bgColor={"#110B79"} fontColor={"#FFFFFF"}fontColor2={'#FFFFFF'}/>
+            <Banner1 data={getDataBySection('career-banner')} bgColor={"#110B79"} fontColor={"#FFFFFF"}fontColor2={'#FFFFFF'}/>
             <div  className=" " style={{ backgroundColor: '#110B79' }}>
             <div className=" container project__area-three" >
-            {getDataBySection('annual-heading').map((item) => (
+            {getDataBySection('career-heading').map((item) => (
 
                 <div className="row container">
                     <div key={item._id} className="col-xl-7 space-betweeni col-lg-8">
@@ -94,11 +94,11 @@ export default function About({ initialData, pageTitle,pageDescription, }) {
             <Careerform  />
            
            </div>
-           <div className="dev-bottom container"><Sectionfoot data={getDataBySection('annual-contact')}/></div>  
+           <div className="dev-bottom container"><Sectionfoot data={getDataBySection('career-trusted')}/></div>  
 
             </div>
 
-            <Bannerfooter data={getDataBySection('annual-contact')}/>
+            <Bannerfooter data={getDataBySection('career-contact')}/>
             </Layout>
         </>
     )
