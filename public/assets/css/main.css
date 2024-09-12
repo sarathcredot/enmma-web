@@ -10492,10 +10492,11 @@ display: none;  }
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center;
+  justify-content: center; */
+  padding-inline: clamp(40px,3vw,10px);
   gap: 20px;
-  margin: auto auto  auto 30px;
+  margin: auto;
   width: 100%;
 }
 @media only screen and (min-width: 600px) {
