@@ -7970,7 +7970,7 @@ display: none;  }
   padding: 50px 50px;
   position: absolute;
   right: 105px;
-  top: 50%;
+  top: 48%;
   z-index: 2;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
@@ -8037,7 +8037,7 @@ display: none;  }
   padding: 50px 50px;
   position: absolute;
   right:0px;
-  top: 50%;
+  top: 48%;
   z-index: 2;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
