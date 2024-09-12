@@ -92,10 +92,12 @@ export default function About({ initialData, pageTitle, pageDescription, }) {
                                 <div className="dev_customsize mt-4" style={{ color: '#282739' }}>{item.description}</div>
                             </div>
                         ))}
-                 <ContactForm/>
-                    <Bannerfooter data={getDataBySection('contact-footer')} />
 
-                </div></div>
+                </div>
+                 <ContactForm/>
+                
+                </div>
+                    <Bannerfooter data={getDataBySection('contact-contact')} />
             </Layout>
         </>
     )

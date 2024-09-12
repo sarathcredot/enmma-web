@@ -19,7 +19,7 @@ export default function About({ initialData, pageTitle,pageDescription, }) {
             try {
                 const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/cms`);
                 const data = await response.json();
-                const fetchedData = data.filter(item => item.page === 'annual-report');
+                const fetchedData = data.filter(item => item.page === 'career');
                 setData(fetchedData);
             } catch (error) {
                 console.error('Failed to load data:', error);
@@ -94,7 +94,7 @@ export default function About({ initialData, pageTitle,pageDescription, }) {
             <Careerform  />
            
            </div>
-           <div className="dev-bottom container"><Sectionfoot data={getDataBySection('career-trusted')}/></div>  
+           <div className="dev-bottom container"><Sectionfoot data={getDataBySection('career-Trusted')}/></div>  
 
             </div>
 

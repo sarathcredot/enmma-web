@@ -58,12 +58,12 @@ export default function ComplaintSection() {
   };
 
   return (
-    <section className="contact__area">
+    <section className="">
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-5">
             <div className="contact__content">
-              <div className="section-title mb-35">
+              <div className="section-title mb-30">
                 <h2 className="title">{t('contact-title')}</h2>
                 <p>{t("contact-subtitle")}</p>
               </div>

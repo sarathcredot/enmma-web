@@ -259,7 +259,7 @@ export default function About3({ initialData, teamMembersData,pageDescription,pa
                     </section>
                 </div>
 
-                <Bannerfooter data={getDataBySection("footer-banner")} />
+                <Bannerfooter data={getDataBySection("team-contact")} />
             </Layout>
         </>
     );
