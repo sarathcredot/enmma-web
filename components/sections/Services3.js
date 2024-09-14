@@ -54,7 +54,7 @@ export default function Services3() {
                                             </div>
                                             <div className="services__top-title">
                                                 <h2 className="title">
-                                                    <Link href="">{service.title}</Link>
+                                                    <Link href="/services">{service.title}</Link>
                                                 </h2>
                                             </div>
                                         </div>

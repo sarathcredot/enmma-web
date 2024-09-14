@@ -3447,9 +3447,9 @@ html[lang="ar"] .tgmobile__menu .navigation li > a {
   position: relative;
   z-index: 1;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 800.98px) {
   .about__bg-two {
-    padding: 100px 0;
+    padding: 60px 0;
   }
 }
 .about__area-four {
@@ -5434,7 +5434,10 @@ font-size:18px;
 color: #282739;
 font-weight: 400;
 line-height: 30px;
-  margin-bottom: 25px;
+margin-bottom: 25px;
+text-wrap: wrap;
+overflow-y: scroll;
+
 }
 .services__content-three .btn {
   background: var(--tg-color-yellow-light);
@@ -6592,7 +6595,7 @@ line-height: 30px;
 }
 @media (max-width: 767.98px) {
   .choose__area-four {
-    padding: 100px 0;
+    padding: 70px 0;
   }
 }
 .choose__area-five {
@@ -6792,12 +6795,12 @@ text-align: start;
 }
 @media (max-width: 1199.98px) {
   .choose__list-box-two {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
 }
-@media (max-width: 991.98px) {
+@media (max-width: 600.98px) {
   .choose__list-box-two {
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
   }
 }
 .choose__list-box-two:hover .choose__list-icon-two {

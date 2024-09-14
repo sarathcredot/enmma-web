@@ -11,7 +11,7 @@ export default function Counter2({data}) {
                             
                     <div className="row flex-wrap">
             
-                    <div className=" d-flex gap-4 justify-content-center justify-content-md-between align-items-center fflex-wrap flex-lg-nowrap">
+                    <div className=" d-flex gap-4 justify-content-center justify-content-md-between align-items-center flex-wrap flex-lg-nowrap">
                                     {Object.keys(item.localizedIcondata).map(iconKey => (
 
                                         <div className="counter-item">
