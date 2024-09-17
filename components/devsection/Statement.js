@@ -7,6 +7,7 @@ import Link from "next/link";
 import SVG from "@/components/elements/Allsvg";
 
 export default function Statement({ style, showItem, showPagination }) {
+    
     const [currentPage, setCurrentPage] = useState(1);
     const [groupedData, setGroupedData] = useState([]);
 
