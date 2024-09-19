@@ -12931,7 +12931,7 @@ margin-bottom: 20px;
   font-weight: 200;
   line-height: 28px;
   text-wrap: wrap;
-  text-align: left;
+  text-align: start;
   
 }
 .footer__social-three .list-wrap li a {
