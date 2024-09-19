@@ -141,7 +141,7 @@ export default function About({ initialData, pageTitle,pageDescription, }) {
                                 </div>
                                 <div className="col-lg-7">
                                     <div className="choose__list-two">
-                                        <ul className="">
+                                        <ul style={{listStyle:"none"}}>
                                            
                                             <li>
                                                 <div className="choose__list-box-two">

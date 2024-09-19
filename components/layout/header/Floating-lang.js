@@ -1,60 +1,72 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
-import { Tooltip, TooltipProps } from "reactstrap";
 
 const FloatingLanguageSwitcher = () => {
-    const { t } = useTranslation('common');
+  const { t } = useTranslation('common');
   const { i18n } = useTranslation();
   const router = useRouter();
-  const [tooltipOpen, setTooltipOpen] = useState({}); 
+  const [tooltipVisible, setTooltipVisible] = useState({});
 
   const toggleTooltip = (id) => {
-    setTooltipOpen((prev) => ({
+    setTooltipVisible((prev) => ({
       ...prev,
       [id]: !prev[id],
     }));
   };
-
-  useEffect(() => {
-  }, []);
 
   const changeLanguage = async (languageCode) => {
     await i18n.changeLanguage(languageCode);
     router.push(router.pathname, router.asPath, { locale: languageCode });
   };
 
-  // Language options
   const languages = [
-    { code: "en", name: "En" ,lang: "English"},
-    { code: "ar", name: "ع",lang: "العربية"},
+    { code: "en", name: "En", lang: "English" },
+    { code: "ar", name: "ع", lang: "العربية" },
   ];
 
   return (
     <div className="wpml-floating-language-switcher">
       <div className="wpml-ls-statics-shortcode_actions">
         {languages.map((lang) => (
-          <div key={lang.code}>
+          <div key={lang.code} style={{ position: 'relative', display: 'inline-block' }}>
             <a
               onClick={() => changeLanguage(lang.code)}
-              className={`${i18n.language === lang.code ? "active" : ""} floatlanglink `}
+              className={`${i18n.language === lang.code ? "active" : ""} floatlanglink`}
               style={{ cursor: "pointer" }}
-              id={`tooltip-${lang.code}`}
-              onMouseEnter={() => toggleTooltip(`tooltip-${lang.code}`)}
-              onMouseLeave={() => toggleTooltip(`tooltip-${lang.code}`)}
+              onMouseEnter={() => toggleTooltip(lang.code)}
+              onMouseLeave={() => toggleTooltip(lang.code)}
             >
               {lang.name}
             </a>
-            <Tooltip
-              isOpen={tooltipOpen[`tooltip-${lang.code}`]}
-              target={`tooltip-${lang.code}`}
-              toggle={() => toggleTooltip(`tooltip-${lang.code}`)}
-            >
-              {t('Change-language')} {lang.lang}
-            </Tooltip>
+
+            {tooltipVisible[lang.code] && (
+              <div className="custom-tooltip">
+                {t('Change-language')} {lang.lang}
+              </div>
+            )}
           </div>
         ))}
       </div>
+      <style jsx>{`
+        .custom-tooltip {
+          position: absolute;
+          bottom: 100%;
+          left: 50%;
+          transform: translateX(-50%);
+          background-color: black;
+          color: white;
+          padding: 5px 10px;
+          border-radius: 4px;
+          white-space: nowrap;
+          font-size: 12px;
+          z-index: 1000;
+          opacity: 0.75;
+        }
+        .floatlanglink.active {
+          font-weight: bold;
+        }
+      `}</style>
     </div>
   );
 };

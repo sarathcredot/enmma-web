@@ -3,7 +3,7 @@ import CounterUp from "../elements/CounterUp";
 export default function Counter2({data}) {
     return (
         <>
-            <section className="counter-area-two">
+            <section className="counter-area">
                 <div className="container">
                     <div className="row justify-content-center">
                         {data.map((item) => (
