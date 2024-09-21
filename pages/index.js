@@ -88,6 +88,7 @@ export default function Home({
                 <Marketingexpert1 data={localizeData(solutionSectionData)} datas={localizeData(trustedSectionData)} />
                 <BlogPost3 />
             </Layout>
+
         </>
     );
 }
