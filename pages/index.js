@@ -10,7 +10,7 @@ import BlogPost3 from "@/components/sections/BlogPost3";
 import Request3 from "@/components/sections/Request3";
 import Devindex1 from "@/components/devcreate/devindexherobottom";
 import Head from 'next/head';
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
