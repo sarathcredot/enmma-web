@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react"
 import axios from "axios"
 import Disclosurelist from "./Disclosurelist"
 import Pagination from "./Pagination"
+import { Table, Button } from 'reactstrap';
 
 export default function BlogPost({ style, showItem, showPagination }) {
     const [currentPage, setCurrentPage] = useState(1)
@@ -73,40 +74,52 @@ export default function BlogPost({ style, showItem, showPagination }) {
                             </button>
                         </form>
                     </div> */}
-                    <div className="dev-disclosure-form">
+                    <div className="table-container">
                         {/* <select className=" dev-disclosure-form-wrap" name="list">
                             <option value="">Sort By</option>
                             <option value="week">Week</option>
                             <option value="30 Days">30 Days</option>
                             <option value="1-6 month">1-6 month</option>
                         </select> */}
-                        <select   className=" dev-disclosure-form-wrap" name="list">
+                        {/* <select   className=" dev-disclosure-form-wrap" name="list">
                             <option value="">Year Disclosure</option>
                      {getPaginatedProducts.map(item => (
                             <option key={item._id}value={item.year}>{item.year}</option>
                         ))}
-                        </select>
+                        </select> */}
                     </div>
                 </div>
 
                 {getPaginatedProducts.length === 0 && (
                     <h3>No Products Found </h3>
                 )}
-
-                <div className="dev-disclosure-table">
+                
+                <table >
+                <thead>
+          <tr>
+            <th>Disclosures</th>
+            <th>Date</th>
+            <th>Details</th>
+          </tr>
+        </thead>
+   
+                {/* <div className="dev-disclosure-table">
                     <h6>Disclosures</h6>
                     <h6>Date</h6>
                     <h6>Details</h6>
-                </div>
-
+                </div> */}
+   
                 {getPaginatedProducts.map(item => (
                     <React.Fragment key={item._id}>
-                        <div className="dev-disclosure-border">
+                        <tbody className="">
                             {!style && <Disclosurelist item={item} />}
                             {style === 1 && <Disclosurelist item={item} />}
-                        </div>
+                        </tbody>
                     </React.Fragment>
                 ))}
+                  
+         
+       </table>
             </div>
             {showPagination &&
                 <Pagination

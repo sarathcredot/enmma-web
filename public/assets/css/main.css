@@ -15945,3 +15945,45 @@ html[lang="en-US"] :root {
   display: none; 
 }
 /*  */
+/* Add this to your CSS file */
+/* Ensure table container has horizontal scroll on smaller screens */
+.table-container {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th{
+  background-color: white;
+}
+th, td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+/* Responsive behavior for smaller screens */
+@media (max-width: 768px) {
+  table, thead, tbody, th, td, tr {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+
+
+  tr {
+    margin-bottom: 10px;
+    border: none;
+
+  }
+
+  td {
+  
+    border-bottom: 1px solid #ddd;
+  }
+
+}
