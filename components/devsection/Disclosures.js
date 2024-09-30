@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react"
 import axios from "axios"
 import Disclosurelist from "./Disclosurelist"
 import Pagination from "./Pagination"
-import { Table, Button } from 'reactstrap';
 
 export default function BlogPost({ style, showItem, showPagination }) {
     const [currentPage, setCurrentPage] = useState(1)
