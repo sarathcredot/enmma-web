@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 'use client';
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
@@ -6,29 +5,6 @@ import Statementlist from './Statementlist';
 import Pagination from './Pagination';
 import Link from 'next/link';
 import SVG from '@/components/elements/Allsvg';
-=======
-'use client'
-import React, { useEffect, useState } from "react"
-import axios from "axios"
-import Disclosurelist from "./Disclosurelist"
-import Pagination from "./Pagination"
-
-export default function BlogPost({ style, showItem, showPagination }) {
-    const [currentPage, setCurrentPage] = useState(1)
-    const [data, setData] = useState([])
-    const [limit, setLimit] = useState(showItem)
-    const [pagination, setPagination] = useState([])
-    const [pages, setPages] = useState(0)
-    const paginationItem = 4
-
-    useEffect(() => {
-        fetchData()
-    }, [])
-
-    useEffect(() => {
-        cratePagination()
-    }, [limit, pages, data.length])
->>>>>>> 91847a97370f90e0eedbafa48c483daea7b557f8
 
 export default function Statement({ style, showItem, showPagination }) {
   const [currentPage, setCurrentPage] = useState(1);
