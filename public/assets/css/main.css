@@ -13994,7 +13994,7 @@ margin-bottom: 20px;
   transform: translateY(-50%) rotate(-90deg);
 }
 :root[dir='rtl'] .text-25-years{
-  inset-inline-start: -135px;
+  inset-inline-start: -150px;
 }
 .text-experience {
   font-size: 16px;
@@ -14874,10 +14874,10 @@ margin-bottom: 20px;
   .text-25-years {
     padding: 5px 15px 5px 24px;
     border-radius: 50px 0px 50px 50px;
-    inset-inline-start: -170px;
+    inset-inline-start: -175px;
   }
   :root[dir='rtl'] .text-25-years{
-    inset-inline-start: -100px;
+    inset-inline-start: -130px;
   }
   .slider_baner_home6 .banner__content-three {
     padding: 30px 20px 30px 50px;
@@ -15348,6 +15348,8 @@ text-align: left;
   padding-bottom: 25px;
   flex-wrap: wrap;
   justify-content: center;
+  height: 100%;
+  margin: auto 0;
 }
 .bg-dev-color{
   background-color: #FFFBF3;
@@ -15989,4 +15991,15 @@ th, td {
     border-bottom: 1px solid #ddd;
   }
 
+}
+.discloure-list{
+  text-wrap:nowrap;
+  overflow: hidden;
+  max-width: calc(10.2em* 3);
+  text-overflow: ellipsis;
+
+}
+.dev_index_comp{
+  height: auto;
+  margin: auto 0;
 }

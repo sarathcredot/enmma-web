@@ -46,7 +46,12 @@ export default function Slider2({ data }) {
                                                 <span className="sub-title aos-init aos-animate">{item.subtitle}</span>
                                                 <h2 className="title">{item.title}</h2>
                                                 <p>{item.description}</p>
+                                                {item.buttonTitle ? (
                                                 <Link href={item.buttonLink} className="btn">{item.buttonTitle}</Link>
+                                               
+                      ) : (
+                        <></>
+                      )}
                                             </div>
                                         </div>
                                     </div>

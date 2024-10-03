@@ -9,8 +9,8 @@ import { useEffect, useState } from 'react';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Head from "next/head"
 
-export default function About({ initialData, pageTitle,pageDescription, }) {
- 
+export default function About({ initialData, pageTitle, pageDescription, }) {
+
     const { t, i18n } = useTranslation('common');
     const [data, setData] = useState(initialData);
 
@@ -25,9 +25,9 @@ export default function About({ initialData, pageTitle,pageDescription, }) {
                 console.error('Failed to load data:', error);
             }
         }
-    
+
         loadData();
-    },  [i18n.language]);
+    }, [i18n.language]);
 
     const localizedData = data.map(item => {
         const localizedIcondata = {};
@@ -63,7 +63,7 @@ export default function About({ initialData, pageTitle,pageDescription, }) {
             localizedIcondata,
             points: i18n.language === 'ar' ? localizedPointsAr : localizedPointsEn,
             buttonLink: item.buttonLink || "#",
-          
+
         };
     });
 
@@ -72,53 +72,58 @@ export default function About({ initialData, pageTitle,pageDescription, }) {
     return (
 
         <>
-           <Head>
+            <Head>
                 <title>{pageTitle}</title>
                 <meta name="description" content={pageDescription} />
             </Head>
             <Layout headerStyle={6} footerStyle={3} >
-                <Banner2 data={getDataBySection('about-banner')}  />
+                <Banner2 data={getDataBySection('about-banner')} />
                 <div>
-                <section className="about__area-four">
-  {getDataBySection('about-info-section').map((item) => (
-    <div key={item._id} className="container">
-      <div className="row align-items-center justify-content-center">
-        <div className="col-lg-6 col-md-9 col-sm-10">
-          <div className="about__img-wrap-four">
-            <img src={`${process.env.NEXT_PUBLIC_MEDIA_BASE_URL}${item.bannerImage}`} width={500} height={500} alt="" />
-            <img src={`${process.env.NEXT_PUBLIC_MEDIA_BASE_URL}${item.bannerImage}`}width={300} height={100}  alt="" />
-            <div className="about__award-box">
-              {/* <div className="icon">
+                    <section className="about__area-four">
+                        {getDataBySection('about-info-section').map((item) => (
+                            <div key={item._id} className="container">
+                                <div className="row align-items-center justify-content-center">
+                                    <div className="col-lg-6 col-md-9 col-sm-10">
+                                        <div className="about__img-wrap-four">
+                                            <img src={`${process.env.NEXT_PUBLIC_MEDIA_BASE_URL}${item.bannerImage}`} width={500} height={500} alt="" />
+                                            <img src={`${process.env.NEXT_PUBLIC_MEDIA_BASE_URL}${item.bannerImage}`} width={300} height={100} alt="" />
+                                            <div className="about__award-box">
+                                                {/* <div className="icon">
                 <i className="flaticon-time" />
               </div> */}
-              {/* <div className="content" style={{position: 'relative',zIndex: '4'}}>
+                                                {/* <div className="content" style={{position: 'relative',zIndex: '4'}}>
                 <h2 className="title">30+</h2>
                 <p className="w-50">Years of Experiences Property management & Investment</p>
               </div> */}
-            </div>
-            <div className="shape">
-              <img src="/assets/img/images/inner_about_shape.jpg" alt="" className="alltuchtopdown" />
-            </div>
-          </div>
-        </div>
-        <div className="col-lg-6">
-          <div className="about__content-four">
-            <div className="section-title mb-30">
-              <span className="sub-title">{item.subtitle}</span>
-              <h2 className="title">{item.title}</h2>
-            </div>
-            <p>{item.description}</p>
-            <Link href={item.buttonLink} className="btn">{item.buttonTitle}</Link>
-          </div>
-        </div>
-      </div>
-    </div>
-  ))}
-</section>
+                                            </div>
+                                            <div className="shape">
+                                                <img src="/assets/img/images/inner_about_shape.jpg" alt="" className="alltuchtopdown" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-6">
+                                        <div className="about__content-four">
+                                            <div className="section-title mb-30">
+                                                <span className="sub-title">{item.subtitle}</span>
+                                                <h2 className="title">{item.title}</h2>
+                                            </div>
+                                            <p>{item.description}</p>
+                                            {item.buttonTitle ? (
+                                                <Link href={item.buttonLink} className="btn">{item.buttonTitle}</Link>
 
-                     <Counter2 data={getDataBySection('about-counter')} />
+                                            ) : (
+                                                <></>
+                                            )} 
+                                             </div>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </section>
 
-                   
+                    <Counter2 data={getDataBySection('about-counter')} />
+
+
                     <div className="brand__area">
                         <div className="container">
                             <div className="swiper-container brand-active">
@@ -141,12 +146,12 @@ export default function About({ initialData, pageTitle,pageDescription, }) {
                                 </div>
                                 <div className="col-lg-7">
                                     <div className="choose__list-two">
-                                        <ul style={{listStyle:"none"}}>
-                                           
+                                        <ul style={{ listStyle: "none" }}>
+
                                             <li>
                                                 <div className="choose__list-box-two">
                                                     <div className="choose__list-icon-two">
-                                                    <SVG caseValue='case4'/>
+                                                        <SVG caseValue='case4' />
                                                     </div>
                                                     <div className="choose__list-content-two">
                                                         <h4 className="title">{t('mission')}</h4>
@@ -157,7 +162,7 @@ export default function About({ initialData, pageTitle,pageDescription, }) {
                                             <li>
                                                 <div className="choose__list-box-two">
                                                     <div className="choose__list-icon-two">
-                                                    <SVG caseValue='case5'/>
+                                                        <SVG caseValue='case5' />
                                                     </div>
                                                     <div className="choose__list-content-two">
                                                         <h4 className="title">{t('vision')}</h4>
@@ -179,36 +184,36 @@ export default function About({ initialData, pageTitle,pageDescription, }) {
                         <h1 className=" text-wrap">{t('banner-title')}</h1>
                     </section>
                     {getDataBySection('about-contact').map((item) => (
-                    <section key={item._id} className="request-area request-bg" data-background={`${process.env.NEXT_PUBLIC_MEDIA_BASE_URL}${item.bannerImage}`}>
-                        <div className="container">
-                            <div className="row justify-content-center">
-                                <div className="col-lg-8">
-                                    <div className="request-content text-center">
-                                        <h2 className="title">{item.title}</h2>
-                                        <div className="content-bottom">
-                                            <Link  dir="ltr" href={`tel:${item.buttonLink}`} className="btn">{item.buttonTitle}</Link>
-                                            <div className="content-right">
-                                                <div className="icon">
-                                                    <i className="flaticon-phone-call" />
-                                                </div>
-                                                <div className="content">
-                                                    {/* <span>Toll Free Call</span> */}
-                                                    <Link  dir="ltr" href={`tel:${item.buttonLink}`}>{item.buttonLink}</Link>
+                        <section key={item._id} className="request-area request-bg" data-background={`${process.env.NEXT_PUBLIC_MEDIA_BASE_URL}${item.bannerImage}`}>
+                            <div className="container">
+                                <div className="row justify-content-center">
+                                    <div className="col-lg-8">
+                                        <div className="request-content text-center">
+                                            <h2 className="title">{item.title}</h2>
+                                            <div className="content-bottom">
+                                                <Link dir="ltr" href={`tel:${item.buttonLink}`} className="btn">{item.buttonTitle}</Link>
+                                                <div className="content-right">
+                                                    <div className="icon">
+                                                        <i className="flaticon-phone-call" />
+                                                    </div>
+                                                    <div className="content">
+                                                        {/* <span>Toll Free Call</span> */}
+                                                        <Link dir="ltr" href={`tel:${item.buttonLink}`}>{item.buttonLink}</Link>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="request-shape">
-                            <img src="/assets/img/images/request_shape01.png" alt="" data-aos="fade-right" data-aos-delay={400} />
-                            <img src="/assets/img/images/request_shape02.png" alt="" data-aos="fade-left" data-aos-delay={400} />
-                        </div>
-                    </section>
-                ))}
-                    </div>
-                    
+                            <div className="request-shape">
+                                <img src="/assets/img/images/request_shape01.png" alt="" data-aos="fade-right" data-aos-delay={400} />
+                                <img src="/assets/img/images/request_shape02.png" alt="" data-aos="fade-left" data-aos-delay={400} />
+                            </div>
+                        </section>
+                    ))}
+                </div>
+
             </Layout>
         </>
     )
@@ -238,6 +243,6 @@ export async function getServerSideProps({ locale }) {
             pageTitle,
             pageDescription,
             ...(await serverSideTranslations(locale, ['common'])),
-    },
-};
+        },
+    };
 }
