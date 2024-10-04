@@ -47,11 +47,7 @@ export default function Slider2({ data }) {
                                                 <h2 className="title">{item.title}</h2>
                                                 <p>{item.description}</p>
                                                 {item.buttonTitle ? (
-                                                <Link href={item.buttonLink} className="btn">{item.buttonTitle}</Link>
-                                               
-                      ) : (
-                        <></>
-                      )}
+                                                <Link href={item.buttonLink} className="btn">{item.buttonTitle}</Link> ) : (<></>)}
                                             </div>
                                         </div>
                                     </div>

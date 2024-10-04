@@ -105,15 +105,11 @@ export default function About({ initialData, pageTitle, pageDescription, }) {
                                         <div className="about__content-four">
                                             <div className="section-title mb-30">
                                                 <span className="sub-title">{item.subtitle}</span>
-                                                <h2 className="title">{item.title}</h2>
+                                                <h2 className="title" style={{textWrap:"nowrap"}}>{item.title}</h2>
                                             </div>
                                             <p>{item.description}</p>
                                             {item.buttonTitle ? (
-                                                <Link href={item.buttonLink} className="btn">{item.buttonTitle}</Link>
-
-                                            ) : (
-                                                <></>
-                                            )} 
+                                                <Link href={item.buttonLink} className="btn">{item.buttonTitle}</Link> ) : ( <></>)} 
                                              </div>
                                     </div>
                                 </div>

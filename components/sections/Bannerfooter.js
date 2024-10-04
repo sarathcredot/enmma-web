@@ -19,8 +19,9 @@ export default function Bannerfooter({data}) {
                                                 </div>
                                                 <div className="content">
                                                     {/* <span>Toll Free Call</span> */}
-                                                    <Link  dir="ltr" href={`tel:${item.buttonLink}`}>{item.buttonLink}</Link>
-                                                </div>
+                                                    {item.buttonLink ? (
+                                                <Link href={item.buttonLink} className="btn">{item.buttonLink}</Link> ) : (<></>)} 
+                                                  </div>
                                             </div>
                                         </div>
                                     </div>
