@@ -102,9 +102,9 @@ export function CorporateSubheading({ corporateHeading }) {
   return (
     <div className="row container">
       <div className="col-xl-7 space-betweeni col-lg-8">
-        <div className="  container mb-50 dev_gover w-75 ">
+        <div className="  mb-50 dev_gover   ">
           <span className="">{corporateHeading.title}</span>
-          <h2 className=" mt-4 text-wrap">{corporateHeading.subtitle}</h2>
+          <h2 className=" mt-4 text-wrap devtextwrapo">{corporateHeading.subtitle}</h2>
         </div>
         <div className="dev_customsize mt-4">
           {corporateHeading.description}
@@ -147,7 +147,7 @@ export function CorporatePoints({ corporatePoints }) {
                         aria-controls="health-tab-pane"
                         aria-selected="true"
                       >
-                        <i className="flaticon-travel-insurance" />
+                        <i className=" flaticon-pin" />
                         {corporatePoint.title}
                       </button>
                     </Link>

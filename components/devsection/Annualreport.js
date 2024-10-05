@@ -27,7 +27,7 @@ export default function AnnualReport({ data }) {
                         <div className="col-xl-7 space-betweeni col-lg-8">
                             <div className="mb-50 dev_gover">
                                 <span className="">{item.subtitle}</span>
-                                <h2 className="mt-4 w-75" style={{ color: '#110B79' }}>
+                                <h2 className="mt-4 text-wrap devtextwrapo" style={{ color: '#110B79' }}>
                                     {item.title}
                                 </h2>
                             </div>

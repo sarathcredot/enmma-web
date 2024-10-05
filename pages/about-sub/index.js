@@ -96,7 +96,7 @@ export default function About3({ initialData, teamMembersData,pageDescription,pa
                                     <div className="col-xl-7 space-betweeni col-lg-8">
                                         <div className="section-title  mb-50 tg-heading-subheading animation-style3">
                                             <span className="sub-title">{item.subtitle}</span>
-                                            <h2 className="title tg-element-title  mt-4 text-wrap w-200">
+                                            <h2 className="title tg-element-title  mt-4 text-wrap devtextwrapo w-200">
                                                 {item.title}
                                             </h2>
                                         </div>
@@ -154,7 +154,7 @@ export default function About3({ initialData, teamMembersData,pageDescription,pa
                                     <div className="col-xl-7 space-betweeni col-lg-8">
                                         <div className="section-title  mb-50 tg-heading-subheading animation-style3">
                                             <span className="sub-title">{item.subtitle}</span>
-                                            <h2 className="title tg-element-title  mt-4 text-wrap">
+                                            <h2 className="title tg-element-title  mt-4 text-wrap devtextwrapo">
                                                 {item.title}
                                             </h2>
                                         </div>
@@ -209,7 +209,7 @@ export default function About3({ initialData, teamMembersData,pageDescription,pa
                                     <div className="col-xl-7 space-betweeni col-lg-8">
                                         <div className="section-title  mb-50 tg-heading-subheading animation-style3">
                                             <span className="sub-title">{item.subtitle}</span>
-                                            <h2 className="title tg-element-title  mt-4 text-wrap">
+                                            <h2 className="title tg-element-title  mt-4 text-wrap devtextwrapo">
                                                 {item.title}
                                             </h2>
                                         </div>

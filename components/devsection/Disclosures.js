@@ -77,14 +77,14 @@ export default function Statement({ style, showItem, showPagination }) {
                 {group.statements.map((item) => (
                   <div className="state-list" key={item._id}>
                     <span className="discloure-list">{item.heading}</span>
-                    <span className="">
+                    <span className=" text-nowrap">
                       {item.document ? (
                         <Link href={`${process.env.NEXT_PUBLIC_MEDIA_BASE_URL}${item.document}`}>
                           <SVG caseValue="case14" />
                           &nbsp; &nbsp;VIEW
                         </Link>
                       ) : (
-                        <span>No Document Available</span>
+                        <span className=' text-nowrap' style={{fontSize:"13px"}}>No Document Available</span>
                       )}
                     </span>
                   </div>
