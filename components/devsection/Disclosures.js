@@ -71,7 +71,7 @@ export default function Statement({ style, showItem, showPagination }) {
           <h3>No Statements Found</h3>
         ) : (
           getPaginatedData().map((group) => (
-            <div key={group.year} className="statement-main">
+            <div key={group.year} className="statement-main m-0">
               <div className="dev-statmentlist container">
                 <h1 className="fw-title">{group.year}</h1>
                 {group.statements.map((item) => (
