@@ -84,7 +84,7 @@ export default function Statement({ style, showItem, showPagination }) {
                           &nbsp; &nbsp;VIEW
                         </Link>
                       ) : (
-                        <span className=' text-nowrap' style={{fontSize:"13px"}}>No Document Available</span>
+                        <span className=' text-nowrap' style={{fontSize:"13px"}}>No Document </span>
                       )}
                     </span>
                   </div>
