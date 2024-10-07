@@ -10666,7 +10666,7 @@ display: none;  }
   border-radius: 15px;
   border: 1px solid var(--tg-border-1);
   margin-bottom: 30px;
-  height: 520px;
+  min-height: 520px;
 }
 .team-item-wrap .row {
   --bs-gutter-x: 24px;
@@ -13774,7 +13774,7 @@ margin-bottom: 20px;
 }
 .login__area-one {
   padding: 120px 0px 250px 0px;
-  background-image: url(/img/login/bg-login.png);
+  /* background-image: url(/img/login/bg-login.png); */
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
@@ -13801,17 +13801,17 @@ margin-bottom: 20px;
   font-weight: 400;
 }
 .box-form-login .form-control.account {
-  background-image: url(/img/login/account.svg);
+  /* background-image: url(/img/login/account.svg); */
   background-repeat: no-repeat;
   background-position: right 26px center;
 }
 .box-form-login .form-control.email-address {
-  background-image: url(/img/register/email.svg);
+  /* background-image: url(/img/register/email.svg); */
   background-repeat: no-repeat;
   background-position: right 26px center;
 }
 .box-form-login .view-password {
-  background-image: url(/img/login/view.svg);
+  /* background-image: url(/img/login/view.svg); */
   background-repeat: no-repeat;
   background-position: center;
   height: 16px;
@@ -13921,7 +13921,7 @@ margin-bottom: 20px;
 }
 .register__area-one {
   padding: 120px 0px 250px 0px;
-  background-image: url(/img/register/bg-register.png);
+  /* background-image: url(/img/register/bg-register.png); */
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
@@ -13929,7 +13929,7 @@ margin-bottom: 20px;
 
 .forgot__area-one {
   padding: 120px 0px 250px 0px;
-  background-image: url(/img/forgot/bg-forgot.png);
+  /* background-image: url(/img/forgot/bg-forgot.png); */
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
@@ -13943,7 +13943,7 @@ margin-bottom: 20px;
 
 .form-forgot .text-infos {
   padding: 0px 0px 0px 29px;
-  background-image: url(/img/forgot/info.svg);
+  /* background-image: url(/img/forgot/info.svg); */
   background-repeat: no-repeat;
   background-position: left center;
   color: var(--tg-body-color);
@@ -14087,7 +14087,7 @@ margin-bottom: 20px;
 
 .all_services__area-six {
   background-color: var(--tg-heading-color);
-  background-image: url(/img/home6/bg-offer.png);
+  /* background-image: url(/img/home6/bg-offer.png); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -14276,7 +14276,7 @@ margin-bottom: 20px;
 }
 
 .accordion-button::after {
-  background-image: url(/img/home6/plus.svg);
+  /* background-image: url(/img/home6/plus.svg); */
   transform: rotate(0deg);
   background-position: center;
   background-color: var(--tg-theme-primary);
@@ -14291,7 +14291,7 @@ margin-bottom: 20px;
 }
 
 .accordion-button:not(.collapsed)::after {
-  background-image: url(/img/home6/plus.svg);
+  /* background-image: url(/img/home6/plus.svg); */
   background-color: var(--tg-theme-primary);
 }
 
@@ -14302,7 +14302,7 @@ margin-bottom: 20px;
 .marketing_expert__area_six {
   padding: 125px 0px 0px 0px;
   background-color: var(--tg-color-gray-3);
-  background-image: url(/img/home6/bg-marketing.png);
+  /* background-image: url(/img/home6/bg-marketing.png); */
   background-repeat: no-repeat;
   background-position: left center;
   margin-bottom: 130px;
@@ -14496,13 +14496,13 @@ margin-bottom: 20px;
 
 .faqs__area-six {
   padding: 124px 0px 124px 0px;
-  background-image: url(/img/home6/bg-faq.svg);
+  /* background-image: url(/img/home6/bg-faq.svg); */
   background-repeat: no-repeat;
   background-position: left bottom -120px;
   position: relative;
 }
 .faqs__area-six .circle {
-  background-image: url(/img/home6/circle-faq.svg);
+  /* background-image: url(/img/home6/circle-faq.svg); */
   background-repeat: no-repeat;
   background-position: center;
   height: 52px;
@@ -14539,7 +14539,7 @@ margin-bottom: 20px;
 
 .services__area-home7 {
   background-color: var(--tg-color-gray-3);
-  background-image: url(../img/home7/bg-service.png);
+  /* background-image: url(../img/home7/bg-service.png); */
   background-position: right bottom;
   background-repeat: no-repeat;
   background-size: auto;
@@ -14693,7 +14693,7 @@ margin-bottom: 20px;
 .journey_area-seven {
   padding: 85px 0px 0px 0px;
   background-color: var(--tg-heading-color);
-  background-image: url(../img/home7/bg-journey.png);
+  /* background-image: url(../img/home7/bg-journey.png); */
   margin-bottom: 200px;
   background-position: top center;
 }
@@ -14724,7 +14724,7 @@ margin-bottom: 20px;
 .card-step .card-icon {
   height: 78px;
   width: 69px;
-  background-image: url(../img/home7/bg-step.svg);
+  /* background-image: url(../img/home7/bg-step.svg); */
   background-repeat: no-repeat;
   text-align: center;
   line-height: 78px;
@@ -15168,7 +15168,7 @@ margin-bottom: 20px;
 
 .marketing__area-home8 {
   background-color: var(--tg-color-gray-3);
-  background-image: url(../img/home8/wave.png);
+  /* background-image: url(../img/home8/wave.png); */
   background-repeat: no-repeat;
   background-position: left top;
 }
@@ -15228,7 +15228,7 @@ margin-bottom: 20px;
   transition: 0.3s linear;
 }
 .card-testimonials .card-info {
-  background-image: url(../img/home8/quote.svg);
+  /* background-image: url(../img/home8/quote.svg); */
   background-position: top right;
   background-repeat: no-repeat;
   padding: 10px 0px;
@@ -15498,7 +15498,7 @@ text-align: left;
     margin-bottom: 20px;
   }
   .sidebar__widget-dev {
-    background-image: url('/assets/img/bg/annualbg.png');
+    /* background-image: url('/assets/img/bg/annualbg.png'); */
     background-size: cover;
     background-position: center;
     border: 1px solid #110B79;
