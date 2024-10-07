@@ -15951,6 +15951,14 @@ html[lang="en-US"] :root {
   left: 5%;  
  
 }
+@media screen and (max-width: 768px) {
+  .wpml-floating-language-switcher {
+
+    bottom: 2.8%;  
+   
+  }
+
+}
 .floatlanglink {
   display: flex; 
   flex-wrap: wrap;
