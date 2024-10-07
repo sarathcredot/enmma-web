@@ -58,8 +58,8 @@ export default function Contact({ data1, data }) {
       <div className="container project__area-three">
         <div className="row container">
           {data.map((item) => (
-            <div key={item._id} className="col-xl-7 space-betweeni col-lg-8">
-              <div className="mb-50 dev_gover">
+            <div key={item._id} className="col-xl-7 space-betweeni col-lg-8 mb-5">
+              <div className="dev_gover">
                 <span>{item.subtitle}</span>
                 <h2 className="mt-4 text-wrap devtextwrapo" style={{ color: '#110B79' }}>
                   {item.title}

@@ -43,8 +43,8 @@ export default function Service({ initialData }) {
           <div style={{ backgroundColor: "#110B79" }}>
             <div className=" container project__area-three">
               <div className="row container">
-                <div className="col-xl-7 space-betweeni col-lg-8">
-                  <div className="  mb-50 dev_gover   ">
+                <div className="col-xl-7 space-betweeni col-lg-8 mb-5">
+                  <div className="  dev_gover   ">
                     <span className="">{localizedData.subHeading1}</span>
                     <h2 className=" mt-4 devtextwrapo">{localizedData.subHeading2}</h2>
                   </div>

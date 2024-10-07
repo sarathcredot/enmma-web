@@ -86,9 +86,9 @@ export default function About({ initialData, pageTitle, pageDescription, }) {
                 <div className="container project__area-three ">
                     <div className="row container ">
                         {getDataBySection('complaint-heading').map((item) => (
-                            <div className="col-xl-7 space-betweeni col-lg-8">
+                            <div className="col-xl-7 space-betweeni col-lg-8 mb-5">
 
-                                <div className="  mb-50 dev_gover   " >
+                                <div className="  dev_gover   " >
                                     <span className="">{item.subtitle}</span>
                                     <h2 className=" mt-4 text-wrap devtextwrapo" style={{ color: '#110B79' }}>{item.title}</h2>
                                 </div>
