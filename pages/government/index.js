@@ -88,7 +88,7 @@ export default function Government({ initialData, pageTitle,pageDescription, }) 
                                         <span className="">{item.subtitle}</span>
                                         <h2 className=" mt-4 text-wrap devtextwrapo">{item.title}</h2>
                                     </div>
-                                    <div className="dev_customsize mt-4">{item.description}</div>
+                                    <div className="dev_customsize  mt-0 mt-md-4">{item.description}</div>
                                 </div>
                             ))}
                         </div>

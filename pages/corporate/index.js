@@ -106,7 +106,7 @@ export function CorporateSubheading({ corporateHeading }) {
           <span className="">{corporateHeading.title}</span>
           <h2 className=" mt-4 text-wrap devtextwrapo">{corporateHeading.subtitle}</h2>
         </div>
-        <div className="dev_customsize mt-4">
+        <div className="dev_customsize  mt-0 mt-md-4">
           {corporateHeading.description}
         </div>
       </div>

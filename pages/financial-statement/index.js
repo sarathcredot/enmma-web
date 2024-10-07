@@ -89,7 +89,7 @@ export default function Financialstatement({ initialData ,pageTitle,pageDescript
                             <span className="">{item.subtitle}</span>
                             <h2 className=" mt-4 text-wrap devtextwrapo" style={{ color: '#110B79' }}>{item.title}</h2>
                         </div>
-                            <div className="dev_customsize mt-4" style={{ color: '#282739' }}>{item.description}</div>
+                            <div className="dev_customsize  mt-0 mt-md-4" style={{ color: '#282739' }}>{item.description}</div>
                             </div>
                         ))}
 

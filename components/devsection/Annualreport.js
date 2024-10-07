@@ -31,7 +31,7 @@ export default function AnnualReport({ data }) {
                                     {item.title}
                                 </h2>
                             </div>
-                            <div className="dev_customsize mt-4" style={{ color: '#282739' }}>
+                            <div className="dev_customsize  mt-0 mt-md-4" style={{ color: '#282739' }}>
                                 {item.description}
                             </div>
                         </div>

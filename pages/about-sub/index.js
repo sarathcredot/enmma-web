@@ -102,7 +102,7 @@ export default function About3({ initialData, teamMembersData,pageDescription,pa
                                             </h2>
                                         </div>
                                         <div
-                                            className="dev_customsize mt-4"
+                                            className="dev_customsize  mt-0 mt-md-4"
                                             style={{ color: "#282739" }}
                                         >
                                             {item.description}
@@ -160,7 +160,7 @@ export default function About3({ initialData, teamMembersData,pageDescription,pa
                                             </h2>
                                         </div>
                                         <div
-                                            className="dev_customsize mt-4"
+                                            className="dev_customsize  mt-0 mt-md-4"
                                             style={{ color: "#282739" }}
                                         >
                                             {item.description}
@@ -215,7 +215,7 @@ export default function About3({ initialData, teamMembersData,pageDescription,pa
                                             </h2>
                                         </div>
                                         <div
-                                            className="dev_customsize mt-4"
+                                            className="dev_customsize  mt-0 mt-md-4"
                                             style={{ color: "#282739" }}
                                         >
                                             {item.description}
