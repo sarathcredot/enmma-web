@@ -5060,12 +5060,38 @@ padding: 30px;
   .services__item-four {
     flex-wrap: wrap;
     padding: 30px 30px;
+    width:365px
   }
 }
 @media (max-width: 767.98px) {
   .services__item-four {
     padding: 30px 25px;
+    width: 100vw;
+    border-radius: 0px;
   }
+}
+@media (max-width: 1199.98px) {
+  .dev_indexcontainer {
+   height:155px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .dev_indexcontainer {
+    height: 224px;
+  }
+}
+@media (max-width: 767.98px) {
+  .dev_indexcontainer {
+    height: 274px;
+
+   
+  }
+}
+.devtextwrapo{
+  max-width: 500px;
+  min-width: auto;
+font-size: 20px;
 }
 .services__item-five {
   -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
@@ -5541,6 +5567,7 @@ padding: 30px;
   .services__tab-wrap .nav-tabs {
     width: auto;
     justify-content: center;
+    margin-top: 20px;
     flex-direction: row;
   }
 }
@@ -5603,7 +5630,7 @@ padding: 30px;
   }
 }
 .services__tab-wrap .nav-link::after {
-  content: "\f10a";
+  content:var(--btn-arrow);
   position: absolute;
   top: 50%;
   right: 20px;
@@ -7669,8 +7696,10 @@ html[lang="ar"] .choose__shape-wrap-three img:nth-child(2){
 }
 @media (max-width: 1199.98px) {
   .project__thumb-three {
-    width: 580px;
-  }
+    width: 550px;
+    position: relative;
+    left: 76px;
+    }
 }
 @media (max-width: 991.98px) {
   .project__thumb-three {
@@ -7709,6 +7738,8 @@ html[lang="ar"] .choose__shape-wrap-three img:nth-child(2){
 @media (max-width: 1199.98px) {
   .project__thumb-three-2 {
     width: 580px;
+    position: relative;
+    left: 219px;
   }
 }
 @media (max-width: 991.98px) {
@@ -7931,7 +7962,7 @@ display: none;  }
   padding: 50px 50px;
   position: absolute;
   left: 0px;
-  top: 50%;
+  top: 49%;
   z-index: 2;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
@@ -8051,9 +8082,9 @@ display: none;  }
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
-  max-height: 400px;
+  /* max-height: 400px;
   overflow-y: scroll;
-  text-wrap: wrap;
+  text-wrap: wrap; */
 
 }::-webkit-scrollbar {
   display: none;
@@ -15325,10 +15356,9 @@ text-align: left;
 
 }
 .space-betweeni .dev_gover h2{
-  font-size: 35px;
+  font-size:clamp(30px, 3vw, 34px);
   font-weight: 600;
   line-height: 40px;
-  text-align: left;
   color: #ffff;
   
 }
@@ -15775,6 +15805,7 @@ justify-content: center;
   display: flex;
   justify-content: space-between;
   border-bottom:.2px solid #DDDDDD ;
+  gap: 20px;
  
   color: white;
  }

@@ -105,11 +105,15 @@ export default function About({ initialData, pageTitle, pageDescription, }) {
                                         <div className="about__content-four">
                                             <div className="section-title mb-30">
                                                 <span className="sub-title">{item.subtitle}</span>
-                                                <h2 className="title" style={{textWrap:"nowrap"}}>{item.title}</h2>
+                                                <h2 className="title">{item.title}</h2>
                                             </div>
                                             <p>{item.description}</p>
                                             {item.buttonTitle ? (
-                                                <Link href={item.buttonLink} className="btn">{item.buttonTitle}</Link> ) : ( <></>)} 
+                                                <Link href={item.buttonLink} className="btn">{item.buttonTitle}</Link>
+
+                                            ) : (
+                                                <></>
+                                            )} 
                                              </div>
                                     </div>
                                 </div>
@@ -135,7 +139,7 @@ export default function About({ initialData, pageTitle, pageDescription, }) {
                                     <div className="choose__content-four">
                                         <div className="section-title white-title mb-20">
                                             <span className="sub-title">{t('mission-subtitle')} </span>
-                                            <h2 className="title">{t('mission-title')}</h2>
+                                            <h2 className="title text-sm-nowrap">{t('mission-title')}</h2>
                                         </div>
                                         <p>{t('mission-description')}</p>
                                     </div>

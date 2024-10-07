@@ -1,7 +1,7 @@
 'use client'
 export default function DevIndexherobottom({ data }) {
     return (
-        <div className="container">
+        <div className="container dev_indexcontainer">
             {data.map((item) => (
                 <div key={item._id} className=" row dev_index_comp">
                     <div className="col-lg-6 div_index01">

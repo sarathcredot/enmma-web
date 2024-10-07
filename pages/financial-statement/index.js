@@ -85,9 +85,9 @@ export default function Financialstatement({ initialData ,pageTitle,pageDescript
                     <div className="row container">
                         {getDataBySection('Financial-heading').map((item) => (
                     <div className="col-xl-7 space-betweeni col-lg-8">
-                            <div  className="  container mb-50 dev_gover w-75 " >
+                            <div  className="  mb-50 dev_gover   " >
                             <span className="">{item.subtitle}</span>
-                            <h2 className=" mt-4 text-wrap" style={{ color: '#110B79' }}>{item.title}</h2>
+                            <h2 className=" mt-4 text-wrap devtextwrapo" style={{ color: '#110B79' }}>{item.title}</h2>
                         </div>
                             <div className="dev_customsize mt-4" style={{ color: '#282739' }}>{item.description}</div>
                             </div>
