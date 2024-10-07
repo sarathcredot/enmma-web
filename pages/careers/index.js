@@ -94,7 +94,7 @@ export default function About({ initialData, pageTitle,pageDescription, }) {
             <Careerform  />
            
            </div>
-           <div className="dev-bottom container"><Sectionfoot data={getDataBySection('career-Trusted')}/></div>  
+           <div className="dev-bottom container"><Sectionfoot /></div>  
 
             </div>
 

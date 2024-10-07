@@ -7,10 +7,10 @@ import { useTranslation } from 'next-i18next';
 
 export default function Careerform() {
   const { t } = useTranslation('common');
-  
+
   // Get country data using country-state-city library
   let countryData = Country.getAllCountries();
-  
+
   const [formData, setFormData] = useState({
     position: '',
     fullName: '',
@@ -19,7 +19,7 @@ export default function Careerform() {
     mobileNumber: '',
     passportNumber: '',
     emailAddress: '',
-    nationality: '', 
+    nationality: '',
     degreeLevel: '',
     careerLevel: '',
     jobDuties: '',
@@ -56,7 +56,26 @@ export default function Careerform() {
       }
     }
   };
+  const handleFileUpload2 = async (files) => {
+    if (files && files.length > 0) {
+      const fileData = new FormData();
+      fileData.append('media', files[0]);
 
+      try {
+        const response = await axios.post(`${process.env.NEXT_PUBLIC_BASE_URL}/media`, fileData, {
+          headers: { 'Content-Type': 'multipart/form-data' },
+        });
+
+        const filePath = `/${response.data.filename}`;
+        setFormData((prevState) => ({
+          ...prevState,
+          resumeUrl: filePath,
+        }));
+      } catch (error) {
+        console.error('Error in file upload:', error.response ? error.response.data : error.message);
+      }
+    }
+  };
   // Validate form fields before submission
   const validateForm = () => {
     for (const [key, value] of Object.entries(formData)) {
@@ -114,7 +133,11 @@ export default function Careerform() {
       alert('An error occurred while submitting the form');
     }
   };
-
+  const handleFocus = (e) => {
+    if (e.target.type === 'text') {
+      e.target.type = 'date';
+    }
+  };
   return (
     <div className="contact__form-wrap">
       <form id="contact-form" dir='ltr' onSubmit={handleSubmit}>
@@ -152,10 +175,11 @@ export default function Careerform() {
           <div className="col-md-6">
             <div className="form-grp">
               <input
-                type="date"
+                type="text"
                 name="dob"
                 placeholder="Date of Birth"
                 value={formData.dob}
+                onFocus={handleFocus}
                 onChange={handleChange}
                 required
               />
