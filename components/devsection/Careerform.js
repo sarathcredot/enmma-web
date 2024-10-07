@@ -19,7 +19,7 @@ export default function Careerform() {
     mobileNumber: '',
     passportNumber: '',
     emailAddress: '',
-    nationality: '', // This will store the country isoCode
+    nationality: '', 
     degreeLevel: '',
     careerLevel: '',
     jobDuties: '',

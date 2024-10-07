@@ -107,7 +107,7 @@ export default function About({ initialData, pageTitle, pageDescription, }) {
                                                 <span className="sub-title">{item.subtitle}</span>
                                                 <h2 className="title">{item.title}</h2>
                                             </div>
-                                            <p>{item.description}</p>
+                                            <p style={{ color: '#282739' }}>{item.description}</p>
                                             {item.buttonTitle ? (
                                                 <Link href={item.buttonLink} className="btn">{item.buttonTitle}</Link>
 

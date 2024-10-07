@@ -83,7 +83,7 @@ export default function About({ initialData, pageTitle,pageDescription, }) {
 
                 <div className="row container">
                     <div key={item._id} className="col-xl-7 space-betweeni col-lg-8 mb-5">
-                        <div className="  dev_gover   ">
+                        <div className="  dev_gover">
                             <span className="">{item.subtitle}</span>
                             <h2 className=" mt-4 text-wrap devtextwrapo">{item.title}</h2>
                         </div>

@@ -10666,7 +10666,7 @@ display: none;  }
   border-radius: 15px;
   border: 1px solid var(--tg-border-1);
   margin-bottom: 30px;
-  height: auto;
+  height: 525px;
 }
 @media (max-width: 1024px) {
   .team-item {
