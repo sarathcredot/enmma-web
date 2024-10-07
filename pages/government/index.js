@@ -93,7 +93,7 @@ export default function Government({ initialData, pageTitle,pageDescription, }) 
                             ))}
                         </div>
 
-                        <section className="project__item-three shine-animate-item mb-5">
+                        <section className="project__item-three   mb-sm-5">
                             {getDataBySection('Government-1Project').map((item) => (
 
                                 <div className="container" key={item._id}>
@@ -103,7 +103,7 @@ export default function Government({ initialData, pageTitle,pageDescription, }) 
                                         <p className="dev-gov-parag">{item.description}</p>
                                         {/* <Link href={item.buttonLink} className="btn ">{item.buttonTitle}</Link> */}
                                     </div>
-                                    <div className="project__thumb-three shine-animate">
+                                    <div className="project__thumb-three ">
                                         <img src={`${process.env.NEXT_PUBLIC_MEDIA_BASE_URL}${item.bannerImage}`} alt="" />
                                     </div>
                                 </div>
@@ -111,7 +111,7 @@ export default function Government({ initialData, pageTitle,pageDescription, }) 
                         </section>
                         <br />
 
-                        <section className="project__item-three shine-animate-item">
+                        <section className="project__item-three ">
                             {getDataBySection('Government-2Project').map((item) => (
                                 
                                 <div className="container" key={item._id}>
@@ -121,7 +121,7 @@ export default function Government({ initialData, pageTitle,pageDescription, }) 
                                 <p className="dev-gov-parag">{item.description}</p>
                                 {/* <Link href={item.buttonLink} className="btn ">{item.buttonTitle}</Link> */}
                             </div>
-                            <div className="project__thumb-three-2 shine-animate">
+                            <div className="project__thumb-three-2 ">
                                 <img src={`${process.env.NEXT_PUBLIC_MEDIA_BASE_URL}${item.bannerImage}`} alt="" />
                             </div>
 
