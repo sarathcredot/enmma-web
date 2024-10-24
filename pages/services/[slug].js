@@ -15,7 +15,7 @@ import { getImageUrl } from "@/util/image-url-helper";
 export default function Service({ initialData }) {
 
   const { t, i18n } = useTranslation("common");
-  const [localizedData, setLocalizedData] = useState(initialData);
+  const [localizedData, setLocalizedData] = useState(initialData  );
 
   useEffect(() => {
     localize();
@@ -45,17 +45,19 @@ export default function Service({ initialData }) {
               <div className="row container">
                 <div className="col-xl-7 space-betweeni col-lg-8 mb-5">
                   <div className="  dev_gover   ">
-                    <span className="">{localizedData.subHeading1}</span>
-                    <h2 className=" mt-4 devtextwrapo">{localizedData.subHeading2}</h2>
+                    <span className="">{localizedData?.subHeading1}</span>
+                    <h2 className=" mt-4 devtextwrapo">{localizedData?.subHeading2}</h2>
                   </div>
                   <div className="dev_customsize services__content-two mt-4">
+                    
                     <Link href="/services" className="btn">
                       {t("more-services")}
                     </Link>
+                  
                   </div>
                 </div>
               </div>
-              <ServicePoints servicePoints={localizedData.servicePoints}/>
+              <ServicePoints servicePoints={localizedData?.servicePoints}/>
             </div>
           </div>
         </div>
@@ -70,13 +72,22 @@ export async function getServerSideProps({ params, locale }) {
   );
   const data = await response.json();
 
+  console.log("joson")
+
   return {
     props: {
-      initialData: data[0],
+      initialData: data[0] || "",
       ...(await serverSideTranslations(locale, ["common"])),
     },
   };
 }
+
+
+
+
+
+
+
 
 export function ServicePoints({ servicePoints }) {
 
@@ -90,18 +101,19 @@ export function ServicePoints({ servicePoints }) {
       <div className="col-md-6">
         <div className="services__tab-wrap">
           <ul className="nav nav-tabs" id="myTab" role="tablist">
-            {servicePoints.map((servicePoint, index) => {
+            {servicePoints?.map((servicePoint, index) => {
               return (
                 <li
                   className="nav-item"
                   onClick={() => handleOnClick(index)}
                   key={servicePoint._id}
                 >
-                  <Link href="#focus" smooth>
+                  
                     <button
                       className={
                         activeIndex == index ? "nav-link active" : "nav-link"
                       }
+                      style={{display:"flex",alignItems:"center"}}
                       id="health-tab"
                       data-bs-toggle="tab"
                       data-bs-target="#health-tab-pane"
@@ -113,7 +125,7 @@ export function ServicePoints({ servicePoints }) {
                       <i className=" flaticon-pin" />
                       {servicePoint.title}
                     </button>
-                  </Link>
+                
                 </li>
               );
             })}
@@ -122,7 +134,7 @@ export function ServicePoints({ servicePoints }) {
       </div>
       <div className="col-md-5" id="focus">
         <div className="tab-content" id="myTabContent">
-          {servicePoints.map((servicePoint, index) => {
+          {servicePoints?.map((servicePoint, index) => {
             return (
               <div
                 className={
