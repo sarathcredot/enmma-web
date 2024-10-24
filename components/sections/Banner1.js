@@ -4,15 +4,15 @@ const Banner1 = ({ data, bgColor, fontColor,fontColor2 }) => {
     // debugger;
     return (
         <>
-        {data.map((item) => (
+        {data?.map((item) => (
             
-            <section key={item._id} className="banner__area-one banner__bg-four"style={{ backgroundColor: bgColor}} >
+            <section key={item?._id} className="banner__area-one banner__bg-four"style={{ backgroundColor: bgColor}} >
                 <div className="container" style={{  color: fontColor }} >
                     <div className="row">
                         <div className="col-lg-8">
                             <div className="banner__content-two">
-                                <h2 className="title "style={{  color: fontColor }} data-aos="fade-up" data-aos-delay={100}>{item.title}</h2>
-                                <p data-aos="fade-up" style={{  color: fontColor2 }} data-aos-delay={300}>{item.description   }</p>
+                                <h2 className="title "style={{  color: fontColor }} data-aos="fade-up" data-aos-delay={100}>{item?.title}</h2>
+                                <p data-aos="fade-up" style={{  color: fontColor2 }} data-aos-delay={300}>{item?.description   }</p>
                                 {/* <Link href="/contact" className="btn border-btn" data-aos="fade-up" data-aos-delay={600}>Get Started</Link> */}
                             </div>
                         </div>
@@ -32,7 +32,7 @@ const Banner1 = ({ data, bgColor, fontColor,fontColor2 }) => {
                
                     <img src="/assets/img/banner/h3_banner_shape01.png" alt="" className="heartbeat" />
                 </div>
-                <div className="breadcrumb__shape_dev2">
+                <div  className="breadcrumb__shape_dev2">
                     <img src="/assets/img/images/breadcrumb_shape01.png" alt="" />
                     <img src="/assets/img/images/breadcrumb_shape02.png" alt="" className="alltuchtopdown" />
                     <img src="/assets/img/images/h2_testimonial_shape.png"  width={500} height={100}  alt="" />

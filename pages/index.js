@@ -31,8 +31,11 @@ export default function Home({
     pageDescription,
 }) {
     const { t, i18n } = useTranslation('common');
+    console.log("hii")
 
     const localizeData = (data) => {
+
+        console.log( "hero", heroSectionData)
         return data.map(item => {
             const localizedIcondata = {};
             Object.keys(item).forEach(key => {
@@ -57,6 +60,7 @@ export default function Home({
                 });
             }
             return {
+
                 ...item,
                 title: item[`title_${i18n.language}`] || item.title_en,
                 subtitle: item[`subtitle_${i18n.language}`] || item.subtitle_en,
@@ -76,7 +80,9 @@ export default function Home({
             <Head>
                 <title>{pageTitle}</title>
                 <meta name="description" content={pageDescription} />
-            </Head>
+            </Head> 
+          
+          
             <Layout headerStyle={6} footerStyle={3}>
                 <Slider2 data={localizeData(heroSectionData)} id="herosection"/>
                 <Devindex1 data={localizeData(heroBottomData)}/>
@@ -94,14 +100,41 @@ export default function Home({
     );
 }
 
+
+
+
+
+
 export async function getServerSideProps({ locale }) {
+
+    console.log("hii")
     
     const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/cms`);
     const metadataResponse = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/pageMetadata/`);
 
+
+    console.log( "respo", response)
+    console.log("meta", metadataResponse)
+
     if (!response.ok || !metadataResponse.ok) {
+
+        console.log("err")
         throw new Error('Failed to fetch data');
+ 
+
     }
+
+
+    // if (!response.ok || !metadataResponse.ok) {
+    //     throw new Error('Failed to fetch data');
+    // }
+
+
+    console.log("new branch")
+    console.log("new changes")
+    
+    
+
 
     const allData = await response.json();
     const metadata = await metadataResponse.json();
