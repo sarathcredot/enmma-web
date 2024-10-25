@@ -165,7 +165,7 @@ export function CorporatePoints({ corporatePoints }) {
           </div>
         </div>
         <div className="col-md-6" id="focus">
-          <div className="tab-content" id="myTabContent">
+          <div  className="tab-content" id="myTabContent">
             {corporatePoints.map((corporatePoint, index) => {
               return (
                 <div
@@ -190,13 +190,18 @@ export function CorporatePoints({ corporatePoints }) {
                       <p>
                       {corporatePoint.description}
                       </p>
-                    </div>
-                  </div1>
-
-                  <Link style={{marginTop:"10px"}} href={`/`} className="btn btn-two">
-                          {t('download-report')}
+                      <Link style={{marginTop:"10px"}} href={`/`} className="btn btn-two">
+                          {t('download')}
                   
                   </Link>
+                     
+                    </div>
+
+                  
+                       
+                  </div1>
+
+                
 
                    
                 </div>

@@ -5,16 +5,18 @@ import { useTranslation } from 'react-i18next';
 const DevsectionFoot = ({ data, bgColor, fontColor, fontColor2 }) => {
     const { t, i18n } = useTranslation('common');
 
+    console.log("new",data)
+
     return (
         <>
             {data && data.length > 0 ? (
                 data?.map((item) => (
                     <div  key={item._id} className="box-video-small">
-                        <div className="item-video-small" style={{ backgroundColor: bgColor }}>
+                        <div  className="item-video-small" style={{ backgroundColor: bgColor , margin:"12px" }}>
                             <div className="video-small-left">
                                 <div className="video-small-left-inner">
                                     <div className="video-small-left-1">
-                                        <h3 dir='ltr'>{item.sidebarNumber || "50"}</h3>
+                                        <h3 dir='ltr'>{item.sidebarNumber || "50+"}</h3>
                                         <p>{item.sidebarSubtitle || t('Diverse-properties')}</p>
                                     </div>
                                     <div className="video-small-left-2">

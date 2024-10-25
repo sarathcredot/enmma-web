@@ -20,7 +20,9 @@ export default function AnnualreportPage({ initialData, pageTitle,pageDescriptio
             try {
                 const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/cms`);
                 const data = await response.json();
+              
                 const fetchedData = data.filter(item => item.page === 'annual-report');
+                console.log("report",fetchedData)
                 setData(fetchedData);
             } catch (error) {
                 console.error('Failed to load data:', error);

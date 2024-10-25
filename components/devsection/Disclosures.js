@@ -66,7 +66,7 @@ export default function Statement({ style, showItem, showPagination }) {
 
   return (
     <>
-      <div>
+      <div className='discloser-main' >
         {groupedData.length === 0 ? (
           <h3>No Statements Found</h3>
         ) : (
