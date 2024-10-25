@@ -90,7 +90,7 @@ export default function About3({ initialData, teamMembersData,pageDescription,pa
                 <Banner2  data={getDataBySection("team-banner")} />
 
                 <div   id="director">
-                    <section className="team-area pt-20 ">
+                    <section  className="team-area pt-10 ">
                         {getDataBySection("team-directors").map((item) => (
                             <div key={item._id} className="container project__area-three">
                                 <div className="row container">
@@ -206,7 +206,7 @@ export default function About3({ initialData, teamMembersData,pageDescription,pa
                         ))}
                     </section>
 
-                    <section id="executive" className="team-area pt-100 ">
+                    <section  id="executive" className="team-area pt-10 ">
                         {getDataBySection("team-Executive").map((item) => (
                             <div key={item._id} className="container project__area-three">
                                 <div className="row container">

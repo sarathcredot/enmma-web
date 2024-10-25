@@ -58,7 +58,7 @@ export default function Services3() {
                                             </div>
                                             <div className="services__top-title">
                                                 <h2 className="title">
-                                                    <Link href="/services">{service.title}</Link>
+                                                    <Link href={`/services/${service.slug}`}>{service.title}</Link>
                                                 </h2>
                                             </div>
                                         </div>

@@ -96,7 +96,7 @@ export default function About({ initialData, pageTitle,pageDescription, }) {
            
            </div>
            <div className="dev-bottom container">
-            <Sectionfoot />
+            <Sectionfoot data={getDataBySection('career-Trusted')}  />
             </div>  
 
             </div>

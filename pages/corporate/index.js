@@ -11,8 +11,10 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { getLocalized } from "@/util/localization-helper";
 import { getImageUrl } from "@/util/image-url-helper";
 
+
 export default function corporate({initialData}) {
-  const { t, i18n } = useTranslation("common");
+  const { t } = useTranslation('common');
+  const {  i18n } = useTranslation("common");
   const [localizedData, setLocalizedData] = useState(initialData);
 
   useEffect(() => {
@@ -116,11 +118,13 @@ export function CorporateSubheading({ corporateHeading }) {
 
 
 export function CorporatePoints({ corporatePoints }) {
-
+  const { t } = useTranslation('common');
     const [activeIndex, setActiveIndex] = useState(0);
     const handleOnClick = (index) => {
       setActiveIndex(index);
     };
+
+    console.log("corparate data",corporatePoints)
   
     return (
       <div className="row flex-wrap-reverse">
@@ -136,7 +140,7 @@ export function CorporatePoints({ corporatePoints }) {
                   >
                     {/* <Link href="#" smooth> */}
                       <button
-                      style={{display:"flex",alignItems:"center",justifyContent:"center"}}
+                      style={{display:"flex",alignItems:"center"}}
 
                         className={
                           activeIndex == index ? "nav-link active" : "nav-link"
@@ -161,7 +165,7 @@ export function CorporatePoints({ corporatePoints }) {
           </div>
         </div>
         <div className="col-md-6" id="focus">
-          <div className="tab-content" id="myTabContent">
+          <div  className="tab-content" id="myTabContent">
             {corporatePoints.map((corporatePoint, index) => {
               return (
                 <div
@@ -175,9 +179,9 @@ export function CorporatePoints({ corporatePoints }) {
                   aria-labelledby="health-tab"
                   tabIndex={0}
                 >
-                  <div1 className="services__item-four shine-animate-item">
-                    <div className="services__thumb-four shine-animate">
-                      <img src={getImageUrl(corporatePoint.imageUrl)} alt="" />
+                  <div1  className="services__item-four shine-animate-item">
+                    <div style={{borderRadius:"0px"}} className="services__thumb-four shine-animate">
+                      <img  style={{borderRadius:"0px"}} src={getImageUrl(corporatePoint.imageUrl)} alt="" />
                     </div>
                     <div className="services__content-four">
                       <h2 className="title">
@@ -186,8 +190,20 @@ export function CorporatePoints({ corporatePoints }) {
                       <p>
                       {corporatePoint.description}
                       </p>
+                      <Link style={{marginTop:"10px"}} href={`/`} className="btn btn-two">
+                          {t('download')}
+                  
+                  </Link>
+                     
                     </div>
+
+                  
+                       
                   </div1>
+
+                
+
+                   
                 </div>
               );
             })}

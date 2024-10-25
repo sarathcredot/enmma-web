@@ -270,7 +270,7 @@ export default function Careerform() {
               <input
                 type="text"
                 name="fullName"
-                placeholder={t("*Full-Name")}
+                placeholder={t("Full-Name")}
                 value={formData.fullName}
                 onChange={handleChange}
 
@@ -286,7 +286,7 @@ export default function Careerform() {
               <input
                 type="text"
                 name="dob"
-                placeholder="Date of Birth"
+                placeholder={t("dob")}
                 value={formData.dob}
                 onFocus={handleFocus}
                 onChange={handleChange}
