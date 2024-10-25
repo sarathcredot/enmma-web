@@ -11,6 +11,12 @@ export default function AnnualReport({ data }) {
             try {
                 const response = await axios.get(`${process.env.NEXT_PUBLIC_BASE_URL}/annual-reports/`);
                 setReports(response.data.annualReports);
+
+
+                
+
+                console.log("report", response.data.annualReports)
+
             } catch (error) {
                 console.error("Failed to fetch annual reports:", error);
             }
