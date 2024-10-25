@@ -136,7 +136,7 @@ export function CorporatePoints({ corporatePoints }) {
                   >
                     {/* <Link href="#" smooth> */}
                       <button
-                      style={{display:"flex",alignItems:"center",justifyContent:"center"}}
+                      style={{display:"flex",alignItems:"center"}}
 
                         className={
                           activeIndex == index ? "nav-link active" : "nav-link"
@@ -175,9 +175,9 @@ export function CorporatePoints({ corporatePoints }) {
                   aria-labelledby="health-tab"
                   tabIndex={0}
                 >
-                  <div1 className="services__item-four shine-animate-item">
-                    <div className="services__thumb-four shine-animate">
-                      <img src={getImageUrl(corporatePoint.imageUrl)} alt="" />
+                  <div1  className="services__item-four shine-animate-item">
+                    <div style={{borderRadius:"0px"}} className="services__thumb-four shine-animate">
+                      <img  style={{borderRadius:"0px"}} src={getImageUrl(corporatePoint.imageUrl)} alt="" />
                     </div>
                     <div className="services__content-four">
                       <h2 className="title">
