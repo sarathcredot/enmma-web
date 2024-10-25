@@ -11,8 +11,10 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { getLocalized } from "@/util/localization-helper";
 import { getImageUrl } from "@/util/image-url-helper";
 
+
 export default function corporate({initialData}) {
-  const { t, i18n } = useTranslation("common");
+  const { t } = useTranslation('common');
+  const {  i18n } = useTranslation("common");
   const [localizedData, setLocalizedData] = useState(initialData);
 
   useEffect(() => {
@@ -116,11 +118,13 @@ export function CorporateSubheading({ corporateHeading }) {
 
 
 export function CorporatePoints({ corporatePoints }) {
-
+  const { t } = useTranslation('common');
     const [activeIndex, setActiveIndex] = useState(0);
     const handleOnClick = (index) => {
       setActiveIndex(index);
     };
+
+    console.log("corparate data",corporatePoints)
   
     return (
       <div className="row flex-wrap-reverse">
@@ -188,6 +192,13 @@ export function CorporatePoints({ corporatePoints }) {
                       </p>
                     </div>
                   </div1>
+
+                  <Link style={{marginTop:"10px"}} href={`/`} className="btn btn-two">
+                          {t('download-report')}
+                  
+                  </Link>
+
+                   
                 </div>
               );
             })}
