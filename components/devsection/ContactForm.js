@@ -178,12 +178,12 @@ export default function ComplaintSection() {
                 <div className="row">
                   <div className="col-md-4">
                     <div className="form-grp">
-                      <label style={{ color: "red" }} > * </label>
+                  
 
                       <input
                         type="text"
                         name="name"
-                        placeholder={t('Full-Name')}
+                        placeholder={"*"+t('Full-Name')}
                         value={formData.name}
                         onChange={handleChange}
                       />
@@ -194,11 +194,11 @@ export default function ComplaintSection() {
                   </div>
                   <div className="col-md-4">
                     <div className="form-grp">
-                      <label style={{ color: "red" }} > * </label>
+                    
                       <input
                         type="email"
                         name="email"
-                        placeholder={t('Email')}
+                        placeholder={"*"+t('Email')}
                         value={formData.email}
                         onChange={handleChange}
                       />
@@ -206,11 +206,11 @@ export default function ComplaintSection() {
                   </div>
                   <div className="col-md-4">
                     <div className="form-grp">
-                      <label style={{ color: "red" }} > * </label>
+                    
                       <input
                         type="number"
                         name="phone"
-                        placeholder={t("phone")}
+                        placeholder={"*"+t("phone")}
                         value={formData.phone}
                         onChange={handleChange}
                       />
@@ -218,16 +218,16 @@ export default function ComplaintSection() {
                   </div>
                 </div>
                 <div className="form-grp">
-                  <label style={{ color: "red" }} > * </label>
+                 
                   <textarea
                     name="message"
-                    placeholder={t('message')}
+                    placeholder={"*"+t('message')}
                     value={formData.message}
                     onChange={handleChange}
                   />
                 </div>
                 <div className="form-grp checkbox-grp">
-                  <label style={{ color: "red" }} > * </label>
+                
                   <input onClick={() => { setconformBox(!conformBox) }} type="checkbox" name="checkbox" id="checkbox" />
                   <label htmlFor="checkbox">
                     Save my name, email, and website in this browser for the next time I comment.

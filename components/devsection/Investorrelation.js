@@ -150,7 +150,7 @@ export default function Contact({ data1, data }) {
                     <div className="row">
                       <div className="form-grp">
                         <select name="option" value={formData.option} onChange={handleChange}>
-                          <option value="">{t('Please-select')}</option>
+                          <option value="">{"*"+t('Please-select')}</option>
                           <option value="Angel Investment">Angel Investment</option>
                           <option value="Venture Capital">Venture Capital</option>
                           <option value="Equity">Equity</option>
@@ -162,7 +162,7 @@ export default function Contact({ data1, data }) {
                           <input
                             type="text"
                             name="name"
-                            placeholder={t('Full-Name')}
+                            placeholder={"*"+t('Full-Name')}
                             value={formData.name}
                             onChange={handleChange}
                           />
@@ -173,7 +173,7 @@ export default function Contact({ data1, data }) {
                           <input
                             type="email"
                             name="email"
-                            placeholder={t('email')}
+                            placeholder={"*"+t('email')}
                             value={formData.email}
                             onChange={handleChange}
                           />
@@ -184,7 +184,7 @@ export default function Contact({ data1, data }) {
                           <input
                             type="text"
                             name="phoneNumber"
-                            placeholder={t('Phone-Number')}
+                            placeholder={"*"+t('Phone-Number')}
                             value={formData.phoneNumber}
                             onChange={handleChange}
                           />
@@ -194,7 +194,7 @@ export default function Contact({ data1, data }) {
                     <div className="form-grp">
                       <textarea
                         name="message"
-                        placeholder={t('Message')}
+                        placeholder={"*"+t('Message')}
                         value={formData.message}
                         onChange={handleChange}
                       />
