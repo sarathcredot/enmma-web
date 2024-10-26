@@ -53,7 +53,7 @@ export default function AnnualReport({ data }) {
 
                             <div key={index}  className="sidebar__widget-dev">
                                 <h4 className="sidebar__widget-title">{report.year}</h4>
-                                <Link href={`${process.env.NEXT_PUBLIC_MEDIA_BASE_URL}${report.document}`} passHref>
+                                <Link href={`${process.env.NEXT_PUBLIC_MEDIA_BASE_URL}${report.document}`}  target="_blank" rel="noopener noreferrer" passHref>
                                     <button className="btn-two">
                                         <SVG caseValue='case14' /> view report
                                     </button>
