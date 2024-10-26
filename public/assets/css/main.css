@@ -7716,7 +7716,7 @@ html[lang="ar"] .choose__shape-wrap-three img:nth-child(2){
   align-items: center;
   position:relative;
   z-index: 1;
-  padding: 0px 0;
+  padding: 100px 0;
 }
 
 
@@ -15909,7 +15909,7 @@ text-align: initial;
     margin-bottom: 20px;
   }
   .sidebar__widget-dev {
-    /* background-image: url('/assets/img/bg/annualbg.png'); */
+    background-image: url('/assets/img/bg/annualbg.png');
     background-size: cover;
     background-position: center;
     border: 1px solid #110B79;
