@@ -133,7 +133,7 @@ export default function Complaintsection() {
                   <form id="contact-form" onSubmit={handleSubmit}>
                     <div className="form-grp">
                       <select name="option" value={formData.option} onChange={handleChange}>
-                        <option value="">{t('Please-select')}</option>
+                        <option value="">{"*"+t('Please-select')}</option>
                         <option value="AAA">AAA</option>
                         <option value="BBBB">BBBB</option>
                         <option value="CCCC">CCCC</option>
@@ -145,7 +145,7 @@ export default function Complaintsection() {
                     <div className="form-grp">
                       <textarea
                         name="description"
-                        placeholder={t('Description-form')}
+                        placeholder={"*"+t('Description-form')}
                         value={formData.description}
                         onChange={handleChange}
                       />
@@ -156,7 +156,7 @@ export default function Complaintsection() {
                           <input
                             type="number"
                             name="contactNumber"
-                            placeholder={t('Contact-Number')}
+                            placeholder={"*"+t('Contact-Number')}
                             value={formData.contactNumber}
                             onChange={handleChange}
                           />
@@ -167,7 +167,7 @@ export default function Complaintsection() {
                           <input
                             type="text"
                             name="civilId"
-                            placeholder={t('Civil-ID')}
+                            placeholder={"*"+t('Civil-ID')}
                             value={formData.civilId}
                             onChange={handleChange}
                           />
@@ -180,7 +180,7 @@ export default function Complaintsection() {
                           <input
                             type="text"
                             name="firstName"
-                            placeholder={t('First-Name')}
+                            placeholder={"*"+t('First-Name')}
                             value={formData.firstName}
                             onChange={handleChange}
                           />
@@ -191,7 +191,7 @@ export default function Complaintsection() {
                           <input
                             type="text"
                             name="lastName"
-                            placeholder={t('Last-Name')}
+                            placeholder={"*"+t('Last-Name')}
                             value={formData.lastName}
                             onChange={handleChange}
                           />
@@ -204,7 +204,7 @@ export default function Complaintsection() {
                           <input
                             type="number"
                             name="phoneNumber"
-                            placeholder={t('Phone-Number')}
+                            placeholder={"*"+t('Phone-Number')}
                             value={formData.phoneNumber}
                             onChange={handleChange}
                           />
@@ -215,7 +215,7 @@ export default function Complaintsection() {
                           <input
                             type="email"
                             name="emailAddress"
-                            placeholder={t('email')}
+                            placeholder={"*"+t('email')}
                             value={formData.emailAddress}
                             onChange={handleChange}
                           />

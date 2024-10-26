@@ -252,11 +252,12 @@ export default function Careerform() {
           {/* Position */}
           <div className="col-md-6">
             <div className="form-grp">
-              <label style={{ color: "red" }} > * </label>
+             
               <input
                 type="text"
                 name="position"
-                placeholder={t('Position-Applying-for')}
+              
+                placeholder={`${"*"}${ t('Position-Applying-for')}`}
                 value={formData.position}
                 onChange={handleChange}
 
@@ -266,11 +267,11 @@ export default function Careerform() {
           {/* Full Name */}
           <div className="col-md-6">
             <div className="form-grp">
-              <label style={{ color: "red" }} > * </label>
+             
               <input
                 type="text"
                 name="fullName"
-                placeholder={t("Full-Name")}
+                placeholder={"*"+t("Full-Name")}
                 value={formData.fullName}
                 onChange={handleChange}
 
@@ -282,11 +283,11 @@ export default function Careerform() {
           {/* Date of Birth */}
           <div className="col-md-6">
             <div className="form-grp">
-              <label style={{ color: "red" }} > * </label>
+            
               <input
                 type="text"
                 name="dob"
-                placeholder={t("dob")}
+                placeholder={"*"+t("dob")}
                 value={formData.dob}
                 onFocus={handleFocus}
                 onChange={handleChange}
@@ -297,7 +298,7 @@ export default function Careerform() {
           {/* Gender */}
           <div className="col-md-6">
             <div className="form-grp">
-              <label style={{ color: "red" }} > * </label>
+           
               <select
                 name="gender"
                 value={formData.gender}
@@ -305,7 +306,7 @@ export default function Careerform() {
                 style={{ color: '#3E4073' }}
 
               >
-                <option value="">{t('Gender')}</option>
+                <option value="">{t("*"+'Gender')}</option>
                 <option value="male">Male</option>
                 <option value="female">Female</option>
               </select>
@@ -316,11 +317,11 @@ export default function Careerform() {
           {/* Mobile Number */}
           <div className="col-md-6">
             <div className="form-grp">
-              <label style={{ color: "red" }} > * </label>
+             
               <input
                 type="number"
                 name="mobileNumber"
-                placeholder={t("Phone-Number")}
+                placeholder={"*"+t("Phone-Number")}
                 value={formData.mobileNumber}
                 onChange={handleChange}
 
@@ -330,11 +331,11 @@ export default function Careerform() {
           {/* Passport Number */}
           <div className="col-md-6">
             <div className="form-grp">
-              <label style={{ color: "red" }} > * </label>
+           
               <input
                 type="text"
                 name="passportNumber"
-                placeholder={t("Passport-Number")}
+                placeholder={"*"+t("Passport-Number")}
                 value={formData.passportNumber}
                 onChange={handleChange}
 
@@ -346,11 +347,11 @@ export default function Careerform() {
           {/* Email Address */}
           <div className="col-md-6">
             <div className="form-grp">
-              <label style={{ color: "red" }} > * </label>
+       
               <input
                 type="email"
                 name="emailAddress"
-                placeholder={t('email')}
+                placeholder={"*"+t('email')}
                 value={formData.emailAddress}
                 onChange={handleChange}
 
@@ -360,7 +361,7 @@ export default function Careerform() {
           {/* Nationality */}
           <div className="col-md-6">
             <div className="form-grp">
-              <label style={{ color: "red" }} > * </label>
+            
               <select
                 name="nationality"
                 value={formData.nationality}
@@ -368,7 +369,7 @@ export default function Careerform() {
                 style={{ color: '#3E4073' }}
 
               >
-                <option value="">{t('Select-Nationality')}</option>
+                <option value="">{"*"+t('Select-Nationality')}</option>
                 {countryData.map((country) => (
                   <option key={country.isoCode} value={country.name}>
                     {country.name}
@@ -382,7 +383,7 @@ export default function Careerform() {
           {/* Degree Level */}
           <div className="col-md-6">
             <div className="form-grp">
-              <label style={{ color: "red" }} > * </label>
+            
               <select
                 name="degreeLevel"
                 value={formData.degreeLevel}
@@ -390,7 +391,7 @@ export default function Careerform() {
                 style={{ color: '#3E4073' }}
 
               >
-                <option value="">{t('Degree-Level')}</option>
+                <option value="">{t("*"+'Degree-Level')}</option>
                 <option value="High School of Equivalent ">High School of Equivalent </option>
                 <option value="Certification">Certification</option>
                 <option value="Vocational">Vocational</option>
@@ -403,7 +404,7 @@ export default function Careerform() {
           {/* Career Level */}
           <div className="col-md-6">
             <div className="form-grp">
-              <label style={{ color: "red" }} > * </label>
+  
               <select
                 name="careerLevel"
                 value={formData.careerLevel}
@@ -411,7 +412,7 @@ export default function Careerform() {
                 style={{ color: '#3E4073' }}
 
               >
-                <option value="">{t('Career-Level')}</option>
+                <option value="">{"*"+t('Career-Level')}</option>
                 <option value="Student">Student</option>
                 <option value="Entry Level">Entry Level</option>
                 <option value="Mid Career">Mid Career</option>
@@ -425,10 +426,10 @@ export default function Careerform() {
           {/* Job Duties */}
           <div className="col-md-6">
             <div className="form-grp">
-              <label style={{ color: "red" }} > * </label>
+      
               <textarea
                 name="jobDuties"
-                placeholder={t('Briefly-describe-your-last-job-duties')}
+                placeholder={"*"+t('Briefly-describe-your-last-job-duties')}
                 value={formData.jobDuties}
                 onChange={handleChange}
 
@@ -438,10 +439,10 @@ export default function Careerform() {
           {/* Additional Information */}
           <div className="col-md-6">
             <div className="form-grp">
-              <label style={{ color: "red" }} > * </label>
+           
               <textarea
                 name="additionalInfo"
-                placeholder={t('If-Any-Additional-Information')}
+                placeholder={"*"+t('If-Any-Additional-Information')}
                 value={formData.additionalInfo}
                 onChange={handleChange}
 
@@ -454,7 +455,7 @@ export default function Careerform() {
           <div className="col-md-6">
             <div className="form-grp">
               <p>{t('Upload-Your-Resume')}</p>
-              <label style={{ color: "red" }} > * </label>
+        
               <input
                 className='form-control form-control-lg'
                 type="file"
