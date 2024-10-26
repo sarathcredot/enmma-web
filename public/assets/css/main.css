@@ -15909,7 +15909,7 @@ text-align: initial;
     margin-bottom: 20px;
   }
   .sidebar__widget-dev {
-    /* background-image: url('/assets/img/bg/annualbg.png'); */
+    background-image: url('/assets/img/bg/annualbg.png');
     background-size: cover;
     background-position: center;
     border: 1px solid #110B79;
