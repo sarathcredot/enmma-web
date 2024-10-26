@@ -5378,8 +5378,8 @@ font-size: 20px;
   bottom: 0;
   width: 100%;
   height: 20%;
-  /* background: linear-gradient(to top, white, transparent); */
-  border-radius: 0 0 12px 12px;
+  background: linear-gradient(to top, white, transparent);
+  /* border-radius: 0 0 12px 12px; */
 }
 
 .services__icon-two {
