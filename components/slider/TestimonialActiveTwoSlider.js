@@ -9,7 +9,7 @@ import axios from 'axios';
 
 export default function TestimonialActiveTwoSlider({ data }) {
 
- 
+    console.log("test data", data)
 
     const settings = {
         infinite: true,
@@ -49,16 +49,21 @@ export default function TestimonialActiveTwoSlider({ data }) {
 
             <div className="testimonial__item-three">
 
-                <Slider ref={slider} {...settings}>
+
+
+                {/* <Slider ref={slider} {...settings}>
 
                     {
                         data?.map((item, index) => (
 
 
+                          
+
+
                             <div>
 
                                 <p key={index} > "{item.description} </p>
-                                {/* <p style={{textAlign:"end",marginRight:'10px'}} > {item.person_en} {item.person_en} </p> */}
+
                                 <div style={{ textAlign: "end", paddingRight: "15px" }} >
 
                                     <span style={{ display: "block" }}>{item.person}</span>
@@ -75,7 +80,7 @@ export default function TestimonialActiveTwoSlider({ data }) {
                     }
 
 
-                </Slider>
+                </Slider> */}
 
 
                 {/* <p>
@@ -83,6 +88,35 @@ export default function TestimonialActiveTwoSlider({ data }) {
                     sit amet, consecteture.Borem ipsum dolor sit amet, consectetur
                     adipiscing elita Moremsit amet.</p>
  */}
+
+                <Slider ref={slider} {...settings}  >
+
+                    {
+                        data?.map((item, index) => (
+
+                            <div>
+
+                                <p key={index} > "{item.description} </p>
+
+                                <div style={{ textAlign: "end", paddingRight: "15px" }} >
+
+                                    <span style={{ display: "block" }}>{item.person}</span>
+                                    <span style={{ display: "block" }}>{item.designation}</span>
+
+                                </div>
+
+
+
+                            </div>
+                        ))
+                    }
+
+                </Slider>
+
+
+
+
+
 
                 <div className="testimonial__bottom">
 
