@@ -9,7 +9,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Bannerfooter from "@/components/sections/Bannerfooter";
 import Head from "next/head";
 
-export default function About3({ initialData, teamMembersData,pageDescription,pageTitle }) {
+export default function About3({ initialData, teamMembersData, pageDescription, pageTitle }) {
     const { t, i18n } = useTranslation("common");
     const [data, setData] = useState(initialData);
     const [teamMembers, setTeamMembers] = useState(teamMembersData);
@@ -81,22 +81,22 @@ export default function About3({ initialData, teamMembersData,pageDescription,pa
 
     return (
         <>
-           <Head>
+            <Head>
                 <title>{pageTitle}</title>
                 <meta name="description" content={pageDescription} />
             </Head>
             <Layout headerStyle={6} footerStyle={3}>
-                
-                <Banner2  data={getDataBySection("team-banner")} />
 
-                <div   id="director">
-                    <section  className="team-area pt-10 ">
+                <Banner2 data={getDataBySection("team-banner")} />
+
+                <div id="director">
+                    <section className="team-area pt-10 ">
                         {getDataBySection("team-directors").map((item) => (
                             <div key={item._id} className="container project__area-three">
                                 <div className="row container">
                                     <div className="col-xl-7 space-betweeni col-lg-8 mb-5">
                                         <div className="section-title  mb-50 tg-heading-subheading animation-style3">
-                                            <span style={{fontSize:"18px"}}  className="sub-title">{item.subtitle}</span>
+                                            <span style={{ fontSize: "18px" }} className="sub-title">{item.subtitle}</span>
 
                                             <h2 className="title tg-element-title  mt-4 text-wrap devtextwrapo w-200">
                                                 {item.title}
@@ -114,20 +114,20 @@ export default function About3({ initialData, teamMembersData,pageDescription,pa
                                     <div className="row justify-content-center">
                                         {item.choicesTeam.map((id) => {
                                             const teamData = Array.isArray(localizedTeamMembers)
-                                            ? localizedTeamMembers.find((member) => member._id === id)
-                                            : null;
-                                            
+                                                ? localizedTeamMembers.find((member) => member._id === id)
+                                                : null;
+
 
 
                                             return teamData ? (
                                                 <div
                                                     key={id}
                                                     className="col-xl-3 col-lg-4 col-md-6 col-sm-8"
-                                                    
-                                                    
+
+
                                                 >
-                                                    <div    className="team-item">
-                                                        <div    className="team-thumb">
+                                                    <div  className="team-item">
+                                                        <div className="team-thumb">
                                                             <img
                                                                 src={`${process.env.NEXT_PUBLIC_MEDIA_BASE_URL}${teamData.imageUrl}`}
                                                                 alt={teamData.name}
@@ -156,8 +156,8 @@ export default function About3({ initialData, teamMembersData,pageDescription,pa
                             <div key={item._id} className="container project__area-three">
                                 <div className="row container">
                                     <div className="col-xl-7 space-betweeni col-lg-8 mb-5">
-                                        <div  className="section-title  mb-50 tg-heading-subheading animation-style3">
-                                            <span style={{fontSize:"18px"}}  className="sub-title">{item.subtitle}</span>
+                                        <div className="section-title  mb-50 tg-heading-subheading animation-style3">
+                                            <span style={{ fontSize: "18px" }} className="sub-title">{item.subtitle}</span>
                                             <h2 className="title tg-element-title  mt-4 text-wrap devtextwrapo">
                                                 {item.title}
                                             </h2>
@@ -174,9 +174,9 @@ export default function About3({ initialData, teamMembersData,pageDescription,pa
                                     <div className="row justify-content-center">
                                         {item.choicesTeam.map((id) => {
                                             const teamData = Array.isArray(localizedTeamMembers)
-                                            ? localizedTeamMembers.find((member) => member._id ===id)
-                                            : null;
-                                              return teamData ? (
+                                                ? localizedTeamMembers.find((member) => member._id === id)
+                                                : null;
+                                            return teamData ? (
                                                 <div
                                                     key={teamData._id}
                                                     className="col-xl-3 col-lg-4 col-md-6 col-sm-8"
@@ -206,13 +206,13 @@ export default function About3({ initialData, teamMembersData,pageDescription,pa
                         ))}
                     </section>
 
-                    <section  id="executive" className="team-area pt-10 ">
+                    <section id="executive" className="team-area pt-10 ">
                         {getDataBySection("team-Executive").map((item) => (
                             <div key={item._id} className="container project__area-three">
                                 <div className="row container">
                                     <div className="col-xl-7 space-betweeni col-lg-8 mb-5">
                                         <div className="section-title  mb-50 tg-heading-subheading animation-style3">
-                                            <span style={{fontSize:"18px"}}  className="sub-title">{item.subtitle}</span>
+                                            <span style={{ fontSize: "18px" }} className="sub-title">{item.subtitle}</span>
                                             <h2 className="title tg-element-title  mt-4 text-wrap devtextwrapo">
                                                 {item.title}
                                             </h2>
