@@ -2675,9 +2675,9 @@ html[lang="ar"] .tgmobile__menu .navigation li > a {
     padding: 140px 0 0;
   }
 }
-@media (max-width: 767.98px) {
+@media (max-width: 769px) {
   .banner__bg-four {
-    padding: 50px 0 0;
+    padding: 70px 0 0;
   }
 }
 @media (max-width: 991.98px) {
@@ -5558,7 +5558,7 @@ font-size: 20px;
   margin-left: 115px;
 }
 
-@media(max-width:600px){
+@media(max-width:800px){
 
      .services__content-two .btn{
 
@@ -7726,9 +7726,9 @@ html[lang="ar"] .choose__shape-wrap-three img:nth-child(2){
   justify-content:space-between;
 }
 
-@media (max-width: 768.98px) {
+@media (max-width: 769.98px) {
   .project__area-three {
-    padding: 10px 0;
+    padding: 80px 0;
   }
   .project__area-three .space-betweeni{
     display: flex;
@@ -7914,6 +7914,7 @@ html[lang="ar"] .choose__shape-wrap-three img:nth-child(2){
     display: none;
   }
 }
+
 
 
 /*devchange*/
@@ -10906,9 +10907,15 @@ display: none;  }
   }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 769px) {
   .team-item {
 height: 600px;
+  }
+}
+
+@media (max-width: 500px) {
+  .team-item {
+height: 550px;
   }
 }
 
@@ -12784,7 +12791,8 @@ margin-bottom: 20px;
 }
 @media (max-width: 991.98px) {
   .contact__content {
-    margin-bottom: 50px;
+    margin-bottom: 0px;
+    margin-top: 20px;
   }
 }
 .contact__info .list-wrap li {
@@ -12875,7 +12883,7 @@ margin-bottom: 20px;
     
      width: 300px;
      margin-bottom: 30px;
-     margin-left: 30px;
+     margin-left: -5px;
     
 
    } 
@@ -14629,6 +14637,7 @@ margin-bottom: 20px;
   position: relative;
   border-radius: 16px;
   overflow: hidden;
+  padding: 20px;
 
 }
 
@@ -14647,7 +14656,11 @@ margin-bottom: 20px;
   
   .box-video{
      
-    padding-top: 30px; 
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    /* padding-top: 30px;  */
+    /* padding: 10px; */
   }
   }
 
@@ -15764,6 +15777,21 @@ line-height: 28px;
 text-align: initial;
 
 }
+
+
+@media(max-width:769px){
+
+  .space-betweeni .dev_customsize{
+
+    width: 600px;
+  }
+}
+
+
+
+
+
+
 .dev_index_comp{
   display: flex;
   flex-direction: row;

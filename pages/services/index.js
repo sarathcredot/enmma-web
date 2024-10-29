@@ -14,16 +14,17 @@ export default function Services({ initialData }) {
   const [localizedData, setLocalizedData] = useState(initialData);
   const [bannerdata, setbannerdata] = useState([
 
-    
-        // {
-        //   choicesBlog:[],
-        //   choicesService:[],
-        //   choicesTeam:[],
-        //   description_ar:['\nنحن نقدم مجموعة واسعة من الخدمات لتلبية احتياجاتك. استكشف عروضنا.\n']
-    
-        // }
+
+    // {
+    //   choicesBlog:[],
+    //   choicesService:[],
+    //   choicesTeam:[],
+    //   description_ar:['\nنحن نقدم مجموعة واسعة من الخدمات لتلبية احتياجاتك. استكشف عروضنا.\n']
+
+    // }
 
   ])
+  const [testimonial, settestimonial] = useState([])
 
 
 
@@ -55,87 +56,121 @@ export default function Services({ initialData }) {
   }
 
 
-  
+
 
   useEffect(() => {
     async function loadData() {
-        try {
-            const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/cms`);
-            const data = await response.json();
-            const fetchedData = data.filter(item => item.page === 'service');
+      try {
+        const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/cms`);
+        const data = await response.json();
+        const fetchedData = data.filter(item => item.page === 'service');
 
-            
 
-             if(fetchedData){
-              console.log( "newdata 24", fetchedData)
 
-              setbannerdata(fetchedData);
-             }
-            
-        } catch (error) {
-            console.error('Failed to load data:', error);
+        if (fetchedData) {
+          console.log("newdata 24", fetchedData)
+
+          setbannerdata(fetchedData);
         }
+
+      } catch (error) {
+        console.error('Failed to load data:', error);
+      }
     }
 
     loadData();
-}, [i18n.language]);
+  }, [i18n.language]);
 
-const localizedbannerData = bannerdata.map(item => {
+  const localizedbannerData = bannerdata.map(item => {
     const localizedIcondata = {};
     Object.keys(item).forEach(key => {
-        if (key.startsWith('icondata')) {
-            localizedIcondata[key] = {
-                ...item[key],
-                title: item[key][`title_${i18n.language}`] || item[key].title_en,
-                number: item[key][`number_${i18n.language}`] || item[key].number_en,
-            };
-        }
+      if (key.startsWith('icondata')) {
+        localizedIcondata[key] = {
+          ...item[key],
+          title: item[key][`title_${i18n.language}`] || item[key].title_en,
+          number: item[key][`number_${i18n.language}`] || item[key].number_en,
+        };
+      }
     });
     const localizedPointsEn = {};
     const localizedPointsAr = {};
     if (item.points_en) {
-        Object.keys(item.points_en).forEach(pointKey => {
-            localizedPointsEn[pointKey] = item.points_en[pointKey];
-        });
+      Object.keys(item.points_en).forEach(pointKey => {
+        localizedPointsEn[pointKey] = item.points_en[pointKey];
+      });
     }
     if (item.points_ar) {
-        Object.keys(item.points_ar).forEach(pointKey => {
-            localizedPointsAr[pointKey] = item.points_ar[pointKey];
-        });
+      Object.keys(item.points_ar).forEach(pointKey => {
+        localizedPointsAr[pointKey] = item.points_ar[pointKey];
+      });
     }
     return {
-        ...item,
-        title: item[`title_${i18n.language}`] || item.title_en,
-        subtitle: item[`subtitle_${i18n.language}`] || item.subtitle_en,
-        description: item[`description_${i18n.language}`] || item.description_en,
-        sidebarSubtitle: item[`sidebarSubtitle_${i18n.language}`] || item.sidebarSubtitle_en,
-        sidebarNumber: item[`sidebarNumber_${i18n.language}`] || item.sidebarNumber_en,
-        buttonTitle: item[`buttonTitle_${i18n.language}`] || item.buttonTitle_en,
-        localizedIcondata,
-        points: i18n.language === 'ar' ? localizedPointsAr : localizedPointsEn,
-        buttonLink: item.buttonLink || "#",
+      ...item,
+      title: item[`title_${i18n.language}`] || item.title_en,
+      subtitle: item[`subtitle_${i18n.language}`] || item.subtitle_en,
+      description: item[`description_${i18n.language}`] || item.description_en,
+      sidebarSubtitle: item[`sidebarSubtitle_${i18n.language}`] || item.sidebarSubtitle_en,
+      sidebarNumber: item[`sidebarNumber_${i18n.language}`] || item.sidebarNumber_en,
+      buttonTitle: item[`buttonTitle_${i18n.language}`] || item.buttonTitle_en,
+      localizedIcondata,
+      points: i18n.language === 'ar' ? localizedPointsAr : localizedPointsEn,
+      buttonLink: item.buttonLink || "#",
 
     };
-});
 
 
 
-const getDataBySection = (section) => localizedbannerData.filter(item => item.section === section && item.status);
+  });
 
 
 
- console.log("data 24",getDataBySection("service_banner"))
+  const getDataBySection = (section) => localizedbannerData.filter(item => item.section === section && item.status);
+  
+  const testi = getDataBySection("service_testimonial")
+  const testmap=testi[0]?.testimonial
+
+ 
+  const localizetetimonial = testmap?.map((item) => {
 
 
-  // const getBannerDataFromMetaData = (meta) => {
-  //   return meta.map((item) => {
-  //     return {
-  //       title: item["title_en"],
-  //       description: item["title_ar"]
-  //     };
-  //   });
-  // };
+    const localizedIcondata = {};
+    Object.keys(item).forEach(key => {
+      if (key.startsWith('icondata')) {
+        localizedIcondata[key] = {
+          ...item[key],
+          title: item[key][`title_${i18n.language}`] || item[key].title_en,
+          number: item[key][`number_${i18n.language}`] || item[key].number_en,
+        };
+      }
+    });
+    const localizedPointsEn = {};
+    const localizedPointsAr = {};
+    if (item.points_en) {
+      Object.keys(item.points_en).forEach(pointKey => {
+        localizedPointsEn[pointKey] = item.points_en[pointKey];
+      });
+    }
+    if (item.points_ar) {
+      Object.keys(item.points_ar).forEach(pointKey => {
+        localizedPointsAr[pointKey] = item.points_ar[pointKey];
+      });
+    }
+    return {
+      ...item,
+      description:item[`description_${i18n.language}`] || description_en ,
+      person:item[`person_${i18n.language}`] || person_en ,
+      designation:item[`designation_${i18n.language}`] || designation_en ,
+     
+     
+    
+    }})
 
+
+  
+
+  
+ 
+  
   return (
     <>
       <Layout headerStyle={6} footerStyle={3}>
@@ -188,7 +223,7 @@ const getDataBySection = (section) => localizedbannerData.filter(item => item.se
               <div className="col-lg-7">
                 <div className="testimonial__item-wrap">
                   <div className="swiper-container testimonial-active-two">
-                    <TestimonialActiveTwoSlider />
+                    <TestimonialActiveTwoSlider data={localizetetimonial} />
                   </div>
                 </div>
               </div>
