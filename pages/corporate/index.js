@@ -58,14 +58,14 @@ export default function corporate({ initialData }) {
           fontColor2={"#FFFFFF"}
         />
         <div>
-          <div className=" " style={{ backgroundColor: "#110B79" }}>
+          <div  className=" " style={{ backgroundColor: "#110B79"  }}>
             <div className=" container project__area-three">
               {corporateHeadings.length > 0 && <CorporateSubheading corporateHeading={corporateHeadings[0]} />}
               <CorporatePoints corporatePoints={localizedData.corporatePoints} />
             </div>
-            {/* <div className="container dev-bottom ">
-                  <Sectionfoot /> 
-            </div> */}
+            <div className="container dev-bottom ">
+                  <Sectionfoot data={[{}]} /> 
+            </div>
           </div>
           {corporateContact.length > 0 && <Bannerfooter data={corporateContact} />}
         </div>

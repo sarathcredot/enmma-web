@@ -6,7 +6,7 @@ export default function Marketingexpert1({ data, datas }) {
     return (
         <>
         {data.map((item) => (
-            <section key = {item._id} className="marketing_expert__area_six">
+            <section key = {item._id} className="marketing_expert__area_six   marketing_expert__area_six_new  ">
                 <div className="container">
                     <div   className="row align-items-center">
                         <div  className="col-lg-5 mb-30">

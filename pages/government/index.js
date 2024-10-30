@@ -8,7 +8,7 @@ import { useEffect, useState } from 'react';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Head from "next/head";
 
-export default function Government({ initialData, pageTitle,pageDescription, }) {
+export default function Government({ initialData, pageTitle, pageDescription, }) {
 
     const { t, i18n } = useTranslation('common');
     const [data, setData] = useState(initialData);
@@ -70,7 +70,7 @@ export default function Government({ initialData, pageTitle,pageDescription, }) 
     return (
 
         <>
-           <Head>
+            <Head>
                 <title>{pageTitle}</title>
                 <meta name="description" content={pageDescription} />
             </Head>
@@ -78,7 +78,7 @@ export default function Government({ initialData, pageTitle,pageDescription, }) 
             <Layout headerStyle={6} footerStyle={3} >
                 <Banner2 data={getDataBySection('government-banner')} bgColor={"#110B79"} fontColor={"#FFFFFF"} fontColor2={'#FFFFFF'} />
                 <div style={{ backgroundColor: '#110B79' }}>
-                    <div className="container project__area-three ">
+                    <div className="container project__area-three project__area-three_new  ">
 
                         <div className="row container">
                             {getDataBySection('govern-heading').map((item) => (
@@ -96,12 +96,14 @@ export default function Government({ initialData, pageTitle,pageDescription, }) 
                         <section className="project__item-three   mb-sm-5">
                             {getDataBySection('Government-1Project').map((item) => (
 
+
+
                                 <div className="container" key={item._id}>
-                                    <div className="project__content-two">
+                                    <div className="project__content-two-2">
 
                                         <h2 className="title"><Link href="#/project-details">{item.title}</Link></h2>
                                         <p className="dev-gov-parag">{item.description}</p>
-                                        {/* <Link href={item.buttonLink} className="btn ">{item.buttonTitle}</Link> */}
+
                                     </div>
                                     <div className="project__thumb-three ">
                                         <img src={`${process.env.NEXT_PUBLIC_MEDIA_BASE_URL}${item.bannerImage}`} alt="" />
@@ -113,19 +115,19 @@ export default function Government({ initialData, pageTitle,pageDescription, }) 
 
                         <section className="project__item-three ">
                             {getDataBySection('Government-2Project').map((item) => (
-                                
-                                <div className="container" key={item._id}>
-                            <div className="project__content-two-2 ">
-                                {/* <span>Souq Al Wataniya</span> */}
-                                <h2 className="title"><Link href="#/project-details">{item.title}</Link></h2>
-                                <p className="dev-gov-parag">{item.description}</p>
-                                {/* <Link href={item.buttonLink} className="btn ">{item.buttonTitle}</Link> */}
-                            </div>
-                            <div className="project__thumb-three-2 ">
-                                <img src={`${process.env.NEXT_PUBLIC_MEDIA_BASE_URL}${item.bannerImage}`} alt="" />
-                            </div>
 
-                            </div>
+                                <div className="container" key={item._id}>
+                                    <div className="project__content-two-2 ">
+                                        {/* <span>Souq Al Wataniya</span> */}
+                                        <h2 className="title"><Link href="#/project-details">{item.title}</Link></h2>
+                                        <p className="dev-gov-parag">{item.description}</p>
+                                        {/* <Link href={item.buttonLink} className="btn ">{item.buttonTitle}</Link> */}
+                                    </div>
+                                    <div className="project__thumb-three-2 ">
+                                        <img src={`${process.env.NEXT_PUBLIC_MEDIA_BASE_URL}${item.bannerImage}`} alt="" />
+                                    </div>
+
+                                </div>
                             ))}
                         </section>
 
@@ -142,7 +144,7 @@ export default function Government({ initialData, pageTitle,pageDescription, }) 
 export async function getServerSideProps({ locale }) {
     const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/cms`);
     const data = await response.json();
-    const fetchedData = data.filter(item => item.page ==='Government');
+    const fetchedData = data.filter(item => item.page === 'Government');
     const metadataResponse = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/pageMetadata/`);
 
     if (!response.ok || !metadataResponse.ok) {
