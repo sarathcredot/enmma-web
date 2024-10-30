@@ -101,7 +101,7 @@ export default function About({ initialData, pageTitle,pageDescription, }) {
 
             
 
-            </div>
+            </div>    
 
             <Bannerfooter data={getDataBySection('career-contact')}/>
             </Layout>

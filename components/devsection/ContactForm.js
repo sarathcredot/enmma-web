@@ -246,9 +246,9 @@ export default function ComplaintSection() {
             </div>
           </div>
         </div>
-        <div className="col-lg-12 pt-5">
+        <div className="col-lg-12 ">
           
-          <div style={{backgroundColor:"red"}}  className="contact-map">
+          <div   className="contact-map">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3476.974574165315!2d47.97528657531801!3d29.371033675269594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fcf859c6fe72ded%3A0x6cab84399af0eabf!2sAl%20Enmaa%20Tower!5e0!3m2!1sen!2sin!4v1715233152422!5m2!1sen!2sin"
               loading="lazy"
