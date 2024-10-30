@@ -99,9 +99,9 @@ export default function Government({ initialData, pageTitle, pageDescription, })
 
 
                                 <div className="container" key={item._id}>
-                                    <div className="project__content-two-2">
+                                    <div   className="project__content-two">
 
-                                        <h2 className="title"><Link href="#/project-details">{item.title}</Link></h2>
+                                        <h2 className="title"><Link href="/project-details">{item.title}</Link></h2>
                                         <p className="dev-gov-parag">{item.description}</p>
 
                                     </div>
@@ -119,7 +119,7 @@ export default function Government({ initialData, pageTitle, pageDescription, })
                                 <div className="container" key={item._id}>
                                     <div className="project__content-two-2 ">
                                         {/* <span>Souq Al Wataniya</span> */}
-                                        <h2 className="title"><Link href="#/project-details">{item.title}</Link></h2>
+                                        <h2 className="title"><Link href="/project-details">{item.title}</Link></h2>
                                         <p className="dev-gov-parag">{item.description}</p>
                                         {/* <Link href={item.buttonLink} className="btn ">{item.buttonTitle}</Link> */}
                                     </div>
