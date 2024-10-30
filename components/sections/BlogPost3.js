@@ -8,6 +8,13 @@ export default function BlogPost3() {
     const { i18n ,t} = useTranslation();
     const [blog, setBlog] = useState([]);
 
+    const truncateText = (text, maxLength) => {
+        if (text.length > maxLength) {
+          return text.slice(0, maxLength) + "...";
+        }
+        return text;
+      };
+
     useEffect(() => {
         const fetchBlog = async () => {
             try {
@@ -57,7 +64,7 @@ export default function BlogPost3() {
                                                 </ul>
                                             </div>
                                             <h2 className="title">
-                                                <Link href={`/blog/${blog._id}`}>{blog.title}</Link>
+                                                <Link href={`/blog/${blog._id}`}> {truncateText(blog.title,50)}</Link>
                                             </h2>
                                             <div className="blog-avatar">
                                                 <div className="avatar-content">

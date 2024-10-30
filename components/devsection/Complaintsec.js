@@ -127,7 +127,7 @@ export default function Complaintsection() {
           <div className="row">
             <div  className="row align-items-center ">
               <div  dir="ltr" className="col-lg-8 ">
-                <div  className="contact__form-wrap">
+                <div  className="contact__form-wrap complaint-form">
                   <h2 className="title">{t('Complaint-title')}</h2>
                   <p>{t('Complaint-subtitle')}</p>
                   <form id="contact-form" onSubmit={handleSubmit}>
