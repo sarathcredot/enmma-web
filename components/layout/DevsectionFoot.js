@@ -5,19 +5,19 @@ import { useTranslation } from 'react-i18next';
 const DevsectionFoot = ({ data, bgColor, fontColor, fontColor2 }) => {
     const { t, i18n } = useTranslation('common');
 
-    console.log("new",data)
+    console.log("new", data)
 
     return (
         <>
             {data && data.length > 0 ? (
                 data?.map((item) => (
-                    <div  key={item._id} className="box-video-small">
-                        <div  className="item-video-small" style={{ backgroundColor: bgColor , margin:"12px" }}>
+                    <div key={item._id} className="box-video-small">
+                        <div className="item-video-small" style={{ backgroundColor: bgColor, margin: "12px" }}>
                             <div className="video-small-left">
                                 <div className="video-small-left-inner">
                                     <div className="video-small-left-1">
                                         <h3 dir='ltr'>{item.sidebarNumber || "50+"}</h3>
-                                        
+
                                         <p>{item.sidebarSubtitle || t('Diverse-properties')}</p>
                                     </div>
                                     <div className="video-small-left-2">
@@ -26,9 +26,12 @@ const DevsectionFoot = ({ data, bgColor, fontColor, fontColor2 }) => {
                                     </div>
                                 </div>
                             </div>
-                            <div  className="video-small-right">
-                                <div  className="box-video image-fit">
-                                    <img style={{width:"100%"}}   src={`${process.env.NEXT_PUBLIC_MEDIA_BASE_URL}${item.bannerImage}`} alt="" />
+                            <div className="video-small-right">
+                                <div className="box-video image-fit">
+                                    {
+                                        item.bannerImage && <img style={{ width: "100%" }} src={`${process.env.NEXT_PUBLIC_MEDIA_BASE_URL}${item.bannerImage}`} alt="" />
+
+                                    }
                                 </div>
                             </div>
                         </div>

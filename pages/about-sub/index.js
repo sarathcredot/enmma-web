@@ -94,7 +94,7 @@ export default function About3({ initialData, teamMembersData, pageDescription, 
                         {getDataBySection("team-directors").map((item) => (
                             <div key={item._id} className="container project__area-three">
                                 <div className="row container">
-                                    <div className="col-xl-7 space-betweeni col-lg-8 mb-5">
+                                    <div  className="col-xl-7 space-betweeni col-lg-8 mb-5">
                                         <div className="section-title  mb-50 tg-heading-subheading animation-style3">
                                             <span style={{ fontSize: "18px" }} className="sub-title">{item.subtitle}</span>
 
@@ -126,7 +126,7 @@ export default function About3({ initialData, teamMembersData, pageDescription, 
 
 
                                                 >
-                                                    <div  className="team-item">
+                                                    <div   className="team-item">
                                                         <div className="team-thumb">
                                                             <img
                                                                 src={`${process.env.NEXT_PUBLIC_MEDIA_BASE_URL}${teamData.imageUrl}`}
