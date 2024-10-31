@@ -7762,6 +7762,7 @@ html[lang="ar"] .choose__shape-wrap-three img:nth-child(2){
   .project__area-three .space-betweeni{
     display: flex;
     padding-bottom: 20px;
+    padding-top: 50px;
    flex-wrap: wrap;
  
   }
