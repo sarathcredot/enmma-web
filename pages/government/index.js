@@ -96,10 +96,8 @@ export default function Government({ initialData, pageTitle, pageDescription, })
                         <section className="project__item-three   mb-sm-5">
                             {getDataBySection('Government-1Project').map((item) => (
 
-
-
                                 <div className="container" key={item._id}>
-                                    <div   className="project__content-two">
+                                    <div className="project__content-two">
 
                                         <h2 className="title"><Link href="/project-details">{item.title}</Link></h2>
                                         <p className="dev-gov-parag">{item.description}</p>
@@ -109,25 +107,43 @@ export default function Government({ initialData, pageTitle, pageDescription, })
                                         <img src={`${process.env.NEXT_PUBLIC_MEDIA_BASE_URL}${item.bannerImage}`} alt="" />
                                     </div>
                                 </div>
+
                             ))}
                         </section>
                         <br />
 
-                        <section className="project__item-three ">
+                        <section className="project__item-three    ">
                             {getDataBySection('Government-2Project').map((item) => (
 
+
                                 <div className="container" key={item._id}>
-                                    <div className="project__content-two-2 ">
-                                        {/* <span>Souq Al Wataniya</span> */}
+                                    <div className="project__content-two">
+
                                         <h2 className="title"><Link href="/project-details">{item.title}</Link></h2>
                                         <p className="dev-gov-parag">{item.description}</p>
-                                        {/* <Link href={item.buttonLink} className="btn ">{item.buttonTitle}</Link> */}
+
                                     </div>
-                                    <div className="project__thumb-three-2 ">
+                                    <div className="project__thumb-three ">
                                         <img src={`${process.env.NEXT_PUBLIC_MEDIA_BASE_URL}${item.bannerImage}`} alt="" />
                                     </div>
-
                                 </div>
+
+                                //    <div className="container" key={item._id}>
+                                //         <div className="project__content-two-2 ">
+
+                                //             <h2 className="title"><Link href="/project-details">{item.title}</Link></h2>
+                                //             <p className="dev-gov-parag">{item.description}</p>
+
+                                //         </div>
+                                //         <div className="project__thumb-three-2 ">
+                                //             <img src={`${process.env.NEXT_PUBLIC_MEDIA_BASE_URL}${item.bannerImage}`} alt="" />
+                                //         </div>
+
+                                //     </div>
+
+
+
+
                             ))}
                         </section>
 

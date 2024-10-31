@@ -7798,6 +7798,17 @@ html[lang="ar"] .choose__shape-wrap-three img:nth-child(2){
   }
 }
 
+
+@media (max-width: 500px) {
+  .project__item-three {
+    margin: 25px 0;
+    padding: 0 0px;
+  }
+}
+
+
+
+
 .project__item-four {
   position: relative;
 }
@@ -8131,6 +8142,23 @@ display: none;  }
     transform: translateY(0);
   }
 }
+
+
+
+@media(max-width:500px){
+
+   .project__content-three-service-slider{
+
+      width: 105%;
+      margin: 10px;
+        padding: 28px;
+   }
+}
+
+
+
+
+
 .project__content-three span {
   font-weight: 600;
   color: var(--tg-theme-primary);
@@ -8138,7 +8166,8 @@ display: none;  }
   margin-bottom: 5px;
   font-size: 18px;
 }
-.project__content-three .title {
+.project__content-three .title 
+{
   font-size: 24px;
   margin-bottom: 18px;
   color: var(--tg-color-white-default);
