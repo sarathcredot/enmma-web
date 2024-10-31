@@ -26,7 +26,7 @@ export default function AnnualReport({ data }) {
 
     return (
         <>
-            <div className="container project__area-three">
+            <div className="container project__area-three project__area-three-new">
                 {data.map((item) => (
 
                     <div key={item._id} className="row container">
