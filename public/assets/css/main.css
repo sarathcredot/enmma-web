@@ -9634,11 +9634,11 @@ display: none;  }
 .testimonial__bg {
   background-size: cover;
   background-position: center;
-  padding: 160px 0 120px;
+  padding: 160px 0 80px;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 800px) {
   .testimonial__bg {
-    padding: 85px 0 100px;
+    padding: 85px 0 20px;
   }
 }
 .testimonial__bg-two {

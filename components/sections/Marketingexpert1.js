@@ -9,7 +9,7 @@ export default function Marketingexpert1({ data, datas }) {
             <section key = {item._id} className="marketing_expert__area_six   marketing_expert__area_six_new  ">
                 <div className="container">
                     <div   className="row align-items-center">
-                        <div  className="col-lg-5 mb-30">
+                        <div  className="col-lg-5 ">
                             <h1 className="title mb-15">{item.title}</h1>
                             <p className="mb-45 dev-change">{item.description}</p>
                             <div className="about__list-box mb-35">
