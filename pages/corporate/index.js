@@ -58,13 +58,13 @@ export default function corporate({ initialData }) {
           fontColor2={"#FFFFFF"}
         />
         <div>
-          <div  className=" " style={{ backgroundColor: "#110B79"  }}>
-            <div className=" container project__area-three">
+          <div className=" " style={{ backgroundColor: "#110B79" }}>
+            <div className=" container project__area-three project__area-three-new    ">
               {corporateHeadings.length > 0 && <CorporateSubheading corporateHeading={corporateHeadings[0]} />}
               <CorporatePoints corporatePoints={localizedData.corporatePoints} />
             </div>
             <div className="container dev-bottom ">
-                  <Sectionfoot data={[{}]} /> 
+              <Sectionfoot data={[{}]} />
             </div>
           </div>
           {corporateContact.length > 0 && <Bannerfooter data={corporateContact} />}
@@ -126,12 +126,12 @@ export function CorporatePoints({ corporatePoints }) {
 
   console.log("corparate data", corporatePoints)
 
-  const handleDownload =async (url) => {
+  const handleDownload = async (url) => {
 
-   
-    const fileUrl =`${process.env.NEXT_PUBLIC_MEDIA_BASE_URL}${url}`
+
+    const fileUrl = `${process.env.NEXT_PUBLIC_MEDIA_BASE_URL}${url}`
     console.log(fileUrl)
-    
+
     const response = await fetch(fileUrl, {
       method: 'GET',
       mode: 'cors', // Adjust CORS settings if necessary
@@ -146,7 +146,7 @@ export function CorporatePoints({ corporatePoints }) {
 
     const blob = await response.blob(); // Get the file as a Blob
     const filename = fileUrl.split("/").pop(); // Extract the filename from the URL
-    
+
     const aTag = document.createElement("a");
     const urlObject = window.URL.createObjectURL(blob); // Create a URL for the Blob
     aTag.href = urlObject;
@@ -158,10 +158,10 @@ export function CorporatePoints({ corporatePoints }) {
     aTag.remove(); // Clean up
     window.URL.revokeObjectURL(urlObject); // Clean up the Blob URL
 
-   
-     
+
+
   };
-  
+
 
   return (
     <div className="row flex-wrap-reverse">
@@ -191,7 +191,11 @@ export function CorporatePoints({ corporatePoints }) {
                     aria-selected="true"
                   >
                     <i className=" flaticon-pin" />
+
+
+
                     {corporatePoint.title}
+
 
                   </button>
                   {/* </Link> */}
@@ -216,7 +220,7 @@ export function CorporatePoints({ corporatePoints }) {
                 aria-labelledby="health-tab"
                 tabIndex={0}
               >
-                <div1 className="services__item-four shine-animate-item">
+                <div1 className="services__item-four shine-animate-item services__item-four-newchange  ">
                   <div style={{ borderRadius: "0px" }} className="services__thumb-four shine-animate">
                     <img src={getImageUrl(corporatePoint.imageUrl)} alt="" />
                   </div>
@@ -236,7 +240,7 @@ export function CorporatePoints({ corporatePoints }) {
 
 
                     {
-                      corporatePoint.document && <button style={{ marginTop: "10px" }} onClick={()=>{handleDownload(corporatePoint.document)}}  className="btn btn-two">
+                      corporatePoint.document && <button style={{ marginTop: "10px" }} onClick={() => { handleDownload(corporatePoint.document) }} className="btn btn-two">
                         {t('download')}
 
                       </button>
@@ -257,6 +261,6 @@ export function CorporatePoints({ corporatePoints }) {
           })}
         </div>
       </div>
-    </div>
+    </div >
   );
 }

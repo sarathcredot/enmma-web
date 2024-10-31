@@ -85,7 +85,7 @@ export default function Project3({ data }) {
                 <div key={index} className="row">
                   <div className="col-12">
                     <div className="project__item-three shine-animate-item">
-                      <div className="project__content-three">
+                      <div className="project__content-three  project__content-three-service-slider    ">
                         <span>{service.subtitle}</span>
                         <h2 className="title">{service.title}</h2>
 
