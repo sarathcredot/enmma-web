@@ -147,7 +147,7 @@ export function ServicePoints({ servicePoints }) {
                 aria-labelledby="health-tab"
                 tabIndex={0}
               >
-                <div1 className="services__item-four shine-animate-item">
+                <div1 className="services__item-four shine-animate-item services__item-four-newchange  ">
                   <div className="services__thumb-four shine-animate">
                     <img src={getImageUrl(servicePoint.imageUrl)} alt="" />
                   </div>

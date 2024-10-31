@@ -5184,6 +5184,19 @@ padding: 30px;
     border-radius: 0px;
   }
 }
+
+@media(max-width:500px){
+
+  .services__item-four-newchange{
+
+          width: 90%;
+          margin: 16px;
+          border-radius: 10px;
+          
+  } 
+}
+
+
 @media (max-width: 1199.98px) {
   .dev_indexcontainer {
    height:155px;
@@ -7717,6 +7730,11 @@ html[lang="ar"] .choose__shape-wrap-three img:nth-child(2){
   position:relative;
   z-index: 1;
   padding: 80px 0;
+}
+
+.project__area-three-new{
+
+  padding: 0px 0;
 }
 
 /* @media(max-width:800px){
@@ -15520,7 +15538,7 @@ margin-bottom: 20px;
   }
  */
 
-
+ 
 
 
 

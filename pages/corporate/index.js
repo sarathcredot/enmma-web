@@ -59,7 +59,7 @@ export default function corporate({ initialData }) {
         />
         <div>
           <div className=" " style={{ backgroundColor: "#110B79" }}>
-            <div className=" container project__area-three">
+            <div className=" container project__area-three project__area-three-new    ">
               {corporateHeadings.length > 0 && <CorporateSubheading corporateHeading={corporateHeadings[0]} />}
               <CorporatePoints corporatePoints={localizedData.corporatePoints} />
             </div>
@@ -220,7 +220,7 @@ export function CorporatePoints({ corporatePoints }) {
                 aria-labelledby="health-tab"
                 tabIndex={0}
               >
-                <div1 className="services__item-four shine-animate-item">
+                <div1 className="services__item-four shine-animate-item services__item-four-newchange  ">
                   <div style={{ borderRadius: "0px" }} className="services__thumb-four shine-animate">
                     <img src={getImageUrl(corporatePoint.imageUrl)} alt="" />
                   </div>
