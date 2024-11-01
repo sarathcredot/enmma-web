@@ -1,3 +1,5 @@
+
+'use client'
 import Layout from "@/components/layout/Layout"
 import Banner2 from "@/components/sections/Banner2"
 import Brand2 from "@/components/sections/Brand1"
@@ -8,6 +10,13 @@ import { useTranslation } from 'next-i18next';
 import { useEffect, useState } from 'react';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Head from "next/head"
+import "@blocknote/core/fonts/inter.css";
+// import { useCreateBlockNote } from "@blocknote/react";
+import "@blocknote/mantine/style.css";
+// import { ServerBlockNoteEditor } from "@blocknote/server-util";
+// import { ServerBlockNoteEditor } from "@blocknote/server-util"
+
+
 
 export default function About({ initialData, pageTitle, pageDescription, }) {
 
@@ -20,6 +29,7 @@ export default function About({ initialData, pageTitle, pageDescription, }) {
                 const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/cms`);
                 const data = await response.json();
                 const fetchedData = data.filter(item => item.page === 'about');
+                console.log("about modify", fetchedData)
                 setData(fetchedData);
             } catch (error) {
                 console.error('Failed to load data:', error);
@@ -57,6 +67,7 @@ export default function About({ initialData, pageTitle, pageDescription, }) {
             title: item[`title_${i18n.language}`] || item.title_en,
             subtitle: item[`subtitle_${i18n.language}`] || item.subtitle_en,
             description: item[`description_${i18n.language}`] || item.description_en,
+            description2: item[`description2_${i18n.language}`] || item.description2_en,
             sidebarSubtitle: item[`sidebarSubtitle_${i18n.language}`] || item.sidebarSubtitle_en,
             sidebarNumber: item[`sidebarNumber_${i18n.language}`] || item.sidebarNumber_en,
             buttonTitle: item[`buttonTitle_${i18n.language}`] || item.buttonTitle_en,
@@ -67,7 +78,7 @@ export default function About({ initialData, pageTitle, pageDescription, }) {
         };
     });
 
-    
+
 
     const getDataBySection = (section) => localizedData.filter(item => item.section === section && item.status);
 
@@ -84,19 +95,19 @@ export default function About({ initialData, pageTitle, pageDescription, }) {
             <Layout headerStyle={6} footerStyle={3} >
                 <Banner2 data={getDataBySection('about-banner')} />
                 <div>
-                    <section  className="about__area-four">
+                    <section className="about__area-four">
                         {getDataBySection('about-info-section').map((item) => (
 
                             <>
 
-                            {console.log(item)}
+                                {console.log(item)}
 
-                                <div  key={item._id} className="container">
-                                    <div  className="row align-items-center justify-content-center">
+                                <div key={item._id} className="container">
+                                    <div className="row align-items-center justify-content-center">
                                         <div className="col-lg-6 col-md-9 col-sm-10">
                                             <div className="about__img-wrap-four">
                                                 <img src={`${process.env.NEXT_PUBLIC_MEDIA_BASE_URL}${item.bannerImage}`} width={500} height={500} alt="" />
-                                                <img src={`${process.env.NEXT_PUBLIC_MEDIA_BASE_URL}${item.secondImage}`} width={300} height={100} alt="" />
+                                                <img src={`${process.env.NEXT_PUBLIC_MEDIA_BASE_URL}${item.SecondImage}`} width={300} height={100} alt="" />
                                                 <div className="about__award-box">
                                                     {/* <div className="icon">
                 <i className="flaticon-time" />
@@ -111,15 +122,19 @@ export default function About({ initialData, pageTitle, pageDescription, }) {
                                                 </div>
                                             </div>
                                         </div>
-                                        
-                                        <div   className="col-lg-6">
-                                           
+
+                                        <div className="col-lg-6">
+
                                             <div className="about__content-four">
                                                 <div className="section-title mb-30">
-                                                    <span style={{fontSize:"18px"}}  className="sub-title">{item.subtitle}</span>
+                                                    <span style={{ fontSize: "18px" }} className="sub-title">{item.subtitle}</span>
                                                     <h2 className="title">{item.title}</h2>
                                                 </div>
-                                                <p style={{ color: '#282739' }}>{item.description}</p>
+                                                <p style={{ color: '#282739' , marginBottom:"15px" }}>{item.description}</p>
+
+                                                {
+                                                     item.description2 &&   <p style={{ color: '#282739' }}>{item.description2}</p>
+                                                }
 
                                                 {item.buttonTitle ? (
                                                     <Link href={item.buttonLink} className="btn">{item.buttonTitle}</Link>
@@ -129,9 +144,10 @@ export default function About({ initialData, pageTitle, pageDescription, }) {
                                                 )}
 
 
+
                                             </div>
                                         </div>
-                                    
+
                                     </div>
                                 </div>
 
@@ -164,28 +180,28 @@ export default function About({ initialData, pageTitle, pageDescription, }) {
                                 <div className="col-lg-5">
                                     <div className="choose__content-four">
                                         <div className="section-title white-title mb-20">
-                                            <span style={{fontSize:"18px"}}  className="sub-title">{t('mission-subtitle')} </span>
+                                            <span style={{ fontSize: "18px" }} className="sub-title">{t('mission-subtitle')} </span>
                                             <h2 className="title text-sm-nowrap">{t('mission-title')}</h2>
                                         </div>
                                         <p>{t('mission-description')}</p>
                                     </div>
                                 </div>
                                 <div className="col-lg-7">
-                                    <div  className="choose__list-two">
-                                        <ul  style={{ listStyle: "none" ,paddingLeft:"0px" }}>
+                                    <div className="choose__list-two">
+                                        <ul style={{ listStyle: "none", paddingLeft: "0px" }}>
 
                                             <li>
-                                                <div  className="choose__list-box-two">
-                                                  
-                                                    <div  className="choose__list-icon-two">
-                                                        <SVG  caseValue='case4' />
+                                                <div className="choose__list-box-two">
+
+                                                    <div className="choose__list-icon-two">
+                                                        <SVG caseValue='case4' />
                                                     </div>
-                                                   
+
                                                     <div className="choose__list-content-two">
                                                         <h4 className="title">{t('mission')}</h4>
                                                         <p>{t('mission-text')}</p>
                                                     </div>
-                                                
+
                                                 </div>
                                             </li>
                                             <li>
@@ -264,6 +280,7 @@ export async function getServerSideProps({ locale }) {
     }
 
     const metadata = await metadataResponse.json();
+    // const editor = ServerBlockNoteEditor.create();
 
     const pageMetadata = metadata.find(page => page.page === 'about') || {};
 
@@ -272,6 +289,21 @@ export async function getServerSideProps({ locale }) {
 
     const data = await response.json();
     const fetchedData = data.filter(item => item.page === 'about');
+
+  
+
+    
+
+//         const  aboutContentEn = await editor.blocksToFullHTML(JSON.parse(fetchedData.description_en));
+//        const aboutContentAr = await editor.blocksToFullHTML(JSON.parse(fetchedData.description_ar));
+
+    
+//    const finalData = {
+//         ...fetchedData,
+//         description_en: aboutContentEn,
+//         description_ar: aboutContentAr
+
+//     }
 
     return {
         props: {
@@ -282,3 +314,35 @@ export async function getServerSideProps({ locale }) {
         },
     };
 }
+
+
+// export async function getServerSideProps({ locale }) {
+//     const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/cms`);
+//     const metadataResponse = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/pageMetadata/`);
+
+//     if (!response.ok || !metadataResponse.ok) {
+//         throw new Error('Failed to fetch data');
+//     }
+
+//     const metadata = await metadataResponse.json();
+    
+
+//     const pageMetadata = metadata.find(page => page.page === 'about');
+
+//     const pageTitle = pageMetadata[`pageTitle_${locale}`] || pageMetadata.pageTitle_en || 'Default Title';
+//     const pageDescription = pageMetadata[`pageDescription_${locale}`] || pageMetadata.pageDescription_en || 'Default description';
+
+//     const data = await response.json();
+//     const fetchedData = data.find(item => item.page === 'about'); // Ensure this is a single object
+
+   
+
+//     return {
+//         props: {
+//             initialData:fetchedData,
+//             pageTitle,
+//             pageDescription,
+//             ...(await serverSideTranslations(locale, ['common'])),
+//         },
+//     };
+// }

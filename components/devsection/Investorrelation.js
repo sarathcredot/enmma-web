@@ -138,9 +138,9 @@ export default function Contact({ data1, data }) {
         </div>
 
         <div className="container">
-          <div className="row">
-            <div className="row align-items-center">
-              <div  dir="ltr" className="col-lg-8">
+          <div className="row justify-content-center">
+            <div className="row ">
+              <div  dir="rtr" className="col-lg-8">
                 <div className="contact__form-wrap">
                   <h2 className="title">{t('form-title1')}</h2>
                   <p>

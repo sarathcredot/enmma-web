@@ -47,7 +47,7 @@ export default function TestimonialActiveTwoSlider({ data }) {
     return (
         <>
 
-            <div className="testimonial__item-three">
+            <div   className="testimonial__item-three">
 
 
 
@@ -89,14 +89,14 @@ export default function TestimonialActiveTwoSlider({ data }) {
                     adipiscing elita Moremsit amet.</p>
  */}
 
-                <Slider ref={slider} {...settings}  >
+                <Slider  ref={slider} {...settings}  >
 
                     {
                         data?.map((item, index) => (
 
-                            <div>
+                            <div  >
 
-                                <p key={index} > "{item.description} </p>
+                                <p    key={index} > "{item.description} </p>
 
                                 <div style={{ textAlign: "end", paddingRight: "15px" }} >
 
