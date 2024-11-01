@@ -135,9 +135,7 @@ export default function About3({ initialData, teamMembersData, pageDescription, 
                                                         </div>
                                                         <div className="team-content">
                                                             <h4 className="title">
-                                                                <Link href="/team-details">
-                                                                    {teamData.name}
-                                                                </Link>
+                                                                {teamData.name}
                                                             </h4>
                                                             <span>{teamData.position}</span>
                                                         </div>
@@ -190,9 +188,7 @@ export default function About3({ initialData, teamMembersData, pageDescription, 
                                                         </div>
                                                         <div className="team-content">
                                                             <h4 className="title">
-                                                                <Link href="/team-details">
                                                                     {teamData.name}
-                                                                </Link>
                                                             </h4>
                                                             <span>{teamData.position}</span>
                                                         </div>
@@ -246,10 +242,8 @@ export default function About3({ initialData, teamMembersData, pageDescription, 
                                                         </div>
                                                         <div className="team-content">
                                                             <h4 className="title">
-                                                                <Link href="/team-details">
                                                                     {teamData.name}
-                                                                </Link>
-                                                            </h4>
+                                                                 </h4>
                                                             <span>{teamData.position}</span>
                                                         </div>
                                                     </div>
