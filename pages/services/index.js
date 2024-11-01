@@ -160,6 +160,7 @@ export default function Services({ initialData }) {
       description:item[`description_${i18n.language}`] || description_en ,
       person:item[`person_${i18n.language}`] || person_en ,
       designation:item[`designation_${i18n.language}`] || designation_en ,
+      points: i18n.language === 'ar' ? localizedPointsAr : localizedPointsEn,
      
      
     
@@ -190,15 +191,15 @@ export default function Services({ initialData }) {
           </div>
         </div>
 
-        <section
+        <section 
           className="testimonial__area-three testimonial__bg "
           data-background="/assets/img/bg/h3_testimonial_bg.jpg"
         >
-          <div className="container my-5">
+          <div dir="ltr" className="container my-5">
             <div className="row align-items-center justify-content-center">
-              <div className="col-lg-5 col-md-8">
-                <div className="testimonial__img-wrap-two">
-                  <img src="/assets/img/images/h3_testimonial_img.png" alt="" />
+              <div  className="col-lg-5 col-md-8">
+                <div  className="testimonial__img-wrap-two">
+                  <img  src="/assets/img/images/h3_testimonial_img.png" alt="" />
 
                   <div className="testimonial__img-shape-two">
                     <img
@@ -220,9 +221,9 @@ export default function Services({ initialData }) {
                 </div>
               </div>
 
-              <div className="col-lg-7">
-                <div className="testimonial__item-wrap">
-                  <div className="swiper-container testimonial-active-two">
+              <div  className="col-lg-7">
+                <div  className="testimonial__item-wrap">
+                  <div  className="swiper-container testimonial-active-two">
                     <TestimonialActiveTwoSlider data={localizetetimonial} />
                   </div>
                 </div>

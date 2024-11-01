@@ -246,9 +246,9 @@ export default function Careerform() {
 
   return (
     <div className="contact__form-wrap carrer-form ">
-      <form id="contact-form" dir='ltr' onSubmit={handleSubmit}>
+      <form id="contact-form" dir='rtr' onSubmit={handleSubmit}>
         {/* Input fields with onChange handlers */}
-        <div className="row">
+        <div className="row justify-content-center">
           {/* Position */}
           <div className="col-md-6">
             <div className="form-grp">

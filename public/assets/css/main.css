@@ -12956,7 +12956,7 @@ margin-bottom: 20px;
   -ms-border-radius: 8px;
   border-radius: 8px;
   padding: 35px 40px 40px;
-  margin-left: 10px;
+  /* margin-left: 10px; */
   margin-top: 20px;
   
 }
@@ -12979,7 +12979,7 @@ margin-bottom: 20px;
     
      /* width: 300px; */
      margin-bottom: 30px;
-     margin-left: 20px;
+     /* margin-left: 20px; */
     
 
    } 
@@ -12994,10 +12994,19 @@ margin-bottom: 20px;
     
      /* width: 300px; */
      margin-bottom: 30px;
-     margin-left: 80px;
+     /* margin-left: 80px; */
     
 
    } 
+}
+
+@media(max-width:500px){
+
+    .carrer-form{
+
+       margin-left: 0px;
+       /* width: 100%; */
+    }
 }
 
 
@@ -13006,7 +13015,7 @@ margin-bottom: 20px;
     
      width: 300px;
      margin-bottom: 30px;
-     margin-left: -5px;
+     /* margin-left: -5px; */
     
 
    } 
@@ -13015,23 +13024,34 @@ margin-bottom: 20px;
 @media (max-width: 376px) {
   .contact__form-wrap {
     
-     width: 300px;
+     width: 100%;
      margin-bottom: 30px;
-     margin-left: 20px;
+     /* margin-left: 20px; */
     
 
    } 
-}
+  }
+
+  
+
+
+
+
+
+
+
 
 @media (max-width: 330px) {
   .contact__form-wrap {
     
-     width: 300px;
+     width: 100%;
      margin-bottom: 30px;
-     margin-left: -5px;
+     /* margin-left: -5px; */
     
 
    } 
+
+   
 }
 
 
@@ -13041,7 +13061,7 @@ margin-bottom: 20px;
     
      /* width: 300px; */
      margin-bottom: 30px;
-     margin-left: 40px;
+     /* margin-left: 40px; */
     
 
    } 
@@ -13052,7 +13072,7 @@ margin-bottom: 20px;
     
      /* width: 300px; */
      margin-bottom: 30px;
-     margin-left: 20px;
+     /* margin-left: 20px; */
     
 
    } 
@@ -13063,7 +13083,8 @@ margin-bottom: 20px;
 
   .carrer-form{
 
-       margin-left: 50px;
+    width: 100%;
+
   }
 }
 
@@ -13072,7 +13093,7 @@ margin-bottom: 20px;
 
   .carrer-form{
 
-       margin-left: 30px;
+      width: 100%;
   }
 }
 
@@ -13081,6 +13102,7 @@ margin-bottom: 20px;
   .carrer-form{
 
        margin-bottom: 0px;
+       width: 100%;
   }
 }
 
@@ -15568,6 +15590,15 @@ margin-bottom: 20px;
   }
 
 
+
+  /* html[lang="ar"] .tesimonial{
+
+    direction: rtl;
+    text-align: right;
+  } */
+
+
+ 
  
 
 
@@ -16583,6 +16614,9 @@ html[lang="en"] :root,
 html[lang="en-US"] :root {
   direction: ltr;
   text-align: initial;
+}
+html[lang="ar"] .testimonial__area-three .slick-slide p{
+  direction: rtl ;
 }
 
 .dir-ltr{

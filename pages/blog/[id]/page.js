@@ -52,7 +52,7 @@ export default function BlogDetails({data}) {
                                                                 <li><i className="far fa-comment" /><Link href="/blog-details">05 Comments</Link></li>
                                                             </ul>
                                                         </div>
-                                                        <p>when an unknown printer took ar galley offer type year anddey scrambled  make type aewer specimen book bethas survived not only five when annery unknown printer.eed a little help from our friends from time to time. Although we offer the one-stop convenience.</p>
+                                                        <p> when an unknown printer took ar galley offer type year anddey scrambled  make type aewer specimen book bethas survived not only five when annery unknown printer.eed a little help from our friends from time to time. Although we offer the one-stop convenience.</p>
                                                         <p>eed a little help from our friends from time to time. Although we offer the one-stop convenience of annery integrated range of legal, financial services under one roof.eed a little help from our friends from time to time. Although we offer the one-stop convenience.</p>
                                                         <blockquote>
                                                             <p>“ urabitur varius eros rutrum consequat Mauris aewa sollicitudin enim condimentum luctus enim justo non molestie nisl ”</p>

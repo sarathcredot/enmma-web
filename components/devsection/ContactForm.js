@@ -170,7 +170,7 @@ export default function ComplaintSection() {
               </div>
             </div>
           </div>
-          <div dir="ltr" className="col-lg-7">
+          <div dir="rtr" className="col-lg-7">
             <div className="contact__form-wrap">
               <h2 className="title">{t('form-title1')}</h2>
               <p>{t('form-subtitle')}</p>
