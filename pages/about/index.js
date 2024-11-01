@@ -67,6 +67,7 @@ export default function About({ initialData, pageTitle, pageDescription, }) {
             title: item[`title_${i18n.language}`] || item.title_en,
             subtitle: item[`subtitle_${i18n.language}`] || item.subtitle_en,
             description: item[`description_${i18n.language}`] || item.description_en,
+            description2: item[`description2_${i18n.language}`] || item.description2_en,
             sidebarSubtitle: item[`sidebarSubtitle_${i18n.language}`] || item.sidebarSubtitle_en,
             sidebarNumber: item[`sidebarNumber_${i18n.language}`] || item.sidebarNumber_en,
             buttonTitle: item[`buttonTitle_${i18n.language}`] || item.buttonTitle_en,
@@ -129,7 +130,11 @@ export default function About({ initialData, pageTitle, pageDescription, }) {
                                                     <span style={{ fontSize: "18px" }} className="sub-title">{item.subtitle}</span>
                                                     <h2 className="title">{item.title}</h2>
                                                 </div>
-                                                <p style={{ color: '#282739' }}>{item.description}</p>
+                                                <p style={{ color: '#282739' , marginBottom:"15px" }}>{item.description}</p>
+
+                                                {
+                                                     item.description2 &&   <p style={{ color: '#282739' }}>{item.description2}</p>
+                                                }
 
                                                 {item.buttonTitle ? (
                                                     <Link href={item.buttonLink} className="btn">{item.buttonTitle}</Link>
