@@ -2,12 +2,12 @@ import Link from 'next/link'
 
 export default function Bannerfooter({data}) {
 
-     console.log("banner data",data)
+     console.log("banner data new",data)
     return (
         <>
         {data?.map((item) => (
 
-            <section  key={item._id} className="request-area request-bg" data-background={`${process.env.NEXT_PUBLIC_MEDIA_BASE_URL}${item.bannerImage}`}   >
+            <section  key={item._id} className="request-area request-bg" style={{backgroundImage: `url(${process.env.NEXT_PUBLIC_MEDIA_BASE_URL}${item.bannerImage})`,backgroundSize: 'cover',backgroundPosition: 'center',}}  data-background={`${process.env.NEXT_PUBLIC_MEDIA_BASE_URL}${item.bannerImage}`}    >
                         <div className="container">
                             <div className="row justify-content-center">
                                 <div className="col-lg-8">

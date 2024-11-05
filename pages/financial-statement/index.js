@@ -16,6 +16,8 @@ export default function Financialstatement({ initialData ,pageTitle,pageDescript
     const { t, i18n } = useTranslation('common');
     const [data, setData] = useState(initialData);
 
+    console.log("data file  ",initialData)
+
     useEffect(() => {
         async function loadData() {
             try {
