@@ -39,8 +39,9 @@ export default function MobileMenu() {
                 <li className="menu-item-has-children"><Link href="/about">{t('about')} </Link>
                     <ul className="sub-menu" style={{ display: `${isActive.key == 2 ? "block" : "none"}` }}>
                         <li><Link href="/about-sub/#director">{t("board_of_directors")}</Link></li>
-                        <li><Link href="/about-sub/#management">{t("management")}</Link></li>
                         <li><Link href="/about-sub/#executive">{t("executive")} </Link></li>
+                        <li><Link href="/about-sub/#management">{t("management")}</Link></li>
+                     
              
                     </ul>
                     <div className={isActive.key == 2 ? "dropdown-btn open" : "dropdown-btn"} onClick={() => handleToggle(2)}><span className="plus-line" /></div></li>

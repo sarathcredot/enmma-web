@@ -24,8 +24,9 @@ export default function Menu() {
                     <ul className="sub-menu">
                         <li><Link href="/about/"  >{t("our-story")}</Link></li>
                         <li><Link href="/about-sub/#director"  >{t("board_of_directors")}</Link></li>
-                        <li><Link href="/about-sub/#management">{t("management")}</Link></li>
                         <li><Link href="/about-sub/#executive">{t("executive")}</Link></li>
+                        <li><Link href="/about-sub/#management">{t("management")}</Link></li>
+                      
                         {/* <li><Link href="/>Insurance About</Link></li>
                         <li><Link href="/#about-4">Digital agency About</Link></li> */}
                     </ul>

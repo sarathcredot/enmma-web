@@ -149,59 +149,6 @@ export default function About3({ initialData, teamMembersData, pageDescription, 
                         ))}
                     </section>
 
-                    <section className="team-area pt-10 bg-dev-color" id="management">
-                        {getDataBySection("team-Management").map((item) => (
-                            <div key={item._id} className="container project__area-three">
-                                <div className="row container">
-                                    <div className="col-xl-7 space-betweeni col-lg-8 mb-5">
-                                        <div className="section-title  mb-50 tg-heading-subheading animation-style3">
-                                            <span style={{ fontSize: "18px" }} className="sub-title">{item.subtitle}</span>
-                                            <h2 className="title tg-element-title  mt-4 text-wrap devtextwrapo">
-                                                {item.title}
-                                            </h2>
-                                        </div>
-                                        <div
-                                            className="dev_customsize  mt-0 mt-md-4"
-                                            style={{ color: "#282739" }}
-                                        >
-                                            {item.description}
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="team-item-wrap">
-                                    <div className="row justify-content-center">
-                                        {item.choicesTeam.map((id) => {
-                                            const teamData = Array.isArray(localizedTeamMembers)
-                                                ? localizedTeamMembers.find((member) => member._id === id)
-                                                : null;
-                                            return teamData ? (
-                                                <div
-                                                    key={teamData._id}
-                                                    className="col-xl-3 col-lg-4 col-md-6 col-sm-8"
-                                                >
-                                                    <div className="team-item">
-                                                        <div className="team-thumb">
-                                                            <img
-                                                                src={`${process.env.NEXT_PUBLIC_MEDIA_BASE_URL}${teamData.imageUrl}`}
-                                                                alt={teamData.name}
-                                                            />
-                                                        </div>
-                                                        <div className="team-content">
-                                                            <h4 className="title">
-                                                                    {teamData.name}
-                                                            </h4>
-                                                            <span>{teamData.position}</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            ) : null;
-                                        })}
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                    </section>
-
                     <section id="executive" className="team-area pt-10 ">
                         {getDataBySection("team-Executive").map((item) => (
                             <div key={item._id} className="container project__area-three">
@@ -255,6 +202,61 @@ export default function About3({ initialData, teamMembersData, pageDescription, 
                             </div>
                         ))}
                     </section>
+
+                    <section className="team-area pt-10 bg-dev-color" id="management">
+                        {getDataBySection("team-Management").map((item) => (
+                            <div key={item._id} className="container project__area-three">
+                                <div className="row container">
+                                    <div className="col-xl-7 space-betweeni col-lg-8 mb-5">
+                                        <div className="section-title  mb-50 tg-heading-subheading animation-style3">
+                                            <span style={{ fontSize: "18px" }} className="sub-title">{item.subtitle}</span>
+                                            <h2 className="title tg-element-title  mt-4 text-wrap devtextwrapo">
+                                                {item.title}
+                                            </h2>
+                                        </div>
+                                        <div
+                                            className="dev_customsize  mt-0 mt-md-4"
+                                            style={{ color: "#282739" }}
+                                        >
+                                            {item.description}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="team-item-wrap">
+                                    <div className="row justify-content-center">
+                                        {item.choicesTeam.map((id) => {
+                                            const teamData = Array.isArray(localizedTeamMembers)
+                                                ? localizedTeamMembers.find((member) => member._id === id)
+                                                : null;
+                                            return teamData ? (
+                                                <div
+                                                    key={teamData._id}
+                                                    className="col-xl-3 col-lg-4 col-md-6 col-sm-8"
+                                                >
+                                                    <div className="team-item">
+                                                        <div className="team-thumb">
+                                                            <img
+                                                                src={`${process.env.NEXT_PUBLIC_MEDIA_BASE_URL}${teamData.imageUrl}`}
+                                                                alt={teamData.name}
+                                                            />
+                                                        </div>
+                                                        <div className="team-content">
+                                                            <h4 className="title">
+                                                                    {teamData.name}
+                                                            </h4>
+                                                            <span>{teamData.position}</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            ) : null;
+                                        })}
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </section>
+
+                
                 </div>
 
                 <Bannerfooter data={getDataBySection("team-contact")} />
