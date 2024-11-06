@@ -55,7 +55,7 @@ export default function Menu() {
                         <li><Link href="/blog">{t("latest_news")}</Link></li>
                         <li><Link href="/careers">{t("careers")}</Link></li>
                         <li><Link href="/complaints">{t("complaints")}</Link></li>
-                        <li><Link href="mailto:whistleblower@enmaa.com">{t("report_incident")}</Link></li>
+                        <li><Link href="/incident">{t("report_incident")}</Link></li>
                         {/* <li><Link href="/#-details">Team Details</Link></li>
                         <li><Link href="/project-details">Project Details</Link></li>
                         <li><Link href="/error">404 Error Page</Link></li>
