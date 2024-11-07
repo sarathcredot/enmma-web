@@ -1,8 +1,23 @@
 import Link from "next/link"
 import { useTranslation } from 'next-i18next';
-
+import { useEffect,useState } from "react";
+import axios from "axios"
 export default function Menu() {
     const { t } = useTranslation('common');
+    const [navdata,setnavdata]=useState([])
+ 
+    useEffect(()=>{
+
+
+        axios(`${process.env.NEXT_PUBLIC_BASE_URL}/header/get_all_navsection`).then((result)=>{
+
+              setnavdata(result.data)
+        })
+
+    },[])
+
+
+
     return (
         <>
             <ul className="navigation">

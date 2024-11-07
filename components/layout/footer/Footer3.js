@@ -16,6 +16,8 @@ export default function Footer3() {
 
     
     useEffect(() => {
+
+        
        
         const fetchFooterData = async () => {
           try {
