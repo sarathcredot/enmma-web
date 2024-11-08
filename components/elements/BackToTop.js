@@ -20,6 +20,10 @@ export default function BackToTop() {
 
     return (
         <>
+
+        <h1> hiii </h1>
+
+
             {hasScrolled && (
                 <a className="scroll__top scroll-to-target open" href="#top" style={{ position: 'fixed', zIndex: 2147483647 }}>
                     <i className="fas fa-angle-up"></i>
