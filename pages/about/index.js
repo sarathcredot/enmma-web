@@ -241,14 +241,14 @@ export default function About({ initialData, pageTitle, pageDescription, }) {
                                         <div className="request-content text-center">
                                             <h2 className="title">{item.title}</h2>
                                             <div className="content-bottom">
-                                                <Link dir="ltr" href={`tel:${item.buttonLink}`} className="btn">{item.buttonTitle}</Link>
+                                                <Link dir="ltr" href={item.buttonLink} className="btn">{item.buttonTitle}</Link>
                                                 <div className="content-right">
                                                     <div className="icon">
                                                         <i className="flaticon-phone-call" />
                                                     </div>
                                                     <div className="content">
                                                         {/* <span>Toll Free Call</span> */}
-                                                        <Link dir="ltr" href={`tel:${item.buttonLink}`}>{item.buttonLink}</Link>
+                                                        <Link dir="ltr" href={`tel:${item.buttonLink}`}>{item.phone_number}</Link>
                                                     </div>
                                                 </div>
                                             </div>

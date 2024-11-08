@@ -14,7 +14,8 @@ export default function Bannerfooter({data}) {
                                     <div className="request-content text-center">
                                         <h2 className="title">{item.title}</h2>
                                         <div className="content-bottom">
-                                            <Link href="/contact" className="btn">{item.subtitle}</Link>
+                                        <Link dir="ltr" href={item.buttonLink} className="btn">{item.buttonTitle}</Link>
+
                                             <div className="content-right">
                                                 <div className="icon">
                                                     <i className="flaticon-phone-call" />
@@ -22,7 +23,7 @@ export default function Bannerfooter({data}) {
                                                 <div className="content">
                                                     {/* <span>Toll Free Call</span> */}
                                                     {item.buttonLink ? (
-                                                <Link href={`tel:+ 88(9600)6002`} className="">+ 88(9600)6002</Link> ) : (<></>)} 
+                                                    <Link dir="ltr" href={`tel:${item.buttonLink}`}>{item.phone_number}</Link>) : (<></>)} 
                                                   </div>
                                             </div>
                                         </div>

@@ -1,11 +1,13 @@
 
 "use-client"
 import Link from "next/link";
-import { useState , useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { useTranslation } from 'next-i18next';
 import { toast } from "react-toastify";
 import emailjs from '@emailjs/browser';
 import { message } from "antd";
+import axios from "axios";
+
 
 export default function IncidentForm() {
     // const { t, i18n } = useTranslation('common');
@@ -129,6 +131,8 @@ export default function IncidentForm() {
 
 
     const { t, i18n } = useTranslation('common');
+    const [footerData, setfooterData] = useState(null);
+
     const [formData, setFormData] = useState({
         fullname: "",
         email: "",
@@ -201,15 +205,15 @@ export default function IncidentForm() {
                 // emailjs
 
 
-                emailjs.sendForm("service_g43yul4","template_zg6cd5v",form.current,{
+                emailjs.sendForm("service_g43yul4", "template_zg6cd5v", form.current, {
 
-                    publicKey:"ajnXquWIKiIPWA87n"
-                }).then(()=>{
+                    publicKey: "ajnXquWIKiIPWA87n"
+                }).then(() => {
 
-                   console.log("email sent")
-                }).catch(err=>{
+                    console.log("email sent")
+                }).catch(err => {
 
-                   console.log("email sent failed")
+                    console.log("email sent failed")
                 })
 
 
@@ -257,6 +261,60 @@ export default function IncidentForm() {
 
 
     };
+
+
+    useEffect(() => {
+
+
+
+        const fetchFooterData = async () => {
+            try {
+                const result = await axios(`${process.env.NEXT_PUBLIC_BASE_URL}/footer`);
+                console.log("footer data", result.data);
+                setfooterData(result.data);
+            } catch (error) {
+                console.error('Error fetching footer data:', error);
+            }
+        };
+
+
+        fetchFooterData();
+    }, [i18n.language]);
+
+
+
+    const localizedData = {
+        ...footerData,
+        QuickLinks: footerData?.QuickLinks?.map(link => ({
+            ...link,
+            title: link[`title_${i18n.language}`] || link.title_en,
+        })),
+        InformationLinks: footerData?.InformationLinks?.map(link => ({
+            ...link,
+            title: link[`title_${i18n.language}`] || link.title_en,
+        })),
+        socialMediaLinks: footerData?.socialMediaLinks?.map(link => ({
+            ...link,
+            platform: link.platform,
+            url: link.url,
+        })),
+        address: footerData?.[`address_${i18n.language}`] || footerData?.address_en,
+        phoneNumber: footerData?.phoneNumber,
+        emailAddress: footerData?.emailAddress,
+        copyrightText: footerData?.copyrightText,
+        poweredByText: footerData?.poweredByText,
+        logourl: footerData?.logourl,
+        logoUrl: footerData?.logoUrl,
+    };
+
+
+
+
+
+
+
+
+
 
     return (
         <>
@@ -355,7 +413,11 @@ export default function IncidentForm() {
                                                 </div>
                                                 <div className="content">
                                                     <h4 className="title">{t('Address')}</h4>
-                                                    <p>{t('address')}</p>
+                                                    <a href={`https://www.google.com/maps?q=${encodeURIComponent(localizedData?.address)}`} target="_blank" rel="noopener noreferrer" >
+
+                                                        <p>{localizedData?.address}</p>
+
+                                                    </a>
                                                 </div>
                                             </li>
                                             <li>
@@ -364,8 +426,8 @@ export default function IncidentForm() {
                                                 </div>
                                                 <div className="content">
                                                     <h4 className="title">{t('phone')}</h4>
-                                                    <Link dir="ltr" href="tel:0123456789">+48 1866667</Link>
-                                                </div>
+                                                    <Link dir="ltr" href={`tel:${localizedData?.phoneNumber}`}>{localizedData?.phoneNumber}</Link>
+                                                    </div>
                                             </li>
                                             <li>
                                                 <div className="icon">
@@ -373,8 +435,8 @@ export default function IncidentForm() {
                                                 </div>
                                                 <div className="content">
                                                     <h4 className="title">{t('email')}  </h4>
-                                                    <Link href="mailto:enmaa@enmaa.com">enmaa@enmaa.com</Link>
-                                                </div>
+                                                    <Link href={`mailto:${localizedData?.emailAddress}`}>{localizedData?.emailAddress}</Link>
+                                                    </div>
                                             </li>
                                         </ul>
                                     </div>

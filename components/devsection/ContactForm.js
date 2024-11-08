@@ -1,8 +1,10 @@
 'use client'
 import Link from "next/link";
-import { useState } from "react";
+import { useState ,useEffect} from "react";
 import { useTranslation } from 'next-i18next';
 import { toast } from "react-toastify";
+import axios from "axios";
+
 
 
 
@@ -11,6 +13,8 @@ export default function ComplaintSection() {
 
 
   const { t, i18n } = useTranslation('common');
+  const [footerData, setfooterData] = useState(null);
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -120,6 +124,53 @@ export default function ComplaintSection() {
   };
 
 
+  useEffect(() => {
+
+
+
+    const fetchFooterData = async () => {
+      try {
+        const result = await axios(`${process.env.NEXT_PUBLIC_BASE_URL}/footer`);
+        console.log("footer data", result.data);
+        setfooterData(result.data);
+      } catch (error) {
+        console.error('Error fetching footer data:', error);
+      }
+    };
+
+
+    fetchFooterData();
+  }, [i18n.language]);
+
+
+
+  const localizedData = {
+    ...footerData,
+    QuickLinks: footerData?.QuickLinks?.map(link => ({
+      ...link,
+      title: link[`title_${i18n.language}`] || link.title_en,
+    })),
+    InformationLinks: footerData?.InformationLinks?.map(link => ({
+      ...link,
+      title: link[`title_${i18n.language}`] || link.title_en,
+    })),
+    socialMediaLinks: footerData?.socialMediaLinks?.map(link => ({
+      ...link,
+      platform: link.platform,
+      url: link.url,
+    })),
+    address: footerData?.[`address_${i18n.language}`] || footerData?.address_en,
+    phoneNumber: footerData?.phoneNumber,
+    emailAddress: footerData?.emailAddress,
+    copyrightText: footerData?.copyrightText,
+    poweredByText: footerData?.poweredByText,
+    logourl: footerData?.logourl,
+    logoUrl: footerData?.logoUrl,
+  };
+
+
+
+
 
 
 
@@ -145,7 +196,11 @@ export default function ComplaintSection() {
                     </div>
                     <div className="content">
                       <h4 className="title">{t('Address')}</h4>
-                      <p>{('address')}</p>
+                      <a href={`https://www.google.com/maps?q=${encodeURIComponent(localizedData?.address)}`} target="_blank" rel="noopener noreferrer" >
+
+                        <p>{localizedData?.address}</p>
+
+                      </a>
                     </div>
                   </li>
                   <li>
@@ -154,8 +209,8 @@ export default function ComplaintSection() {
                     </div>
                     <div className="content">
                       <h4 className="title">{t('phone')}</h4>
-                      <Link href="tel:+481866667">+48 1866667</Link>
-                    </div>
+                      <Link dir="ltr" href={`tel:${localizedData?.phoneNumber}`}>{localizedData?.phoneNumber}</Link>
+                      </div>
                   </li>
                   <li>
                     <div className="icon">
@@ -163,8 +218,8 @@ export default function ComplaintSection() {
                     </div>
                     <div className="content">
                       <h4 className="title">{t('email')}</h4>
-                      <Link href="mailto:enmaa@enmaa.com">enmaa@enmaa.com</Link>
-                    </div>
+                      <Link href={`mailto:${localizedData?.emailAddress}`}>{localizedData?.emailAddress}</Link>
+                      </div>
                   </li>
                 </ul>
               </div>
@@ -178,12 +233,12 @@ export default function ComplaintSection() {
                 <div className="row">
                   <div className="col-md-4">
                     <div className="form-grp">
-                  
+
 
                       <input
                         type="text"
                         name="name"
-                        placeholder={"*"+t('Full-Name')}
+                        placeholder={"*" + t('Full-Name')}
                         value={formData.name}
                         onChange={handleChange}
                       />
@@ -194,11 +249,11 @@ export default function ComplaintSection() {
                   </div>
                   <div className="col-md-4">
                     <div className="form-grp">
-                    
+
                       <input
                         type="email"
                         name="email"
-                        placeholder={"*"+t('Email')}
+                        placeholder={"*" + t('Email')}
                         value={formData.email}
                         onChange={handleChange}
                       />
@@ -206,11 +261,11 @@ export default function ComplaintSection() {
                   </div>
                   <div className="col-md-4">
                     <div className="form-grp">
-                    
+
                       <input
                         type="number"
                         name="phone"
-                        placeholder={"*"+t("phone")}
+                        placeholder={"*" + t("phone")}
                         value={formData.phone}
                         onChange={handleChange}
                       />
@@ -218,16 +273,16 @@ export default function ComplaintSection() {
                   </div>
                 </div>
                 <div className="form-grp">
-                 
+
                   <textarea
                     name="message"
-                    placeholder={"*"+t('message')}
+                    placeholder={"*" + t('message')}
                     value={formData.message}
                     onChange={handleChange}
                   />
                 </div>
                 <div className="form-grp checkbox-grp">
-                
+
                   <input onClick={() => { setconformBox(!conformBox) }} type="checkbox" name="checkbox" id="checkbox" />
                   <label htmlFor="checkbox">
                     Save my name, email, and website in this browser for the next time I comment.
@@ -247,17 +302,17 @@ export default function ComplaintSection() {
           </div>
         </div>
         <div className="col-lg-12 ">
-          
-          <div   className="contact-map">
+
+          <div className="contact-map">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3476.974574165315!2d47.97528657531801!3d29.371033675269594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fcf859c6fe72ded%3A0x6cab84399af0eabf!2sAl%20Enmaa%20Tower!5e0!3m2!1sen!2sin!4v1715233152422!5m2!1sen!2sin"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
-         
+
           </div>
-        
-        
+
+
         </div>
       </div>
     </section>
