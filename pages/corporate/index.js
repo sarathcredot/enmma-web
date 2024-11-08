@@ -190,7 +190,11 @@ export function CorporatePoints({ corporatePoints }) {
                     aria-controls="health-tab-pane"
                     aria-selected="true"
                   >
-                    <i className=" flaticon-pin" />
+                   
+                   {
+                      corporatePoint.icon ?  <img style={{width:"30px",height:"30px" ,borderRadius:"100%", marginRight:"10px" }}  src={getImageUrl(corporatePoint.icon)} alt="" /> : <i style={{marginRight:"5px"}} className=" flaticon-pin" />
+                   }
+                    
 
 
 
