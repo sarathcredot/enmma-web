@@ -10774,20 +10774,59 @@ display: none;  }
 	position:fixed;
 	width:50px;
 	height:50px;
-	bottom:80px;
+	bottom:30px;
 	right:46px;
 	background-color:#25d366;
 	color:#FFF;
 	border-radius:50px;
 	text-align:center;
   font-size:30px;
-	box-shadow: 2px 2px 3px #999;
+	/* box-shadow: 2px 2px 3px #999; */
   z-index:100;
 }
 
 .my-float{
 	margin-top:10px;
+  color: white;
 }
+
+a:hover {
+  color: initial !important;
+  text-decoration: none !important;
+}
+
+@media(max-width:769px){
+
+      .float{
+
+          bottom: 17px;
+          right: 30px;
+      }
+}
+
+@media(max-width:500px){
+
+  .float{
+      width:40px;
+      height:40px;
+      bottom: 17px;
+      right: 20px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+  }
+
+  .my-float{
+    margin-top:0px;
+    font-size: 28px;
+   
+  }
+}
+
+
+
+
+
 
 
 

@@ -133,7 +133,7 @@ export default function MobileMenu() {
                                     <li><Link href="/blog">{t("latest_news")}</Link></li>
                                     <li><Link href="/careers">{t("careers")}</Link></li>
                                     <li><Link href="/complaints">{t("complaints")}</Link></li>
-                                    <li><Link href="mailto:whistleblower@enmaa.com">{t("report_incident")}</Link></li>
+                                    <li><Link href="/incident">{t("report_incident")}</Link></li>
                                 </ul>
                                 <div className={isActive.key == 5 ? "dropdown-btn open" : "dropdown-btn"} onClick={() => handleToggle(5)}><span className="plus-line" /></div>
                             </li>
