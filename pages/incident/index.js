@@ -1,39 +1,41 @@
-import Banner1 from "@/components/sections/Banner1"
-import Link from "next/link"
+
 import Layout from "@/components/layout/Layout"
+import Banner1 from "@/components/sections/Banner1"
 import Bannerfooter from "@/components/sections/Bannerfooter"
-import Statement from "@/components/devsection/Statement"
+import Link from "next/link"
+import IncidentForm from "@/components/devsection/Incidentform"
 import { useTranslation } from 'next-i18next';
-import { useEffect, useState } from 'react';
+import { useEffect, useState , useRef } from 'react';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Head from "next/head"
+import emailjs from '@emailjs/browser';
+
 
 export const metadata = {
     title: 'Annual report',
 }
 
-export default function Financialstatement({ initialData ,pageTitle,pageDescription, }) {
+export default function About({ initialData, pageTitle, pageDescription, }) {
     const { t, i18n } = useTranslation('common');
     const [data, setData] = useState(initialData);
-
-    console.log("data file  ",initialData)
+    
 
     useEffect(() => {
         async function loadData() {
             try {
                 const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/cms`);
                 const data = await response.json();
-                const fetchedData = data.filter(item => item.page === 'Financial');
+                const fetchedData = data.filter(item => item.page === 'incident');
                 setData(fetchedData);
             } catch (error) {
                 console.error('Failed to load data:', error);
             }
         }
-    
-        loadData();
-    },  [i18n.language]);
 
-    const localizedData = data.map(item => {
+        loadData();
+    }, [i18n.language]);
+
+    const localizedData = data?.map(item => {
         const localizedIcondata = {};
         Object.keys(item).forEach(key => {
             if (key.startsWith('icondata')) {
@@ -74,30 +76,35 @@ export default function Financialstatement({ initialData ,pageTitle,pageDescript
 
     return (
 
-
         <>
-           <Head>
+            <Head>
                 <title>{pageTitle}</title>
                 <meta name="description" content={pageDescription} />
             </Head>
+
             <Layout headerStyle={6} footerStyle={3} >
-            <Banner1 data={getDataBySection('Financial-banner')} />
-            
-            <div className="container project__area-three ">
-                    <div className="row container">
-                        {getDataBySection('Financial-heading').map((item) => (
-                    <div className="col-xl-7 space-betweeni col-lg-8 mb-5">
-                            <div  className="  dev_gover   " >
-                            <span className="">{item.subtitle}</span>
-                            <h2 className=" mt-4 text-wrap devtextwrapo" style={{ color: '#110B79' }}>{item.title}</h2>
-                        </div>
-                            <div className="dev_customsize  mt-0 mt-md-4" style={{ color: '#282739' }}>{item.description}</div>
+                <Banner1 data={getDataBySection('incident-banner')} />
+
+
+
+                <div className="container project__area-three ">
+                    <div className="row container ">
+                        {getDataBySection('incident-heading')?.map((item) => (
+                            <div className="col-xl-7 space-betweeni col-lg-8 ">
+
+                                <div className="  dev_gover   " >
+                                    <span className="">{item.subtitle}</span>
+                                    <h2 className=" mt-4 text-wrap devtextwrapo" style={{ color: '#110B79' }}>{item.title}</h2>
+                                </div>
+                                <div className="dev_customsize  mt-0 mt-md-4" style={{ color: '#282739' }}>{item.description}</div>
                             </div>
                         ))}
+                      <IncidentForm />
+                     
 
-            < Statement showItem={2} style={1} showPagination/>
-            </div></div>
-            <Bannerfooter data={getDataBySection('Financial-contact')}/> 
+                    </div>
+                    </div>
+                <Bannerfooter data={getDataBySection('incident-contact')} />
             </Layout>
         </>
     )
@@ -105,7 +112,7 @@ export default function Financialstatement({ initialData ,pageTitle,pageDescript
 export async function getServerSideProps({ locale }) {
     const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/cms`);
     const data = await response.json();
-    const fetchedData = data.filter(item => item.page === 'Financial');
+    const fetchedData = data.filter(item => item.page === 'incident');
     const metadataResponse = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/pageMetadata/`);
 
     if (!response.ok || !metadataResponse.ok) {
@@ -114,11 +121,10 @@ export async function getServerSideProps({ locale }) {
 
     const metadata = await metadataResponse.json();
 
-    const pageMetadata = metadata.find(page => page.page === 'about') || {};
+    const pageMetadata = metadata.find(page => page.page === 'incident') || {};
 
     const pageTitle = pageMetadata[`pageTitle_${locale}`] || pageMetadata.pageTitle_en || 'Default Title';
     const pageDescription = pageMetadata[`pageDescription_${locale}`] || pageMetadata.pageDescription_en || 'Default description';
-
 
     return {
         props: {

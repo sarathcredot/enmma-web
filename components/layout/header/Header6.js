@@ -3,8 +3,27 @@ import Menu from "../Menu"
 import MobileMenu from "../MobileMenu"
 import SVG from "../../elements/Allsvg"
 import { useTranslation } from 'next-i18next';
+import { useEffect, useState } from "react";
+import axios from "axios"
+
 export default function Header6({ scroll, isMobileMenu, handleMobileMenu, transparent, isSearch, isOffcanvus, handleOffcanvus, handleSearch }) {
     const { t } = useTranslation('common');
+    const [navdata, setnavdata] = useState([])
+
+    useEffect(() => {
+
+
+        axios(`${process.env.NEXT_PUBLIC_BASE_URL}/header/get_all_navsection`).then((result) => {
+
+            setnavdata(result.data)
+        })
+
+    }, [])
+
+
+
+
+
     return (
         <>
             <header className="tg-header__style-five">
@@ -40,8 +59,53 @@ export default function Header6({ scroll, isMobileMenu, handleMobileMenu, transp
                                         </div>
                                         <div className="tgmenu__action tgmenu__action-five d-none d-md-block">
                                             <ul className="list-wrap">
-                                                <li className="header-btn" ><Link href="/search-property" className="btn "> <SVG caseValue='case1'/>&nbsp; {t("search_properties")}</Link></li>
-                                                <li className="header-btn"><Link href="https://onpayment.enmaa.com/ONPAY/login.jsp" className="btn btn-two"> <SVG caseValue='case2'/>&nbsp; {t("pay_rent")}</Link></li>
+
+
+                                                {
+                                                    navdata.map((obj, index) => (
+
+                                                        obj.section === "Search-property" && obj.status ? (
+
+
+                                                            <li className="header-btn" >
+                                                                <Link href="/search-property" className="btn ">
+                                                                    <SVG caseValue='case1' />&nbsp; {t("search_properties")}</Link>
+
+                                                            </li>
+
+                                                        ) : null
+                                                    ))
+                                                }
+
+
+{
+                                                    navdata.map((obj, index) => (
+
+                                                        obj.section === "Pay Rent" && obj.status ? (
+
+
+                                                            <li className="header-btn">
+                                                            <Link href="https://onpayment.enmaa.com/ONPAY/login.jsp" className="btn btn-two"> 
+                                                            <SVG caseValue='case2' />&nbsp; {t("pay_rent")}</Link>
+                                                            </li>
+
+                                                        ) : null
+                                                    ))
+                                                }
+
+
+
+
+
+
+
+
+                                                
+
+
+
+
+
                                             </ul>
                                         </div>
                                         <div className="mobile-nav-toggler mobile-nav-toggler-two" onClick={handleMobileMenu}>
@@ -84,10 +148,10 @@ export default function Header6({ scroll, isMobileMenu, handleMobileMenu, transp
                                             </div>
                                             <div className="social-links">
                                                 <ul className="list-wrap">
-                                                    
-                                                    <li><Link href="#"></Link> <SVG caseValue='case6'/></li>
+
+                                                    <li><Link href="#"></Link> <SVG caseValue='case6' /></li>
                                                     <li><Link href="#"><i className="fab fa-instagram" /></Link></li>
-                                             
+
                                                 </ul>
                                             </div>
                                         </div>

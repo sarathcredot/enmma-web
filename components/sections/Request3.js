@@ -1,6 +1,8 @@
 import Link from 'next/link'
 
 export default function Request3({data}) {
+
+    
     return (
         <>
        { data.map((item) => (
