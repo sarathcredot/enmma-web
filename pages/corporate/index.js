@@ -17,6 +17,8 @@ export default function corporate({ initialData }) {
   const { i18n } = useTranslation("common");
   const [localizedData, setLocalizedData] = useState(initialData);
 
+  console.log("crop intionl",initialData)
+
   useEffect(() => {
     localize();
   }, []);
@@ -101,6 +103,8 @@ export async function getServerSideProps({ locale }) {
 }
 
 export function CorporateSubheading({ corporateHeading }) {
+
+  console.log("cor",corporateHeading)
   return (
     <div className="row container">
       <div className="col-xl-7 space-betweeni col-lg-8 mb-5">
