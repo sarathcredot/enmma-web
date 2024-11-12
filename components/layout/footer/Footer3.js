@@ -293,7 +293,7 @@ export default function Footer3() {
                                         <h4 className="fw-title">{t("location")}</h4>
                                         <div className="footer-info-list">
                                             <ul className="list-wrap">
-                                                <li>
+                                                <li  >
                                                     <div className="icon">
                                                         <i className="flaticon-phone-call" />
                                                     </div>
@@ -312,7 +312,7 @@ export default function Footer3() {
                                                     </div>
                                                 </li>
                                                 <li>
-                                                    <a href={googleMapsLink} target="_blank" rel="noopener noreferrer"  >
+                                                    <a style={{display:"flex",gap:"8px"}} href={googleMapsLink} target="_blank" rel="noopener noreferrer"  >
 
                                                         <div className="icon">
                                                             <i className="flaticon-pin" />

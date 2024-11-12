@@ -36,16 +36,16 @@ export default function About3({ data }) {
                                             </ul>
                                         </div>
                                     </div>
-                                    <div className="about-bottom about-bottom-two ">
-                                        {/* <div className="author-wrap">
+                                    {/* <div className="about-bottom about-bottom-two ">
+                                        <div className="author-wrap">
                                             <div className="thumb">
                                                 <img src="/assets/img/images/author_img.jpg" alt="" />
                                             </div>
                                             <div className="content">
                                                 <h4 className="title">{t('chief-executive-officer-name')}<br /><span>{t('chief-executive-officer')}</span></h4>
                                             </div>
-                                        </div> */}
-                                    </div>
+                                        </div>
+                                    </div> */}
                                     <div className="about__shape-wrap-three">
                                         <img src="/assets/img/images/h3_about_shape01.png" alt="" className="rotateme" />
                                     </div>

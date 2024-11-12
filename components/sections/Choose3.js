@@ -13,7 +13,7 @@ export default function Choose3({ data }) {
                                 <img src={`${process.env.NEXT_PUBLIC_MEDIA_BASE_URL}${item.bannerImage}`} alt="" />
                                 {/* <Link href="#" className="play-btn"><i className="fas fa-play" /></Link> */}
                                 </div>
-                                <img src="/assets/img/images/h3_choose_img02.jpg" alt=""/>
+                                {/* <img src="/assets/img/images/h3_choose_img02.jpg" alt=""/> */}
                                 <div className="shape">
                                     <img src="/assets/img/images/h3_choose_img_shape.jpg" alt="" className="alltuchtopdown" />
                                 </div>

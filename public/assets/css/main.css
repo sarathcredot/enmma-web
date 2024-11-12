@@ -16737,7 +16737,7 @@ html[lang="ar"] .testimonial__area-three .slick-slide p{
 }
 @media screen and (max-width: 768px) {
   .wpml-floating-language-switcher {
-    bottom: 2.8%;   
+    bottom: 2.5%;   
   }
 
 }
@@ -16762,6 +16762,32 @@ html[lang="ar"] .testimonial__area-three .slick-slide p{
   width: clamp(50px,4vw,50px);
   height: clamp(50px,4vw,50px);
 }
+
+
+@media screen and (max-width: 500px) {
+  .wpml-floating-language-switcher {
+       
+    bottom: 2.5%; 
+  }
+
+}
+
+
+@media screen and (max-width: 500px) {
+  
+  .floatlanglink{
+
+    width: clamp(43px,4vw,43px);
+    height: clamp(43px,4vw,43px);
+  }
+
+}
+
+
+
+
+
+
 .floatlanglink:hover{
    /* color: white;
   background: var(--tg-theme-secondary); */
