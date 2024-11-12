@@ -26,10 +26,10 @@ const FloatingLanguageSwitcher = () => {
   ];
 
   return (
-    <div className="wpml-floating-language-switcher">
-      <div className="wpml-ls-statics-shortcode_actions">
+    <div  className="wpml-floating-language-switcher">
+      <div  className="wpml-ls-statics-shortcode_actions">
         {languages.map((lang) => (
-          <div key={lang.code} style={{ position: 'relative', display: 'inline-block' }}>
+          <div  key={lang.code} style={{ position: 'relative', display: 'inline-block' }}>
             <a
               onClick={() => changeLanguage(lang.code)}
               className={`${i18n.language === lang.code ? "active" : ""} floatlanglink`}
@@ -54,7 +54,7 @@ const FloatingLanguageSwitcher = () => {
           bottom: 100%;
           left: 50%;
           transform: translateX(-50%);
-          background-color: black;
+          background-color: black
           color: white;
           padding: 5px 10px;
           border-radius: 4px;

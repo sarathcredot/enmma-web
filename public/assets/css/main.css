@@ -10791,7 +10791,8 @@ display: none;  }
 }
 
 a:hover {
-  color: initial !important;
+  color: white;
+
   text-decoration: none !important;
 }
 
@@ -16718,6 +16719,15 @@ html[lang="ar"] .testimonial__area-three .slick-slide p{
    */
   
 /*Customize this if you want*/
+
+
+.wpml-floating-language-switcher a :hover { 
+
+      color: white;
+}
+
+
+
 .wpml-floating-language-switcher {
   position: fixed;
   z-index: 9999;
@@ -16737,22 +16747,26 @@ html[lang="ar"] .testimonial__area-three .slick-slide p{
   background: #FE7B12;
   /* backdrop-filter: blur(40px); */
   /* border: 1px solid white; */
-  color: white;
+  color:white;
  
-  border-radius: 4px; 
-  -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.25);
+  border-radius: 100%; 
+  /* -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.25);
   -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.25);
   box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.25);
-  transition: 1s ease;
+  transition: 1s ease; */
   justify-content: center;
   align-items: center;
-  width: clamp(30px,4vw,40px);
-  height: clamp(30px,4vw,40px);
+  /* width: clamp(30px,4vw,40px);
+  height: clamp(30px,4vw,40px); */
+
+  width: clamp(50px,4vw,50px);
+  height: clamp(50px,4vw,50px);
 }
 .floatlanglink:hover{
-  color: white;
-  background: var(--tg-theme-secondary);
-
+   /* color: white;
+  background: var(--tg-theme-secondary); */
+ 
+  
 }
 .floatlanglink.active {
   display: none; 
