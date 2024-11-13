@@ -10048,7 +10048,7 @@ display: none;  }
 
 .swiper-slide{
 
-    padding-top: 60px;
+    /* padding-top: 60px; */
 }
 
 .testimonial-nav .swiper-wrapper .swiper-slide {
@@ -14576,7 +14576,7 @@ margin-bottom: 20px;
   background-color: #fff;
   border-radius: 8px;
   padding: 60px 60px 60px 80px;
-  margin: 60px 0px 120px 60px;
+  margin: 60px 0px 60px 60px;
   /* margin: 100px; */
   margin-inline-end: 60px;
 }
