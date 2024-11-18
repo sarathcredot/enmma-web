@@ -136,11 +136,12 @@ export default function About({ initialData, pageTitle, pageDescription, }) {
                                                      item.description2 &&   <p style={{ color: '#282739' }}>{item.description2}</p>
                                                 }
 
-                                                {item.buttonTitle ? (
-                                                    <Link href={item.buttonLink} className="btn">{item.buttonTitle}</Link>
-
+                                                {item.buttonTitle.length===0  ? (
+                                                 
+                                                          <></>
                                                 ) : (
-                                                    <></>
+                                                  
+                                                    <Link href={item.buttonLink} className="btn">{item.buttonTitle}</Link>
                                                 )}
 
 

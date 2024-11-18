@@ -157,7 +157,7 @@ export default function IncidentForm() {
         e.preventDefault();
 
         // Validate required fields
-        const requiredFields = ["fullname", "email", "mobile", "message"];
+        const requiredFields = [ "message"];
         const isValid = requiredFields.every(field => formData[field]);
 
         if (!isValid) {
@@ -166,19 +166,19 @@ export default function IncidentForm() {
             return;
         }
 
-        if (formData.mobile.length !== 10) {
+        // if (formData.mobile.length !== 10) {
 
-            setvaliDateCheck(true)
-            setvalidationMsg("Enter valid phone number")
-            return;
-        }
+        //     setvaliDateCheck(true)
+        //     setvalidationMsg("Enter valid phone number")
+        //     return;
+        // }
 
-        if (!conformBox) {
+        // if (!conformBox) {
 
-            setvaliDateCheck(true)
-            setvalidationMsg("Please enable your confirmation.")
-            return;
-        }
+        //     setvaliDateCheck(true)
+        //     setvalidationMsg("Please enable your confirmation.")
+        //     return;
+        // }
 
         setvaliDateCheck(false)
 
@@ -258,6 +258,8 @@ export default function IncidentForm() {
 
         }
 
+      
+
 
 
     };
@@ -335,7 +337,7 @@ export default function IncidentForm() {
                                                     <input
                                                         type="text"
                                                         name="fullname"
-                                                        placeholder={"*" + t('Full-Name')}
+                                                        placeholder={ t('Full-Name')+" "+"(optional)"}
                                                         value={formData.fullname}
                                                         onChange={handleChange}
                                                     />
@@ -350,7 +352,7 @@ export default function IncidentForm() {
                                                     <input
                                                         type="email"
                                                         name="email"
-                                                        placeholder={"*" + t('Email')}
+                                                        placeholder={ t('Email')+" "+"(optional)"}
                                                         value={formData.email}
                                                         onChange={handleChange}
                                                     />
@@ -362,7 +364,7 @@ export default function IncidentForm() {
                                                     <input
                                                         type="number"
                                                         name="mobile"
-                                                        placeholder={"*" + t("phone")}
+                                                        placeholder={ t("phone")+" "+"(optional)"}
                                                         value={formData.mobile}
                                                         onChange={handleChange}
                                                     />
@@ -383,7 +385,7 @@ export default function IncidentForm() {
 
                                             <input onClick={() => { setconformBox(!conformBox) }} type="checkbox" name="checkbox" id="checkbox" />
                                             <label htmlFor="checkbox">
-                                                Save my name, email, and website in this browser for the next time I comment.
+                                                Save my name, email, and website in this browser for the next time I comment.(optional)
                                             </label>
                                         </div>
 
