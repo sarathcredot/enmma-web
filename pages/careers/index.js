@@ -14,6 +14,15 @@ export default function About({ initialData, pageTitle,pageDescription, }) {
     const { t, i18n } = useTranslation('common');
     const [data, setData] = useState(initialData);
 
+
+    // jlgdfhgdfhg
+
+
+
+
+
+    
+
     useEffect(() => {
         async function loadData() {
             try {
